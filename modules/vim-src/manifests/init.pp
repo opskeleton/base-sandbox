@@ -18,15 +18,21 @@ class vim-src {
    "10.10" => "python2.6"
   }
 
+
+   package {"mercurial":
+    ensure => "installed"
+   }
+
    file { "/tmp/vim":
-      ensure => directory,
+      ensure => directory
    }
 
    vcsrepo { "/tmp/vim":
       ensure   => present,
       provider => hg,
       source   => 'https://vim.googlecode.com/hg/',
-      require  => File["/tmp/vim"]
+      require  => File["/tmp/vim"],
+      revision => 'v7-3-162'
    } 
 
 
@@ -43,7 +49,7 @@ class vim-src {
     command => "/tmp/vim/configure --enable-multibyte --enable-cscope --enable-xim --enable-rubyinterp --enable-pythoninterp --with-python-config-dir=/usr/lib/$python/config --disable-largefile --with-features=big",
     cwd     => "/tmp/vim/",
     path    => ["/usr/bin/","/bin/"],
-    require => [Package["ncurses-dev"], Package["python-dev"]],
+    require => [Package["ncurses-dev"], Package["python-dev"],Vcsrepo["/tmp/vim"]],
     timeout => 0,
     user    => "root"
   }
