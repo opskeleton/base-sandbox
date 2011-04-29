@@ -13,6 +13,7 @@
 # [Remember: No empty lines between comments and class definition]
 class vim-src {
 
+
   $python = $lsbdistrelease? {
    "11.04" => "python2.7",
    "10.10" => "python2.6"
@@ -23,6 +24,7 @@ class vim-src {
     ensure => "installed"
    }
 
+  if $vim_version !='Vi IMproved 7.3' {
    file { "/tmp/vim":
       ensure => directory
    }
@@ -34,12 +36,12 @@ class vim-src {
       require  => File["/tmp/vim"],
       revision => 'v7-3-162'
    } 
+   
 
 
   package {"python-dev":
     ensure => "installed"
   }
-
 
   package {"ncurses-dev":
     ensure => "installed"
@@ -71,4 +73,5 @@ class vim-src {
     timeout => 0,
     user    => "root"
   }
+ }
 }
