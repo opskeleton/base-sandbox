@@ -29,15 +29,13 @@ class vim-src {
       ensure => directory
    }
 
-   vcsrepo { "/tmp/vim":
+  vcsrepo { "/tmp/vim":
       ensure   => present,
       provider => hg,
       source   => 'https://vim.googlecode.com/hg/',
       require  => File["/tmp/vim"],
       revision => 'v7-3-162'
-   } 
-   
-
+  } 
 
   package {"python-dev":
     ensure => "installed"
@@ -47,7 +45,7 @@ class vim-src {
     ensure => "installed"
   }
 
-  exec {"configure_vim" :
+ exec {"configure_vim" :
     command => "/tmp/vim/configure --enable-multibyte --enable-cscope --enable-xim --enable-rubyinterp --enable-pythoninterp --with-python-config-dir=/usr/lib/$python/config --disable-largefile --with-features=big",
     cwd     => "/tmp/vim/",
     path    => ["/usr/bin/","/bin/"],

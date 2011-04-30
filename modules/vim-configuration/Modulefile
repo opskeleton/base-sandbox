@@ -1,9 +1,9 @@
-name    'vim-src'
+name    'ronen-vim-configuration'
 version '0.0.1'
 source 'UNKNOWN'
 author 'ronen'
 license 'UNKNOWN'
-summary 'UNKNOWN'
+summary 'Fetchs vim configuration repo'
 description 'UNKNOWN'
 project_page 'UNKNOWN'
 
