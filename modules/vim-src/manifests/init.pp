@@ -50,7 +50,7 @@ class vim-src {
     ensure => "installed"
   }
 
- exec {"configure_vim" :
+  exec {"configure_vim" :
     command => "/tmp/vim/configure --enable-multibyte --enable-cscope --enable-xim --enable-rubyinterp --enable-pythoninterp --with-python-config-dir=/usr/lib/$python/config --disable-largefile $config_flags",
     cwd     => "/tmp/vim/",
     path    => ["/usr/bin/","/bin/"],

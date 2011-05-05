@@ -2,6 +2,8 @@
 node basenode {
   include "vim-src"
   include "vim-configuration"
+  include "zsh"
+  include "zsh_configuration"
 }
 node 'natty' inherits basenode {
 }
