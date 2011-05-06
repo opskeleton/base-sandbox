@@ -12,15 +12,17 @@
 #
 # [Remember: No empty lines between comments and class definition]
 class vim-configuration($user = "ronen") {
+
   package { "git-core":
-   ensure => "installed"
+      ensure => "installed"
   }
 
   vcsrepo { "/home/$user/.vim":
       ensure   => present,
       provider => git,
       source   => 'git://github.com/narkisr/.vim.git',
-      require  => [Package["git-core"]]
+      require  => [Package["git-core"]], 
+      revision => "HEAD"
   }  
 
  file { "/home/$user/.vimrc":
