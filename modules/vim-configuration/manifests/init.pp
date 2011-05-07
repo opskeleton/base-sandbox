@@ -37,5 +37,31 @@ class vim-configuration($user = "ronen") {
    require  => [Vcsrepo["/home/$user/.vim"]]
  }
 
+ package{"ruby1.8-dev":
+ 	ensure	=> installed
+ }
 
+ exec{"configure command-t":
+ 	user	   => "root",
+ 	cwd	   => "/home/$user/.vim/bundle/command-t/ruby/command-t", 
+      require  => [Vcsrepo["/home/$user/.vim"],Package["ruby1.8-dev"]],
+      path     => ["/usr/bin/","/bin/"],
+      command  => "ruby extconf.rb"
+ }
+
+ exec{"make clean command-t":
+ 	user	   => "root",
+ 	cwd	   => "/home/$user/.vim/bundle/command-t/ruby/command-t", 
+      require  => [Exec["configure command-t"]], 
+      path     => ["/usr/bin/","/bin/"],
+      command  => "make clean"
+ }
+ 
+ exec{"make command-t":
+ 	user	   => "root",
+ 	cwd	   => "/home/$user/.vim/bundle/command-t/ruby/command-t", 
+      require  => [Exec["configure command-t"]], 
+      path     => ["/usr/bin/","/bin/"],
+      command  => "make"
+ }
 }
