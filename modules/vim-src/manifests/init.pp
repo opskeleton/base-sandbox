@@ -11,8 +11,8 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
+import "vim_gui.pp"
 class vim-src {
-
 
   $python = $lsbdistrelease? {
    "11.04" => "python2.7",
@@ -29,6 +29,10 @@ class vim-src {
     ensure => "installed"
    }
 
+  if $is_desktop == "true" {
+   include vim::gui::packages
+  }
+
   if $vim_version !='Vi IMproved 7.3' {
    file { "/tmp/vim":
       ensure => directory
@@ -37,7 +41,7 @@ class vim-src {
   vcsrepo { "/tmp/vim":
       ensure   => present,
       provider => hg,
-      source   => 'https://vim.googlecode.com/hg/',
+      source   => "https://vim.googlecode.com/hg/",
       require  => File["/tmp/vim"],
       revision => 'v7-3-162'
   } 
