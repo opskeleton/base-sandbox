@@ -10,5 +10,8 @@ node basenode {
 node 'natty' inherits basenode {
 }
 
-node 'zsh' inherits basenode {
+node 'puppet-client' inherits basenode {
+}
+
+node 'Uranus' inherits basenode {
 }
