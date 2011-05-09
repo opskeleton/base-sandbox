@@ -1,3 +1,6 @@
 [submodule "modules/puppet-vcsrepo"]
 	path = modules/puppet-vcsrepo
 	url = https://github.com/bruce/puppet-vcsrepo.git
+[submodule "modules/nodejs"]
+	path = modules/nodejs
+	url = git@github.com:narkisr/puppet-npm.git
