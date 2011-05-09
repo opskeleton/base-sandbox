@@ -11,6 +11,8 @@ node 'natty' inherits basenode {
 }
 
 node 'puppet-client' inherits basenode {
+  include "nodejs"
+  include "nodejs::npm"
 }
 
 node 'Uranus' inherits basenode {
