@@ -19,21 +19,28 @@ class vim-src {
    "10.10" => "python2.6"
   }
 
-  #Add the following if desktop install: libncurses-dev libgnome2-dev libgtk2.0-dev libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev
-   $config_flags = $is_desktop? {
+  $config_flags = $is_desktop? {
      "true"  => "--with-features=huge --enable-gui=gnome2",
      "false" => "--with-features=big"
-   }  
+  }  
 
-   package {"mercurial":
+  package {"mercurial":
     ensure => "installed"
-   }
+  }
+
+  package{"build-essential":
+  	ensure	=> "installed"
+  }
+
+  package {"vim":
+    ensure => "absent"
+  }
 
   if $is_desktop == "true" {
    include vim::gui::packages
   }
 
-  if $vim_version !='Vi IMproved 7.3' {
+  if $vim_version !="Vi IMproved 7.3 Included patches: 1-162" {
    file { "/tmp/vim":
       ensure => directory
    }
