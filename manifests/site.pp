@@ -1,5 +1,6 @@
 
-node basenode {
+class basenode {
+  include "build_essential"
   include "vim-src"
   include "vim-configuration"
   include "zsh"
@@ -7,13 +8,25 @@ node basenode {
   include "z"
   include "local_security"
 }
-node 'natty' inherits basenode {
-}
 
-node 'puppet-client' inherits basenode {
+class development inherits basenode {
+  include "build_essential"
   include "nodejs"
   include "nodejs::npm"
 }
 
-node 'Uranus' inherits basenode {
+node "puppet" {
+  include basenode
+}
+
+node "puppet-client" {
+ include development
+}
+
+node "Uranus" {
+  include basenode
+}
+
+node "cobbler" {
+ include basenode
 }
