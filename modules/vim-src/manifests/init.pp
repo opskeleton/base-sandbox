@@ -28,14 +28,15 @@ class vim-src {
     ensure => "installed"
   }
 
-  package{"build-essential":
-  	ensure	=> "installed"
-  }
 
   package {"vim":
     ensure => "absent"
   }
 
+  package {"vim-tiny":
+    ensure => "absent"
+  }
+  
   if $is_desktop == "true" {
    include vim::gui::packages
   }
@@ -65,7 +66,7 @@ class vim-src {
     command => "/tmp/vim/configure --enable-multibyte --enable-cscope --enable-xim --enable-rubyinterp --enable-pythoninterp --with-python-config-dir=/usr/lib/$python/config --disable-largefile $config_flags",
     cwd     => "/tmp/vim/",
     path    => ["/usr/bin/","/bin/"],
-    require => [Package["ncurses-dev"], Package["python-dev"],Vcsrepo["/tmp/vim"]],
+    require => [Package["ncurses-dev"], Package["python-dev"], Vcsrepo["/tmp/vim"], Package["vim"],Package["vim-tiny"]],
     timeout => 0,
     user    => "root"
   }
@@ -74,7 +75,7 @@ class vim-src {
     command => "make",
     cwd     => "/tmp/vim/",
     path    => "/usr/bin:/usr/sbin:/bin",
-    require => Exec["configure_vim"],
+    require => [ Exec["configure_vim"], Package["build-essential"] ],
     timeout => 0,
     user    => "root"
   }
