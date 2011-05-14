@@ -16,17 +16,12 @@ import "vim_purge.pp"
 import "vim_build.pp"
 class vim-src {
 
-  $python = $lsbdistrelease? {
-   "11.04" => "python2.7",
-   "10.10" => "python2.6"
-  }
-
   $config_flags = $is_desktop? {
      "true"  => "--with-features=huge --enable-gui=gnome2",
      "false" => "--with-features=big"
   }  
 
-   if $is_desktop == "true" {
+  if $is_desktop == "true" {
    include vim::gui::packages
   }
 

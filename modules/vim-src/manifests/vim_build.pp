@@ -1,4 +1,10 @@
 class vim::build {
+
+   $python = $lsbdistrelease? {
+    "11.04" => "python2.7",
+    "10.10" => "python2.6"
+   }
+
    package {"mercurial":
      ensure => "installed"
    }
