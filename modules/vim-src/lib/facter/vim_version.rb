@@ -5,7 +5,7 @@ Facter.add("vim_version") do
            version = $~[1] if $~
            vim_version =~ /Included patches: \d-\d*/ 
            patch_level = $~[0] if $~
-           "#{vim_version} #{patch_level}"
+           "#{version} #{patch_level}"
         end
 end
 
