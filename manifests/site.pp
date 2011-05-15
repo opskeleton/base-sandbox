@@ -13,6 +13,7 @@ class development inherits basenode {
   include "build_essential"
   include "nodejs"
   include "nodejs::npm"
+  include "coffeescript"
 }
 
 node "puppet" {
@@ -24,7 +25,7 @@ node "puppet-client" {
 }
 
 node "Uranus" {
-  include basenode
+  include development
 }
 
 node "cobbler" {
