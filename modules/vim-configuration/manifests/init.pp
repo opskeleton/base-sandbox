@@ -35,7 +35,8 @@ class vim-configuration($user = "ronen") {
    group => $user,
    mode => 644,
    require  => [Vcsrepo["/home/$user/.vim"]], 
-   recurse	=> true
+ #   recurse	=> true,
+   # checksum => none
  }
 
  package{"ruby1.8-dev":

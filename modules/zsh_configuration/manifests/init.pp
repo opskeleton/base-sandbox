@@ -18,7 +18,7 @@ class zsh_configuration($user = "ronen") {
     provider => git,
     source   => 'git://github.com/narkisr/oh-my-zsh.git',
     require  => [Package["git-core"],Package["zsh"]], 
-    revision => "HEAD"
+    revision => "master"
   }  
 
   file { "/home/$user/.zshrc":
@@ -32,7 +32,8 @@ class zsh_configuration($user = "ronen") {
    owner    => $user,
    mode     => "0644",
    require  => [Vcsrepo["/home/$user/.oh-my-zsh"]],
-   recurse  =>  true 
+   # recurse  =>  true, 
+   # checksum => none
   }
 
   notify {"please re-login in order to use your new zsh shell :)":}
