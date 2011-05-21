@@ -4,3 +4,9 @@
 [submodule "modules/nodejs"]
 	path = modules/nodejs
 	url = git@github.com:narkisr/puppet-npm.git
+[submodule "modules/apt"]
+	path = modules/apt
+	url = https://narkisr@github.com/narkisr/puppet-apt.git
+[submodule "modules/common"]
+	path = modules/common
+	url = https://github.com/vurbia/puppet-common.git

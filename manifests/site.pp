@@ -12,6 +12,8 @@ class basenode {
   include "zsh_configuration"
   include "z"
   include "local_security"
+  include "apt"
+  include "apt::unattended-upgrade::automatic"
 }
 
 class development inherits basenode {
