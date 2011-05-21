@@ -32,9 +32,6 @@ class zsh_configuration($user = "ronen") {
    owner    => $user,
    mode     => "0644",
    require  => [Vcsrepo["/home/$user/.oh-my-zsh"]],
-   # recurse  =>  true, 
-   # checksum => none
   }
 
-  notify {"please re-login in order to use your new zsh shell :)":}
 }

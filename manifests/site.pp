@@ -6,9 +6,9 @@ $email = "narkisr@gmail.com"
 class basenode {
   include "build_essential"
   include "vim-src"
-  class{ git: user=> $www_user, email => $email}
-  class{ vim-configuration: user => $user}
-  include "zsh"
+  class { git: user=> $www_user, email => $email}
+  class { vim-configuration: user => $user}
+  class { "zsh": user => $user}
   include "zsh_configuration"
   include "z"
   include "local_security"
