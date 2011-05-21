@@ -12,15 +12,7 @@
 #
 # [Remember: No empty lines between comments and class definition]
 class local_security {
-  package{"encfs":
-  	ensure	=> present
-  }
-
-  package{"pwsafe":
-  	ensure	=> present
-  }
-
-  package{"pwgen":
-  	ensure	=> present
-  }
+  include encfs
+  include pwsafe
+  include pwgen
 }
