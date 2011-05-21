@@ -11,13 +11,12 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
-class vim-configuration($user = "ronen") {
-
+class vim-configuration($user) {
 
   vcsrepo { "/home/$user/.vim":
       ensure   => present,
       provider => git,
-      source   => 'git://github.com/narkisr/.vim.git',
+      source   => "git://github.com/narkisr/.vim.git",
       require  => [Package["git-core"]], 
       revision => "HEAD"
   }  
@@ -32,35 +31,7 @@ class vim-configuration($user = "ronen") {
    group => $user,
    mode => 644,
    require  => [Vcsrepo["/home/$user/.vim"]], 
- #   recurse	=> true,
-   # checksum => none
- }
-
- package{"ruby1.8-dev":
- 	ensure	=> installed
- }
-
- exec{"configure command-t":
- 	user	   => "root",
- 	cwd	   => "/home/$user/.vim/bundle/command-t/ruby/command-t", 
-      require  => [Vcsrepo["/home/$user/.vim"],Package["ruby1.8-dev"]],
-      path     => ["/usr/bin/","/bin/"],
-      command  => "ruby extconf.rb"
- }
-
- exec{"make clean command-t":
- 	user	   => "root",
- 	cwd	   => "/home/$user/.vim/bundle/command-t/ruby/command-t", 
-      require  => [Exec["configure command-t"]], 
-      path     => ["/usr/bin/","/bin/"],
-      command  => "make clean"
  }
  
- exec{"make command-t":
- 	user	   => "root",
- 	cwd	   => "/home/$user/.vim/bundle/command-t/ruby/command-t", 
-      require  => [Exec["configure command-t"]], 
-      path     => ["/usr/bin/","/bin/"],
-      command  => "make"
- }
+ class {"vim-configuration::command-t": user => $user}
 }

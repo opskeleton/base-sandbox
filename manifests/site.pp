@@ -7,7 +7,7 @@ class basenode {
   include "build_essential"
   include "vim-src"
   class{ git: user=> $www_user, email => $email}
-  include "vim-configuration"
+  class{ vim-configuration: user => $user}
   include "zsh"
   include "zsh_configuration"
   include "z"
