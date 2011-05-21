@@ -1,7 +1,12 @@
 
+$user = "ronen"
+$www_user="narkisr"
+$email = "narkisr@gmail.com"
+
 class basenode {
   include "build_essential"
   include "vim-src"
+  class{ git: user=> $www_user, email => $email}
   include "vim-configuration"
   include "zsh"
   include "zsh_configuration"
@@ -10,7 +15,6 @@ class basenode {
 }
 
 class development inherits basenode {
-  include "build_essential"
   include "nodejs"
   include "nodejs::npm"
   include "coffeescript"

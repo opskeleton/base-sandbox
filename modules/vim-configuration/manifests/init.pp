@@ -13,9 +13,6 @@
 # [Remember: No empty lines between comments and class definition]
 class vim-configuration($user = "ronen") {
 
-  package { "git-core":
-      ensure => "installed"
-  }
 
   vcsrepo { "/home/$user/.vim":
       ensure   => present,
