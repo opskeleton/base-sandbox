@@ -11,7 +11,7 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
-class z($user = "ronen"){
+class z($user){
 
   vcsrepo { "/opt/z":
       ensure   => present,
