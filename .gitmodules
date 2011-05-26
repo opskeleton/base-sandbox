@@ -7,3 +7,6 @@
 [submodule "modules/common"]
 	path = modules/common
 	url = https://github.com/vurbia/puppet-common.git
+[submodule "modules/puppet-vcsrepo"]
+	path = modules/puppet-vcsrepo
+	url = git@github.com:narkisr/puppet-vcsrepo.git
