@@ -5,10 +5,6 @@ class vim::build {
     "10.10" => "python2.6"
    }
 
-   package {"mercurial":
-     ensure => "installed"
-   }
-
    package {"python-dev":
       ensure => "installed"
    }
@@ -17,24 +13,23 @@ class vim::build {
 	  ensure => "installed"
    }
 
-   file { "/tmp/vim":
-      ensure => directory
+
+   file { "/tmp/vim-v7-3-206.tar.gz":
+      source   => "puppet:///modules/vim-src/vim-v7-3-206.tar.gz", 
+   } 
+   
+   common::archive::extract { "vim-v7-3-206":
+    target	=>  "/tmp/",
+    src_target	=>  "/tmp",
+    require => File["/tmp/vim-v7-3-206.tar.gz"]
    }
-
-   vcsrepo { "/tmp/vim":
-      ensure   => present,
-      provider => hg,
-      source   => "https://vim.googlecode.com/hg/",
-      require  => File["/tmp/vim"],
-      revision => 'v7-3-162'
-  } 
-
+  
 
   exec {"configure_vim" :
     command => "/tmp/vim/configure --enable-multibyte --enable-cscope --enable-xim --enable-rubyinterp --enable-pythoninterp --with-python-config-dir=/usr/lib/$python/config --disable-largefile $config_flags",
     cwd     => "/tmp/vim/",
     path    => ["/usr/bin/","/bin/"],
-    require => [Package["ncurses-dev"], Package["python-dev"], Vcsrepo["/tmp/vim"], Package["vim"],Package["vim-tiny"]],
+    require => [Package["ncurses-dev"], Package["python-dev"], Common::Archive::Extract["vim-v7-3-206"], Package["vim"],Package["vim-tiny"]],
     timeout => 0,
     user    => "root"
   }

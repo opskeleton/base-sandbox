@@ -25,7 +25,7 @@ class vim-src {
    include vim::gui::packages
   }
 
-  if $vim_version !="Vi IMproved 7.3 Included patches: 1-162" {
+  if $vim_version !="Vi IMproved 7.3 Included patches: 1-206" {
    include vim::purge
    include vim::build
   }
