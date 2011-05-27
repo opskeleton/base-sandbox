@@ -10,3 +10,6 @@
 [submodule "modules/puppet-vcsrepo"]
 	path = modules/puppet-vcsrepo
 	url = git@github.com:narkisr/puppet-vcsrepo.git
+[submodule "modules/rvm"]
+	path = modules/rvm
+	url = https://github.com/blt04/puppet-rvm.git
