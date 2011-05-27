@@ -3,13 +3,11 @@ $user = "ronen"
 $www_user="narkisr"
 $email = "narkisr@gmail.com"
 
-stage {"pre": before => Stage["main"]}
-Vcsrepo {stage => "main"}
 class basenode {
-  class { git: user=> $www_user, email => $email,stage => pre}
+  class { git: user=> $www_user, email => $email}
   include "build_essential"
   include "vim-src"
-  class { vim-configuration: user => $user}
+  class { "vim-configuration": user => $user}
   class { "zsh": user => $user}
   include "zsh_configuration"
   class { "z": user => $user}
@@ -23,6 +21,7 @@ class development {
   include "nodejs"
   include "nodejs::npm"
   include "coffeescript"
+  include "ruby"
 }
 
 node "puppet" {
