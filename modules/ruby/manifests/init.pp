@@ -20,7 +20,7 @@ class ruby {
 
 
   # rvm::system_user { $user: ; }
-
+if $rvm_installed=="true" {
   rvm_system_ruby {
     $ruby9:
         ensure => 'present',
@@ -36,5 +36,6 @@ class ruby {
 	    ensure => '1.0.13',
 	    require => Rvm_system_ruby[$ruby8];
   }
+}
 
 }
