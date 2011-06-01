@@ -3,13 +3,13 @@
 	url = git@github.com:narkisr/puppet-npm.git
 [submodule "modules/apt"]
 	path = modules/apt
-	url = https://narkisr@github.com/narkisr/puppet-apt.git
+	url = git@github.com:narkisr/puppet-apt.git
 [submodule "modules/puppet-vcsrepo"]
 	path = modules/puppet-vcsrepo
 	url = git@github.com:narkisr/puppet-vcsrepo.git
 [submodule "modules/rvm"]
 	path = modules/rvm
-	url = https://github.com/blt04/puppet-rvm.git
+	url = git@github.com:narkisr/puppet-rvm.git
 [submodule "modules/common"]
 	path = modules/common
 	url = git@github.com:narkisr/puppet-common.git
