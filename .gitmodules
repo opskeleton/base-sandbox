@@ -7,9 +7,9 @@
 [submodule "modules/puppet-vcsrepo"]
 	path = modules/puppet-vcsrepo
 	url = git@github.com:narkisr/puppet-vcsrepo.git
-[submodule "modules/rvm"]
-	path = modules/rvm
-	url = git@github.com:narkisr/puppet-rvm.git
 [submodule "modules/common"]
 	path = modules/common
 	url = git@github.com:narkisr/puppet-common.git
+[submodule "modules/rvm"]
+	path = modules/rvm
+	url = git@github.com:narkisr/puppet-rvm.git
