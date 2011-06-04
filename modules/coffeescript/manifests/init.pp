@@ -14,7 +14,7 @@
 include "nodejs"
 class coffeescript {
  
-if $npm_installed == "true" {
+if $node_installed == "true" {
   package {"coffee-script":
     provider => npm, 
     ensure   => "installed"
