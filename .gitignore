@@ -3,3 +3,7 @@
 *.swm
 etc*
 ssl
+auth.conf
+fileserver.conf
+templates
+puppet.conf
