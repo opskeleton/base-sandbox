@@ -17,7 +17,6 @@ class basenode($user) {
 
 class development($user) {
   class{"basenode": user => $user}
-  # class{"nodejs::npm": user => $user}
   class{"nodejs": user => $user}
   include "coffeescript"
   include "ruby"
