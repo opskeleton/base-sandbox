@@ -1,45 +1,48 @@
 
-$user = "ronen"
 $www_user="narkisr"
 $email = "narkisr@gmail.com"
 
-class basenode {
-  class { git: user=> $www_user, email => $email}
-  include "build_essential"
-  include "vim-src"
-  class { "vim-configuration": user => $user}
-  class { "zsh": user => $user}
-  include "zsh_configuration"
-  class { "z": user => $user}
-  include "local_security"
-  include "apt"
-  include "apt::unattended-upgrade::automatic"
+class basenode($user) {
+ class { git: user=> $www_user, email => $email}
+ include "build_essential"
+ include "vim-src"
+ class { "vim-configuration": user => $user}
+ class { "zsh": user => $user}
+ class { "zsh_configuration" : user => $user}
+ class { "z": user => $user}
+ include "local_security"
+ include "apt"
+ include "apt::unattended-upgrade::automatic"
 }
 
-class development {
-  include basenode
-  include "nodejs"
-  include "nodejs::npm"
+class development($user) {
+  class{"basenode": user => $user}
+  # class{"nodejs::npm": user => $user}
+  class{"nodejs": user => $user}
   include "coffeescript"
   include "ruby"
 }
 
+class dev_with_user {
+  class {"development": user => "ronen"}
+}
+
 node "puppet" {
-  include basenode
+    include dev_with_user
 }
 
 node "puppet-client" {
- include development
+    include dev_with_user
 }
 
 node "puppet-client2" {
- include development
+    include dev_with_user
 }
 
 node "Uranus" {
-  include development
+    include dev_with_user
 }
 
 node "cobbler" {
- include basenode
+    include basenode
 }
