@@ -11,7 +11,6 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
-include "nodejs"
 class coffeescript {
  
 if $node_installed == "true" {
