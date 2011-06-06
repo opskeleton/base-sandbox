@@ -51,4 +51,9 @@ class vim::build {
     timeout => 0,
     user    => "root"
   }
+
+  file { "/use/local/bin/vim":
+    ensure => link,
+    target => "/bin/vi",
+  }
 }
