@@ -52,8 +52,9 @@ class vim::build {
     user    => "root"
   }
 
-  file { "/use/local/bin/vim":
+  file { "/bin/vi":
     ensure => link,
-    target => "/bin/vi",
+    target => "/usr/local/bin/vim",
+    require => Exec["install_vim"],
   }
 }

@@ -34,4 +34,8 @@ class vim-configuration($user) {
  }
  
  class {"vim-configuration::command-t": user => $user}
+
+ package{"ctags":
+ 	ensure	=> installed
+ }
 }
