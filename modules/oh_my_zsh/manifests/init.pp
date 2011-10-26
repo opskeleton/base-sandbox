@@ -11,27 +11,28 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
-class zsh_configuration($user = "ronen") {
+class oh_my_zsh  {
+  
 
-  vcsrepo { "/home/$user/.oh-my-zsh":
-    ensure   => present,
-    provider => git,
-    source   => 'git://github.com/narkisr/oh-my-zsh.git',
-    require  => [Package["git-core"],Package["zsh"]], 
-    revision => "master"
-  }  
-
-  file { "/home/$user/.zshrc":
-   ensure => link,
-   target => "/home/$user/.oh-my-zsh/.zshrc",
-   require  => [Vcsrepo["/home/$user/.oh-my-zsh"]]
+  common::archive { ".oh-my-zsh":
+     ensure => present,
+     url => "https://github.com/downloads/narkisr/oh-my-zsh/.oh-my-zsh.tar.gz", 
+     target => "/home/$username",
+     checksum => false, 
+     follow_redirects => true
   }
 
-  file { "/home/$user/.oh-my-zsh":
-   group    => $user,
-   owner    => $user,
+  file { "/home/$username/.zshrc":
+   ensure => link,
+   target => "/home/$username/.oh-my-zsh/.zshrc",
+   require  => Common::Archive[".oh-my-zsh"]
+  }
+
+  file { "/home/$username/.oh-my-zsh":
+   group    => $username,
+   owner    => $username,
    mode     => "0644",
-   require  => [Vcsrepo["/home/$user/.oh-my-zsh"]],
+   require  =>  Common::Archive[".oh-my-zsh"]
   }
 
 }
