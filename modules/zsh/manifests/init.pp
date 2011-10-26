@@ -11,14 +11,14 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
-class zsh($user) {
+class zsh {
 
   package { "zsh":
      ensure => installed
   }
   
   exec {"default shell":
-   command     => "chsh -s /bin/zsh $user", 
+   command     => "chsh -s /bin/zsh $username", 
    path        => ["/usr/bin/","/bin/"],
    require     => [Package["zsh"]],
    user        => "root", 
