@@ -13,16 +13,16 @@
 # [Remember: No empty lines between comments and class definition]
 class oh_my_zsh {
   
+  include git
+
   $home = "/home/$username"
 
-  exec{"clone oh-my-zsh":
-    command => "git clone git://github.com/narkisr/oh-my-zsh.git .oh-my-zsh",
-    cwd  => $home,
-    user    => "root",
-    path    => ['/usr/bin/'],
-    unless  => "test -d $home/.oh-my-zsh"
+  git::clone {'oh-my-zsh':
+    url   => 'git://github.com/narkisr/oh-my-zsh.git',
+    dst   => "$home/.oh-my-zsh",
+    owner => $username
   }
-
+  
   file { "$home/.zshrc":
    ensure => link,
    target => "$home/.oh-my-zsh/.zshrc",
