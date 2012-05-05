@@ -7,3 +7,4 @@ auth.conf
 fileserver.conf
 templates
 puppet.conf
+.vagrant
