@@ -11,28 +11,29 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
-class oh_my_zsh  {
+class oh_my_zsh {
   
+  $home = "/home/$username"
 
-  common::archive { ".oh-my-zsh":
-     ensure => present,
-     url => "https://github.com/downloads/narkisr/oh-my-zsh/.oh-my-zsh.tar.gz", 
-     target => "/home/$username",
-     checksum => false, 
-     follow_redirects => true
+  exec{"clone oh-my-zsh":
+    command => "git clone git://github.com/narkisr/oh-my-zsh.git .oh-my-zsh",
+    cwd  => $home,
+    user    => "root",
+    path    => ['/usr/bin/'],
+    unless  => "test -d $home/.oh-my-zsh"
   }
 
-  file { "/home/$username/.zshrc":
+  file { "$home/.zshrc":
    ensure => link,
-   target => "/home/$username/.oh-my-zsh/.zshrc",
-   require  => Common::Archive[".oh-my-zsh"]
+   target => "$home/.oh-my-zsh/.zshrc",
+   require  => Exec["clone oh-my-zsh"]
   }
 
-  file { "/home/$username/.oh-my-zsh":
+  file { "$home/.oh-my-zsh":
    group    => $username,
    owner    => $username,
    mode     => "0644",
-   require  =>  Common::Archive[".oh-my-zsh"]
+   require  => Exec["clone oh-my-zsh"]
   }
 
 }
