@@ -11,3 +11,4 @@ include oh_my_zsh
 include local_security
 include build_essential
 include z
+include vim
