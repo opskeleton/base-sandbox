@@ -13,6 +13,5 @@
 # [Remember: No empty lines between comments and class definition]
 class local_security {
   include encfs
-  include pwsafe
   include pwgen
 }
