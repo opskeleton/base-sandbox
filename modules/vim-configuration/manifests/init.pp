@@ -11,31 +11,42 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
-class vim-configuration($user) {
+class vim-configuration {
 
-  vcsrepo { "/home/$user/.vim":
-      ensure   => present,
-      provider => git,
-      source   => "git://github.com/narkisr/.vim.git",
-      require  => [Package["git-core"]], 
-      revision => "HEAD"
-  }  
+  $home = "/home/$username"
+  $dot_vim= "$home/.vim"
 
- file { "/home/$user/.vimrc":
-  ensure => link,
-  target => "/home/$user/.vim/.vimrc",
-  require  => [Vcsrepo["/home/$user/.vim"]]
- }
+  git::clone {$dot_vim:
+    url   => 'git://github.com/narkisr/.vim.git',
+    dst   => $dot_vim,
+    owner => $username
+  }
 
- file { "/home/$user/.vim":
-   group => $user,
-   mode => 644,
-   require  => [Vcsrepo["/home/$user/.vim"]], 
- }
- 
- class {"vim-configuration::command-t": user => $user}
+  exec{".vim submodules":
+    command  => "/bin/bash `git submodule update --init`" ,
+    returns  => [2,0],
+    cwd => $dot_vim,
+    path     => ['/usr/bin/','/bin'],
+    user     => $username,
+    require  => Git::Clone[$dot_vim],
+    provider => shell
+  }
 
- package{"ctags":
- 	ensure	=> installed
- }
+  file { "$home/.vimrc":
+    ensure => link,
+    target => "$dot_vim/.vimrc",
+    require  => Git::Clone[$dot_vim]
+  }
+
+  file { $dot_vim:
+    group => $username,
+    mode => 644,
+    require  => Git::Clone[$dot_vim], 
+  }
+
+  class {"vim-configuration::command-t": dot_vim => $dot_vim}
+
+  package{"ctags":
+    ensure	=> installed
+  }
 }
