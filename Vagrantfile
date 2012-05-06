@@ -12,4 +12,6 @@ Vagrant::Config.run do |config|
   config.vm.provision :puppet, :module_path => "modules" 
 
   config.vm.customize ["modifyvm", :id, "--memory", 2096 , "--cpus", 2]
+
+  config.vm.host_name = 'puppet-base-env'
 end
