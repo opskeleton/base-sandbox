@@ -1,12 +1,12 @@
 [submodule "modules/nodejs"]
 	path = modules/nodejs
-	url = git@github.com:narkisr/puppet-npm.git
+	url = git://github.com/narkisr/puppet-npm.git
 [submodule "modules/apt"]
 	path = modules/apt
-	url = git@github.com:narkisr/puppet-apt.git
+	url = git://github.com/narkisr/puppet-apt.git
 [submodule "modules/common"]
 	path = modules/common
-	url = git@github.com:narkisr/puppet-common.git
+	url = git://github.com/narkisr/puppet-common.git
 [submodule "modules/rvm"]
 	path = modules/rvm
-	url = git@github.com:narkisr/puppet-rvm.git
+	url = git://github.com/narkisr/puppet-rvm.git
