@@ -38,12 +38,6 @@ class vim-configuration {
     require  => Git::Clone[$dot_vim]
   }
 
-  file { $dot_vim:
-    group => $username,
-    mode => 644,
-    require  => Git::Clone[$dot_vim], 
-  }
-
   class {"vim-configuration::command-t": dot_vim => $dot_vim}
 
   package{"ctags":
