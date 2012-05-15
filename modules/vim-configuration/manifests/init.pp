@@ -39,8 +39,7 @@ class vim-configuration {
   }
 
   class {"vim-configuration::command-t": dot_vim => $dot_vim}
+  class {"vim-configuration::snipmate": dot_vim => $dot_vim}
 
-  package{"ctags":
-    ensure	=> installed
-  }
+  package{"ctags": ensure	=> installed }
 }

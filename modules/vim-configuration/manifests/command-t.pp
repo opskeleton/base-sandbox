@@ -12,7 +12,6 @@ class vim-configuration::command-t($dot_vim) {
     require  => [Git::Clone[$dot_vim],Package['ruby1.8-dev'],Exec['.vim submodules']],
     subscribe => Git::Clone[$dot_vim],
     refreshonly => true
-
   }
 
   exec{'make clean command-t':
