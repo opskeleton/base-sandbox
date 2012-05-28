@@ -15,7 +15,7 @@ class ruby {
   
   include ruby::installations
   
-  package{'rubygems':
+  package{['rubygems','rake']:
     ensure  => installed
   }
 }
