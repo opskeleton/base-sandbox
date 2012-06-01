@@ -15,4 +15,5 @@ include z
 include vim
 include vim-configuration
 include ruby
+include tmux
 
