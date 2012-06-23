@@ -13,6 +13,3 @@
 [submodule "modules/archive"]
 	path = modules/archive
 	url = git://github.com/camptocamp/puppet-archive.git
-[submodule "modules/rvm"]
-	path = modules/rvm
-	url = https://github.com/blt04/puppet-rvm/commits/master
