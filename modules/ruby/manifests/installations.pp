@@ -8,7 +8,9 @@ class ruby::installations {
   $ruby8 = 'ruby-1.8.7'
 
 
-  if $rvm_installed==true {
+
+  if $rvm_installed=="true" {
+    notify {"Running with $rvm_installed":}
     rvm_system_ruby {
       $ruby9:
         ensure      => 'present',
