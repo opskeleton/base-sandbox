@@ -22,7 +22,7 @@ class ack {
   exec {".ackrc":
      command => "/usr/bin/curl $ackurl  -o $home/.ackrc",
      creates => "$home/.ackrc",
-     timeout => 1,
+     timeout => 10,
      require => Package["curl"],
   }
 
