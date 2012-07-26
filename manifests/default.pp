@@ -5,6 +5,7 @@ group{ 'puppet': ensure  => present }
 $username = 'vagrant'
 $scm_user = 'narkisr'
 $scm_email = 'narkisr@gmail.com'
+$home = "/home/$username"
 
 include git
 include zsh
@@ -17,4 +18,4 @@ include vim-configuration
 include ruby
 include tmux
 include gradle
-
+include ack
