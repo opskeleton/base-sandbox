@@ -1,11 +1,11 @@
 class vim-configuration::snipmate($dot_vim) {
 
    exec{'deploy snipmate-snippets':
-     command     => '/usr/bin/rake deploy_local -t',
+     command     => 'rsync -av --delete . ~/.vim/bundle/snipmate/snippets/',
      cwd         => "$dot_vim/bundle/snipmate-snippets",
      user        => $username,
-     path        => ['/usr/local/rvm/bin/','/bin','/usr/bin'],
-     require     => [Git::Clone[$dot_vim],Package['ruby1.8-dev'],Package['rake'],Exec['.vim submodules']],
+     path        => ['/usr/local/rvm/bin/','/bin','/usr/bin',],
+     require     => [Git::Clone[$dot_vim],Exec['.vim submodules']],
      subscribe   => Git::Clone[$dot_vim],
      refreshonly => true
    }
