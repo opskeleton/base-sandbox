@@ -23,7 +23,7 @@ class vim-configuration {
   }
 
   exec{".vim submodules":
-    command  => "/bin/bash `git submodule update --init`" ,
+    command  => "git submodule update --init" ,
     returns  => [2,0],
     cwd => $dot_vim,
     path     => ['/usr/bin/','/bin'],
