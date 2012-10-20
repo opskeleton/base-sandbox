@@ -18,4 +18,6 @@ include vim-configuration
 include ruby
 include tmux
 include gradle
+include dots
 include ack
+include rlwrap
