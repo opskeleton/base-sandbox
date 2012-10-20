@@ -17,5 +17,5 @@ class rlwrap {
     ensure  => present
   }
 
-  dots::link_dot{ '.inputrc':}
+  dots::link_dot{'.inputrc':}
 }
