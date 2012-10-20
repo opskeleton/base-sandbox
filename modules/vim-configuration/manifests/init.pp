@@ -13,6 +13,8 @@
 # [Remember: No empty lines between comments and class definition]
 class vim-configuration {
 
+  include vim-configuration::ctags
+
   $home = "/home/$username"
   $dot_vim= "$home/.vim"
 
@@ -41,5 +43,4 @@ class vim-configuration {
   class {"vim-configuration::command-t": dot_vim => $dot_vim}
   class {"vim-configuration::snipmate": dot_vim => $dot_vim}
 
-  package{"ctags": ensure	=> installed }
 }
