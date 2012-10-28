@@ -12,6 +12,14 @@
 #
 # [Remember: No empty lines between comments and class definition]
 class vim-configuration {
+  $vim_pack = $is_desktop? {
+     "true"  => "vim-gtk",
+     "false" => "vim-nox"
+  }  
+
+  package{$vim_pack:
+    ensure  => present
+  }
 
   include vim-configuration::ctags
 

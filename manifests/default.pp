@@ -8,16 +8,10 @@ $scm_email = 'narkisr@gmail.com'
 $home = "/home/$username"
 
 include git
-include zsh
-include oh_my_zsh
+include shell
 include local_security
 include build_essential
-include z
-include vim
 include vim-configuration
-include ruby
-include tmux
+include langs
 include gradle
-include dots
-include ack
-include rlwrap
+include lein
