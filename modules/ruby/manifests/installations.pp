@@ -10,7 +10,6 @@ class ruby::installations {
 
 
   if $rvm_installed=="true" {
-    notify {"Running with $rvm_installed":}
     rvm_system_ruby {
       $ruby9:
         ensure      => 'present',
