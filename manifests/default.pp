@@ -11,7 +11,7 @@ include git
 include shell
 include local_security
 include build_essential
-include vim-configuration
+include vim
 include langs
 include gradle
 include lein

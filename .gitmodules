@@ -16,3 +16,6 @@
 [submodule "modules/rvm"]
 	path = modules/rvm
 	url = git://github.com/blt04/puppet-rvm.git
+[submodule "modules/vim"]
+	path = modules/vim
+	url = git://github.com/narkisr/puppet-vim.git
