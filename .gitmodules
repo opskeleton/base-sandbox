@@ -7,9 +7,6 @@
 [submodule "modules/common"]
 	path = modules/common
 	url = git://github.com/narkisr/puppet-common.git
-[submodule "modules/gradle"]
-	path = modules/gradle
-	url = git://github.com/narkisr/puppet-gradle.git
 [submodule "modules/archive"]
 	path = modules/archive
 	url = git://github.com/camptocamp/puppet-archive.git
