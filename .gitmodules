@@ -16,3 +16,6 @@
 [submodule "modules/vim"]
 	path = modules/vim
 	url = git://github.com/narkisr/puppet-vim.git
+[submodule "modules/build"]
+	path = modules/build
+	url = git://github.com/narkisr/puppet-build.git
