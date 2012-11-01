@@ -10,8 +10,6 @@ $home = "/home/$username"
 include git
 include shell
 include local_security
-include build_essential
 include vim
 include langs
-include gradle
-include lein
+include build

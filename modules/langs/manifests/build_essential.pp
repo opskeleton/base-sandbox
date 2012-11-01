@@ -1,6 +1,8 @@
 class build_essential {
-	
-	package{"build-essential":
-		ensure	=> "installed"
-	}
+
+  if (!defined(Package['build-essential'])) {
+    package{"build-essential":
+      ensure	=> "installed"
+    }
+  }
 }

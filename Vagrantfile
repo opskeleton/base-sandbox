@@ -3,7 +3,7 @@
 
 Vagrant::Config.run do |config|
 
-  config.vm.box = "ubuntu-12.04"
+  config.vm.box = "ubuntu-12.10"
 
   config.vm.network :bridged
  
