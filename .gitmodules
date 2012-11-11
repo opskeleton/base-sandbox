@@ -19,3 +19,6 @@
 [submodule "modules/build"]
 	path = modules/build
 	url = git://github.com/narkisr/puppet-build.git
+[submodule "modules/git"]
+	path = modules/git
+	url = git://github.com/narkisr/puppet-git.git
