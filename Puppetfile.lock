@@ -1,0 +1,58 @@
+GIT
+  remote: git://github.com/blt04/puppet-rvm.git
+  ref: master
+  sha: 5968ce475c5441c34ab8e727e4f0e51bc78c8108
+  specs:
+    rvm (1.0.0)
+
+GIT
+  remote: git://github.com/camptocamp/puppet-archive.git
+  ref: master
+  sha: 6d2f1df59fb17c84c750d9661a2401e3b3749ad5
+  specs:
+    archive (0.0.1)
+
+GIT
+  remote: git://github.com/narkisr/puppet-apt.git
+  ref: master
+  sha: 0339fb30d71e8f85e20af54a0b3ad543dec83ead
+  specs:
+    apt (0.0.1)
+
+GIT
+  remote: git://github.com/narkisr/puppet-build.git
+  ref: master
+  sha: d66049ae909b43136f5f8ab42d3627c9b2eb3b57
+  specs:
+    build (0.0.1)
+
+GIT
+  remote: git://github.com/narkisr/puppet-common.git
+  ref: master
+  sha: 2d94636c91d7ce9a83f7669f370e246d2a784117
+  specs:
+    common (0.0.1)
+
+GIT
+  remote: git://github.com/narkisr/puppet-git.git
+  ref: master
+  sha: 7ef78de760384e4d8e1066b84f59d5a61c7c5094
+  specs:
+    git (0.0.1)
+
+GIT
+  remote: git://github.com/narkisr/puppet-vim.git
+  ref: master
+  sha: c8251b8f7da6231a218bc0021d3820195d8a489a
+  specs:
+    vim (0.0.1)
+
+DEPENDENCIES
+  apt (>= 0)
+  archive (>= 0)
+  build (>= 0)
+  common (>= 0)
+  git (>= 0)
+  rvm (>= 0)
+  vim (>= 0)
+

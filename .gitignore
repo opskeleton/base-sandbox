@@ -8,3 +8,6 @@ fileserver.conf
 templates
 puppet.conf
 .vagrant
+.tmp/
+modules/
+.librarian
