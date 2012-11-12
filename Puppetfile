@@ -1,9 +1,10 @@
 forge "http://forge.puppetlabs.com"
 
-# mod 'puppetlabs/stdlib'
+mod 'puppetlabs/stdlib'
+mod 'puppetlabs/apt'
 
-mod 'apt',
-  :git => 'git://github.com/narkisr/puppet-apt.git'
+# mod 'apt',
+  # :git => 'git://github.com/narkisr/puppet-apt.git'
 
 mod 'common', 
   :git => 'git://github.com/narkisr/puppet-common.git'
