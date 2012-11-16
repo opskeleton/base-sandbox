@@ -22,7 +22,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-build.git
   ref: master
-  sha: d66049ae909b43136f5f8ab42d3627c9b2eb3b57
+  sha: f5aebb73b0056a70ee055acfac2960bdd5b0d1cf
   specs:
     build (0.0.1)
 
@@ -47,9 +47,17 @@ GIT
   specs:
     vim (0.0.1)
 
+GIT
+  remote: git@github.com:narkisr/puppet-chrome.git
+  ref: master
+  sha: 05550a727b3037d657f390af9047a4bbaa13e8aa
+  specs:
+    chrome (0.0.1)
+
 DEPENDENCIES
   archive (>= 0)
   build (>= 0)
+  chrome (>= 0)
   common (>= 0)
   git (>= 0)
   puppetlabs/apt (>= 0)

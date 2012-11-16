@@ -23,3 +23,4 @@ include local_security
 include vim
 include langs
 include build
+include chrome
