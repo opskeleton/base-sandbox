@@ -1,5 +1,5 @@
 # Basic neworking utilities
-class networking {
+class baseline::networking {
   package{'wakeonlan':
     ensure  => present
   }

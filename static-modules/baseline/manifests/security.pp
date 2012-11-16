@@ -1,5 +1,5 @@
 # Security tools
-class security {
+class baseline::security {
   package{'pwgen':
     ensure => present
   }
