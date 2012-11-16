@@ -19,7 +19,7 @@ class { 'apt':
 
 include git
 include shell
-include local_security
+include baseline
 include vim
 include langs
 include build
