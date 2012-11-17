@@ -7,6 +7,7 @@ $scm_user = 'narkisr'
 $scm_email = 'narkisr@gmail.com'
 $home = "/home/${username}"
 
+
 class { 'apt':
   always_apt_update    => false,
   disable_keys         => undef,
@@ -23,4 +24,8 @@ include baseline
 include vim
 include langs
 include build
+class {'desktop':
+  home     => $home,
+  username => $username
+}
 include chrome
