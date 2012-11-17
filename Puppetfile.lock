@@ -43,14 +43,14 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-vim.git
   ref: master
-  sha: 555a2844f42adcabde00399e2ed3c29a3c1c5451
+  sha: 16be0f496baa1169ae7ec6087ae7db309cf67cd5
   specs:
     vim (0.0.1)
 
 GIT
   remote: git@github.com:narkisr/puppet-chrome.git
   ref: master
-  sha: 05550a727b3037d657f390af9047a4bbaa13e8aa
+  sha: c5521b2d2312bb8546d3808186eefb67074028b9
   specs:
     chrome (0.0.1)
 
