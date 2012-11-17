@@ -18,3 +18,9 @@ In order to use it on your machine edit the manifest.pp default file and change 
 ```bash
 $ sudo ./run.sh
 ```
+
+# License
+
+License GPLv3
+
+Copyright (C) 2012 narkisr.com
