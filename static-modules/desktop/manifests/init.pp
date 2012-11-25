@@ -38,10 +38,11 @@
 class desktop($username='',$home='') {
 
   if($desktop::is_desktop == 'true'){
-    class{'desktop::xomnad':
+    class{'desktop::xmonad':
       home     => $home,
       username => $username
     }
+    include desktop::rxvt
 
   }
 }
