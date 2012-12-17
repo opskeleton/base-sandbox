@@ -25,4 +25,4 @@ mod 'git',
   :git => 'git://github.com/narkisr/puppet-git.git'
 
 mod 'chrome', 
-  :git => 'git@github.com:narkisr/puppet-chrome.git'
+  :git => 'git://github.com/narkisr/puppet-chrome.git'
