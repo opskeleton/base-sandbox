@@ -2,7 +2,7 @@
 group{ 'puppet': ensure  => present }
 
 # when not used within vagrant context this should be set to the main user
-$username = 'ronen'
+$username = 'vagrant'
 $scm_user = 'narkisr'
 $scm_email = 'narkisr@gmail.com'
 $home = "/home/${username}"
