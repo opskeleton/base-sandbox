@@ -37,12 +37,14 @@
 #
 class desktop($username='',$home='') {
 
+  notice $desktop::is_desktop
   if($desktop::is_desktop == 'true'){
     class{'desktop::xmonad':
       home     => $home,
       username => $username
     }
     include desktop::rxvt
+    include desktop::spotify
 
   }
 }
