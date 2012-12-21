@@ -1,43 +1,26 @@
 # == Class: modules/desktop
 #
-# Full description of class modules/desktop here.
+# Sets up a list of desktop packages (checks if its an Ubuntu based desktop system first).
 #
 # === Parameters
 #
-# Document parameters here.
-#
-# [*sample_parameter*]
-#   Explanation of what this parameter affects and what it defaults to.
-#   e.g. "Specify one or more upstream ntp servers as an array."
 #
 # === Variables
 #
-# Here you should define a list of variables that this module would require.
-#
-# [*sample_variable*]
-#   Explanation of how this variable affects the funtion of this class and if it
-#   has a default. e.g. "The parameter enc_ntp_servers must be set by the
-#   External Node Classifier as a comma separated list of hostnames." (Note,
-#   global variables should not be used in preference to class parameters  as of
-#   Puppet 2.6.)
-#
 # === Examples
 #
-#  class { modules/desktop:
-#    servers => [ 'pool.ntp.org', 'ntp.local.company.com' ]
-#  }
+# include desktop
 #
 # === Authors
 #
-# Author Name <author@domain.com>
+# Ronen Narkis narkisr@gmail.com
 #
 # === Copyright
 #
-# Copyright 2011 Your name here, unless otherwise noted.
+# Copyright 2011 narkisr.com, unless otherwise noted.
 #
 class desktop($username='',$home='') {
 
-  notice $desktop::is_desktop
   if($desktop::is_desktop == 'true'){
     class{'desktop::xmonad':
       home     => $home,
@@ -45,6 +28,7 @@ class desktop($username='',$home='') {
     }
     include desktop::rxvt
     include desktop::spotify
+    include desktop::netflix
 
   }
 }
