@@ -5,6 +5,11 @@ class glances {
     ensure  => present
   }
 
+  # Enabling more info
+  package{'lm-sensors':
+    ensure  => present
+  }
+
   package{'glances':
     ensure   => present,
     provider => pip,
