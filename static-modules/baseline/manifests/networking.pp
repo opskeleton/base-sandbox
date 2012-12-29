@@ -7,4 +7,8 @@ class baseline::networking {
   package{'sshuttle':
     ensure  => present
   }
+
+  file{"${home}/.ssh/config":
+    source  => 'puppet:///modules/baseline/ssh_config'
+  }
 }

@@ -1,28 +1,28 @@
 FORGE
   remote: http://forge.puppetlabs.com
   specs:
-    puppetlabs/apt (1.0.1)
+    puppetlabs/apt (1.1.0)
       puppetlabs/stdlib (>= 2.2.1)
-    puppetlabs/stdlib (3.1.1)
+    puppetlabs/stdlib (3.2.0)
 
 GIT
   remote: git://github.com/blt04/puppet-rvm.git
   ref: master
-  sha: 5968ce475c5441c34ab8e727e4f0e51bc78c8108
+  sha: ce10a05a9ba22926b4783bea1f6944ccfb7b93e0
   specs:
     rvm (1.0.0)
 
 GIT
   remote: git://github.com/camptocamp/puppet-archive.git
   ref: master
-  sha: 6d2f1df59fb17c84c750d9661a2401e3b3749ad5
+  sha: 8c0cb72ba392953fd2002b3d164377466cd2705f
   specs:
     archive (0.0.1)
 
 GIT
   remote: git://github.com/narkisr/puppet-build.git
   ref: master
-  sha: f5aebb73b0056a70ee055acfac2960bdd5b0d1cf
+  sha: 922b9ae77c0f59c99af466209e2dfe1b710075ae
   specs:
     build (0.0.1)
 
@@ -50,7 +50,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-vim.git
   ref: master
-  sha: 16be0f496baa1169ae7ec6087ae7db309cf67cd5
+  sha: c910906730c9e161b131b2653a86bc8df3083e1d
   specs:
     vim (0.0.1)
 
