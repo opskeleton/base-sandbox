@@ -20,6 +20,13 @@ GIT
     archive (0.0.1)
 
 GIT
+  remote: git://github.com/derEremit/puppet-downloadfile.git
+  ref: master
+  sha: f60c8939068eca7045919a2fce5ce94eee4c11e4
+  specs:
+    downloadfile (0.0.1)
+
+GIT
   remote: git://github.com/narkisr/puppet-build.git
   ref: master
   sha: 922b9ae77c0f59c99af466209e2dfe1b710075ae
@@ -59,6 +66,7 @@ DEPENDENCIES
   build (>= 0)
   chrome (>= 0)
   common (>= 0)
+  downloadfile (>= 0)
   git (>= 0)
   puppetlabs/apt (>= 0)
   puppetlabs/stdlib (>= 0)
