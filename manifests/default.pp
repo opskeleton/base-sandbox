@@ -21,8 +21,8 @@ class { 'apt':
 include git
 include shell
 include baseline
-include vim
 include langs
+include vim
 include build
 class {'desktop':
   home     => $home,
