@@ -3,7 +3,7 @@
 # This module manages ruby
 class ruby {
 
-  package{['rubygems','rake']:
+  package{['rubygems','rake','ruby1.9.1-dev']:
     ensure  => installed
   }
 
@@ -11,26 +11,22 @@ class ruby {
 
   rvm::system_user { $username: }
 
-  $ruby9 = 'ruby-1.9.2'
-  $ruby8 = 'ruby-1.8.7'
+  $ruby9 = 'ruby-1.9.3'
 
   if $rvm_installed=="true" {
     rvm_system_ruby {
       $ruby9:
-        ensure      => 'present',
-        default_use => false;
-      $ruby8:
         ensure      => 'present',
         default_use => true;
     }
 
     rvm_gem {
       'bundler':
-        ruby_version => $ruby8,
-        require      => Rvm_system_ruby[$ruby8];
+        ruby_version => $ruby9,
+        require      => Rvm_system_ruby[$ruby9];
       'rake':
-        ruby_version => $ruby8,
-        require      => Rvm_system_ruby[$ruby8];
+        ruby_version => $ruby9,
+        require      => Rvm_system_ruby[$ruby9];
     }
   }
 }
