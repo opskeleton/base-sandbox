@@ -24,8 +24,8 @@ mod 'build',
 mod 'git', 
   :git => 'git://github.com/narkisr/puppet-git.git'
 
-mod 'chrome', 
-  :git => 'git://github.com/narkisr/puppet-chrome.git'
+mod 'googlechrome', 
+  :git => 'git://github.com/smarchive/puppet-googlechrome.git'
 
 mod 'downloadfile', 
   :git => 'git://github.com/derEremit/puppet-downloadfile.git'

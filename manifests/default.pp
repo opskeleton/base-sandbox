@@ -2,7 +2,7 @@
 group{ 'puppet': ensure  => present }
 
 # when not used within vagrant context this should be set to the main user
-$username = 'vagrant'
+$username = 'ronen'
 $scm_user = 'narkisr'
 $scm_email = 'narkisr@gmail.com'
 $home = "/home/${username}"
@@ -24,8 +24,8 @@ include baseline
 include langs
 include vim
 include build
+include googlechrome
 class {'desktop':
   home     => $home,
   username => $username
 }
-include chrome
