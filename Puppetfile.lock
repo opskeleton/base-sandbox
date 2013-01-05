@@ -57,7 +57,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-virtualbox.git
   ref: master
-  sha: 5d55655eed5a50ce56b06236d7acb3d52e8b1ecc
+  sha: e3b75536c95bc3e7632f42965acf665662a499a0
   specs:
     virtualbox (0.2.0)
       puppetlabs/apt (>= 1.1.0)
