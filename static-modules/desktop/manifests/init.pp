@@ -29,6 +29,8 @@ class desktop($username='',$home='') {
     include desktop::rxvt
     include desktop::spotify
     include desktop::netflix
+
+    class { 'virtualbox': }
     class { 'googlechrome': }
 
   }

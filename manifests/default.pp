@@ -24,7 +24,6 @@ include baseline
 include langs
 include vim
 include build
-include googlechrome
 class {'desktop':
   home     => $home,
   username => $username

@@ -55,6 +55,14 @@ GIT
     vim (0.0.1)
 
 GIT
+  remote: git://github.com/narkisr/puppet-virtualbox.git
+  ref: master
+  sha: b3584b89eb8a0306b9fcbd442d3a4b4bc679c16f
+  specs:
+    virtualbox (0.2.0)
+      puppetlabs/apt (>= 1.1.0)
+
+GIT
   remote: git://github.com/smarchive/puppet-googlechrome.git
   ref: master
   sha: e1b332f0aae1f622752ea404be2a94206bc52ed2
@@ -72,4 +80,5 @@ DEPENDENCIES
   puppetlabs/stdlib (>= 0)
   rvm (>= 0)
   vim (>= 0)
+  virtualbox (>= 0)
 

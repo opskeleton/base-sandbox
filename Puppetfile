@@ -29,3 +29,6 @@ mod 'googlechrome',
 
 mod 'downloadfile', 
   :git => 'git://github.com/derEremit/puppet-downloadfile.git'
+
+mod 'virtualbox',
+ :git => 'git://github.com/narkisr/puppet-virtualbox.git'
