@@ -32,6 +32,9 @@ class desktop($username='',$home='') {
 
     class { 'virtualbox': }
     class { 'googlechrome': }
+    package{'gnome-do':
+      ensure  => present
+    }
 
   }
 }
