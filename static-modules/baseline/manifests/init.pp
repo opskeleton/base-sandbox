@@ -2,4 +2,6 @@
 class baseline {
   include security
   include networking
+
+  package{'mercurial': ensure  => present }
 }
