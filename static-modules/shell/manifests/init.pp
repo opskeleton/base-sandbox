@@ -8,4 +8,5 @@ class shell {
   include rlwrap
   include tmux
   include glances
+  include git_extras
 }
