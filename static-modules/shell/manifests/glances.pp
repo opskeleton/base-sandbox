@@ -1,5 +1,5 @@
 #  Sets up glances (https://github.com/nicolargo/glances)
-class glances {
+class shell::glances {
 
   package{['python-pip', 'build-essential', 'python-dev']:
     ensure  => present
@@ -11,8 +11,8 @@ class glances {
   }
 
   package{'glances':
-    ensure   => present,
+    ensure   => installed,
     provider => pip,
-    require  => Package['python-pip', 'build-essential', 'python-dev']
+    require  => Package['python-pip', 'build-essential', 'python-dev'],
   }
 }
