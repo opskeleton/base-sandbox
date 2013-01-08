@@ -1,6 +1,7 @@
 # == Class: modules/desktop
 #
-# Sets up a list of desktop packages (checks if its an Ubuntu based desktop system first).
+# Sets up a list of desktop packages
+# (checks if its an Ubuntu based desktop system first).
 #
 # === Parameters
 #
@@ -32,7 +33,7 @@ class desktop($username='',$home='') {
 
     class { 'virtualbox': }
     class { 'googlechrome': }
-    package{'gnome-do':
+    package{['gnome-do','nautilus-dropbox']:
       ensure  => present
     }
 
