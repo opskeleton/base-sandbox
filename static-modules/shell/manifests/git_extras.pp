@@ -13,7 +13,8 @@ class shell::git_extras {
     user    => 'root',
     path    => ['/usr/bin','/bin'],
     cwd     => $dest,
-    require => Git::Clone['git-extras']
+    require => Git::Clone['git-extras'],
+    unless  => "test -f ${home}/bin/git-extras"
   }
 
 }
