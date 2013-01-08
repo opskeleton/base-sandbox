@@ -43,7 +43,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-git.git
   ref: master
-  sha: 7ef78de760384e4d8e1066b84f59d5a61c7c5094
+  sha: 0d46a79d61e4821710208f291722f6d5525cf43d
   specs:
     git (0.0.1)
 
