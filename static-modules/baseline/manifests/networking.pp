@@ -1,8 +1,5 @@
 # Basic neworking utilities
 class baseline::networking {
-  package{:
-    ensure  => present
-  }
 
   package{['sshuttle','wakeonlan','nmap']:
     ensure  => present
