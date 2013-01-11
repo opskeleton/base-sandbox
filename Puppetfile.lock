@@ -50,7 +50,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-vim.git
   ref: master
-  sha: a67eb4a25dbdba3708bee8ef88988efb623c1e9f
+  sha: 56a03cebc175d2a4fee99918adabc8f350c526d8
   specs:
     vim (0.0.1)
 
