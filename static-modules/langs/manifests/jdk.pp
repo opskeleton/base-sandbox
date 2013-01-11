@@ -9,12 +9,15 @@ class langs::jdk {
     require => [Apt::Ppa['ppa:webupd8team/java'],
                 Exec['skipping license approval']]
   }
-  $echo = "/bin/echo  'oracle-java6-installer shared/accepted-oracle-license-v1-1 boolean true'"
+  $prop = 'accepted-oracle-license-v1-1'
+  $echo = "/bin/echo  'oracle-java6-installer shared/$prop boolean true'"
   $set_selections = '/usr/bin/debconf-set-selections'
+  $get_selections = '/usr/bin/debconf-get-selections'
 
   exec{'skipping license approval':
     command => "${echo} | ${set_selections}",
     user    => 'root',
     require => Apt::Ppa['ppa:webupd8team/java'],
+    unless  => "$get_selections | /bin/grep $prop"
   }
 }
