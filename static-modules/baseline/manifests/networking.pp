@@ -1,10 +1,10 @@
 # Basic neworking utilities
 class baseline::networking {
-  package{'wakeonlan':
+  package{:
     ensure  => present
   }
 
-  package{'sshuttle':
+  package{['sshuttle','wakeonlan','nmap']:
     ensure  => present
   }
 
