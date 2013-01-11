@@ -1,4 +1,4 @@
-# Setting up xomnad
+# Setting up xmonad
 class desktop::xmonad($home='',$username='') {
   $xmonad = "${home}/.xmonad"
 
@@ -8,8 +8,15 @@ class desktop::xmonad($home='',$username='') {
     owner => $username
   }
 
-  package{'xmonad':
+  package{['xmonad','xubuntu-desktop']:
     ensure  => present
   }
 
+  exec{'xmonad --recompile':
+    user    => 'root',
+    path    => ['/usr/bin','/bin'],
+    creates => "${xmonad}/xmonad.o",
+    environment => "HOME=${home}",
+    require => [Package['xmonad'], Git::Clone[$xmonad]]
+  }
 }

@@ -24,8 +24,8 @@ class desktop($username='',$home='') {
 
   if($desktop::is_desktop == 'true'){
     class{'desktop::xmonad':
-      home     => $home,
-      username => $username
+      home     => hiera('home'),
+      username => hiera('user')
     }
     include desktop::rxvt
     include desktop::spotify
