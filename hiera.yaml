@@ -1,8 +1,9 @@
 ---
 :backends: 
-  - yaml
+ - yaml
 :logger: console
 :hierarchy:  
-  - common
+ - '%{::virtual}'
+ - common
 :yaml:
    :datadir: hieradata

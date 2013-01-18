@@ -1,0 +1,5 @@
+--- 
+user: "vagrant"
+home: "/home/vagrant"
+scm_user: "vagrant"
+scm_email: "vagrant@gmail.com"
