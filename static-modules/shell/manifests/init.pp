@@ -9,4 +9,5 @@ class shell {
   include tmux
   include glances
   include git_extras
+  include git_fat
 }
