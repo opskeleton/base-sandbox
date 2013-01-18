@@ -30,12 +30,9 @@ class desktop($username='',$home='') {
     include desktop::rxvt
     include desktop::spotify
     include desktop::netflix
+    include desktop::misc
 
-    class { 'virtualbox': }
-    class { 'googlechrome': }
-    package{['gnome-do','nautilus-dropbox']:
-      ensure  => present
-    }
-
+    class {'virtualbox': }
+    class {'googlechrome': }
   }
 }
