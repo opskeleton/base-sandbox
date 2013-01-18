@@ -1,12 +1,13 @@
 # Introduction
 
-My full working environment including shell, vim and many other tools installation/configuration, designed to work only with Ubuntu 12.04.
+My full working environment including shell, vim and many other tools installation/configuration, designed to work only with Ubuntu 12.10.
 
 # Usage
 
 You can play with it using vagrant:
 
 ```bash
+$ vagrant box add ubuntu-12.10_puppet-3 http://ubuntuone.com/7goAh5NodKGtCF0mgbThgb
 $ vagrant up
 $ vagrant ssh
 $ cd /vagrant
