@@ -1,6 +1,6 @@
 # Introduction
 
-My full working environment including shell, vim and many other tools installation/configuration, designed to work only with Ubuntu 12.10.
+My full working environment including shell, vim and many other tools installation/configurations, designed to work only with Ubuntu 12.10.
 
 # Usage
 
@@ -14,9 +14,11 @@ $ cd /vagrant
 $ sudo ./run.sh
 ```
 
-In order to use it on your machine edit the manifest.pp default file and change user name and other details to match you own, then just:
+In order to use it on your machine: 
 
 ```bash
+# edit to match your own settings
+$ vi hieradata/physical.yaml
 $ sudo ./run.sh
 ```
 
