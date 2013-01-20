@@ -9,8 +9,8 @@ mod 'puppetlabs/apt'
 mod 'common', 
   :git => 'git://github.com/narkisr/puppet-common.git'
    
-mod 'archive', 
-  :git => 'git://github.com/camptocamp/puppet-archive.git'
+# mod 'archive', 
+  # :git => 'git://github.com/camptocamp/puppet-archive.git'
 
 mod 'rvm', 
   :git => 'git://github.com/blt04/puppet-rvm.git'
@@ -32,3 +32,10 @@ mod 'downloadfile',
 
 mod 'virtualbox',
  :git => 'git://github.com/narkisr/puppet-virtualbox.git'
+
+mod 'archive', 
+  :git => 'git://github.com/smarchive/puppet-archive.git'
+
+mod 'idea', 
+  :git => 'git://github.com/narkisr/puppet-idea.git'
+

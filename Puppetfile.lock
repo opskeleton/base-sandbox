@@ -13,13 +13,6 @@ GIT
     rvm (1.0.0)
 
 GIT
-  remote: git://github.com/camptocamp/puppet-archive.git
-  ref: master
-  sha: 8c0cb72ba392953fd2002b3d164377466cd2705f
-  specs:
-    archive (0.0.1)
-
-GIT
   remote: git://github.com/derEremit/puppet-downloadfile.git
   ref: master
   sha: f60c8939068eca7045919a2fce5ce94eee4c11e4
@@ -48,6 +41,13 @@ GIT
     git (0.0.1)
 
 GIT
+  remote: git://github.com/narkisr/puppet-idea.git
+  ref: master
+  sha: 718e751ee18ee0b94f2f2c540721dab48a0b0e4d
+  specs:
+    idea (0.1.0)
+
+GIT
   remote: git://github.com/narkisr/puppet-vim.git
   ref: master
   sha: 56a03cebc175d2a4fee99918adabc8f350c526d8
@@ -63,6 +63,13 @@ GIT
       puppetlabs/apt (>= 1.1.0)
 
 GIT
+  remote: git://github.com/smarchive/puppet-archive.git
+  ref: master
+  sha: ec14c9a1a95603dfa15a50dece196588a1e4036c
+  specs:
+    archive (0.1.0)
+
+GIT
   remote: git://github.com/smarchive/puppet-googlechrome.git
   ref: master
   sha: e1b332f0aae1f622752ea404be2a94206bc52ed2
@@ -76,6 +83,7 @@ DEPENDENCIES
   downloadfile (>= 0)
   git (>= 0)
   googlechrome (>= 0)
+  idea (>= 0)
   puppetlabs/apt (>= 0)
   puppetlabs/stdlib (>= 0)
   rvm (>= 0)

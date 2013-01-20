@@ -32,16 +32,14 @@ class desktop($username='',$home='') {
     include desktop::netflix
     include desktop::misc
 
-<<<<<<< Updated upstream
-    class {'virtualbox': }
-    class {'googlechrome': }
-=======
     class { 'virtualbox': }
     class { 'googlechrome': }
-    package{['gnome-do','gparted']:
+    package{'gparted':
       ensure  => present
     }
 
->>>>>>> Stashed changes
+    class { 'idea::community':
+      version => '12.0.2',
+    }
   }
 }
