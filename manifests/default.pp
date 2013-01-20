@@ -1,12 +1,9 @@
-# vagrant box seems to miss this group
 group{ 'puppet': ensure  => present }
 
-# when not used within vagrant context this should be set to the main user
 $username = hiera('user')
 $scm_user = hiera('scm_user')
 $scm_email = hiera('scm_email')
 $home = hiera('home')
-
 
 class { 'apt':
   always_apt_update    => false,
