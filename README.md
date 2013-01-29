@@ -28,7 +28,6 @@ $ sudo ./run.sh
 
 On a barebone machines:
 ```bash
-# edit to match your own settings
 $ gem install bundle
 $ gem install puppet
 $ bundle install 
