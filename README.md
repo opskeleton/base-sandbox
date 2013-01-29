@@ -16,13 +16,26 @@ $ cd /vagrant
 $ sudo ./run.sh
 ```
 
-In order to use it on your machine: 
+## In order to use it on your machine: 
+
+On machine with RVM:
 
 ```bash
 # edit to match your own settings
 $ vi hieradata/physical.yaml
 $ sudo ./run.sh
 ```
+
+On a barebone machines:
+```bash
+# edit to match your own settings
+$ gem install bundle
+$ gem install puppet
+$ bundle install 
+$ sudo ./run.sh
+```
+
+
 
 # License
 
