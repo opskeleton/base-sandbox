@@ -23,18 +23,17 @@ On machine with RVM:
 ```bash
 # edit to match your own settings
 $ vi hieradata/physical.yaml
+$ librarian-puppet install
 $ sudo ./run.sh
 ```
 
 On a barebone machines:
 ```bash
 $ gem install bundle
-$ gem install puppet
 $ bundle install 
+$ librarian-puppet install
 $ sudo ./run.sh
 ```
-
-
 
 # License
 
