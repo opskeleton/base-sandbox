@@ -7,6 +7,8 @@ My full working environment including shell, vim and many other tools installati
 You can play with it using vagrant:
 
 ```bash
+$ cd puppet-base-env
+$ librarian-puppet install 
 $ vagrant box add ubuntu-12.10_puppet-3 http://ubuntuone.com/7goAh5NodKGtCF0mgbThgb
 $ vagrant up
 $ vagrant ssh
@@ -14,11 +16,22 @@ $ cd /vagrant
 $ sudo ./run.sh
 ```
 
-In order to use it on your machine: 
+## In order to use it on your machine: 
+
+On machine with RVM:
 
 ```bash
 # edit to match your own settings
 $ vi hieradata/physical.yaml
+$ librarian-puppet install
+$ sudo ./run.sh
+```
+
+On a barebone machines:
+```bash
+$ gem install bundle
+$ bundle install 
+$ librarian-puppet install
 $ sudo ./run.sh
 ```
 
