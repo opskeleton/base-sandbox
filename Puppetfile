@@ -3,15 +3,9 @@ forge "http://forge.puppetlabs.com"
 mod 'puppetlabs/stdlib'
 mod 'puppetlabs/apt'
 
-# mod 'apt',
-  # :git => 'git://github.com/narkisr/puppet-apt.git'
-
 mod 'common', 
   :git => 'git://github.com/narkisr/puppet-common.git'
    
-# mod 'archive', 
-  # :git => 'git://github.com/camptocamp/puppet-archive.git'
-
 mod 'rvm', 
   :git => 'git://github.com/blt04/puppet-rvm.git'
 
