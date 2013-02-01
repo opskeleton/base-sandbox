@@ -48,6 +48,15 @@ GIT
     idea (0.1.0)
 
 GIT
+  remote: git://github.com/narkisr/puppet-jdk.git
+  ref: master
+  sha: 534cf514e10bf79140d533a21113badedb333c7e
+  specs:
+    jdk (0.0.1)
+      puppetlabs/apt (>= 0.0.3)
+      puppetlabs/stdlib (>= 2.0.0)
+
+GIT
   remote: git://github.com/narkisr/puppet-vim.git
   ref: master
   sha: 56a03cebc175d2a4fee99918adabc8f350c526d8
@@ -84,6 +93,7 @@ DEPENDENCIES
   git (>= 0)
   googlechrome (>= 0)
   idea (>= 0)
+  jdk (>= 0)
   puppetlabs/apt (>= 0)
   puppetlabs/stdlib (>= 0)
   rvm (>= 0)

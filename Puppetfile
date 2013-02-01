@@ -33,3 +33,5 @@ mod 'archive',
 mod 'idea', 
   :git => 'git://github.com/narkisr/puppet-idea.git'
 
+mod 'jdk',
+  :git => 'git://github.com/narkisr/puppet-jdk.git'
