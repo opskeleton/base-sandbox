@@ -1,6 +1,6 @@
 # Misc desktop packages
 class desktop::misc {
-  package{['gnome-do','vlc','recordmydesktop']:
+  package{['kupfer','vlc','recordmydesktop']:
       ensure  => present
   }
 }
