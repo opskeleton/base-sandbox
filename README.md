@@ -9,7 +9,6 @@ You can play with it using vagrant:
 ```bash
 $ cd puppet-base-env
 $ librarian-puppet install 
-$ vagrant box add ubuntu-12.10_puppet-3 http://ubuntuone.com/7goAh5NodKGtCF0mgbThgb
 $ vagrant up
 $ vagrant ssh
 $ cd /vagrant
