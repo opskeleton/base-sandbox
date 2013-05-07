@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  config.vm.box = 'ubuntu-12.10_puppet-3.1'
+  config.vm.box = 'ubuntu-13.04_puppet-3.1'
   # config.vm.box_url='http://ubuntuone.com/66A7lTtTcOnjBuOpUsn9P2'
   config.vm.hostname = 'puppet-base-env'
   
