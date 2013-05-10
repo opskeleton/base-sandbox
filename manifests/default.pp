@@ -26,5 +26,3 @@ class {'desktop':
   username => $username
 }
 
-
-import 'backups.pp'

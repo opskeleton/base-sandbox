@@ -38,4 +38,5 @@ class backup::duply(
     owner   => root,
     require =>  [Package['duply'],File["/etc/duply/${backup_name}"]],
   }
+
 }

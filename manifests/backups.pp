@@ -1,4 +1,4 @@
-# set your back jobs, use import 'backups.pp' to use them:
+# set your backup jobs, use import 'backups.pp' to use them:
 
 $globs='- /home/vagrant/.*
 - /home/vagrant/vim*'
