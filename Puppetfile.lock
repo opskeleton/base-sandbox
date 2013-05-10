@@ -8,7 +8,7 @@ FORGE
 GIT
   remote: git://github.com/blt04/puppet-rvm.git
   ref: master
-  sha: ce10a05a9ba22926b4783bea1f6944ccfb7b93e0
+  sha: 5dbcf8d08d242478723cd675630479a1932f4c82
   specs:
     rvm (1.0.0)
 
@@ -22,7 +22,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-build.git
   ref: master
-  sha: 922b9ae77c0f59c99af466209e2dfe1b710075ae
+  sha: e5c97ba4dee8229308fcb1df5491f4b743a0928c
   specs:
     build (0.0.1)
 
@@ -74,9 +74,9 @@ GIT
 GIT
   remote: git://github.com/smarchive/puppet-archive.git
   ref: master
-  sha: ec14c9a1a95603dfa15a50dece196588a1e4036c
+  sha: 80e374fbe09c2007b1c7d51e24f840bbb1c4cd85
   specs:
-    archive (0.1.0)
+    archive (0.1.1)
 
 GIT
   remote: git://github.com/smarchive/puppet-googlechrome.git
