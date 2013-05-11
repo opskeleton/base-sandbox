@@ -3,11 +3,6 @@
 # Sets up a list of desktop packages
 # (checks if its an Ubuntu based desktop system first).
 #
-# === Parameters
-#
-#
-# === Variables
-#
 # === Examples
 #
 # include desktop
