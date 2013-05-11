@@ -1,5 +1,4 @@
-Enable graylog2 logging via rsyslog.conf
-Fix google chrome cert issue
-Fix git setup errors
-Add virtualbox module
-Add gnome-do
+* Enable graylog2 logging via rsyslog.conf
+* Add nvm
+* add scm_breeze
+* Enable profiles: server/dev-machine/tiny (tiny is rpi)
