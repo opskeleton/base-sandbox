@@ -22,19 +22,19 @@ class desktop($username='',$home='') {
       home     => hiera('home'),
       username => hiera('user')
     }
-    include desktop::rxvt
-    include desktop::spotify
-    include desktop::netflix
+    # include desktop::rxvt
+    # include desktop::spotify
+    # include desktop::netflix
     include desktop::misc
 
     class { 'virtualbox': }
-    class { 'googlechrome': }
+    # class { 'googlechrome': }
     package{'gparted':
       ensure  => present
     }
 
-    class { 'idea::community':
-      version => '12.0.2',
-    }
+  #  class { 'idea::community':
+  #    version => '12.0.2',
+  #  }
   }
 }
