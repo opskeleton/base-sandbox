@@ -1,22 +1,21 @@
 # Schedule a backup job for daily/monthly periods.
-class backup::schedule(
+define backup::schedule(
   $hour='',
   $monthday=undef,
   $type='duply',
-  $backup_name=''
 ) {
 
-  $log = "/var/log/duply_${backup_name}.log"
+  $log = "/var/log/duply_${name}.log"
 
-  cron { 'duply_backup_cron':
+  cron { "${name}_duply_backup_cron":
     ensure   => present,
     command  =>  $type ? {
-      'duply' => "duply ${backup_name} backup_verify_purge --force > ${log} 2>&1"
+      'duply' => "duply ${name} backup_verify_purge --force > ${log} 2>&1"
     },
     user     => 'root',
     hour     => $hour,
     monthday => $monthday,
-    require  => File["/etc/duply/${backup_name}/conf"],
+    require  => File["/etc/duply/${name}/conf"],
   }
 
 }

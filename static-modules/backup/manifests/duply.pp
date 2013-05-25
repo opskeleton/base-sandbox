@@ -1,6 +1,5 @@
 # Sets up a duply backup job
-class backup::duply(
-  $backup_name='',
+define backup::duply(
   $source='',
   $passphrase='',
   $target='',
@@ -10,33 +9,50 @@ class backup::duply(
   $max_full_backups='1',
   $max_fullbkp_age='1M',
   $volsize=50,
-  $globs=''
+  $globs='', 
+  $tmp='/tmp'
   ) {
 
-  package{['duplicity','duply']:
-    ensure  => present
+  if !defined(Package['duply']) {
+    package{'duply':
+      ensure  => present
+    }
   }
 
-  package{'python-boto':
-    ensure  => present
+  if !defined(Package['duplicity']) {
+    package{['duplicity']:
+      ensure  => present
+    }
   }
 
-  file{['/etc/duply',"/etc/duply/${backup_name}"]:
+  if !defined(Package['python-boto']) {
+   package{'python-boto':
+     ensure  => present
+   }
+  }
+
+  if !defined(File['/etc/duply']) {
+   file{['/etc/duply']:
+    ensure => directory,
+   }
+  }
+
+  file{"/etc/duply/${name}":
     ensure => directory,
   }
 
-  file { "/etc/duply/${backup_name}/exclude" :
+  file { "/etc/duply/${name}/exclude" :
     ensure  => file,
     content => $globs,
     owner   => root,
-    require =>  [Package['duply'],File["/etc/duply/${backup_name}"]],
+    require =>  [Package['duply'],File["/etc/duply/${name}"]],
   }
 
-  file{"/etc/duply/${backup_name}/conf":
+  file{"/etc/duply/${name}/conf":
     ensure  => file,
     content => template('backup/conf.erb'),
     owner   => root,
-    require =>  [Package['duply'],File["/etc/duply/${backup_name}"]],
+    require =>  [Package['duply'],File["/etc/duply/${name}"]],
   }
 
 }

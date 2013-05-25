@@ -14,8 +14,8 @@ MAX_FULL_BACKUPS=<%=max_full_backups%>
 MAX_FULLBKP_AGE=<%=max_fullbkp_age%>
 DUPL_PARAMS="$DUPL_PARAMS --full-if-older-than $MAX_FULLBKP_AGE " 
 
-VOLSIZE=<%=volsize=>
+VOLSIZE=<%=volsize%>
 DUPL_PARAMS="$DUPL_PARAMS --volsize $VOLSIZE "
 
 VERBOSITY=5
-TEMP_DIR=/tmp
+TEMP_DIR=<%=tmp%>
