@@ -7,6 +7,8 @@ define backup::schedule(
 
   $log = "/var/log/duply_${name}.log"
 
+  # TODO support trickle
+  # trickle -u 60 -s duply uranus-home-cadytis backup_verify_purge --force | sudo tee /var/log/duply_uranus-home-cadytis.log 2>&1
   cron { "${name}_duply_backup_cron":
     ensure   => present,
     command  =>  $type ? {
