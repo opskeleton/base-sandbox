@@ -3,16 +3,29 @@ define backup::schedule(
   $hour='',
   $monthday=undef,
   $type='duply',
+  $trickle=undef
 ) {
 
   $log = "/var/log/duply_${name}.log"
+  $tee = "sudo tee ${log} 2>&1"
+  $lock = "flock -n /tmp/${$name}"
+  $base_run = "duply ${name} backup_verify_purge --force | ${tee}"
 
-  # TODO support trickle
-  # trickle -u 60 -s duply uranus-home-cadytis backup_verify_purge --force | sudo tee /var/log/duply_uranus-home-cadytis.log 2>&1
+  if($trickle!=undef){
+    $run = "${lock} trickle -u ${trickle} -s ${base_run}"
+    if !defined(Package['trickle']) {
+      package{'trickle':
+        ensure  => present
+      }
+    }
+  } else {
+    $run = "${lock} ${base_run}"
+  }
+
   cron { "${name}_duply_backup_cron":
     ensure   => present,
     command  =>  $type ? {
-      'duply' => "duply ${name} backup_verify_purge --force > ${log} 2>&1"
+      'duply' => $run
     },
     user     => 'root',
     hour     => $hour,
