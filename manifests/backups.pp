@@ -5,17 +5,14 @@ $globs='- /home/vagrant/.*
 
 
 # backup jobs
-class {'backup::duply':
-  backup_name => 'example',
+backup::duply {'sample':
   source      => '/home/vagrant/',
   target      => 'file://tmp/backup',
-  user        => 'vagrant',
-  password    => 'vagrant',
   globs       => $globs
 }
 
-class {'backup::schedule':
-  hour        => '3',
-  type        => 'duply',
-  backup_name => 'example'
+backup::schedule {'sample':
+  hour    => '3',
+  type    => 'duply',
+  trickle => '60'
 }

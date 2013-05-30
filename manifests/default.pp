@@ -7,6 +7,7 @@ $home = hiera('home')
 
 node 'puppet-base-env.local' {
 
+  import 'backups.pp'
   include git
   include shell
   include baseline
