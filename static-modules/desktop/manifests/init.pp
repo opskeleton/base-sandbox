@@ -28,7 +28,6 @@ class desktop($username='',$home='') {
     include desktop::misc
 
     class { 'virtualbox': }
-    # class { 'googlechrome': }
     package{'gparted':
       ensure  => present
     }
