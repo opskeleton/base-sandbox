@@ -3,7 +3,7 @@ FORGE
   specs:
     puppetlabs/apt (1.1.0)
       puppetlabs/stdlib (>= 2.2.1)
-    puppetlabs/stdlib (3.2.0)
+    puppetlabs/stdlib (4.1.0)
 
 GIT
   remote: git://github.com/blt04/puppet-rvm.git
@@ -18,6 +18,13 @@ GIT
   sha: f60c8939068eca7045919a2fce5ce94eee4c11e4
   specs:
     downloadfile (0.0.1)
+
+GIT
+  remote: git://github.com/narkisr/puppet-backup.git
+  ref: master
+  sha: 39e492265df92842e9770c2ae57a7b21eddaaa6b
+  specs:
+    backup (0.1.0)
 
 GIT
   remote: git://github.com/narkisr/puppet-build.git
@@ -50,7 +57,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-jdk.git
   ref: master
-  sha: 534cf514e10bf79140d533a21113badedb333c7e
+  sha: 67b3efa2bb0c3f752a36121027a006c944d2904b
   specs:
     jdk (0.0.1)
       puppetlabs/apt (>= 0.0.3)
@@ -78,20 +85,13 @@ GIT
   specs:
     archive (0.1.1)
 
-GIT
-  remote: git://github.com/smarchive/puppet-googlechrome.git
-  ref: master
-  sha: e1b332f0aae1f622752ea404be2a94206bc52ed2
-  specs:
-    googlechrome (0.1.0)
-
 DEPENDENCIES
   archive (>= 0)
+  backup (>= 0)
   build (>= 0)
   common (>= 0)
   downloadfile (>= 0)
   git (>= 0)
-  googlechrome (>= 0)
   idea (>= 0)
   jdk (>= 0)
   puppetlabs/apt (>= 0)

@@ -16,3 +16,16 @@ backup::schedule {'sample':
   type    => 'duply',
   trickle => '60'
 }
+
+backup::duply {'s3-ex':
+  source      => '/home/vagrant/',
+  target      => 's3+http://myUniqueBucketName',
+  target_pass => 'foo',
+  target_user => 'bla',
+  globs       => $globs
+}
+
+backup::schedule {'s3-ex':
+  hour    => '3',
+  type    => 'duply',
+}

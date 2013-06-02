@@ -5,6 +5,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = 'ubuntu-13.04_puppet-3.1'
   config.vm.box_url='http://ubuntuone.com/6DnhpowFnqDbJEgwqqDiud'
   config.vm.hostname = 'puppet-base-env.local'
+  config.cache.auto_detect = true
   
   config.vm.network :public_network, { bridge: 'eth0' }
   config.vm.provider :virtualbox do |vb|
