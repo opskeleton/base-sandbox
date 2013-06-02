@@ -35,3 +35,6 @@ mod 'idea',
 
 mod 'jdk',
   :git => 'git://github.com/narkisr/puppet-jdk.git'
+
+mod 'backup',
+  :git => 'git://github.com/narkisr/puppet-backup.git'
