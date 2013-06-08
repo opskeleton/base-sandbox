@@ -14,6 +14,7 @@ node 'puppet-base-env.local' {
   include langs
   include vim
   include build
+  include barbecue
   class {'desktop':
     home     => $home,
     username => $username
