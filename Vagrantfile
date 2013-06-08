@@ -7,7 +7,7 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = 'puppet-base-env.local'
   config.cache.auto_detect = true
   
-  config.vm.network :public_network, { bridge: 'eth0' }
+  config.vm.network :public_network #, { bridge: 'eth0' }
   config.vm.provider :virtualbox do |vb|
     vb.customize ['modifyvm', :id, '--memory', 2048, '--cpus', 4]
   end
