@@ -35,3 +35,6 @@ mod 'jdk',
 
 mod 'backup',
   :git => 'git://github.com/narkisr/puppet-backup.git'
+
+mod 'barbecue', 
+  :git => 'git://github.com/narkisr/puppet-barbecue.git'

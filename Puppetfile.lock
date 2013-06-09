@@ -27,6 +27,14 @@ GIT
     backup (0.1.0)
 
 GIT
+  remote: git://github.com/narkisr/puppet-barbecue.git
+  ref: master
+  sha: 5533c01f26e2b3f78910002783072795766c5bb2
+  specs:
+    barbecue (0.0.1)
+      puppetlabs/apt (>= 1.1.0)
+
+GIT
   remote: git://github.com/narkisr/puppet-build.git
   ref: master
   sha: e5c97ba4dee8229308fcb1df5491f4b743a0928c
@@ -88,6 +96,7 @@ GIT
 DEPENDENCIES
   archive (>= 0)
   backup (>= 0)
+  barbecue (>= 0)
   build (>= 0)
   common (>= 0)
   downloadfile (>= 0)
