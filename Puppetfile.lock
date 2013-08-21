@@ -1,14 +1,14 @@
 FORGE
   remote: http://forge.puppetlabs.com
   specs:
-    puppetlabs/apt (1.1.0)
+    puppetlabs/apt (1.2.0)
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/stdlib (4.1.0)
 
 GIT
   remote: git://github.com/blt04/puppet-rvm.git
   ref: master
-  sha: 5dbcf8d08d242478723cd675630479a1932f4c82
+  sha: 6b5591f297b1a46fc19e110e9c1031d80a326dce
   specs:
     rvm (1.0.0)
 
@@ -29,7 +29,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-barbecue.git
   ref: master
-  sha: 5533c01f26e2b3f78910002783072795766c5bb2
+  sha: 5c80fc0b7ed17059f130fdb09d85db9945bf91e9
   specs:
     barbecue (0.0.1)
       puppetlabs/apt (>= 1.1.0)
@@ -37,9 +37,9 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-build.git
   ref: master
-  sha: e5c97ba4dee8229308fcb1df5491f4b743a0928c
+  sha: 17fa55633007f879dfe9c6c6796a9d9654cf101a
   specs:
-    build (0.0.1)
+    build (0.1.0)
 
 GIT
   remote: git://github.com/narkisr/puppet-common.git
@@ -65,7 +65,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-jdk.git
   ref: master
-  sha: 67b3efa2bb0c3f752a36121027a006c944d2904b
+  sha: 1355da2cec8ffac86a682e15f804587dac9531f1
   specs:
     jdk (0.0.1)
       puppetlabs/apt (>= 0.0.3)
@@ -89,7 +89,7 @@ GIT
 GIT
   remote: git://github.com/smarchive/puppet-archive.git
   ref: master
-  sha: 80e374fbe09c2007b1c7d51e24f840bbb1c4cd85
+  sha: ebf322534daa458e93f276d5df5ce6c1e8fd0121
   specs:
     archive (0.1.1)
 
