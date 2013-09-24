@@ -24,8 +24,7 @@ mod 'downloadfile',
 mod 'virtualbox',
  :git => 'git://github.com/narkisr/puppet-virtualbox.git'
 
-mod 'archive', 
-  :git => 'git://github.com/smarchive/puppet-archive.git'
+mod 'smarchive/archive'
 
 mod 'idea', 
   :git => 'git://github.com/narkisr/puppet-idea.git'
