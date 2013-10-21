@@ -1,16 +1,10 @@
 FORGE
   remote: http://forge.puppetlabs.com
   specs:
-    puppetlabs/apt (1.2.0)
+    puppetlabs/apt (1.4.0)
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/stdlib (4.1.0)
-
-GIT
-  remote: git://github.com/blt04/puppet-rvm.git
-  ref: master
-  sha: 6b5591f297b1a46fc19e110e9c1031d80a326dce
-  specs:
-    rvm (1.0.0)
+    smarchive/archive (0.1.1)
 
 GIT
   remote: git://github.com/derEremit/puppet-downloadfile.git
@@ -18,6 +12,13 @@ GIT
   sha: f60c8939068eca7045919a2fce5ce94eee4c11e4
   specs:
     downloadfile (0.0.1)
+
+GIT
+  remote: git://github.com/maestrodev/puppet-rvm.git
+  ref: master
+  sha: 6b5591f297b1a46fc19e110e9c1031d80a326dce
+  specs:
+    rvm (1.0.0)
 
 GIT
   remote: git://github.com/narkisr/puppet-backup.git
@@ -86,15 +87,7 @@ GIT
     virtualbox (0.2.0)
       puppetlabs/apt (>= 1.1.0)
 
-GIT
-  remote: git://github.com/smarchive/puppet-archive.git
-  ref: master
-  sha: ebf322534daa458e93f276d5df5ce6c1e8fd0121
-  specs:
-    archive (0.1.1)
-
 DEPENDENCIES
-  archive (>= 0)
   backup (>= 0)
   barbecue (>= 0)
   build (>= 0)
@@ -106,6 +99,7 @@ DEPENDENCIES
   puppetlabs/apt (>= 0)
   puppetlabs/stdlib (>= 0)
   rvm (>= 0)
+  smarchive/archive (>= 0)
   vim (>= 0)
   virtualbox (>= 0)
 
