@@ -7,7 +7,7 @@ mod 'common',
   :git => 'git://github.com/narkisr/puppet-common.git'
    
 mod 'rvm', 
-  :git => 'git://github.com/blt04/puppet-rvm.git'
+  :git => 'git://github.com/maestrodev/puppet-rvm.git'
 
 mod 'vim', 
   :git => 'git://github.com/narkisr/puppet-vim.git'
