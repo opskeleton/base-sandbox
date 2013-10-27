@@ -52,7 +52,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-git.git
   ref: master
-  sha: 0d46a79d61e4821710208f291722f6d5525cf43d
+  sha: 90a5ed68d8d964922e2b8fa6b0581e64d66abac1
   specs:
     git (0.0.1)
 
@@ -75,23 +75,23 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-shell.git
   ref: master
-  sha: 3824f7a2b34772e4899751b32c321ae2f603daa0
+  sha: 1e552dbd639d6f41a486add5087fa1b71bd498e3
   specs:
     shell (0.0.1)
 
 GIT
   remote: git://github.com/narkisr/puppet-vim.git
   ref: master
-  sha: 56a03cebc175d2a4fee99918adabc8f350c526d8
+  sha: b9578c8406c8f797fd3a41cfe6cab02c2110e561
   specs:
     vim (0.0.1)
 
 GIT
   remote: git://github.com/narkisr/puppet-virtualbox.git
   ref: master
-  sha: e3b75536c95bc3e7632f42965acf665662a499a0
+  sha: c88a4199897388979ca82c1f5e2e97aa38812ec3
   specs:
-    virtualbox (0.2.0)
+    virtualbox (0.2.4)
       puppetlabs/apt (>= 1.1.0)
 
 DEPENDENCIES
