@@ -37,3 +37,6 @@ mod 'backup',
 
 mod 'barbecue', 
   :git => 'git://github.com/narkisr/puppet-barbecue.git'
+
+mod 'shell', 
+  :git => 'git://github.com/narkisr/puppet-shell.git'

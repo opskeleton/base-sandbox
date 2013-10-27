@@ -73,6 +73,13 @@ GIT
       puppetlabs/stdlib (>= 2.0.0)
 
 GIT
+  remote: git://github.com/narkisr/puppet-shell.git
+  ref: master
+  sha: 3824f7a2b34772e4899751b32c321ae2f603daa0
+  specs:
+    shell (0.0.1)
+
+GIT
   remote: git://github.com/narkisr/puppet-vim.git
   ref: master
   sha: 56a03cebc175d2a4fee99918adabc8f350c526d8
@@ -99,6 +106,7 @@ DEPENDENCIES
   puppetlabs/apt (>= 0)
   puppetlabs/stdlib (>= 0)
   rvm (>= 0)
+  shell (>= 0)
   smarchive/archive (>= 0)
   vim (>= 0)
   virtualbox (>= 0)
