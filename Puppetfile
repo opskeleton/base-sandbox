@@ -40,3 +40,10 @@ mod 'barbecue',
 
 mod 'shell', 
   :git => 'git://github.com/narkisr/puppet-shell.git'
+
+mod 'langs', 
+  :git => 'git://github.com/narkisr/puppet-langs.git'
+
+mod 'vagrant', 
+  :git => 'git://github.com/narkisr/puppet-vagrant.git'
+

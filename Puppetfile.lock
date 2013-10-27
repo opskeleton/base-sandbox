@@ -73,11 +73,25 @@ GIT
       puppetlabs/stdlib (>= 2.0.0)
 
 GIT
+  remote: git://github.com/narkisr/puppet-langs.git
+  ref: master
+  sha: f53eb9e07f1b8da3bd1e056f336f076965cc16c6
+  specs:
+    langs (0.0.1)
+
+GIT
   remote: git://github.com/narkisr/puppet-shell.git
   ref: master
   sha: 1e552dbd639d6f41a486add5087fa1b71bd498e3
   specs:
     shell (0.0.1)
+
+GIT
+  remote: git://github.com/narkisr/puppet-vagrant.git
+  ref: master
+  sha: 18d61bc5709e247c09ca2967a84839d1aea28d68
+  specs:
+    vagrant (0.1.0)
 
 GIT
   remote: git://github.com/narkisr/puppet-vim.git
@@ -103,11 +117,13 @@ DEPENDENCIES
   git (>= 0)
   idea (>= 0)
   jdk (>= 0)
+  langs (>= 0)
   puppetlabs/apt (>= 0)
   puppetlabs/stdlib (>= 0)
   rvm (>= 0)
   shell (>= 0)
   smarchive/archive (>= 0)
+  vagrant (>= 0)
   vim (>= 0)
   virtualbox (>= 0)
 
