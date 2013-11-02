@@ -1,7 +1,10 @@
 --- 
-user: "vagrant"
-home: "/home/vagrant"
-scm_user: "vagrant"
-scm_email: "vagrant@gmail.com"
-
+user: 'vagrant'
+home: '/home/vagrant'
+scm_user: 'vagrant'
+scm_email: 'vagrant@gmail.com'
 backup::duply::passphrase: 'foobar'
+baseline::filesystem::ssds:
+ - '/'
+ - '/home'
+baseline::security::syslog_server: 'kibana'
