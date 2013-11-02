@@ -15,6 +15,7 @@ node 'puppet-base-env.local' {
   include vim
   include build
   include barbecue
+  include vagrant
   class {'desktop':
     home     => $home,
     username => $username
