@@ -47,3 +47,5 @@ mod 'langs',
 mod 'vagrant', 
   :git => 'git://github.com/narkisr/puppet-vagrant.git'
 
+mod 'baseline', 
+  :git => 'git://github.com/narkisr/puppet-baseline.git'

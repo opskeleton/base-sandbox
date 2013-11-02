@@ -36,6 +36,13 @@ GIT
       puppetlabs/apt (>= 1.1.0)
 
 GIT
+  remote: git://github.com/narkisr/puppet-baseline.git
+  ref: master
+  sha: 99aa3b6a5715acdd7f902de11a6ed8f0dbd067c6
+  specs:
+    baseline (0.0.1)
+
+GIT
   remote: git://github.com/narkisr/puppet-build.git
   ref: master
   sha: 17fa55633007f879dfe9c6c6796a9d9654cf101a
@@ -111,6 +118,7 @@ GIT
 DEPENDENCIES
   backup (>= 0)
   barbecue (>= 0)
+  baseline (>= 0)
   build (>= 0)
   common (>= 0)
   downloadfile (>= 0)
