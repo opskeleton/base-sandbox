@@ -38,7 +38,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-baseline.git
   ref: master
-  sha: 99aa3b6a5715acdd7f902de11a6ed8f0dbd067c6
+  sha: 8d071c15147beebfdfa60b0c8c4e94893f91fef1
   specs:
     baseline (0.0.1)
 
