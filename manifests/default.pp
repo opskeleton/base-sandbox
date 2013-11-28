@@ -43,4 +43,6 @@ if($environment == 'dev'){
   }
 
   backup::schedule {'s3-ex': }
+
+  include backup::copy
 }
