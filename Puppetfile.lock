@@ -23,7 +23,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-backup.git
   ref: master
-  sha: c7fc4bb3f21092a79d09e6b156b59918ea367c02
+  sha: e05b0b09ad9ec517ca2b9f9c8d455c26c19cf6e2
   specs:
     backup (0.1.0)
 
@@ -73,7 +73,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-jdk.git
   ref: master
-  sha: 1355da2cec8ffac86a682e15f804587dac9531f1
+  sha: e97207a098264a871badd2102586cb52025c2ec4
   specs:
     jdk (0.0.1)
       puppetlabs/apt (>= 0.0.3)
