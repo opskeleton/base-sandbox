@@ -1,1 +1,2 @@
-puppet apply --modulepath=modules:static-modules manifests/default.pp --hiera_config hiera.yaml $@
+MANIFEST=manifests/default.pp
+puppet apply --modulepath=modules:static-modules ${1:-$MANIFEST} --hiera_config hiera.yaml
