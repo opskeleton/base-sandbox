@@ -5,6 +5,8 @@ $scm_user = hiera('scm_user')
 $scm_email = hiera('scm_email')
 $home = hiera('home')
 
+include backup::copy
+
 node default {
   include git
   include shell
