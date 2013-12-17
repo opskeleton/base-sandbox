@@ -11,3 +11,4 @@ puppet.conf
 modules/
 .librarian
 profiles
+pkg
