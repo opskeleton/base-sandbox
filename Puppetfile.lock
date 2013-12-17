@@ -64,13 +64,6 @@ GIT
     git (0.0.1)
 
 GIT
-  remote: git://github.com/narkisr/puppet-idea.git
-  ref: master
-  sha: 718e751ee18ee0b94f2f2c540721dab48a0b0e4d
-  specs:
-    idea (0.1.0)
-
-GIT
   remote: git://github.com/narkisr/puppet-jdk.git
   ref: master
   sha: e97207a098264a871badd2102586cb52025c2ec4
@@ -123,7 +116,6 @@ DEPENDENCIES
   common (>= 0)
   downloadfile (>= 0)
   git (>= 0)
-  idea (>= 0)
   jdk (>= 0)
   langs (>= 0)
   puppetlabs/apt (>= 0)
