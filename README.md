@@ -1,6 +1,6 @@
 # Introduction
 
-My full working environment including shell, vim and many other tools installation/configurations, designed to work only with Ubuntu 12.10.
+My full working environment including shell, vim and many other tools installation/configurations, designed to work only with Ubuntu 13.04/13.10
 
 # Usage
 
