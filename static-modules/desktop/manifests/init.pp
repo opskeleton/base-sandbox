@@ -5,6 +5,7 @@ class desktop($username='',$home='') {
 
     include virtualbox
     include desktop::misc
+    include desktop::tor
 
     class{'desktop::xmonad':
       home     => hiera('home'),
