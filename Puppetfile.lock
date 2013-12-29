@@ -23,7 +23,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-backup.git
   ref: master
-  sha: 22bce0afecc288eaf090e7154f3f8b5e9571ccb5
+  sha: 3a91d60e8761d757b5b959806564c312e063236d
   specs:
     backup (0.1.0)
 
@@ -45,7 +45,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-build.git
   ref: master
-  sha: 17fa55633007f879dfe9c6c6796a9d9654cf101a
+  sha: 430a557fce38b72e6a0c063eec408b33843435d1
   specs:
     build (0.1.0)
 
