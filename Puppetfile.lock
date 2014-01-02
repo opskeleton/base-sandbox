@@ -23,7 +23,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-backup.git
   ref: master
-  sha: 3a91d60e8761d757b5b959806564c312e063236d
+  sha: 2d90af663e234d72a69030495f66d4869141b973
   specs:
     backup (0.1.0)
 
@@ -89,14 +89,14 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-vagrant.git
   ref: master
-  sha: 18d61bc5709e247c09ca2967a84839d1aea28d68
+  sha: 5974c3d683066734f54412bc0a9e75b71a9e1b68
   specs:
     vagrant (0.1.0)
 
 GIT
   remote: git://github.com/narkisr/puppet-vim.git
   ref: master
-  sha: b9578c8406c8f797fd3a41cfe6cab02c2110e561
+  sha: 6d79192d97a06cef6f45c59e22c0b3d1ca80e776
   specs:
     vim (0.0.1)
 
