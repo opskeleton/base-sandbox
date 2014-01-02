@@ -47,5 +47,8 @@ if($environment == 'dev'){
   backup::schedule {'s3-ex': }
 
   include backup::copy
-  include backup::dropbox
+
+  class{'backup::dropbox':
+    headless => true
+  }
 }
