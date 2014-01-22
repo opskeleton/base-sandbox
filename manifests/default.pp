@@ -15,6 +15,7 @@ node default {
   include vim
   include build
   include barbecue
+  include barbecue::packages
   include vagrant
   class {'desktop':
     home     => $home,
