@@ -23,14 +23,14 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-backup.git
   ref: master
-  sha: 2d90af663e234d72a69030495f66d4869141b973
+  sha: fdb738159f7473c6e57fcc5ee470c8163c949868
   specs:
     backup (0.1.0)
 
 GIT
   remote: git://github.com/narkisr/puppet-barbecue.git
   ref: master
-  sha: 5c80fc0b7ed17059f130fdb09d85db9945bf91e9
+  sha: 2fe10256711d79582ee9d7c211a0699ec9d4053b
   specs:
     barbecue (0.0.1)
       puppetlabs/apt (>= 1.1.0)
@@ -75,7 +75,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-langs.git
   ref: master
-  sha: dab115f7f546dff2d0ab3326c31004362e40e80a
+  sha: 47f3cfa60fb395360fd65da00e82a60f9e0237f6
   specs:
     langs (0.0.1)
 
@@ -89,7 +89,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-vagrant.git
   ref: master
-  sha: 5974c3d683066734f54412bc0a9e75b71a9e1b68
+  sha: b3f92e1d054daf3a3da9ee2d2466e7d9e444f1da
   specs:
     vagrant (0.1.0)
 
