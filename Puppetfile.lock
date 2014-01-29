@@ -45,7 +45,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-build.git
   ref: master
-  sha: 430a557fce38b72e6a0c063eec408b33843435d1
+  sha: fe3b4df716d107c6d9b695e526e0ae8fa4dc219e
   specs:
     build (0.1.0)
 
