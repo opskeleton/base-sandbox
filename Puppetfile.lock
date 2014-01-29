@@ -30,7 +30,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-barbecue.git
   ref: master
-  sha: 2fe10256711d79582ee9d7c211a0699ec9d4053b
+  sha: eddd16bbc7a1673a92d3676e40d3cb5c4eb8301f
   specs:
     barbecue (0.0.1)
       puppetlabs/apt (>= 1.1.0)
@@ -38,7 +38,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-baseline.git
   ref: master
-  sha: c8bfe55df20e14909a709ec024464ff670b39f33
+  sha: 9a724e0768e4f4d9ab1f6c6122644a43ae7eee87
   specs:
     baseline (0.0.1)
 
