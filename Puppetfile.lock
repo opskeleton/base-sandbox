@@ -45,7 +45,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-build.git
   ref: master
-  sha: fe3b4df716d107c6d9b695e526e0ae8fa4dc219e
+  sha: 6bfada209b717d8479b34b30a4490a772e2dfcc4
   specs:
     build (0.1.0)
 
@@ -75,7 +75,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-langs.git
   ref: master
-  sha: 47f3cfa60fb395360fd65da00e82a60f9e0237f6
+  sha: 48c6ee875d7ee013a952897b86f7a4bd09fffdee
   specs:
     langs (0.0.1)
 
