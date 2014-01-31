@@ -82,7 +82,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-shell.git
   ref: master
-  sha: 96d06e1b200fc119d9801c0c0c95845ec7c9ae79
+  sha: 75882ca751fa1d0f93fd31bb420f318490dbbbbe
   specs:
     shell (0.0.1)
 
