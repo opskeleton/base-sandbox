@@ -8,6 +8,7 @@ backup::duply::passphrase: 'foobar'
 
 backup::copy::user: 'vagrant'
 backup::copy::sysuser: 'vagrant'
+backup::copy::folder: '/home/vagrant/.copy'
 
 baseline::filesystem::ssds:
  - '/'
