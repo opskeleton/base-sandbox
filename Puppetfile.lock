@@ -21,9 +21,16 @@ GIT
     rvm (1.0.0)
 
 GIT
+  remote: git://github.com/mstrauss/puppet-editfile.git
+  ref: master
+  sha: 884efdc0997af667f24625e696630e6b1db5a952
+  specs:
+    editfile (0.0.1)
+
+GIT
   remote: git://github.com/narkisr/puppet-backup.git
   ref: master
-  sha: 82e9d23e29c04d4fb47fd7cf0f0b76a2207827fe
+  sha: 7614eda70879d024730b321dfe282ee78ba1f982
   specs:
     backup (0.1.0)
 
@@ -115,6 +122,7 @@ DEPENDENCIES
   build (>= 0)
   common (>= 0)
   downloadfile (>= 0)
+  editfile (>= 0)
   git (>= 0)
   jdk (>= 0)
   langs (>= 0)

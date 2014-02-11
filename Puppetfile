@@ -46,3 +46,7 @@ mod 'vagrant',
 
 mod 'baseline', 
   :git => 'git://github.com/narkisr/puppet-baseline.git'
+
+mod 'editfile',
+    :git => 'git://github.com/mstrauss/puppet-editfile.git'
+
