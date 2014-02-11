@@ -32,6 +32,9 @@ if($environment == 'dev'){
   backup::duply {'sample':
     source      => '/home/vagrant/',
     target      => 'file://tmp/backup',
+    target_pass => 'foo',
+    target_user => 'bla',
+    passphrase  => 'blabla',
     globs       => $globs
   }
 
@@ -42,10 +45,13 @@ if($environment == 'dev'){
     target      => 's3+http://myUniqueBucketName',
     target_pass => 'foo',
     target_user => 'bla',
+    passphrase  => 'blabla',
     globs       => $globs
   }
 
-  backup::schedule {'s3-ex': }
+  backup::schedule {'s3-ex':
+    precondition => '-d /tmp'
+  }
 
   include backup::copy
 
