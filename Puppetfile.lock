@@ -1,7 +1,7 @@
 FORGE
   remote: http://forge.puppetlabs.com
   specs:
-    puppetlabs/apt (1.4.0)
+    puppetlabs/apt (1.4.1)
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/stdlib (4.1.0)
     smarchive/archive (0.1.1)
@@ -45,7 +45,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-baseline.git
   ref: master
-  sha: 9a724e0768e4f4d9ab1f6c6122644a43ae7eee87
+  sha: dec1d46ceebdd702e17252ae03eb7c223621b048
   specs:
     baseline (0.0.1)
 
