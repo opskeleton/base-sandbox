@@ -24,6 +24,14 @@ node default {
 }
 
 if($environment == 'dev'){
+
+  include clamav
+  clamav::scan { 'all-but-sys-and-dev':
+    exclude_dir => ['(?i)/^\/(sys|dev)/'],
+    scan        => ['/'],
+    enable      => true,
+  }
+
   $globs='- /home/vagrant/.*
   - /home/vagrant/vim*'
 
@@ -59,3 +67,5 @@ if($environment == 'dev'){
     headless => true
   }
 }
+
+

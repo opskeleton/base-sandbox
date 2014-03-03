@@ -7,6 +7,14 @@ FORGE
     smarchive/archive (0.1.1)
 
 GIT
+  remote: git://github.com/arusso/puppet-clamav.git
+  ref: master
+  sha: 536f79b3dee033ad2061fa5b2d1cdd0931c15623
+  specs:
+    clamav (0.0.1)
+      puppetlabs/stdlib (>= 2.6.0)
+
+GIT
   remote: git://github.com/derEremit/puppet-downloadfile.git
   ref: master
   sha: f60c8939068eca7045919a2fce5ce94eee4c11e4
@@ -120,6 +128,7 @@ DEPENDENCIES
   barbecue (>= 0)
   baseline (>= 0)
   build (>= 0)
+  clamav (>= 0)
   common (>= 0)
   downloadfile (>= 0)
   editfile (>= 0)

@@ -50,3 +50,5 @@ mod 'baseline',
 mod 'editfile',
     :git => 'git://github.com/mstrauss/puppet-editfile.git'
 
+mod 'clamav', 
+    :git => 'git://github.com/arusso/puppet-clamav.git'
