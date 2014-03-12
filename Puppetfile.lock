@@ -1,7 +1,7 @@
 FORGE
   remote: http://forge.puppetlabs.com
   specs:
-    puppetlabs/apt (1.4.1)
+    puppetlabs/apt (1.4.2)
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/stdlib (4.1.0)
     smarchive/archive (0.1.1)
@@ -9,9 +9,9 @@ FORGE
 GIT
   remote: git://github.com/arusso/puppet-clamav.git
   ref: master
-  sha: 536f79b3dee033ad2061fa5b2d1cdd0931c15623
+  sha: e124d53a9f2912351cd20fca9006985aea2656d6
   specs:
-    clamav (0.0.1)
+    clamav (0.0.2)
       puppetlabs/stdlib (>= 2.6.0)
 
 GIT
@@ -60,7 +60,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-build.git
   ref: master
-  sha: 51db10e6485f0ea69d3830f2dac768b386b191f8
+  sha: 257c54d4b8316600f0f9db3797226aa8b539f506
   specs:
     build (0.1.0)
 
@@ -81,7 +81,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-jdk.git
   ref: master
-  sha: e97207a098264a871badd2102586cb52025c2ec4
+  sha: 10d98210c0fe43bbb840384013fafb2cb70a47d0
   specs:
     jdk (0.0.1)
       puppetlabs/apt (>= 0.0.3)
@@ -100,6 +100,13 @@ GIT
   sha: 75882ca751fa1d0f93fd31bb420f318490dbbbbe
   specs:
     shell (0.0.1)
+
+GIT
+  remote: git://github.com/narkisr/puppet-ssmtp.git
+  ref: master
+  sha: 37c2367f43527181bf49ccf320ae57368e850298
+  specs:
+    ssmtp (0.1.0)
 
 GIT
   remote: git://github.com/narkisr/puppet-vagrant.git
@@ -140,6 +147,7 @@ DEPENDENCIES
   rvm (>= 0)
   shell (>= 0)
   smarchive/archive (>= 0)
+  ssmtp (>= 0)
   vagrant (>= 0)
   vim (>= 0)
   virtualbox (>= 0)

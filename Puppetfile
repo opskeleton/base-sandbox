@@ -52,3 +52,7 @@ mod 'editfile',
 
 mod 'clamav', 
     :git => 'git://github.com/arusso/puppet-clamav.git'
+
+
+mod 'ssmtp', 
+  :git => 'git://github.com/narkisr/puppet-ssmtp.git'
