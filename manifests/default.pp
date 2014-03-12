@@ -17,6 +17,14 @@ node default {
   include barbecue
   include barbecue::packages
   include vagrant
+
+  class {'ssmtp':
+    email => 'foo@gmail.com',
+    host  => 'smtp.gmail.com:587',
+    user  => 'foo',
+    pass  => 'bar'
+  }
+
   class {'desktop':
     home     => $home,
     username => $username
