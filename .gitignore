@@ -10,5 +10,5 @@ puppet.conf
 .tmp/
 modules/
 .librarian
-profiles
+profiles/
 pkg
