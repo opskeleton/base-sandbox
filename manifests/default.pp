@@ -66,7 +66,12 @@ if($environment == 'dev'){
   }
 
   backup::schedule {'s3-ex':
-    precondition => '-d /tmp'
+    precondition => '-d /tmp',
+    shapping     => {
+      interface  => 'eth0',
+      port       => '2222',
+      limit      => '45kbps'
+    }
   }
 
   include backup::copy
