@@ -4,7 +4,6 @@ FORGE
     puppetlabs/apt (1.4.2)
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/stdlib (4.1.0)
-    smarchive/archive (0.1.1)
 
 GIT
   remote: git://github.com/arusso/puppet-clamav.git
@@ -36,6 +35,13 @@ GIT
     editfile (0.0.1)
 
 GIT
+  remote: git://github.com/narkisr/puppet-archive.git
+  ref: master
+  sha: 3777199a329679174e38c088fb71adb1094f4a5a
+  specs:
+    archive (0.2.0)
+
+GIT
   remote: git://github.com/narkisr/puppet-backup.git
   ref: master
   sha: 166eadeba7d08a1bea39324429d05d6f212cf029
@@ -65,13 +71,6 @@ GIT
     build (0.1.0)
 
 GIT
-  remote: git://github.com/narkisr/puppet-common.git
-  ref: master
-  sha: 2d94636c91d7ce9a83f7669f370e246d2a784117
-  specs:
-    common (0.0.1)
-
-GIT
   remote: git://github.com/narkisr/puppet-git.git
   ref: master
   sha: e692ea7e34377c44e951bfd950f50460f88220ad
@@ -81,7 +80,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-jdk.git
   ref: master
-  sha: 10d98210c0fe43bbb840384013fafb2cb70a47d0
+  sha: a9a2e8bcfdee2e17e8a2d1b7952084c1c4b37646
   specs:
     jdk (0.0.1)
       puppetlabs/apt (>= 0.0.3)
@@ -131,12 +130,12 @@ GIT
       puppetlabs/apt (>= 1.1.0)
 
 DEPENDENCIES
+  archive (>= 0)
   backup (>= 0)
   barbecue (>= 0)
   baseline (>= 0)
   build (>= 0)
   clamav (>= 0)
-  common (>= 0)
   downloadfile (>= 0)
   editfile (>= 0)
   git (>= 0)
@@ -146,7 +145,6 @@ DEPENDENCIES
   puppetlabs/stdlib (>= 0)
   rvm (>= 0)
   shell (>= 0)
-  smarchive/archive (>= 0)
   ssmtp (>= 0)
   vagrant (>= 0)
   vim (>= 0)

@@ -3,9 +3,6 @@ forge "http://forge.puppetlabs.com"
 mod 'puppetlabs/stdlib'
 mod 'puppetlabs/apt'
 
-mod 'common', 
-  :git => 'git://github.com/narkisr/puppet-common.git'
-   
 mod 'rvm', 
   :git => 'git://github.com/maestrodev/puppet-rvm.git'
 
@@ -24,7 +21,8 @@ mod 'downloadfile',
 mod 'virtualbox',
  :git => 'git://github.com/narkisr/puppet-virtualbox.git'
 
-mod 'smarchive/archive'
+mod 'archive', 
+  :git => 'git://github.com/narkisr/puppet-archive.git'
 
 mod 'jdk',
   :git => 'git://github.com/narkisr/puppet-jdk.git'
@@ -52,7 +50,6 @@ mod 'editfile',
 
 mod 'clamav', 
     :git => 'git://github.com/arusso/puppet-clamav.git'
-
 
 mod 'ssmtp', 
   :git => 'git://github.com/narkisr/puppet-ssmtp.git'
