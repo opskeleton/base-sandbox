@@ -1,10 +1,9 @@
 require 'spec_helper'
 
-describe package('httpd') do
+describe package('esl-erlang') do
   it { should be_installed }
 end
 
-describe file('/etc/httpd/conf/httpd.conf') do
-  it { should be_file }
-  its(:content) { should match /ServerName default/ }
+describe file('/usr/share/elixir-v0.12.4') do
+  it { should be_directory}
 end
