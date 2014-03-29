@@ -1,6 +1,13 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+update = <<SCRIPT
+if [ ! -f /tmp/up ]; then
+  sudo aptitude update 
+  touch /tmp/up
+fi
+SCRIPT
+
 Vagrant.configure("2") do |config|
   config.vm.box = 'ubuntu-13.10_puppet-3.4.3'
   config.vm.hostname = 'puppet-base-env.local'
@@ -11,8 +18,7 @@ Vagrant.configure("2") do |config|
     vb.customize ['modifyvm', :id, '--memory', 2048, '--cpus', 4]
   end
 
-  config.vm.provision :shell, :inline => 'sudo aptitude update'
-
+  config.vm.provision :shell, :inline => update
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "manifests"
     puppet.manifest_file  = "default.pp"
