@@ -110,7 +110,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-vagrant.git
   ref: master
-  sha: b3f92e1d054daf3a3da9ee2d2466e7d9e444f1da
+  sha: 2772adaaaf0215829f8b7ff9b72b677b0cd3b626
   specs:
     vagrant (0.1.0)
 
