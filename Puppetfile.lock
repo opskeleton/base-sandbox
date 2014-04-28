@@ -44,7 +44,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-backup.git
   ref: master
-  sha: 0e550ebda7bf9e58169698ce20798225b9a4de7b
+  sha: 183baea6c8811edef455a3b7e1e58efbd8d9c38f
   specs:
     backup (0.1.0)
 
@@ -110,7 +110,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-vagrant.git
   ref: master
-  sha: bc4ec860f4ddbcdd1801c52db2f70de538c481f0
+  sha: 3ad65d31b97668dc0812c2683c710a5fb3b01086
   specs:
     vagrant (0.1.0)
 
