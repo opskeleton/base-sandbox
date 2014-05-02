@@ -8,7 +8,7 @@ FORGE
 GIT
   remote: git://github.com/arusso/puppet-clamav.git
   ref: master
-  sha: e124d53a9f2912351cd20fca9006985aea2656d6
+  sha: c8ee7256e89f59ca4a75788ab07113e4e3a6293f
   specs:
     clamav (0.0.2)
       puppetlabs/stdlib (>= 2.6.0)
