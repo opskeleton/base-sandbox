@@ -2,54 +2,56 @@ forge "http://forge.puppetlabs.com"
 
 mod 'puppetlabs/stdlib'
 mod 'puppetlabs/apt'
+mod 'mcanevet/btsync'
+mod 'garethr/docker'
 
-mod 'rvm', 
-  :git => 'git://github.com/maestrodev/puppet-rvm.git'
+mod 'narkisr/rvm', 
+   :git => 'git://github.com/narkisr/puppet-rvm.git'
 
-mod 'vim', 
-  :git => 'git://github.com/narkisr/puppet-vim.git'
+mod 'narkisr/vim', 
+    :git => 'git://github.com/narkisr/puppet-vim.git'
 
-mod 'build', 
+mod 'narkisr/build', 
   :git => 'git://github.com/narkisr/puppet-build.git'
 
-mod 'git', 
+mod 'narkisr/git', 
   :git => 'git://github.com/narkisr/puppet-git.git'
- 
-mod 'downloadfile', 
+
+mod 'derEremit/downloadfile', 
   :git => 'git://github.com/derEremit/puppet-downloadfile.git'
 
-mod 'virtualbox',
+mod 'narkisr/virtualbox',
  :git => 'git://github.com/narkisr/puppet-virtualbox.git'
 
-mod 'archive', 
+mod 'narkisr/archive', 
   :git => 'git://github.com/narkisr/puppet-archive.git'
 
-mod 'jdk',
+mod 'narkisr/jdk',
   :git => 'git://github.com/narkisr/puppet-jdk.git'
 
-mod 'backup',
+mod 'narkisr/backup',
   :git => 'git://github.com/narkisr/puppet-backup.git'
 
-mod 'barbecue', 
+mod 'narkisr/barbecue', 
   :git => 'git://github.com/narkisr/puppet-barbecue.git'
 
-mod 'shell', 
+mod 'narkisr/shell', 
   :git => 'git://github.com/narkisr/puppet-shell.git'
 
-mod 'langs', 
+mod 'narkisr/langs', 
   :git => 'git://github.com/narkisr/puppet-langs.git'
 
-mod 'vagrant', 
+mod 'narkisr/vagrant', 
   :git => 'git://github.com/narkisr/puppet-vagrant.git'
 
-mod 'baseline', 
+mod 'narkisr/baseline', 
   :git => 'git://github.com/narkisr/puppet-baseline.git'
 
-mod 'editfile',
+mod 'mstrauss/editfile',
     :git => 'git://github.com/mstrauss/puppet-editfile.git'
 
-mod 'clamav', 
+mod 'arusso/clamav', 
     :git => 'git://github.com/arusso/puppet-clamav.git'
 
-mod 'ssmtp', 
+mod 'narkisr/ssmtp', 
   :git => 'git://github.com/narkisr/puppet-ssmtp.git'
