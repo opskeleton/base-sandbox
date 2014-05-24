@@ -3,7 +3,6 @@ class desktop($username='',$home='') {
 
   if($desktop::is_desktop == 'true'){
 
-    include virtualbox
     include desktop::misc
     include desktop::tor
 
