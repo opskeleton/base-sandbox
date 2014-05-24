@@ -15,6 +15,8 @@ node default {
   include barbecue
   include barbecue::packages
   include vagrant
+  include docker
+  include virtualbox
 
   class {'ssmtp':
     email => 'foo@gmail.com',
