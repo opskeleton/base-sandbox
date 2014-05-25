@@ -10,13 +10,13 @@ FORGE
       theforeman/concat_native (>= 0.0.1)
     puppetlabs/apt (1.4.2)
       puppetlabs/stdlib (>= 2.2.1)
-    puppetlabs/stdlib (4.1.0)
+    puppetlabs/stdlib (4.2.1)
     theforeman/concat_native (1.3.1)
 
 GIT
   remote: git://github.com/arusso/puppet-clamav.git
   ref: master
-  sha: c8ee7256e89f59ca4a75788ab07113e4e3a6293f
+  sha: 6e64521e0fdf5f31870e43abb892fc71a6e18dc9
   specs:
     arusso/clamav (0.0.2)
       puppetlabs/stdlib (>= 2.6.0)
@@ -67,7 +67,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-build.git
   ref: master
-  sha: a502c3f8288a87675e82c2d1554b16c06101bb76
+  sha: 44ccb6e21c05e0bc5c20f9973fe8b3fe5f9b9c2c
   specs:
     narkisr/build (0.1.0)
 
@@ -90,7 +90,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-langs.git
   ref: master
-  sha: 8d375ac0f568795653e55f8a1335f63b493aac4f
+  sha: a30d0ac5b79fa127d369e0b3153ed501097e612b
   specs:
     narkisr/langs (0.0.1)
 
@@ -118,14 +118,14 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-vagrant.git
   ref: master
-  sha: 3ad65d31b97668dc0812c2683c710a5fb3b01086
+  sha: 9566b3e0bb1939ae5f4ceedd7e383b1bcaaab37c
   specs:
     narkisr/vagrant (0.1.0)
 
 GIT
   remote: git://github.com/narkisr/puppet-vim.git
   ref: master
-  sha: 6d79192d97a06cef6f45c59e22c0b3d1ca80e776
+  sha: f2c27ccf4773ea03a9f8b713fdcc46944ad46ce7
   specs:
     narkisr/vim (0.0.1)
 
