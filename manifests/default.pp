@@ -17,6 +17,7 @@ node default {
   include vagrant
   include docker
   include virtualbox
+  include kvm
 
   class {'ssmtp':
     email => 'foo@gmail.com',
