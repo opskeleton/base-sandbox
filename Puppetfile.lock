@@ -90,7 +90,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-langs.git
   ref: master
-  sha: a30d0ac5b79fa127d369e0b3153ed501097e612b
+  sha: aa82d5d723255ae76277faf1868f25c6ebac168e
   specs:
     narkisr/langs (0.0.1)
 

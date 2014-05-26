@@ -9,9 +9,8 @@ fi
 SCRIPT
 
 Vagrant.configure("2") do |config|
-  config.vm.box = 'ubuntu-13.10_puppet-3.4.3'
+  config.vm.box = 'ubuntu-14.04_puppet-3.4.2'
   config.vm.hostname = 'puppet-base-env.local'
-  # config.cache.auto_detect = true
   
   config.vm.network :public_network , { bridge: 'eth0' }
   config.vm.provider :virtualbox do |vb|
