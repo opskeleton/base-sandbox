@@ -78,42 +78,12 @@ if($environment == 'dev'){
   }
 
   include backup::copy
+  include backup::syncthing
 
   class{'backup::dropbox':
     headless => true
   }
 
-  include btsync::repo
-
-  file{'/home/vagrant/btsync_test':
-    ensure => directory,
-    owner  => vagrant,
-    group  => vagrant
-  } ->
-
-  class { 'btsync':
-    instances => {
-      vagrant => {
-        storage_path => '/home/vagrant/.sync',
-        use_upnp => false,
-        webui        => {
-          listen   => '0.0.0.0:8888',
-          login    => 'admin',
-          password => 'changeme',
-        },
-        shared_folders       => {
-          'MY_SECRET_1'      => {
-            dir              => '/home/vagrant/btsync_test',
-            use_relay_server => true,
-            use_tracker      => true,
-            use_dht          => true,
-            search_lan       => true,
-            use_sync_trash   => true
-          }
-        }
-      }
-    }
-  }
 }
 
 
