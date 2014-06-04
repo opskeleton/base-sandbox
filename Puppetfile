@@ -2,7 +2,6 @@ forge "http://forge.puppetlabs.com"
 
 mod 'puppetlabs/stdlib'
 mod 'puppetlabs/apt'
-# mod 'mcanevet/btsync'
 mod 'garethr/docker'
 
 mod 'narkisr/rvm', 
