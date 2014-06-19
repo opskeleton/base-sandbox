@@ -1,20 +1,14 @@
 FORGE
   remote: http://forge.puppetlabs.com
   specs:
-    garethr/docker (0.9.0)
+    garethr/docker (1.0.2)
       puppetlabs/apt (>= 1.1.0)
       puppetlabs/stdlib (>= 4.1.0)
+      stahnma/epel (>= 0.0.6)
     puppetlabs/apt (1.5.0)
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/stdlib (4.2.2)
-
-GIT
-  remote: git://github.com/arusso/puppet-clamav.git
-  ref: master
-  sha: 6e64521e0fdf5f31870e43abb892fc71a6e18dc9
-  specs:
-    arusso/clamav (0.0.2)
-      puppetlabs/stdlib (>= 2.6.0)
+    stahnma/epel (0.0.6)
 
 GIT
   remote: git://github.com/derEremit/puppet-downloadfile.git
@@ -67,6 +61,14 @@ GIT
     narkisr/build (0.1.0)
 
 GIT
+  remote: git://github.com/narkisr/puppet-clamav.git
+  ref: master
+  sha: 4035cd71c25a910216ee7a2b556a13e3e1d184df
+  specs:
+    narkisr/clamav (0.0.2)
+      puppetlabs/stdlib (>= 2.6.0)
+
+GIT
   remote: git://github.com/narkisr/puppet-git.git
   ref: master
   sha: b6fdf2c43a10fec6ec364a6b3e135537b3da4302
@@ -85,7 +87,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-langs.git
   ref: master
-  sha: fcacfae41dc4f4ba8ee0914dd88b5c1fe21753b1
+  sha: 8547d4347f2d315c64dc6ad0490933d29b4000be
   specs:
     narkisr/langs (0.0.1)
 
@@ -133,7 +135,6 @@ GIT
       puppetlabs/apt (>= 1.1.0)
 
 DEPENDENCIES
-  arusso/clamav (>= 0)
   derEremit/downloadfile (>= 0)
   garethr/docker (>= 0)
   mstrauss/editfile (>= 0)
@@ -142,6 +143,7 @@ DEPENDENCIES
   narkisr/barbecue (>= 0)
   narkisr/baseline (>= 0)
   narkisr/build (>= 0)
+  narkisr/clamav (>= 0)
   narkisr/git (>= 0)
   narkisr/jdk (>= 0)
   narkisr/langs (>= 0)

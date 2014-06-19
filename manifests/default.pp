@@ -37,10 +37,12 @@ node default {
 if($environment == 'dev'){
 
   include clamav
+
   clamav::scan { 'all-but-sys-and-dev':
     exclude_dir => ['(?i)/^\/(sys|dev)/'],
     scan        => ['/'],
     enable      => true,
+    email       => 'gookup@gmail.com'
   }
 
   $globs='- /home/vagrant/.*

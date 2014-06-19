@@ -49,8 +49,8 @@ mod 'narkisr/baseline',
 mod 'mstrauss/editfile',
     :git => 'git://github.com/mstrauss/puppet-editfile.git'
 
-mod 'arusso/clamav', 
-    :git => 'git://github.com/arusso/puppet-clamav.git'
+mod 'narkisr/clamav', 
+    :git => 'git://github.com/narkisr/puppet-clamav.git'
 
 mod 'narkisr/ssmtp', 
   :git => 'git://github.com/narkisr/puppet-ssmtp.git'
