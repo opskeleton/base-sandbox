@@ -4,6 +4,6 @@ describe package('esl-erlang') do
   it { should be_installed }
 end
 
-describe file('/usr/share/elixir-v0.12.4') do
+describe file('/usr/share/elixir-v0.14.0') do
   it { should be_directory}
 end
