@@ -80,7 +80,17 @@ if($environment == 'dev'){
   }
 
   include backup::copy
-  include backup::syncthing
+
+  $repos = {
+    appliances  => {
+      directory => '~/appliances-1',
+      ro        => false
+    }
+  }
+
+  class{'backup::syncthing':
+    repos => $repos
+  }
 
   class{'backup::dropbox':
     headless => true
