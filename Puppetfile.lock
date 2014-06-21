@@ -63,7 +63,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-clamav.git
   ref: master
-  sha: 4035cd71c25a910216ee7a2b556a13e3e1d184df
+  sha: 452cf62fbc1ef84365b6489c3a18dd4fba2e0bd2
   specs:
     narkisr/clamav (0.0.2)
       puppetlabs/stdlib (>= 2.6.0)
