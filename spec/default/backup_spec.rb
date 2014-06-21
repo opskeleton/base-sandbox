@@ -9,3 +9,7 @@ describe file('/opt/syncthing/.config/syncthing/config.xml') do
     it { should contain 'tls="true"' }
     it { should contain '~/appliances-1' }
 end
+
+describe service('syncthing') do
+    it { should be_running}
+end
