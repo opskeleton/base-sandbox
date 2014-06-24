@@ -8,7 +8,7 @@ FORGE
     puppetlabs/apt (1.5.0)
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/stdlib (4.2.2)
-    stahnma/epel (0.0.6)
+    stahnma/epel (0.1.0)
 
 GIT
   remote: git://github.com/derEremit/puppet-downloadfile.git
@@ -34,7 +34,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-backup.git
   ref: master
-  sha: 1911ccd6f7dae316b00ed49ec972ef9b19723f2e
+  sha: 3bf80a60f6c6ccfd6493c155a8b7bc4585c1b7ea
   specs:
     narkisr/backup (0.1.0)
 
@@ -71,7 +71,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-git.git
   ref: master
-  sha: b6fdf2c43a10fec6ec364a6b3e135537b3da4302
+  sha: 31a950eab408cc432d1098353325f53bc98eb69c
   specs:
     narkisr/git (0.0.1)
 
@@ -87,7 +87,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-langs.git
   ref: master
-  sha: 8547d4347f2d315c64dc6ad0490933d29b4000be
+  sha: 7692254e8b0cd92f363cad4378935200cb9b2a5b
   specs:
     narkisr/langs (0.0.1)
 
@@ -101,7 +101,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-shell.git
   ref: master
-  sha: 75882ca751fa1d0f93fd31bb420f318490dbbbbe
+  sha: de95f61610eedfc9f6adb51ed10d7d8c180064fd
   specs:
     narkisr/shell (0.0.1)
 
@@ -122,7 +122,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-vim.git
   ref: master
-  sha: f2c27ccf4773ea03a9f8b713fdcc46944ad46ce7
+  sha: a7b911d057cc1c172c70e0f90a88887f2ca1b04a
   specs:
     narkisr/vim (0.0.1)
 

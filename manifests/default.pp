@@ -1,10 +1,5 @@
 group{ 'puppet': ensure  => present }
 
-$username = hiera('user')
-$scm_user = hiera('scm_user')
-$scm_email = hiera('scm_email')
-$home = hiera('home')
-
 node default {
   include git
   include shell
@@ -18,17 +13,13 @@ node default {
   include docker
   include virtualbox
   include kvm
+  include desktop
 
   class {'ssmtp':
     email => 'foo@gmail.com',
     host  => 'smtp.gmail.com:587',
     user  => 'foo',
     pass  => 'bar'
-  }
-
-  class {'desktop':
-    home     => $home,
-    username => $username
   }
 
 
