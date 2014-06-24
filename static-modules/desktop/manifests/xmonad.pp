@@ -1,11 +1,11 @@
 # Setting up xmonad
-class desktop::xmonad($home='',$username='') {
-  $xmonad = "${home}/.xmonad"
+class desktop::xmonad {
+  $xmonad = "${desktop::home}/.xmonad"
 
   git::clone {$xmonad:
     url   => 'git://github.com/narkisr/xmonad-config.git',
     dst   => $xmonad,
-    owner => $username
+    owner => $desktop::user
   }
 
   package{['xmonad','xubuntu-desktop']:
@@ -13,10 +13,10 @@ class desktop::xmonad($home='',$username='') {
   }
 
   exec{'xmonad --recompile':
-    user    => 'root',
-    path    => ['/usr/bin','/bin'],
-    creates => "${xmonad}/xmonad.o",
-    environment => "HOME=${home}",
-    require => [Package['xmonad'], Git::Clone[$xmonad]]
+    user        => 'root',
+    path        => ['/usr/bin','/bin'],
+    creates     => "${xmonad}/xmonad.o",
+    environment => "HOME=${desktop::home}",
+    require     => [Package['xmonad'], Git::Clone[$xmonad]]
   }
 }
