@@ -34,14 +34,14 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-backup.git
   ref: master
-  sha: bddff24783c59a85e6c0b31bb39f261abb4b313e
+  sha: 0e7fa3017c59fea4f3f0730c6cac143f11a7b263
   specs:
     narkisr/backup (0.1.0)
 
 GIT
   remote: git://github.com/narkisr/puppet-barbecue.git
   ref: master
-  sha: eddd16bbc7a1673a92d3676e40d3cb5c4eb8301f
+  sha: 9ea5ff246dc1cfc315b6dd258dd733f8b4f8f3a1
   specs:
     narkisr/barbecue (0.0.1)
       puppetlabs/apt (>= 1.1.0)
