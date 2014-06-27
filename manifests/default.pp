@@ -1,5 +1,3 @@
-group{ 'puppet': ensure  => present }
-
 node default {
   include git
   include shell
@@ -14,19 +12,16 @@ node default {
   include virtualbox
   include kvm
   include desktop
-
-  class {'ssmtp':
-    email => 'foo@gmail.com',
-    host  => 'smtp.gmail.com:587',
-    user  => 'foo',
-    pass  => 'bar'
-  }
-
-
 }
 
-if($environment == 'dev'){
+node 'minimal.local'{
+  include apt
+  include shell
+  include baseline
+  include vim
+}
 
+node 'backup.local'{
   include clamav
 
   clamav::scan { 'all-but-sys-and-dev':
@@ -86,7 +81,6 @@ if($environment == 'dev'){
   class{'backup::dropbox':
     headless => true
   }
-
 }
 
 
