@@ -1,21 +1,25 @@
 --- 
 desktop::user: 'vagrant'         
 desktop::home: '/home/vagrant'
+
 shell::user: 'vagrant'         
 shell::home: '/home/vagrant'
+
 vim::user: 'vagrant'           
 vim::home: '/home/vagrant'     
+
 langs::ruby::user: 'vagrant'   
+
 git::user: 'vagrant'
 git::scm_user: 'vagrant'       
 git::scm_email: 'vagrant@gmail.com'
 
 backup::duply::passphrase: 'foobar'
-
 backup::copy::user: 'vagrant'
 backup::copy::sysuser: 'vagrant'
 backup::copy::folder: '/home/vagrant/.copy'
 
+baseline::home: '/home/vagrant'
 baseline::filesystem::ssds:
  - '/'
  - '/home'
