@@ -13,5 +13,5 @@ describe file('/etc/clamav/scans/email_scan') do
 end
 
 describe cron do
-    it { should have_entry '18 18 * * * /etc/clamav/scans/all-but-sys-and-dev' }
+    it { should have_entry '* * * /etc/clamav/scans/all-but-sys-and-dev' }
 end
