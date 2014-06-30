@@ -70,12 +70,19 @@ node 'backup.local'{
   $repos = {
     appliances  => {
       directory => '~/appliances-1',
-      ro        => false
+      ro        => false,
+      nodes     => ['1', '2']
     }
   }
 
+  $nodes = {
+    '1' => 'foo',
+    '2' => 'bar'
+  }
+
   class{'backup::syncthing':
-    repos => $repos
+    repos => $repos,
+    nodes => $nodes
   }
 
   class{'backup::dropbox':
