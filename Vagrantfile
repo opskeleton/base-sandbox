@@ -3,6 +3,7 @@
 
 update = <<SCRIPT
 if [ ! -f /tmp/up ]; then
+  sudo sed -i.bak s/us.archive/il.archive/g /etc/apt/sources.list
   sudo aptitude update 
   touch /tmp/up
 fi
@@ -14,7 +15,7 @@ Vagrant.configure("2") do |config|
     minimal.vm.box = 'ubuntu-14.04_puppet-3.6.1'
     minimal.vm.hostname = 'minimal.local'
 
-    minimal.vm.network :public_network , { bridge: 'wlan0' }
+    minimal.vm.network :public_network , { bridge: 'eth0' }
     minimal.vm.provider :virtualbox do |vb|
       vb.customize ['modifyvm', :id, '--memory', 2048, '--cpus', 4]
     end
@@ -31,7 +32,7 @@ Vagrant.configure("2") do |config|
     backup.vm.box = 'ubuntu-14.04_puppet-3.6.1'
     backup.vm.hostname = 'backup.local'
 
-    backup.vm.network :public_network , { bridge: 'wlan0' }
+    backup.vm.network :public_network , { bridge: 'eth0' }
     backup.vm.provider :virtualbox do |vb|
       vb.customize ['modifyvm', :id, '--memory', 2048, '--cpus', 4]
     end
