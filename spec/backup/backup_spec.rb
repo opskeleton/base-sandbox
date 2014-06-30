@@ -8,7 +8,7 @@ end
 # syncthing
 version = 'v0.8.16'
 
-describe file("/opt/syncthing-#{version}/.config/syncthing/config.xml") do
+describe file("/opt/syncthing/.config/config.xml") do
     it { should contain 'tls="true"' }
     it { should contain '~/appliances-1' }
 end
