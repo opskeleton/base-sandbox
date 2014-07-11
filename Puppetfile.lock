@@ -5,7 +5,7 @@ FORGE
       puppetlabs/apt (>= 1.1.0)
       puppetlabs/stdlib (>= 4.1.0)
       stahnma/epel (>= 0.0.6)
-    puppetlabs/apt (1.5.0)
+    puppetlabs/apt (1.5.1)
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/stdlib (4.2.2)
     stahnma/epel (0.1.0)
@@ -27,14 +27,14 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-archive.git
   ref: master
-  sha: 5b42753b2507985058d6a01afe78c0be189af4d4
+  sha: 3f4250dbc2b977845643e98ad24f427c24c845b1
   specs:
     narkisr/archive (0.2.0)
 
 GIT
   remote: git://github.com/narkisr/puppet-backup.git
   ref: master
-  sha: 077ed77db95a6b25185d4c5f51eac14ccdcdb196
+  sha: abaf450f3a7057d8ea9fa793e2c712dcf48a1161
   specs:
     narkisr/backup (0.1.0)
 
@@ -115,7 +115,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-vagrant.git
   ref: master
-  sha: e5a29060efe17483a7f95dcc7fba9ac0af00c6cb
+  sha: ea19d6a9c129f1bbd86c237aab009457a73780d2
   specs:
     narkisr/vagrant (0.1.0)
 
