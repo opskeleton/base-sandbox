@@ -1,4 +1,5 @@
 --- 
+home: '/home/vagrant'
 desktop::user: 'vagrant'         
 desktop::home: '/home/vagrant'
 

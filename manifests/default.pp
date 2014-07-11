@@ -21,6 +21,13 @@ node 'minimal.local'{
   include vim
 }
 
+node 'virtualized.local'{
+  include vagrant
+  include virtualbox
+  include kvm
+  include docker
+}
+
 node 'backup.local'{
   include clamav
 

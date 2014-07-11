@@ -45,5 +45,23 @@ Vagrant.configure("2") do |config|
     end
   end
 
+  config.vm.define :virtualized do |virtualized| 
+    virtualized.vm.box = 'ubuntu-14.04_puppet-3.6.1'
+    virtualized.vm.hostname = 'virtualized.local'
+
+    virtualized.vm.network :public_network , { bridge: 'eth0' }
+    virtualized.vm.provider :virtualbox do |vb|
+      vb.customize ['modifyvm', :id, '--memory', 2048, '--cpus', 4]
+    end
+
+    virtualized.vm.provision :shell, :inline => update
+    virtualized.vm.provision :puppet do |puppet|
+      puppet.manifests_path = "manifests"
+      puppet.manifest_file  = "default.pp"
+      puppet.options = "--modulepath=/vagrant/modules:/vagrant/static-modules --hiera_config /vagrant/hiera_vagrant.yaml --environment='dev'"
+    end
+  end
+
+
 
 end
