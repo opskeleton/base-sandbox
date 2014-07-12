@@ -44,6 +44,11 @@ namespace :serverspec do
     t.pattern = 'spec/backup/*_spec.rb'
   end
 
+  ServerspecTask.new(:virtualized) do |t|
+    t.target = 'virtualized'
+    t.pattern = 'spec/virtualized/*_spec.rb'
+  end
+
   ServerspecTask.new(:desktop) do |t|
     t.target = 'desktop'
     t.pattern = 'spec/desktop/*_spec.rb'
