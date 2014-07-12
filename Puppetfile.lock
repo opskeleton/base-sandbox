@@ -101,7 +101,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-shell.git
   ref: master
-  sha: 8e9a67371cee74093c3fa9af5aae8ed3e0b579b9
+  sha: a09452f14682888b08a070a7acb6f7b53094c3d4
   specs:
     narkisr/shell (0.0.1)
 
@@ -115,7 +115,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-vagrant.git
   ref: master
-  sha: ea19d6a9c129f1bbd86c237aab009457a73780d2
+  sha: 1c342315a1bdbf80003f22b3582b08f865e5b517
   specs:
     narkisr/vagrant (0.1.0)
 
