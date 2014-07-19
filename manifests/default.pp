@@ -17,8 +17,9 @@ node default {
 node 'minimal.local'{
   include apt
   include shell
-  include baseline
   include vim
+  include baseline
+  include baseline::update
 }
 
 node 'virtualized.local'{
