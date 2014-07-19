@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
     minimal.vm.box = 'ubuntu-14.04_puppet-3.6.1'
     minimal.vm.hostname = 'minimal.local'
 
-    minimal.vm.network :public_network , { bridge: 'eth0' }
+    minimal.vm.network :private_network, ip: "192.168.1.25"
     minimal.vm.provider :virtualbox do |vb|
       vb.customize ['modifyvm', :id, '--memory', 2048, '--cpus', 4]
     end
@@ -32,7 +32,6 @@ Vagrant.configure("2") do |config|
     backup.vm.box = 'ubuntu-14.04_puppet-3.6.1'
     backup.vm.hostname = 'backup.local'
 
-    backup.vm.network :public_network , { bridge: 'eth0' }
     backup.vm.provider :virtualbox do |vb|
       vb.customize ['modifyvm', :id, '--memory', 2048, '--cpus', 4]
     end
@@ -49,7 +48,6 @@ Vagrant.configure("2") do |config|
     virtualized.vm.box = 'ubuntu-14.04_puppet-3.6.1'
     virtualized.vm.hostname = 'virtualized.local'
 
-    virtualized.vm.network :public_network , { bridge: 'eth0' }
     virtualized.vm.provider :virtualbox do |vb|
       vb.customize ['modifyvm', :id, '--memory', 2048, '--cpus', 4]
     end
