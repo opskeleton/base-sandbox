@@ -12,3 +12,4 @@ modules/
 .librarian
 profiles/
 pkg
+local_deploy.clj
