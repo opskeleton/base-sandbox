@@ -1,4 +1,4 @@
-forge "http://forge.puppetlabs.com"
+forge "https://forgeapi.puppetlabs.com"
 
 mod 'puppetlabs/stdlib'
 mod 'puppetlabs/apt'
@@ -23,16 +23,13 @@ mod 'narkisr/virtualbox',
  :git => 'git://github.com/narkisr/puppet-virtualbox.git'
 
 mod 'narkisr/archive', 
-  :git => 'git://github.com/narkisr/puppet-archive.git'
+ :git => 'git://github.com/narkisr/puppet-archive.git'
 
 mod 'narkisr/jdk',
   :git => 'git://github.com/narkisr/puppet-jdk.git'
 
 mod 'narkisr/backup',
   :git => 'git://github.com/narkisr/puppet-backup.git'
-
-mod 'narkisr/barbecue', 
-  :git => 'git://github.com/narkisr/puppet-barbecue.git'
 
 mod 'narkisr/shell', 
   :git => 'git://github.com/narkisr/puppet-shell.git'
@@ -54,3 +51,8 @@ mod 'narkisr/clamav',
 
 mod 'narkisr/ssmtp', 
   :git => 'git://github.com/narkisr/puppet-ssmtp.git'
+
+# mod 'narkisr/barbecue', 
+  # :git => 'git://github.com/narkisr/puppet-barbecue.git'
+
+

@@ -1,158 +1,149 @@
 FORGE
-  remote: http://forge.puppetlabs.com
+  remote: https://forgeapi.puppetlabs.com
   specs:
-    garethr/docker (1.1.3)
-      puppetlabs/apt (>= 1.1.0)
-      puppetlabs/stdlib (>= 4.1.0)
-      stahnma/epel (>= 0.0.6)
-    puppetlabs/apt (1.5.1)
-      puppetlabs/stdlib (>= 2.2.1)
-    puppetlabs/stdlib (4.2.2)
-    stahnma/epel (0.1.0)
+    garethr-docker (1.1.3)
+      puppetlabs-apt (>= 1.1.0)
+      puppetlabs-stdlib (>= 4.1.0)
+      stahnma-epel (>= 0.0.6)
+    puppetlabs-apt (1.5.2)
+      puppetlabs-stdlib (>= 2.2.1)
+    puppetlabs-stdlib (4.3.2)
+    stahnma-epel (0.1.0)
 
 GIT
   remote: git://github.com/derEremit/puppet-downloadfile.git
   ref: master
   sha: f60c8939068eca7045919a2fce5ce94eee4c11e4
   specs:
-    derEremit/downloadfile (0.0.1)
+    derEremit-downloadfile (0.0.1)
 
 GIT
   remote: git://github.com/mstrauss/puppet-editfile.git
   ref: master
   sha: 884efdc0997af667f24625e696630e6b1db5a952
   specs:
-    mstrauss/editfile (0.0.1)
+    mstrauss-editfile (0.0.1)
 
 GIT
   remote: git://github.com/narkisr/puppet-archive.git
   ref: master
   sha: 3f4250dbc2b977845643e98ad24f427c24c845b1
   specs:
-    narkisr/archive (0.2.0)
+    narkisr-archive (0.2.0)
 
 GIT
   remote: git://github.com/narkisr/puppet-backup.git
   ref: master
   sha: abaf450f3a7057d8ea9fa793e2c712dcf48a1161
   specs:
-    narkisr/backup (0.1.0)
-
-GIT
-  remote: git://github.com/narkisr/puppet-barbecue.git
-  ref: master
-  sha: 9ea5ff246dc1cfc315b6dd258dd733f8b4f8f3a1
-  specs:
-    narkisr/barbecue (0.0.1)
-      puppetlabs/apt (>= 1.1.0)
+    narkisr-backup (0.1.0)
 
 GIT
   remote: git://github.com/narkisr/puppet-baseline.git
   ref: master
-  sha: 3e05512af5579afc278af9ebe24c5e6af9d7956f
+  sha: 2a1c8ab084c7f6e7e7e59c19202485d9b7f6958f
   specs:
-    narkisr/baseline (0.0.1)
+    narkisr-baseline (0.0.1)
 
 GIT
   remote: git://github.com/narkisr/puppet-build.git
   ref: master
   sha: 44ccb6e21c05e0bc5c20f9973fe8b3fe5f9b9c2c
   specs:
-    narkisr/build (0.1.0)
+    narkisr-build (0.1.0)
 
 GIT
   remote: git://github.com/narkisr/puppet-clamav.git
   ref: master
   sha: 452cf62fbc1ef84365b6489c3a18dd4fba2e0bd2
   specs:
-    narkisr/clamav (0.0.2)
-      puppetlabs/stdlib (>= 2.6.0)
+    narkisr-clamav (0.0.2)
+      puppetlabs-stdlib (>= 2.6.0)
 
 GIT
   remote: git://github.com/narkisr/puppet-git.git
   ref: master
   sha: 31a950eab408cc432d1098353325f53bc98eb69c
   specs:
-    narkisr/git (0.0.1)
+    narkisr-git (0.0.1)
 
 GIT
   remote: git://github.com/narkisr/puppet-jdk.git
   ref: master
   sha: a9a2e8bcfdee2e17e8a2d1b7952084c1c4b37646
   specs:
-    narkisr/jdk (0.0.1)
-      puppetlabs/apt (>= 0.0.3)
-      puppetlabs/stdlib (>= 2.0.0)
+    narkisr-jdk (0.0.1)
+      puppetlabs-apt (>= 0.0.3)
+      puppetlabs-stdlib (>= 2.0.0)
 
 GIT
   remote: git://github.com/narkisr/puppet-langs.git
   ref: master
   sha: 7692254e8b0cd92f363cad4378935200cb9b2a5b
   specs:
-    narkisr/langs (0.0.1)
+    narkisr-langs (0.0.1)
 
 GIT
   remote: git://github.com/narkisr/puppet-rvm.git
   ref: master
   sha: 773cfc40038b876478e26a81fb503b20fc380e14
   specs:
-    narkisr/rvm (1.0.0)
+    narkisr-rvm (1.0.0)
 
 GIT
   remote: git://github.com/narkisr/puppet-shell.git
   ref: master
   sha: 2728ddfcd88648cea40e58250bc17e142dc078a3
   specs:
-    narkisr/shell (0.0.1)
+    narkisr-shell (0.0.1)
 
 GIT
   remote: git://github.com/narkisr/puppet-ssmtp.git
   ref: master
   sha: ab81fefbba12c4c4c127c6cf8d2b963f19a7f4c5
   specs:
-    narkisr/ssmtp (0.1.0)
+    narkisr-ssmtp (0.1.0)
 
 GIT
   remote: git://github.com/narkisr/puppet-vagrant.git
   ref: master
   sha: 1c342315a1bdbf80003f22b3582b08f865e5b517
   specs:
-    narkisr/vagrant (0.1.0)
+    narkisr-vagrant (0.1.0)
 
 GIT
   remote: git://github.com/narkisr/puppet-vim.git
   ref: master
   sha: 938e40feefb8a5b917376b05f13fa7aac15064cf
   specs:
-    narkisr/vim (0.0.1)
+    narkisr-vim (0.0.1)
 
 GIT
   remote: git://github.com/narkisr/puppet-virtualbox.git
   ref: master
   sha: c88a4199897388979ca82c1f5e2e97aa38812ec3
   specs:
-    narkisr/virtualbox (0.2.4)
-      puppetlabs/apt (>= 1.1.0)
+    narkisr-virtualbox (0.2.4)
+      puppetlabs-apt (>= 1.1.0)
 
 DEPENDENCIES
-  derEremit/downloadfile (>= 0)
-  garethr/docker (>= 0)
-  mstrauss/editfile (>= 0)
-  narkisr/archive (>= 0)
-  narkisr/backup (>= 0)
-  narkisr/barbecue (>= 0)
-  narkisr/baseline (>= 0)
-  narkisr/build (>= 0)
-  narkisr/clamav (>= 0)
-  narkisr/git (>= 0)
-  narkisr/jdk (>= 0)
-  narkisr/langs (>= 0)
-  narkisr/rvm (>= 0)
-  narkisr/shell (>= 0)
-  narkisr/ssmtp (>= 0)
-  narkisr/vagrant (>= 0)
-  narkisr/vim (>= 0)
-  narkisr/virtualbox (>= 0)
-  puppetlabs/apt (>= 0)
-  puppetlabs/stdlib (>= 0)
+  derEremit-downloadfile (>= 0)
+  garethr-docker (>= 0)
+  mstrauss-editfile (>= 0)
+  narkisr-archive (>= 0)
+  narkisr-backup (>= 0)
+  narkisr-baseline (>= 0)
+  narkisr-build (>= 0)
+  narkisr-clamav (>= 0)
+  narkisr-git (>= 0)
+  narkisr-jdk (>= 0)
+  narkisr-langs (>= 0)
+  narkisr-rvm (>= 0)
+  narkisr-shell (>= 0)
+  narkisr-ssmtp (>= 0)
+  narkisr-vagrant (>= 0)
+  narkisr-vim (>= 0)
+  narkisr-virtualbox (>= 0)
+  puppetlabs-apt (>= 0)
+  puppetlabs-stdlib (>= 0)
 
