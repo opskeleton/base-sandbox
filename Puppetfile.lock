@@ -34,7 +34,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-backup.git
   ref: master
-  sha: abaf450f3a7057d8ea9fa793e2c712dcf48a1161
+  sha: 4ca0a0ed426b0510b2bc5209c08cfb3308470e9d
   specs:
     narkisr-backup (0.1.0)
 
@@ -100,7 +100,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-ssmtp.git
   ref: master
-  sha: ab81fefbba12c4c4c127c6cf8d2b963f19a7f4c5
+  sha: 47b71687fc8e29ebcc28cd4d44f729d79e3b45e8
   specs:
     narkisr-ssmtp (0.1.0)
 
