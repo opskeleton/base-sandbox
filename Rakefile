@@ -34,29 +34,11 @@ end
 
 namespace :serverspec do
 
-  ServerspecTask.new(:minimal) do |t|
-    t.target = 'minimal'
-    t.pattern = 'spec/minimal/*_spec.rb'
-  end
-
-  ServerspecTask.new(:backup) do |t|
-    t.target = 'backup'
-    t.pattern = 'spec/backup/*_spec.rb'
-  end
-
-  ServerspecTask.new(:virtualized) do |t|
-    t.target = 'virtualized'
-    t.pattern = 'spec/virtualized/*_spec.rb'
-  end
-
-  ServerspecTask.new(:desktop) do |t|
-    t.target = 'desktop'
-    t.pattern = 'spec/desktop/*_spec.rb'
-  end
-
-  ServerspecTask.new(:full) do |t|
-    t.target = 'full'
-    t.pattern = 'spec/full/*_spec.rb'
+  %w(langs minimal backup virtualized desktop full).each do |profile|
+    ServerspecTask.new(profile.to_sym) do |t|
+	t.target = profile 
+	t.pattern = "spec/#{profile}/*_spec.rb"
+    end
   end
 end
 
