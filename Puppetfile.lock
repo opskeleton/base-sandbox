@@ -9,6 +9,7 @@ FORGE
       puppetlabs-stdlib (>= 2.2.1)
     puppetlabs-stdlib (4.3.2)
     stahnma-epel (0.1.0)
+    stankevich-python (1.7.8)
 
 GIT
   remote: git://github.com/derEremit/puppet-downloadfile.git
@@ -93,9 +94,10 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-shell.git
   ref: master
-  sha: 2728ddfcd88648cea40e58250bc17e142dc078a3
+  sha: f922137f0b403154448f3a58b9898dbce1727d1a
   specs:
     narkisr-shell (0.0.1)
+      stankevich-python (>= 1.7.8)
 
 GIT
   remote: git://github.com/narkisr/puppet-ssmtp.git

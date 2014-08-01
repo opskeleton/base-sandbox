@@ -11,7 +11,7 @@ SCRIPT
 
 Vagrant.configure("2") do |config|
 
-  %w(langs minimal backup virtualized logging).each do |type|
+  %w(pythonized langs minimal backup virtualized logging).each do |type|
     config.vm.define type.to_sym do |node| 
       node.vm.box = 'ubuntu-14.04_puppet-3.6.1'
       node.vm.hostname = "#{type}.local"
