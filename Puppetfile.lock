@@ -35,7 +35,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-backup.git
   ref: master
-  sha: 4ca0a0ed426b0510b2bc5209c08cfb3308470e9d
+  sha: bbde61bc05b755fa0d8985bd5a89348083a0caef
   specs:
     narkisr-backup (0.1.0)
 
@@ -94,9 +94,9 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-shell.git
   ref: master
-  sha: f922137f0b403154448f3a58b9898dbce1727d1a
+  sha: e5bfb2bebeeaac161f60f261c39a1af08780b4e5
   specs:
-    narkisr-shell (0.0.1)
+    narkisr-shell (0.2.0)
       stankevich-python (>= 1.7.8)
 
 GIT

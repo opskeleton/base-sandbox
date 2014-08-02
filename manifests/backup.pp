@@ -65,6 +65,8 @@ node 'backup.local'{
   class{'backup::dropbox':
     headless => true
   }
+
+  include backup::attic
 }
 
 
