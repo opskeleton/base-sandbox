@@ -1,0 +1,21 @@
+# settings up zfs user
+class zfs::user {
+
+  group{'zfs':
+    ensure  => present
+  } ->
+
+  user{'zfs':
+    ensure  => present,
+    comment => 'zfs',
+  }
+
+  file {'/etc/sudoers.d/zfs':
+    ensure=> file,
+    mode  => '0644',
+    source=> 'puppet:///modules/zfs/sudo-zfs',
+    owner => root,
+    group => root,
+  }
+
+}
