@@ -53,8 +53,8 @@ node 'backup.local'{
   }
 
   $nodes = {
-    '1' => 'foo',
-    '2' => 'bar'
+    '1' => {name => 'foo' , address => 'foo:1234'} ,
+    '2' => {name => 'bar' address   => 'bar:22000'} 
   }
 
   class{'backup::syncthing':
