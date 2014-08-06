@@ -29,7 +29,7 @@ class kvm {
   } ~>
 
   exec{'/sbin/sysctl -p':
-    user         => 'root',
+    user        => 'root',
     refreshonly => true
   }
 }
