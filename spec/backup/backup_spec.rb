@@ -6,9 +6,9 @@ describe file('/etc/duply/s3-ex/conf') do
 end
 
 # syncthing
-version = 'v0.8.16'
+version = 'v0.8.17'
 
-describe file("/opt/syncthing/.config/config.xml") do
+describe file("/opt/syncthing/.config/syncthing/config.xml") do
     it { should contain 'tls="true"' }
     it { should contain '~/appliances-1' }
 end
