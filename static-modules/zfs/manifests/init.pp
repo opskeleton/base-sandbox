@@ -2,6 +2,7 @@
 class zfs {
   ensure_resource('class','apt',{})
   include zfs::user
+  include zfs::sync
 
   apt::ppa{'ppa:zfs-native/stable':} ->
 
@@ -25,11 +26,4 @@ class zfs {
     group => root,
   }
 
-  file { '/usr/local/bin/zfs-recieve':
-    ensure=> file,
-    mode  => '0644',
-    source=> 'puppet:///modules/zfs/zfs-recieve',
-    owner => root,
-    group => root,
-  }
 }

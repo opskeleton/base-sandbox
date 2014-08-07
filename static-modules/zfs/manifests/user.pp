@@ -6,8 +6,8 @@ class zfs::user {
   } ->
 
   user{'zfs':
-    ensure  => present,
-    comment => 'zfs',
+    ensure => present,
+    groups => 'zfs',
   }
 
   file {'/etc/sudoers.d/zfs':

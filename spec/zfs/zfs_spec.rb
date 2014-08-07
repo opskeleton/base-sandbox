@@ -8,4 +8,3 @@ describe file('/etc/sudoers.d/zfs') do
   it { should contain 'C_ZFS' }
 end
 
-
