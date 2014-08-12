@@ -14,3 +14,4 @@ profiles/
 pkg
 local_deploy.clj
 third-party.log
+hieradata/physical.yaml
