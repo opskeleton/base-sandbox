@@ -1,7 +1,7 @@
 FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
-    garethr-docker (1.1.3)
+    garethr-docker (1.1.4)
       puppetlabs-apt (>= 1.1.0)
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
@@ -9,7 +9,8 @@ FORGE
       puppetlabs-stdlib (>= 2.2.1)
     puppetlabs-stdlib (4.3.2)
     stahnma-epel (0.1.0)
-    stankevich-python (1.7.8)
+    stankevich-python (1.7.9)
+      puppetlabs-stdlib (>= 4.0.0)
 
 GIT
   remote: git://github.com/derEremit/puppet-downloadfile.git
@@ -35,7 +36,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-backup.git
   ref: master
-  sha: ac6ebbe1ca84f907f093dc3ed7e4a8d31a1ff8e1
+  sha: 05ee832a99da6a5ec1120564607f371c886a30e8
   specs:
     narkisr-backup (0.1.0)
 
