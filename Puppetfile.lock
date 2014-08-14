@@ -20,13 +20,6 @@ GIT
     derEremit-downloadfile (0.0.1)
 
 GIT
-  remote: git://github.com/mstrauss/puppet-editfile.git
-  ref: master
-  sha: 884efdc0997af667f24625e696630e6b1db5a952
-  specs:
-    mstrauss-editfile (0.0.1)
-
-GIT
   remote: git://github.com/narkisr/puppet-archive.git
   ref: master
   sha: 3f4250dbc2b977845643e98ad24f427c24c845b1
@@ -63,6 +56,13 @@ GIT
       puppetlabs-stdlib (>= 2.6.0)
 
 GIT
+  remote: git://github.com/narkisr/puppet-editfile.git
+  ref: master
+  sha: cb513b37b185375454bf2f767fa8ea2b992595dd
+  specs:
+    narkisr-editfile (0.1.0)
+
+GIT
   remote: git://github.com/narkisr/puppet-git.git
   ref: master
   sha: 31a950eab408cc432d1098353325f53bc98eb69c
@@ -84,6 +84,14 @@ GIT
   sha: d16728ed5fcc07a4cc2c4351d528a00227557283
   specs:
     narkisr-langs (0.0.1)
+
+GIT
+  remote: git://github.com/narkisr/puppet-logging.git
+  ref: master
+  sha: 33de353113de00854bade66831aa9bd2ff4f4c2a
+  specs:
+    narkisr-logging (0.0.1)
+      puppetlabs-stdlib (>= 0)
 
 GIT
   remote: git://github.com/narkisr/puppet-rvm.git
@@ -132,15 +140,16 @@ GIT
 DEPENDENCIES
   derEremit-downloadfile (>= 0)
   garethr-docker (>= 0)
-  mstrauss-editfile (>= 0)
   narkisr-archive (>= 0)
   narkisr-backup (>= 0)
   narkisr-baseline (>= 0)
   narkisr-build (>= 0)
   narkisr-clamav (>= 0)
+  narkisr-editfile (>= 0)
   narkisr-git (>= 0)
   narkisr-jdk (>= 0)
   narkisr-langs (>= 0)
+  narkisr-logging (>= 0)
   narkisr-rvm (>= 0)
   narkisr-shell (>= 0)
   narkisr-ssmtp (>= 0)

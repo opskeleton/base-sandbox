@@ -43,14 +43,17 @@ mod 'narkisr/vagrant',
 mod 'narkisr/baseline', 
   :git => 'git://github.com/narkisr/puppet-baseline.git'
 
-mod 'mstrauss/editfile',
-    :git => 'git://github.com/mstrauss/puppet-editfile.git'
+mod 'narkisr/editfile',
+    :git => 'git://github.com/narkisr/puppet-editfile.git'
 
 mod 'narkisr/clamav', 
     :git => 'git://github.com/narkisr/puppet-clamav.git'
 
 mod 'narkisr/ssmtp', 
   :git => 'git://github.com/narkisr/puppet-ssmtp.git'
+
+mod 'narkisr/logging', 
+  :git => 'git://github.com/narkisr/puppet-logging.git'
 
 # mod 'narkisr/barbecue', 
   # :git => 'git://github.com/narkisr/puppet-barbecue.git'
