@@ -55,6 +55,10 @@ mod 'narkisr/ssmtp',
 mod 'narkisr/logging', 
   :git => 'git://github.com/narkisr/puppet-logging.git'
 
+mod 'narkisr/desktop', 
+  :git => 'git://github.com/narkisr/puppet-desktop.git'
+
+
 # mod 'narkisr/barbecue', 
   # :git => 'git://github.com/narkisr/puppet-barbecue.git'
 

@@ -49,6 +49,13 @@ GIT
       puppetlabs-stdlib (>= 2.6.0)
 
 GIT
+  remote: git://github.com/narkisr/puppet-desktop.git
+  ref: master
+  sha: 5d50dd9ce381afc2b215593381c781b082cb26d2
+  specs:
+    narkisr-desktop (0.1.0)
+
+GIT
   remote: git://github.com/narkisr/puppet-downloadfile.git
   ref: master
   sha: d15eff627fc8051e58950b6b961f5157ecf4c8ca
@@ -144,6 +151,7 @@ DEPENDENCIES
   narkisr-baseline (>= 0)
   narkisr-build (>= 0)
   narkisr-clamav (>= 0)
+  narkisr-desktop (>= 0)
   narkisr-downloadfile (>= 0)
   narkisr-editfile (>= 0)
   narkisr-git (>= 0)
