@@ -13,13 +13,6 @@ FORGE
       puppetlabs-stdlib (>= 4.0.0)
 
 GIT
-  remote: git://github.com/derEremit/puppet-downloadfile.git
-  ref: master
-  sha: f60c8939068eca7045919a2fce5ce94eee4c11e4
-  specs:
-    derEremit-downloadfile (0.0.1)
-
-GIT
   remote: git://github.com/narkisr/puppet-archive.git
   ref: master
   sha: 3f4250dbc2b977845643e98ad24f427c24c845b1
@@ -56,6 +49,13 @@ GIT
       puppetlabs-stdlib (>= 2.6.0)
 
 GIT
+  remote: git://github.com/narkisr/puppet-downloadfile.git
+  ref: master
+  sha: d15eff627fc8051e58950b6b961f5157ecf4c8ca
+  specs:
+    narkisr-downloadfile (0.0.1)
+
+GIT
   remote: git://github.com/narkisr/puppet-editfile.git
   ref: master
   sha: cb513b37b185375454bf2f767fa8ea2b992595dd
@@ -88,7 +88,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-logging.git
   ref: master
-  sha: 33de353113de00854bade66831aa9bd2ff4f4c2a
+  sha: c79c58e7755ca662b1a9ba19103d5566656bbd87
   specs:
     narkisr-logging (0.0.1)
       puppetlabs-stdlib (>= 0)
@@ -138,13 +138,13 @@ GIT
       puppetlabs-apt (>= 1.1.0)
 
 DEPENDENCIES
-  derEremit-downloadfile (>= 0)
   garethr-docker (>= 0)
   narkisr-archive (>= 0)
   narkisr-backup (>= 0)
   narkisr-baseline (>= 0)
   narkisr-build (>= 0)
   narkisr-clamav (>= 0)
+  narkisr-downloadfile (>= 0)
   narkisr-editfile (>= 0)
   narkisr-git (>= 0)
   narkisr-jdk (>= 0)

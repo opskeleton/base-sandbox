@@ -34,7 +34,7 @@ end
 
 namespace :serverspec do
 
-  %w(zfs langs minimal backup virtualized desktop full).each do |profile|
+  %w(logging zfs langs minimal backup virtualized desktop full).each do |profile|
     ServerspecTask.new(profile.to_sym) do |t|
 	t.target = profile 
 	t.pattern = "spec/#{profile}/*_spec.rb"

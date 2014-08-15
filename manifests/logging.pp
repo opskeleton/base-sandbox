@@ -1,10 +1,11 @@
 node 'logging.local'{
-  include apt
+  include logging::sysdig
 
   class{'logging::logwatch':
     email    => 'foo@gmail.com',
     mailfrom => 'bar@gmail.com'
   }
+
 
   class{'ssmtp':
     email   => 'foo@gmail.com',

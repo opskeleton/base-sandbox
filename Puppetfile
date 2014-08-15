@@ -16,8 +16,8 @@ mod 'narkisr/build',
 mod 'narkisr/git', 
   :git => 'git://github.com/narkisr/puppet-git.git'
 
-mod 'derEremit/downloadfile', 
-  :git => 'git://github.com/derEremit/puppet-downloadfile.git'
+mod 'narkisr/downloadfile', 
+  :git => 'git://github.com/narkisr/puppet-downloadfile.git'
 
 mod 'narkisr/virtualbox',
  :git => 'git://github.com/narkisr/puppet-virtualbox.git'
