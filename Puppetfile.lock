@@ -1,6 +1,8 @@
 FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
+    attachmentgenie-ufw (1.4.9)
+      puppetlabs-stdlib (>= 2.2.1)
     garethr-docker (1.1.4)
       puppetlabs-apt (>= 1.1.0)
       puppetlabs-stdlib (>= 4.1.0)
@@ -51,9 +53,10 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-desktop.git
   ref: master
-  sha: 5d50dd9ce381afc2b215593381c781b082cb26d2
+  sha: a8f65435614e7dfd432d446ebf3929022dab93ac
   specs:
     narkisr-desktop (0.1.0)
+      attachmentgenie-ufw (>= 1.4.9)
 
 GIT
   remote: git://github.com/narkisr/puppet-downloadfile.git
