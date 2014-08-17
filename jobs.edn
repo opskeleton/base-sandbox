@@ -1,0 +1,15 @@
+{
+ :jobs [
+    {:name "puppet-base-env"
+     :repo "git://github.com/narkisr/puppet-base-env.git" 
+     :target "/tmp/puppet-base-env" 
+     :steps [
+        {:cmd "bundle" :args ["install"] :timeout 1200}
+        {:cmd "librarian-puppet" :args ["install"] :timeout 1200}
+        {:cmd "rake" :args ["serverspec:minimal"] :timeout 1200}
+        {:cmd "vagrant" :args ["destroy" "-f"] :timeout 600}
+     ]
+     :poll 300000
+    }
+  ]
+} 
