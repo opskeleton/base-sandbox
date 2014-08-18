@@ -98,7 +98,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-logging.git
   ref: master
-  sha: c79c58e7755ca662b1a9ba19103d5566656bbd87
+  sha: 8b3944afb84cf7fcf740c0ff57ec1498e9363318
   specs:
     narkisr-logging (0.0.1)
       puppetlabs-stdlib (>= 0)
