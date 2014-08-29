@@ -3,14 +3,14 @@ FORGE
   specs:
     attachmentgenie-ufw (1.4.9)
       puppetlabs-stdlib (>= 2.2.1)
-    garethr-docker (1.2.0)
+    garethr-docker (1.2.2)
       puppetlabs-apt (>= 1.1.0)
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
     puppetlabs-apt (1.6.0)
       puppetlabs-stdlib (>= 2.2.1)
     puppetlabs-stdlib (4.3.2)
-    stahnma-epel (0.1.0)
+    stahnma-epel (0.1.1)
     stankevich-python (1.7.9)
       puppetlabs-stdlib (>= 4.0.0)
 
@@ -53,7 +53,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-desktop.git
   ref: master
-  sha: 6c98615fdce97730d799bfa939926e8e7be2f599
+  sha: a25ffef4c953170bdd62c6461821cb24d4ada625
   specs:
     narkisr-desktop (0.1.0)
       attachmentgenie-ufw (>= 1.4.9)
@@ -75,7 +75,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-git.git
   ref: master
-  sha: 31a950eab408cc432d1098353325f53bc98eb69c
+  sha: 04ccc3f8676621f85725f1920117c55055e1bb5c
   specs:
     narkisr-git (0.0.1)
 
