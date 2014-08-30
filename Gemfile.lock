@@ -86,13 +86,13 @@ GEM
     rspec-mocks (2.99.2)
     rspec-puppet (1.0.1)
       rspec
-    serverspec (1.11.0)
+    serverspec (1.14.0)
       highline
       net-ssh
       rspec (~> 2.99)
       rspec-its
-      specinfra (~> 1.22)
-    specinfra (1.25.2)
+      specinfra (~> 1.25)
+    specinfra (1.25.8)
     thor (0.19.1)
     thread_safe (0.3.4)
     tzinfo (1.2.2)
@@ -109,4 +109,4 @@ DEPENDENCIES
   puppetlabs_spec_helper (>= 0.1.0)
   rake
   rspec-puppet
-  serverspec (~> 1.11.0)
+  serverspec (~> 1.14.0)
