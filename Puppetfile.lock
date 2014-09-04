@@ -91,9 +91,11 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-langs.git
   ref: master
-  sha: d16728ed5fcc07a4cc2c4351d528a00227557283
+  sha: 46ce85df92c356d594874d186e46509269a870b2
   specs:
-    narkisr-langs (0.0.1)
+    narkisr-langs (0.1.0)
+      puppetlabs-apt (>= 1.1.0)
+      puppetlabs-stdlib (>= 2.2.1)
 
 GIT
   remote: git://github.com/narkisr/puppet-logging.git
