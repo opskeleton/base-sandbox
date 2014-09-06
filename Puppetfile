@@ -31,6 +31,9 @@ mod 'narkisr/jdk',
 mod 'narkisr/backup',
   :git => 'git://github.com/narkisr/puppet-backup.git'
 
+mod 'narkisr/monitoring',
+  :git => 'git://github.com/narkisr/puppet-monitoring.git'
+
 mod 'narkisr/shell', 
   :git => 'git://github.com/narkisr/puppet-shell.git'
 
@@ -57,9 +60,3 @@ mod 'narkisr/logging',
 
 mod 'narkisr/desktop', 
   :git => 'git://github.com/narkisr/puppet-desktop.git'
-
-
-# mod 'narkisr/barbecue', 
-  # :git => 'git://github.com/narkisr/puppet-barbecue.git'
-
-

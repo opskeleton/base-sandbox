@@ -59,7 +59,14 @@ node 'backup.local'{
 
   class{'backup::syncthing':
     repos => $repos,
-    nodes => $nodes
+    nodes => $nodes,
+    token => 'mhfu4ugmsauj6cgvsu68kvloa1gt3v'
+  }
+
+  include monitoring
+
+  class{'monitoring::syncthing':
+    token => 'mhfu4ugmsauj6cgvsu68kvloa1gt3v'
   }
 
   class{'backup::dropbox':

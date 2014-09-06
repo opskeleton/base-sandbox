@@ -7,9 +7,14 @@ FORGE
       puppetlabs-apt (>= 1.1.0)
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
+    maestrodev-wget (1.5.2)
     puppetlabs-apt (1.6.0)
       puppetlabs-stdlib (>= 2.2.1)
     puppetlabs-stdlib (4.3.2)
+    sensu-sensu (1.1.0)
+      maestrodev-wget (>= 1.4.5)
+      puppetlabs-apt (>= 0.0.1)
+      puppetlabs-stdlib (>= 0.0.1)
     stahnma-epel (0.1.1)
     stankevich-python (1.7.9)
       puppetlabs-stdlib (>= 4.0.0)
@@ -24,7 +29,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-backup.git
   ref: master
-  sha: 8f3e14639ceb1b631e5ff4a612e98875eea4f96d
+  sha: 86d4089d035358a4abc0b2d5517a6fd43e739279
   specs:
     narkisr-backup (0.1.1)
 
@@ -106,6 +111,16 @@ GIT
       puppetlabs-stdlib (>= 0)
 
 GIT
+  remote: git://github.com/narkisr/puppet-monitoring.git
+  ref: master
+  sha: ea045c16e90027021456e6140fb45c60112af42f
+  specs:
+    narkisr-monitoring (0.1.0)
+      narkisr-git (>= 0)
+      puppetlabs-stdlib (>= 0)
+      sensu-sensu (>= 0)
+
+GIT
   remote: git://github.com/narkisr/puppet-rvm.git
   ref: master
   sha: 773cfc40038b876478e26a81fb503b20fc380e14
@@ -163,6 +178,7 @@ DEPENDENCIES
   narkisr-jdk (>= 0)
   narkisr-langs (>= 0)
   narkisr-logging (>= 0)
+  narkisr-monitoring (>= 0)
   narkisr-rvm (>= 0)
   narkisr-shell (>= 0)
   narkisr-ssmtp (>= 0)

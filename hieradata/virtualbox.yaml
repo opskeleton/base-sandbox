@@ -28,3 +28,11 @@ baseline::security::syslog_server: 'kibana'
 baseline::update::user: 'ronen'
 baseline::update::keys:
   - 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDEC+/sMzpTUwvFVAqzUbS/oFP0GdgRPNIKRudKAxGWTk6GxiXSkAQ0Dky+5f/iUrEXCP4lVHe+hOazu4yaR3gepDM+MaYObR+GL/9tW8K3nhVaaBH7cnWJGpsGgQe4bvkuWOhETiJFNmE6RinW2YFBw1tZFK05vfhGMBrlXRidUzqUT4ffjUz7uZoUjLmNTYuA7/APBaOlYvxDmO+/MTjCrGRacu47jOHSYjcKOh43zhaUwgh8SFhs3DS8FshHRCTdeVHO1ZfEqQ/i7B5ESm/f2KCmV6MmuebvQuryEEpEtxe20bOhJ7OOqbdlcxowv8BVLfi0QqGYsd3oiIzuBo/X some key'
+
+sensu::rabbitmq_password: 'secret'
+sensu::rabbitmq_host: '10.0.2.2'
+sensu::rabbitmq_port: '55672'
+sensu::rabbitmq_vhost: '/sensu'
+sensu::rabbitmq_subscription: 'syncthing'
+sensu::sensu_plugin_version: 'latest'
+
