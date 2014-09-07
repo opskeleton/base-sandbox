@@ -113,7 +113,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-monitoring.git
   ref: master
-  sha: ea045c16e90027021456e6140fb45c60112af42f
+  sha: af3e11fe30dc4b349f2257add3abfb7b7dad69fc
   specs:
     narkisr-monitoring (0.1.0)
       narkisr-git (>= 0)
