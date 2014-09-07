@@ -48,14 +48,18 @@ node 'backup.local'{
     appliances  => {
       directory => '~/appliances-1',
       ro        => false,
-      nodes     => ['1', '2']
+      nodes     => [
+        'C56YYFN-U7QEMMU-2J3DVM4-RFHHNAT-FH7ATN6-VJSREZY-XKYXPOF-RSKC7QE',
+      ]
+
+
     }
   }
 
   $nodes = {
-    '1' => {name => 'foo' , address => 'foo:1234'},
-    '2' => {name => 'bar', address   => 'bar:22000'}
+    'C56YYFN-U7QEMMU-2J3DVM4-RFHHNAT-FH7ATN6-VJSREZY-XKYXPOF-RSKC7QE' => {name => 'foo' , address => 'foo:1234'},
   }
+
 
   class{'backup::syncthing':
     repos => $repos,
@@ -67,6 +71,13 @@ node 'backup.local'{
 
   class{'monitoring::syncthing':
     token => 'mhfu4ugmsauj6cgvsu68kvloa1gt3v'
+  }
+
+  class{'monitoring::serverspec':
+    name  => 'backup',
+    repo  => 'git://github.com/narkisr/puppet-base-env.git',
+    dst   => '/opt/puppet-base-env',
+    specs => 'backup/*'
   }
 
   class{'backup::dropbox':
