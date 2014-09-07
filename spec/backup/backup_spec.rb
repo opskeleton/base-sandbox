@@ -11,7 +11,6 @@ version = 'v0.8.17'
 describe file("/opt/syncthing/.config/syncthing/config.xml") do
     it { should contain 'tls="true"' }
     it { should contain '~/appliances-1' }
-    it { should contain 'bar:22000' }
     it { should contain 'foo:1234' }
 end
 
