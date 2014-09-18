@@ -1,6 +1,7 @@
 {
  :jobs [
     {:name "puppet-base-env"
+     :clear-merge-fail true
      :repo "git://github.com/narkisr/puppet-base-env.git" 
      :target "/tmp/puppet-base-env" 
      :steps [
