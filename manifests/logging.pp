@@ -1,5 +1,6 @@
 node 'logging.local'{
   include logging::sysdig
+  include logging::syslog
 
   class{'logging::logwatch':
     email    => 'foo@gmail.com',
