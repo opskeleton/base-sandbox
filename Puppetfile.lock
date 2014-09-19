@@ -7,7 +7,7 @@ FORGE
       puppetlabs-apt (>= 1.1.0)
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
-    maestrodev-wget (1.5.2)
+    maestrodev-wget (1.5.6)
     puppetlabs-apt (1.6.0)
       puppetlabs-stdlib (>= 2.2.1)
     puppetlabs-stdlib (4.3.2)
@@ -15,7 +15,7 @@ FORGE
       maestrodev-wget (>= 1.4.5)
       puppetlabs-apt (>= 0.0.1)
       puppetlabs-stdlib (>= 0.0.1)
-    stahnma-epel (0.1.1)
+    stahnma-epel (1.0.0)
     stankevich-python (1.7.9)
       puppetlabs-stdlib (>= 4.0.0)
 
@@ -36,7 +36,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-baseline.git
   ref: master
-  sha: f3014a11b31af3b00ab86cc7148be5f32731ab3b
+  sha: 92e588c0c6faac3e8c6be196dacd58d3cbab30c2
   specs:
     narkisr-baseline (0.0.1)
 
@@ -105,7 +105,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-logging.git
   ref: master
-  sha: 8b3944afb84cf7fcf740c0ff57ec1498e9363318
+  sha: fb6c9c6aa5d850240e89419de5c708e7920f66d2
   specs:
     narkisr-logging (0.0.1)
       puppetlabs-stdlib (>= 0)
