@@ -1,0 +1,3 @@
+---
+virtualbox::manage::machinefolder: '/vagrant'
+virtualbox::manage::user: 'vagrant'

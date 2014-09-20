@@ -3,6 +3,7 @@ node 'virtualized.local'{
   include virtualbox
   include kvm
   include docker
+  include shell::fig
 }
 
 
