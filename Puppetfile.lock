@@ -130,7 +130,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-shell.git
   ref: master
-  sha: e5bfb2bebeeaac161f60f261c39a1af08780b4e5
+  sha: 7608687f6f13e791b82b341bc88192f7ca72bc46
   specs:
     narkisr-shell (0.2.0)
       stankevich-python (>= 1.7.8)
@@ -159,7 +159,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-virtualbox.git
   ref: master
-  sha: c88a4199897388979ca82c1f5e2e97aa38812ec3
+  sha: 2afbc0312c510d7f166a6c26ed7efc608a777d8a
   specs:
     narkisr-virtualbox (0.2.4)
       puppetlabs-apt (>= 1.1.0)
