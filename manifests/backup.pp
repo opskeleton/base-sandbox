@@ -42,7 +42,9 @@ node 'backup.local'{
     }
   }
 
-  include backup::copy
+  class{'backup::copy':
+    reinstall => true
+  }
 
   $repos = {
     appliances  => {
