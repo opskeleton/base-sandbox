@@ -8,6 +8,6 @@ describe command('vagrant version') do
     it { should return_exit_status 0 }
 end
 
-describe command('pecrant') do
+describe command("su - vagrant -c 'pecrant'") do
     it { should return_exit_status 0 }
 end
