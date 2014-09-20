@@ -8,6 +8,7 @@ FORGE
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
     maestrodev-wget (1.5.6)
+    narkisr-git (0.0.1)
     puppetlabs-apt (1.6.0)
       puppetlabs-stdlib (>= 2.2.1)
     puppetlabs-stdlib (4.3.2)
@@ -20,171 +21,171 @@ FORGE
       puppetlabs-stdlib (>= 4.0.0)
 
 GIT
-  remote: git://github.com/narkisr/puppet-archive.git
+  remote: git://github.com/pulling-strings/puppet-archive.git
   ref: master
   sha: 3f4250dbc2b977845643e98ad24f427c24c845b1
   specs:
-    narkisr-archive (0.2.0)
+    strings-archive (0.2.0)
 
 GIT
-  remote: git://github.com/narkisr/puppet-backup.git
+  remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: 86d4089d035358a4abc0b2d5517a6fd43e739279
+  sha: 6c0955eafc0e5562d30592efa77eb7e2df2338c4
   specs:
-    narkisr-backup (0.1.1)
+    strings-backup (0.1.1)
 
 GIT
-  remote: git://github.com/narkisr/puppet-baseline.git
+  remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
   sha: 92e588c0c6faac3e8c6be196dacd58d3cbab30c2
   specs:
-    narkisr-baseline (0.0.1)
+    strings-baseline (0.0.1)
 
 GIT
-  remote: git://github.com/narkisr/puppet-build.git
+  remote: git://github.com/pulling-strings/puppet-build.git
   ref: master
   sha: 44ccb6e21c05e0bc5c20f9973fe8b3fe5f9b9c2c
   specs:
-    narkisr-build (0.1.0)
+    strings-build (0.1.0)
 
 GIT
-  remote: git://github.com/narkisr/puppet-clamav.git
+  remote: git://github.com/pulling-strings/puppet-clamav.git
   ref: master
   sha: 452cf62fbc1ef84365b6489c3a18dd4fba2e0bd2
   specs:
-    narkisr-clamav (0.0.2)
+    strings-clamav (0.0.2)
       puppetlabs-stdlib (>= 2.6.0)
 
 GIT
-  remote: git://github.com/narkisr/puppet-desktop.git
+  remote: git://github.com/pulling-strings/puppet-desktop.git
   ref: master
   sha: a25ffef4c953170bdd62c6461821cb24d4ada625
   specs:
-    narkisr-desktop (0.1.0)
+    strings-desktop (0.1.0)
       attachmentgenie-ufw (>= 1.4.9)
 
 GIT
-  remote: git://github.com/narkisr/puppet-downloadfile.git
+  remote: git://github.com/pulling-strings/puppet-downloadfile.git
   ref: master
   sha: d15eff627fc8051e58950b6b961f5157ecf4c8ca
   specs:
-    narkisr-downloadfile (0.0.1)
+    strings-downloadfile (0.0.1)
 
 GIT
-  remote: git://github.com/narkisr/puppet-editfile.git
+  remote: git://github.com/pulling-strings/puppet-editfile.git
   ref: master
   sha: cb513b37b185375454bf2f767fa8ea2b992595dd
   specs:
-    narkisr-editfile (0.1.0)
+    strings-editfile (0.1.0)
 
 GIT
-  remote: git://github.com/narkisr/puppet-git.git
+  remote: git://github.com/pulling-strings/puppet-git.git
   ref: master
   sha: 04ccc3f8676621f85725f1920117c55055e1bb5c
   specs:
-    narkisr-git (0.0.1)
+    strings-git (0.0.1)
 
 GIT
-  remote: git://github.com/narkisr/puppet-jdk.git
+  remote: git://github.com/pulling-strings/puppet-jdk.git
   ref: master
   sha: a9a2e8bcfdee2e17e8a2d1b7952084c1c4b37646
   specs:
-    narkisr-jdk (0.0.1)
+    strings-jdk (0.0.1)
       puppetlabs-apt (>= 0.0.3)
       puppetlabs-stdlib (>= 2.0.0)
 
 GIT
-  remote: git://github.com/narkisr/puppet-langs.git
+  remote: git://github.com/pulling-strings/puppet-langs.git
   ref: master
   sha: 46ce85df92c356d594874d186e46509269a870b2
   specs:
-    narkisr-langs (0.1.0)
+    strings-langs (0.1.0)
       puppetlabs-apt (>= 1.1.0)
       puppetlabs-stdlib (>= 2.2.1)
 
 GIT
-  remote: git://github.com/narkisr/puppet-logging.git
+  remote: git://github.com/pulling-strings/puppet-logging.git
   ref: master
   sha: fb6c9c6aa5d850240e89419de5c708e7920f66d2
   specs:
-    narkisr-logging (0.0.1)
+    strings-logging (0.0.1)
       puppetlabs-stdlib (>= 0)
 
 GIT
-  remote: git://github.com/narkisr/puppet-monitoring.git
+  remote: git://github.com/pulling-strings/puppet-monitoring.git
   ref: master
   sha: af3e11fe30dc4b349f2257add3abfb7b7dad69fc
   specs:
-    narkisr-monitoring (0.1.0)
+    strings-monitoring (0.1.0)
       narkisr-git (>= 0)
       puppetlabs-stdlib (>= 0)
       sensu-sensu (>= 0)
 
 GIT
-  remote: git://github.com/narkisr/puppet-rvm.git
+  remote: git://github.com/pulling-strings/puppet-rvm.git
   ref: master
   sha: 773cfc40038b876478e26a81fb503b20fc380e14
   specs:
-    narkisr-rvm (1.0.0)
+    strings-rvm (1.0.0)
 
 GIT
-  remote: git://github.com/narkisr/puppet-shell.git
+  remote: git://github.com/pulling-strings/puppet-shell.git
   ref: master
   sha: 7608687f6f13e791b82b341bc88192f7ca72bc46
   specs:
-    narkisr-shell (0.2.0)
+    strings-shell (0.2.0)
       stankevich-python (>= 1.7.8)
 
 GIT
-  remote: git://github.com/narkisr/puppet-ssmtp.git
+  remote: git://github.com/pulling-strings/puppet-ssmtp.git
   ref: master
   sha: 47b71687fc8e29ebcc28cd4d44f729d79e3b45e8
   specs:
-    narkisr-ssmtp (0.1.0)
+    strings-ssmtp (0.1.0)
 
 GIT
-  remote: git://github.com/narkisr/puppet-vagrant.git
+  remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
   sha: 1c342315a1bdbf80003f22b3582b08f865e5b517
   specs:
-    narkisr-vagrant (0.1.0)
+    strings-vagrant (0.1.0)
 
 GIT
-  remote: git://github.com/narkisr/puppet-vim.git
+  remote: git://github.com/pulling-strings/puppet-vim.git
   ref: master
   sha: 938e40feefb8a5b917376b05f13fa7aac15064cf
   specs:
-    narkisr-vim (0.0.1)
+    strings-vim (0.0.1)
 
 GIT
-  remote: git://github.com/narkisr/puppet-virtualbox.git
+  remote: git://github.com/pulling-strings/puppet-virtualbox.git
   ref: master
   sha: 2afbc0312c510d7f166a6c26ed7efc608a777d8a
   specs:
-    narkisr-virtualbox (0.2.4)
+    strings-virtualbox (0.2.4)
       puppetlabs-apt (>= 1.1.0)
 
 DEPENDENCIES
   garethr-docker (>= 0)
-  narkisr-archive (>= 0)
-  narkisr-backup (>= 0)
-  narkisr-baseline (>= 0)
-  narkisr-build (>= 0)
-  narkisr-clamav (>= 0)
-  narkisr-desktop (>= 0)
-  narkisr-downloadfile (>= 0)
-  narkisr-editfile (>= 0)
-  narkisr-git (>= 0)
-  narkisr-jdk (>= 0)
-  narkisr-langs (>= 0)
-  narkisr-logging (>= 0)
-  narkisr-monitoring (>= 0)
-  narkisr-rvm (>= 0)
-  narkisr-shell (>= 0)
-  narkisr-ssmtp (>= 0)
-  narkisr-vagrant (>= 0)
-  narkisr-vim (>= 0)
-  narkisr-virtualbox (>= 0)
   puppetlabs-apt (>= 0)
   puppetlabs-stdlib (>= 0)
+  strings-archive (>= 0)
+  strings-backup (>= 0)
+  strings-baseline (>= 0)
+  strings-build (>= 0)
+  strings-clamav (>= 0)
+  strings-desktop (>= 0)
+  strings-downloadfile (>= 0)
+  strings-editfile (>= 0)
+  strings-git (>= 0)
+  strings-jdk (>= 0)
+  strings-langs (>= 0)
+  strings-logging (>= 0)
+  strings-monitoring (>= 0)
+  strings-rvm (>= 0)
+  strings-shell (>= 0)
+  strings-ssmtp (>= 0)
+  strings-vagrant (>= 0)
+  strings-vim (>= 0)
+  strings-virtualbox (>= 0)
 

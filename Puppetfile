@@ -4,59 +4,59 @@ mod 'puppetlabs/stdlib'
 mod 'puppetlabs/apt'
 mod 'garethr/docker'
 
-mod 'narkisr/rvm', 
-   :git => 'git://github.com/narkisr/puppet-rvm.git'
+mod 'strings/rvm', 
+   :git => 'git://github.com/pulling-strings/puppet-rvm.git'
 
-mod 'narkisr/vim', 
-    :git => 'git://github.com/narkisr/puppet-vim.git'
+mod 'strings/vim', 
+    :git => 'git://github.com/pulling-strings/puppet-vim.git'
 
-mod 'narkisr/build', 
-  :git => 'git://github.com/narkisr/puppet-build.git'
+mod 'strings/build', 
+  :git => 'git://github.com/pulling-strings/puppet-build.git'
 
-mod 'narkisr/git', 
-  :git => 'git://github.com/narkisr/puppet-git.git'
+mod 'strings/git', 
+  :git => 'git://github.com/pulling-strings/puppet-git.git'
 
-mod 'narkisr/downloadfile', 
-  :git => 'git://github.com/narkisr/puppet-downloadfile.git'
+mod 'strings/downloadfile', 
+  :git => 'git://github.com/pulling-strings/puppet-downloadfile.git'
 
-mod 'narkisr/virtualbox',
- :git => 'git://github.com/narkisr/puppet-virtualbox.git'
+mod 'strings/virtualbox',
+ :git => 'git://github.com/pulling-strings/puppet-virtualbox.git'
 
-mod 'narkisr/archive', 
- :git => 'git://github.com/narkisr/puppet-archive.git'
+mod 'strings/archive', 
+ :git => 'git://github.com/pulling-strings/puppet-archive.git'
 
-mod 'narkisr/jdk',
-  :git => 'git://github.com/narkisr/puppet-jdk.git'
+mod 'strings/jdk',
+  :git => 'git://github.com/pulling-strings/puppet-jdk.git'
 
-mod 'narkisr/backup',
-  :git => 'git://github.com/narkisr/puppet-backup.git'
+mod 'strings/backup',
+  :git => 'git://github.com/pulling-strings/puppet-backup.git'
 
-mod 'narkisr/monitoring',
-  :git => 'git://github.com/narkisr/puppet-monitoring.git'
+mod 'strings/monitoring',
+  :git => 'git://github.com/pulling-strings/puppet-monitoring.git'
 
-mod 'narkisr/shell', 
-  :git => 'git://github.com/narkisr/puppet-shell.git'
+mod 'strings/shell', 
+  :git => 'git://github.com/pulling-strings/puppet-shell.git'
 
-mod 'narkisr/langs', 
-  :git => 'git://github.com/narkisr/puppet-langs.git'
+mod 'strings/langs', 
+  :git => 'git://github.com/pulling-strings/puppet-langs.git'
 
-mod 'narkisr/vagrant', 
-  :git => 'git://github.com/narkisr/puppet-vagrant.git'
+mod 'strings/vagrant', 
+  :git => 'git://github.com/pulling-strings/puppet-vagrant.git'
 
-mod 'narkisr/baseline', 
-  :git => 'git://github.com/narkisr/puppet-baseline.git'
+mod 'strings/baseline', 
+  :git => 'git://github.com/pulling-strings/puppet-baseline.git'
 
-mod 'narkisr/editfile',
-    :git => 'git://github.com/narkisr/puppet-editfile.git'
+mod 'strings/editfile',
+    :git => 'git://github.com/pulling-strings/puppet-editfile.git'
 
-mod 'narkisr/clamav', 
-    :git => 'git://github.com/narkisr/puppet-clamav.git'
+mod 'strings/clamav', 
+    :git => 'git://github.com/pulling-strings/puppet-clamav.git'
 
-mod 'narkisr/ssmtp', 
-  :git => 'git://github.com/narkisr/puppet-ssmtp.git'
+mod 'strings/ssmtp', 
+  :git => 'git://github.com/pulling-strings/puppet-ssmtp.git'
 
-mod 'narkisr/logging', 
-  :git => 'git://github.com/narkisr/puppet-logging.git'
+mod 'strings/logging', 
+  :git => 'git://github.com/pulling-strings/puppet-logging.git'
 
-mod 'narkisr/desktop', 
-  :git => 'git://github.com/narkisr/puppet-desktop.git'
+mod 'strings/desktop', 
+  :git => 'git://github.com/pulling-strings/puppet-desktop.git'
