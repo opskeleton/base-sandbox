@@ -12,7 +12,8 @@ FORGE
     puppetlabs-apt (1.6.0)
       puppetlabs-stdlib (>= 2.2.1)
     puppetlabs-stdlib (4.3.2)
-    sensu-sensu (1.1.0)
+    rodjek-logrotate (1.1.1)
+    sensu-sensu (1.2.0)
       maestrodev-wget (>= 1.4.5)
       puppetlabs-apt (>= 0.0.1)
       puppetlabs-stdlib (>= 0.0.1)
@@ -30,9 +31,10 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: 46dd1cc53afb1328b64f242a2dcebcd79123b5b3
+  sha: 6ff52aad4259f3794650c34878c79c5760031ba8
   specs:
     strings-backup (0.1.1)
+      rodjek-logrotate (>= 1.1.1)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git

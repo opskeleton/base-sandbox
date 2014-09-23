@@ -22,7 +22,7 @@ node 'backup.local'{
     globs       => $globs
   }
 
-  backup::schedule {'sample':
+  backup::duply::schedule {'sample':
     onsuccess => '/usr/sbin/ssmtp foo@gmail.com </etc/duply/sample-msg.txt'
   }
 
@@ -35,7 +35,7 @@ node 'backup.local'{
     globs       => $globs
   }
 
-  backup::schedule {'s3-ex':
+  backup::duply::schedule {'s3-ex':
     precondition => '-d /tmp',
     shapping     => {
       interface  => 'eth0',
