@@ -37,7 +37,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 92e588c0c6faac3e8c6be196dacd58d3cbab30c2
+  sha: 03fee1ead53353badceb5f5ec7b62efb8351fc26
   specs:
     strings-baseline (0.0.1)
 
