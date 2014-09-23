@@ -30,14 +30,14 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: 93ba463e4695d8f0ab7e42f961975a04cbf0d5d1
+  sha: 46dd1cc53afb1328b64f242a2dcebcd79123b5b3
   specs:
     strings-backup (0.1.1)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 92e588c0c6faac3e8c6be196dacd58d3cbab30c2
+  sha: 03fee1ead53353badceb5f5ec7b62efb8351fc26
   specs:
     strings-baseline (0.0.1)
 
