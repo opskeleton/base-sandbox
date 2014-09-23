@@ -22,7 +22,9 @@ node 'backup.local'{
     globs       => $globs
   }
 
-  backup::schedule {'sample': }
+  backup::schedule {'sample':
+    onsuccess => '/usr/sbin/ssmtp foo@gmail.com </etc/duply/sample-msg.txt'
+  }
 
   backup::duply {'s3-ex':
     source      => '/home/vagrant/',
