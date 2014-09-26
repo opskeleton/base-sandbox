@@ -4,6 +4,9 @@ mod 'puppetlabs/stdlib'
 mod 'puppetlabs/apt'
 mod 'garethr/docker'
 
+mod 'strings/zfs', 
+   :git => 'git://github.com/pulling-strings/puppet-zfs.git'
+
 mod 'strings/rvm', 
    :git => 'git://github.com/pulling-strings/puppet-rvm.git'
 

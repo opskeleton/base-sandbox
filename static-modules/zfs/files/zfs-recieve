@@ -1,1 +1,0 @@
-nc -w 120 -l -p 8023 | zfs receive $1 -v
