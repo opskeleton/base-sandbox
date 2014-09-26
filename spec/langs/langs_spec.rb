@@ -13,7 +13,7 @@ describe package('nodejs') do
 end
 
 describe command('node -v') do
-  it { should return_stdout 'v0.10.31' }
+  it { should return_stdout 'v0.10.32' }
 end
 
 # describe ppa('chris-lea/node.js') do
