@@ -18,7 +18,7 @@ FORGE
       puppetlabs-apt (>= 0.0.1)
       puppetlabs-stdlib (>= 0.0.1)
     stahnma-epel (1.0.0)
-    stankevich-python (1.7.9)
+    stankevich-python (1.7.10)
       puppetlabs-stdlib (>= 4.0.0)
 
 GIT
