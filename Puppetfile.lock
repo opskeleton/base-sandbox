@@ -170,7 +170,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-zfs.git
   ref: master
-  sha: 033a53581ad51a1efbe7614066539d0257d15859
+  sha: 11e4fc41f00ec7256f06e446288021e893498a62
   specs:
     strings-zfs (0.1.0)
       puppetlabs-stdlib (>= 0)
