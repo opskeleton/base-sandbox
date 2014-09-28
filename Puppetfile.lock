@@ -13,7 +13,7 @@ FORGE
       puppetlabs-stdlib (>= 2.2.1)
     puppetlabs-stdlib (4.3.2)
     rodjek-logrotate (1.1.1)
-    sensu-sensu (1.2.0)
+    sensu-sensu (1.2.1)
       maestrodev-wget (>= 1.4.5)
       puppetlabs-apt (>= 0.0.1)
       puppetlabs-stdlib (>= 0.0.1)
@@ -148,7 +148,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: 1c342315a1bdbf80003f22b3582b08f865e5b517
+  sha: d76f0b0e6b5a9e803ed9eefd0668ac9644741fae
   specs:
     strings-vagrant (0.1.0)
 
