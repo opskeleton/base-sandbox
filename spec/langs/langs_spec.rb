@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe package('esl-erlang') do
+describe package('erlang') do
   it { should be_installed }
 end
 
-describe file('/usr/share/elixir-v0.15.1') do
+describe file('/usr/share/elixir-v1.0.0') do
   it { should be_directory}
 end
 
