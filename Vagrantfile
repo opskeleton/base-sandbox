@@ -11,6 +11,9 @@ SCRIPT
 
 Vagrant.configure("2") do |config|
 
+  env  = ENV['PUPPET_ENV'] 
+  env ||= 'dev'
+
   %w(desktop pythonized langs minimal backup virtualized logging zfs).each do |type|
     config.vm.define type.to_sym do |node| 
 	    node.vm.box = 'ubuntu-14.04.1_puppet-3.7.0'
@@ -24,7 +27,7 @@ Vagrant.configure("2") do |config|
       node.vm.provision :puppet do |puppet|
         puppet.manifests_path = 'manifests'
         puppet.manifest_file  = "#{type}.pp"
-        puppet.options = "--modulepath=/vagrant/modules:/vagrant/static-modules --hiera_config /vagrant/hiera_vagrant.yaml --environment='dev'"
+        puppet.options = "--modulepath=/vagrant/modules:/vagrant/static-modules --hiera_config /vagrant/hiera_vagrant.yaml --environment='#{env}'"
       end
     end
 
