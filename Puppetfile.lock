@@ -31,7 +31,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: fc801d4b6ff04c8e906f9c27a4dff3cff474c538
+  sha: 628629bcf761c7e94b8f4a45e59ba3b872ab7ad1
   specs:
     strings-backup (0.1.1)
       rodjek-logrotate (>= 1.1.1)
@@ -61,7 +61,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-desktop.git
   ref: master
-  sha: a25ffef4c953170bdd62c6461821cb24d4ada625
+  sha: 2b0ae6726dcb478e03e0d45e19d45686f4d4c7c7
   specs:
     strings-desktop (0.1.0)
       attachmentgenie-ufw (>= 1.4.9)
@@ -99,7 +99,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-langs.git
   ref: master
-  sha: 46ce85df92c356d594874d186e46509269a870b2
+  sha: 722450c5c6bc25228eb4b07774e527a7b4af366d
   specs:
     strings-langs (0.1.0)
       puppetlabs-apt (>= 1.1.0)
