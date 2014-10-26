@@ -1,4 +1,8 @@
 node 'syncbsd.local' {
+
+  include shell
+  include vim
+
   $nodes = {
     'C56YYFN-U7QEMMU-2J3DVM4-RFHHNAT-FH7ATN6-VJSREZY-XKYXPOF-RSKC7QE' => {name => 'foo' , address => 'foo:1234'},
   }

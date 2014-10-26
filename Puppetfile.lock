@@ -33,7 +33,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: 628629bcf761c7e94b8f4a45e59ba3b872ab7ad1
+  sha: 065447ecaa97d012f1b50aadb96a0d243406b612
   specs:
     strings-backup (0.1.1)
       rodjek-logrotate (>= 1.1.1)
@@ -85,7 +85,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-git.git
   ref: master
-  sha: 04ccc3f8676621f85725f1920117c55055e1bb5c
+  sha: 06af77524e08ff7855500e1f4ee3f0fba6b5e359
   specs:
     strings-git (0.0.1)
 
@@ -135,7 +135,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-shell.git
   ref: master
-  sha: 7608687f6f13e791b82b341bc88192f7ca72bc46
+  sha: 74218ba28ac8257d095b5205cbf5203775096fa8
   specs:
     strings-shell (0.2.0)
       stankevich-python (>= 1.7.8)
@@ -150,14 +150,14 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: d76f0b0e6b5a9e803ed9eefd0668ac9644741fae
+  sha: 6255b237ea9ca7231c45ce3d6d7d5ec3b76cfa54
   specs:
     strings-vagrant (0.1.0)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-vim.git
   ref: master
-  sha: 938e40feefb8a5b917376b05f13fa7aac15064cf
+  sha: 97f42ab600e0e1a9da3c089a831ac2280f31c0a3
   specs:
     strings-vim (0.0.1)
 
