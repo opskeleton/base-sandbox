@@ -157,7 +157,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vim.git
   ref: master
-  sha: 97f42ab600e0e1a9da3c089a831ac2280f31c0a3
+  sha: 27130ee34e6f6708589bd7bef0dde6145eaf6a3f
   specs:
     strings-vim (0.0.1)
 
