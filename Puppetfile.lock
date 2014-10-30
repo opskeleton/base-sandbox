@@ -9,7 +9,7 @@ FORGE
       stahnma-epel (>= 0.0.6)
     maestrodev-wget (1.5.6)
     narkisr-git (0.0.1)
-    puppetlabs-apt (1.6.0)
+    puppetlabs-apt (1.7.0)
       puppetlabs-stdlib (>= 2.2.1)
     puppetlabs-stdlib (4.3.2)
     rodjek-logrotate (1.1.1)
