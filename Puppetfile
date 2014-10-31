@@ -3,6 +3,7 @@ forge "https://forgeapi.puppetlabs.com"
 mod 'puppetlabs/stdlib'
 mod 'puppetlabs/apt'
 mod 'garethr/docker'
+mod 'zleslie/pkgng'
 
 mod 'strings/zfs', 
    :git => 'git://github.com/pulling-strings/puppet-zfs.git'
@@ -63,3 +64,4 @@ mod 'strings/logging',
 
 mod 'strings/desktop', 
   :git => 'git://github.com/pulling-strings/puppet-desktop.git'
+

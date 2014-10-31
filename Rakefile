@@ -42,10 +42,10 @@ end
 
 namespace :serverspec do
 
-  %w(desktop logging zfs langs minimal backup virtualized desktop full).each do |profile|
+  %w(syncbsd desktop logging zfs langs minimal backup virtualized desktop full).each do |profile|
     ServerspecTask.new(profile.to_sym) do |t|
-	t.target = profile 
-	t.pattern = "spec/#{profile}/*_spec.rb"
+      t.target = profile 
+      t.pattern = "spec/#{profile}/*_spec.rb"
     end
   end
 end

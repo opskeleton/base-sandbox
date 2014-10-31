@@ -5,6 +5,6 @@
 
   :dependencies [[org.clojure/clojure "1.5.1"]]
 
-  :plugins  [[self-build "0.0.6"]]
+  :plugins  [[self-build "0.0.7"]]
 
 )
