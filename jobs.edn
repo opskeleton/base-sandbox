@@ -9,6 +9,9 @@
         {:cmd "librarian-puppet" :args ["install"] :timeout 1200}
         {:cmd "rake" :args ["serverspec:minimal"] :timeout 1200}
         {:cmd "rake" :args ["serverspec:virtualized"] :timeout 1200}
+        {:cmd "rake" :args ["serverspec:backup"] :timeout 1200}
+        {:cmd "rake" :args ["serverspec:langs"] :timeout 1200}
+        {:cmd "rake" :args ["serverspec:syncbsd"] :timeout 1200}
         {:cmd "vagrant" :args ["destroy" "-f"] :timeout 600}
      ]
      :poll 300000
