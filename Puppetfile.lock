@@ -43,7 +43,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 424ba366229f7193881856b04ba45bbc109daffb
+  sha: 9e7890a964d5297576e5cd7b385487361630a15a
   specs:
     strings-baseline (0.0.1)
 
@@ -94,7 +94,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-hardening.git
   ref: master
-  sha: d139a730d24f4275a18174cbd246260542173d71
+  sha: 9d6f958316775b38f7273dd9297d6ac5c6ea3eb1
   specs:
     strings-hardening (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
