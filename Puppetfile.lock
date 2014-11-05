@@ -41,7 +41,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 03fee1ead53353badceb5f5ec7b62efb8351fc26
+  sha: 9009d1ce4c38dbb00c920e519c95e97ac674f7ea
   specs:
     strings-baseline (0.0.1)
 
@@ -85,7 +85,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-git.git
   ref: master
-  sha: 06af77524e08ff7855500e1f4ee3f0fba6b5e359
+  sha: c92b58b03b532b951ae93835931e38b870d8b6f9
   specs:
     strings-git (0.0.1)
 
@@ -118,7 +118,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-monitoring.git
   ref: master
-  sha: af3e11fe30dc4b349f2257add3abfb7b7dad69fc
+  sha: 51db0b4c1faa2f2b5cad581a12a97bd0f2bb00f3
   specs:
     strings-monitoring (0.1.0)
       narkisr-git (>= 0)
@@ -135,7 +135,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-shell.git
   ref: master
-  sha: 55ef145d8af453f19e71f9a7ae5dab30a9479da3
+  sha: 3dcc28e5653676c53b9c9eb1fdfae1574eeb0da7
   specs:
     strings-shell (0.2.0)
       stankevich-python (>= 1.7.8)
@@ -157,7 +157,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vim.git
   ref: master
-  sha: 27130ee34e6f6708589bd7bef0dde6145eaf6a3f
+  sha: 5dd05bfd7b994516ae5e4c434377bdc013741ea9
   specs:
     strings-vim (0.0.1)
 
