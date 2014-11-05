@@ -8,9 +8,6 @@ describe package('pwgen') do
     it { should be_installed }
 end
 
-describe package('truecrypt') do
-    it { should be_installed }
-end
 describe file('/home/vagrant/.zshrc') do
     it { should contain 'plugins' }
     it { should be_file }
