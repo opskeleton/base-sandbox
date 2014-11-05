@@ -24,10 +24,14 @@ baseline::home: '/home/vagrant'
 baseline::filesystem::ssds:
  - '/'
  - '/home'
-logging::syslog::syslog_server: 'kibana'
+
+baseline::ssh_keys:
+  upgrade:
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5BsjhACNz35yfz2Mxb23+YZLDPpQnjFvi7kXbjc5oNq3He9W2/uQfmdnwxYiSDMxk2LmRqoboIv4CyTDFPDSXDSqUpXh5SxTKQazbu8qEuudM9xAgSt3Q9DLvJj/KU6V5i/y8mnpDbrLa6DlM1bC6FAvK8PtbOPlMRrtjYYGJ/SS/oRzij0UTuBpJfz7+qsHrRNdJ3yU52wqwZuj8SparlKwpPCrcYFJ14LviULoAOKoTBaEsa23iMcQlLL7Eyf5AVStglFZWaKfs+7arQKgoJnSHHOY9osZDA6WyW81SFvqw5l/O9TwijDBKdMuo5Cz53Ci64wc5eNw4orxt4s7n ronen@nucleus
+  ronen:
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5BsjhACNz35yfz2Mxb23+YZLDPpQnjFvi7kXbjc5oNq3He9W2/uQfmdnwxYiSDMxk2LmRqoboIv4CyTDFPDSXDSqUpXh5SxTKQazbu8qEuudM9xAgSt3Q9DLvJj/KU6V5i/y8mnpDbrLa6DlM1bC6FAvK8PtbOPlMRrtjYYGJ/SS/oRzij0UTuBpJfz7+qsHrRNdJ3yU52wqwZuj8SparlKwpPCrcYFJ14LviULoAOKoTBaEsa23iMcQlLL7Eyf5AVStglFZWaKfs+7arQKgoJnSHHOY9osZDA6WyW81SFvqw5l/O9TwijDBKdMuo5Cz53Ci64wc5eNw4orxt4s7n ronen@nucleus
+
 baseline::update::user: 'ronen'
-baseline::update::keys:
-  - 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDEC+/sMzpTUwvFVAqzUbS/oFP0GdgRPNIKRudKAxGWTk6GxiXSkAQ0Dky+5f/iUrEXCP4lVHe+hOazu4yaR3gepDM+MaYObR+GL/9tW8K3nhVaaBH7cnWJGpsGgQe4bvkuWOhETiJFNmE6RinW2YFBw1tZFK05vfhGMBrlXRidUzqUT4ffjUz7uZoUjLmNTYuA7/APBaOlYvxDmO+/MTjCrGRacu47jOHSYjcKOh43zhaUwgh8SFhs3DS8FshHRCTdeVHO1ZfEqQ/i7B5ESm/f2KCmV6MmuebvQuryEEpEtxe20bOhJ7OOqbdlcxowv8BVLfi0QqGYsd3oiIzuBo/X some key'
 
 sensu::rabbitmq_password: 'secret'
 sensu::rabbitmq_host: '10.0.2.2'
@@ -36,3 +40,4 @@ sensu::rabbitmq_vhost: '/sensu'
 sensu::rabbitmq_subscription: 'syncthing'
 sensu::sensu_plugin_version: 'latest'
 
+logging::syslog::syslog_server: 'kibana'
