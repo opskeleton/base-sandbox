@@ -4,12 +4,10 @@ mod 'puppetlabs/stdlib'
 mod 'puppetlabs/apt'
 mod 'garethr/docker'
 mod 'zleslie/pkgng'
+mod 'maestrodev/rvm'
 
 mod 'strings/zfs', 
    :git => 'git://github.com/pulling-strings/puppet-zfs.git'
-
-mod 'strings/rvm', 
-   :git => 'git://github.com/pulling-strings/puppet-rvm.git'
 
 mod 'strings/vim', 
     :git => 'git://github.com/pulling-strings/puppet-vim.git'
@@ -49,6 +47,9 @@ mod 'strings/vagrant',
 
 mod 'strings/baseline', 
   :git => 'git://github.com/pulling-strings/puppet-baseline.git'
+
+mod 'strings/hardening', 
+  :git => 'git://github.com/pulling-strings/puppet-hardening.git'
 
 mod 'strings/editfile',
     :git => 'git://github.com/pulling-strings/puppet-editfile.git'
