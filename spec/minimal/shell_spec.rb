@@ -69,4 +69,12 @@ describe file('/opt/z') do
   it { should be_owned_by 'vagrant' }
 end
 
+# transcrypt
+describe file('/opt/transcrypt') do
+  it { should be_directory }  
+  it { should be_owned_by 'vagrant' }
+end
 
+describe file('/home/vagrant/bin/transcrypt') do
+  it { should be_linked_to '/opt/transcrypt/transcrypt' }
+end
