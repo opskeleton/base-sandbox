@@ -18,6 +18,7 @@ RSpec.configure do |c|
     c.ssh.close if c.ssh
     options = Net::SSH::Config.for(c.host)
     if(!ENV['LOCAL'])
+	run("vagrant destroy #{c.host} -f")
 	run("vagrant up #{c.host}")
       config = `vagrant ssh-config #{c.host}`
       sshhost =  sshuser = ''
