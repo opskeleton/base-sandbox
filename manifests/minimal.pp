@@ -5,4 +5,5 @@ node 'minimal.local'{
   include git::configure
   include baseline
   include baseline::update
+  include baseline::celestial
 }
