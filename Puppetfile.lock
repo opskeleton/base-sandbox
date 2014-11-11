@@ -26,6 +26,14 @@ FORGE
       puppetlabs-stdlib (>= 4.0.0)
 
 GIT
+  remote: /home/ronen/code/puppet-profiles
+  ref: master
+  sha: 35ecf18db51707b114f688e18bad43437916f4f4
+  specs:
+    narkisr-profiles (0.1.0)
+      puppetlabs-stdlib (>= 1.0.0)
+
+GIT
   remote: git://github.com/pulling-strings/puppet-archive.git
   ref: master
   sha: 3f4250dbc2b977845643e98ad24f427c24c845b1
@@ -43,7 +51,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 9e7890a964d5297576e5cd7b385487361630a15a
+  sha: 13a7df9441c0982c4d64b22c016d881045cd6abf
   specs:
     strings-baseline (0.0.1)
 
@@ -167,7 +175,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-virtualbox.git
   ref: master
-  sha: 58149e407d7be7746f2b32605ec4ca78663df630
+  sha: 1d05c4828beed2c8f05e154009ac1453433ac6e7
   specs:
     strings-virtualbox (0.2.4)
       puppetlabs-apt (>= 1.1.0)
@@ -180,11 +188,20 @@ GIT
     strings-zfs (0.1.0)
       puppetlabs-stdlib (>= 0)
 
+GIT
+  remote: git://github.com/ripienaar/puppet-module-data.git
+  ref: master
+  sha: 010c9eb3496f515582a4d4868154e5fb246ee9b8
+  specs:
+    rip-module-data (0.4.0)
+
 DEPENDENCIES
   garethr-docker (>= 0)
   maestrodev-rvm (>= 0)
+  narkisr-profiles (>= 0)
   puppetlabs-apt (>= 0)
   puppetlabs-stdlib (>= 0)
+  rip-module-data (>= 0)
   strings-archive (>= 0)
   strings-backup (>= 0)
   strings-baseline (>= 0)

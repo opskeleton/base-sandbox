@@ -1,0 +1,3 @@
+node example {
+  include profiles
+}

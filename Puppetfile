@@ -66,3 +66,8 @@ mod 'strings/logging',
 mod 'strings/desktop', 
   :git => 'git://github.com/pulling-strings/puppet-desktop.git'
 
+mod 'narkisr/profiles', 
+  :git => '/home/ronen/code/puppet-profiles'
+
+mod 'rip/module-data',
+  :git => 'git://github.com/ripienaar/puppet-module-data.git'
