@@ -5,6 +5,5 @@
 :logger: console
 :hierarchy:  
  - '%{::virtual}'
- - common
 :yaml:
    :datadir: hieradata
