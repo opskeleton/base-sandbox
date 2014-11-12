@@ -1,10 +1,10 @@
 ---
 :backends: 
  - yaml
+ - module_data
 :logger: console
 :hierarchy:  
  - '%{::virtual}'
- - '%{::hostname}'
  - common
 :yaml:
    :datadir: hieradata
