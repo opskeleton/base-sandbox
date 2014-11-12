@@ -1,4 +1,3 @@
-node default {
+node example {
   include profiles
 }
-
