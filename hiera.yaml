@@ -5,5 +5,7 @@
 :logger: console
 :hierarchy:  
  - '%{::virtual}'
+ - '%{::hostname}'
+ - common
 :yaml:
-   :datadir: hieradata
+   :datadir: hieradata-%{::environment}

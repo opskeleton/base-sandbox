@@ -5,6 +5,7 @@
 :logger: console
 :hierarchy:  
  - '%{::virtual}'
+ - '%{::hostname}'
  - common
 :yaml:
-   :datadir: /vagrant/hieradata
+  :datadir: /vagrant/hieradata-%{::environment}

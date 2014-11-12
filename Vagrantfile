@@ -30,7 +30,7 @@ Vagrant.configure("2") do |config|
       node.vm.provision :puppet do |puppet|
         puppet.manifests_path = 'manifests'
         puppet.manifest_file  = "#{type}.pp"
-        puppet.options = "--modulepath=/vagrant/modules:/vagrant/static-modules --hiera_config /vagrant/hiera_vagrant.yaml --environment='#{env}'"
+        puppet.options = "--modulepath=/vagrant/modules:/vagrant/static-modules --hiera_config /vagrant/hiera_vagrant.yaml --environment=dev"
       end
     end
   end
@@ -41,15 +41,15 @@ Vagrant.configure("2") do |config|
       node.vm.box = 'freebsd-10_puppet-3.6.2' 
       node.vm.guest = :freebsd
       node.vm.network :public_network, :bridge => bridge
-      node.vm.network "private_network", ip: "10.0.1.10"
+      node.vm.network 'private_network', ip: '10.0.1.10'
       node.vm.hostname = "#{type}.local"
 
       node.vm.provider :virtualbox do |vb|
         vb.customize ['modifyvm', :id, '--memory', 2048, '--cpus', 2]
       end
 
-      node.vm.synced_folder ".", "/vagrant", :nfs => true, id: "vagrant-root"
-      node.vm.provision "shell", inline: "cd /vagrant && ./run.sh manifests/#{type}.pp"
+      node.vm.synced_folder '.', '/vagrant', :nfs => true, id: 'vagrant-root'
+      node.vm.provision 'shell', inline: "cd /vagrant && ./run.sh manifests/#{type}.pp"
     end
   end
 
