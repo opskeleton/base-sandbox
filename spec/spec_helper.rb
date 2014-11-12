@@ -8,7 +8,7 @@ include SpecInfra::Helper::DetectOS
 def run(cmd)
   unless(system(cmd, out: $stdout, err: :out))
     puts 'Failed to setup vagrant machine'
-    System.exit 1
+    exit 1
   end
 end
 
