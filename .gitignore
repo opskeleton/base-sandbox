@@ -1,14 +1,13 @@
 *.swp
 *.swo
 *.swm
-etc*
 ssl
 auth.conf
 fileserver.conf
 puppet.conf
 .vagrant
 .tmp/
-modules/
+modules
 .librarian
 profiles/
 pkg
