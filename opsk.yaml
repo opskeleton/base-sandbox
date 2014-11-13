@@ -4,6 +4,7 @@
   includes: 
     - Puppetfile
     - modules
+    - manifests/default.pp
     - static-modules
     - Gemfile
     - Gemfile.lock
