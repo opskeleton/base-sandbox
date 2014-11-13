@@ -13,7 +13,7 @@ FORGE
     narkisr-git (0.0.1)
     puppetlabs-apt (1.7.0)
       puppetlabs-stdlib (>= 2.2.1)
-    puppetlabs-stdlib (4.3.2)
+    puppetlabs-stdlib (4.4.0)
     rodjek-logrotate (1.1.1)
     sensu-sensu (1.3.1)
       maestrodev-wget (>= 1.4.5)
@@ -28,7 +28,7 @@ FORGE
 GIT
   remote: /home/ronen/code/puppet-profiles
   ref: master
-  sha: 4171dbf404de5caa9b7a8d5a0a6fbe1e6c9c07c3
+  sha: 893ec72aff358e0f96e9d869136b9a67eaf2a214
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
@@ -51,7 +51,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 13a7df9441c0982c4d64b22c016d881045cd6abf
+  sha: 0c810c1552a1c301911e16229a28c860afa5b7cc
   specs:
     strings-baseline (0.0.1)
 
