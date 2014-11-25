@@ -3,11 +3,11 @@ FORGE
   specs:
     attachmentgenie-ufw (1.4.9)
       puppetlabs-stdlib (>= 2.2.1)
-    garethr-docker (2.0.0)
+    garethr-docker (2.1.0)
       puppetlabs-apt (>= 1.1.0)
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
-    maestrodev-rvm (1.6.6)
+    maestrodev-rvm (1.7.0)
       puppetlabs-stdlib (>= 3.2.0)
     maestrodev-wget (1.5.6)
     narkisr-git (0.0.1)
@@ -20,7 +20,7 @@ FORGE
       puppetlabs-apt (>= 0.0.1)
       puppetlabs-stdlib (>= 0.0.1)
     stahnma-epel (1.0.0)
-    stankevich-python (1.7.15)
+    stankevich-python (1.7.16)
       puppetlabs-stdlib (>= 4.0.0)
     zleslie-pkgng (0.2.5)
       puppetlabs-stdlib (>= 4.0.0)
@@ -28,7 +28,7 @@ FORGE
 GIT
   remote: /home/ronen/code/puppet-profiles
   ref: master
-  sha: 893ec72aff358e0f96e9d869136b9a67eaf2a214
+  sha: 37a6d448bc388f36ac201dc15a37d586cf0ff1b4
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
@@ -51,7 +51,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 0c810c1552a1c301911e16229a28c860afa5b7cc
+  sha: 69afcf5239728e7b53569c2eaecbc72e743768c2
   specs:
     strings-baseline (0.0.1)
 
