@@ -20,7 +20,7 @@ FORGE
       puppetlabs-apt (>= 0.0.1)
       puppetlabs-stdlib (>= 0.0.1)
     stahnma-epel (1.0.0)
-    stankevich-python (1.7.16)
+    stankevich-python (1.8.1)
       puppetlabs-stdlib (>= 4.0.0)
     zleslie-pkgng (0.2.5)
       puppetlabs-stdlib (>= 4.0.0)
@@ -28,7 +28,7 @@ FORGE
 GIT
   remote: /home/ronen/code/puppet-profiles
   ref: master
-  sha: ef957daeeaaf007a8a1ee31dc4b012dac6cde6e3
+  sha: eace78f15d4b8b7f94f20912ccc714e99de15c6f
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
