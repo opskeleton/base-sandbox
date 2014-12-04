@@ -3,7 +3,7 @@ FORGE
   specs:
     attachmentgenie-ufw (1.4.9)
       puppetlabs-stdlib (>= 2.2.1)
-    garethr-docker (2.1.0)
+    garethr-docker (2.2.0)
       puppetlabs-apt (>= 1.1.0)
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
@@ -168,14 +168,14 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vim.git
   ref: master
-  sha: 5dd05bfd7b994516ae5e4c434377bdc013741ea9
+  sha: c0a22a7fe216156b3e648bc80f994f8d969f23d8
   specs:
     strings-vim (0.0.1)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-virtualbox.git
   ref: master
-  sha: 1d05c4828beed2c8f05e154009ac1453433ac6e7
+  sha: 74dfcbe5c97755f3fb2c925a0011d59ec27d4677
   specs:
     strings-virtualbox (0.2.4)
       puppetlabs-apt (>= 1.1.0)
