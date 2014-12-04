@@ -19,7 +19,7 @@ FORGE
       maestrodev-wget (>= 1.4.5)
       puppetlabs-apt (>= 0.0.1)
       puppetlabs-stdlib (>= 0.0.1)
-    stahnma-epel (1.0.0)
+    stahnma-epel (1.0.1)
     stankevich-python (1.8.2)
       puppetlabs-stdlib (>= 4.0.0)
     zleslie-pkgng (0.2.5)
