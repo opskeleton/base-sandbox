@@ -30,7 +30,7 @@ end
 
 describe file('/etc/sudoers.d/celestial') do
     it { should be_file }
-    it { should contain 'celestial ALL=NOPASSWD: /tmp/*/scripts/run.sh --detailed-exitcodes'}
+    it { should contain 'celestial ALL=NOPASSWD: /tmp/*/scripts/run.sh  --detailed-exitcodes'}
 end
 
 
