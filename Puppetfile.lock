@@ -28,7 +28,7 @@ FORGE
 GIT
   remote: /home/ronen/code/puppet-profiles
   ref: master
-  sha: a4cc9d402a130f76e90620d3b93ed49fdafc1673
+  sha: 8cd932e345311132618b9cf7bad23677d45b63ec
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
@@ -195,6 +195,14 @@ GIT
   specs:
     rip-module-data (0.4.0)
 
+GIT
+  remote: git://github.com/saz/puppet-timezone.git
+  ref: master
+  sha: e82cd1b32f395217056df492e5a7dac8dc5c683a
+  specs:
+    saz-timezone (3.1.1)
+      puppetlabs-stdlib (>= 2.3.0)
+
 DEPENDENCIES
   garethr-docker (>= 0)
   maestrodev-rvm (>= 0)
@@ -202,6 +210,7 @@ DEPENDENCIES
   puppetlabs-apt (>= 0)
   puppetlabs-stdlib (>= 0)
   rip-module-data (>= 0)
+  saz-timezone (>= 0)
   strings-archive (>= 0)
   strings-backup (>= 0)
   strings-baseline (>= 0)

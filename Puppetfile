@@ -6,6 +6,9 @@ mod 'garethr/docker'
 mod 'zleslie/pkgng'
 mod 'maestrodev/rvm'
 
+mod 'saz/timezone', 
+  :git => 'git://github.com/saz/puppet-timezone.git'
+
 mod 'strings/zfs', 
    :git => 'git://github.com/pulling-strings/puppet-zfs.git'
 
