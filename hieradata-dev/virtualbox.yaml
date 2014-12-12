@@ -11,7 +11,7 @@ vim::home: '/home/vagrant'
 
 langs::ruby::user: 'vagrant'   
 
-git::user: 'vagrant'
+git::configure::user: 'vagrant'
 git::configure::scm_user: 'vagrant'       
 git::configure::scm_email: 'vagrant@gmail.com'
 
