@@ -28,7 +28,7 @@ FORGE
 GIT
   remote: /home/ronen/code/puppet-profiles
   ref: master
-  sha: 8cd932e345311132618b9cf7bad23677d45b63ec
+  sha: 7d3f3ba320cf4857d7b2544b9ca78f965ceb1ca1
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
@@ -95,7 +95,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-git.git
   ref: master
-  sha: c92b58b03b532b951ae93835931e38b870d8b6f9
+  sha: 89a24c7ae98f833ecdd7d1901b9a82bd2c317aba
   specs:
     strings-git (0.0.1)
 
