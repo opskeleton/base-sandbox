@@ -6,4 +6,5 @@ node 'minimal.local'{
   include baseline
   include baseline::update
   include baseline::celestial
+  include timezone
 }
