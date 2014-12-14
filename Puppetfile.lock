@@ -19,7 +19,7 @@ FORGE
       maestrodev-wget (>= 1.4.5)
       puppetlabs-apt (>= 0.0.1)
       puppetlabs-stdlib (>= 0.0.1)
-    stahnma-epel (1.0.1)
+    stahnma-epel (1.0.2)
     stankevich-python (1.8.2)
       puppetlabs-stdlib (>= 4.0.0)
     zleslie-pkgng (0.2.5)
@@ -28,7 +28,7 @@ FORGE
 GIT
   remote: /home/ronen/code/puppet-profiles
   ref: master
-  sha: 7d3f3ba320cf4857d7b2544b9ca78f965ceb1ca1
+  sha: 536c9dc5714538b572d39e623e458d5d3e769ce4
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
@@ -43,7 +43,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: 3358a646a558fddd676f09e7111bc4b5db4cd543
+  sha: 904944a85675a727e8636e5307ccb0a9b32f7502
   specs:
     strings-backup (0.1.1)
       rodjek-logrotate (>= 1.1.1)
