@@ -49,7 +49,9 @@ Vagrant.configure("2") do |config|
       end
 
       node.vm.synced_folder '.', '/vagrant', :nfs => true, id: 'vagrant-root'
-      node.vm.provision 'shell', inline: "cd /vagrant && ./run.sh manifests/#{type}.pp"
+	node.vm.provision :shell, :inline => 'pkg update -f'
+	node.vm.provision :shell, :inline => 'pkg upgrade -y'
+	node.vm.provision :shell, inline: "cd /vagrant && ./bsdrun.sh manifests/#{type}.pp"
     end
   end
 
