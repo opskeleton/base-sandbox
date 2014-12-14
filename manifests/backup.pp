@@ -37,11 +37,11 @@ node 'backup.local'{
 
   backup::duply::schedule {'s3-ex':
     precondition => '-d /tmp',
-    email => 'foo@gmail.com',
-    shapping     => {
-      interface  => 'eth0',
-      port       => '2222',
-      limit      => '45kbps'
+    email        => 'foo@gmail.com',
+    shapping    => {
+      interface => 'eth0',
+      port      => '2222',
+      limit     => '45kbps'
     },
   }
 
