@@ -45,3 +45,5 @@ sensu::sensu_plugin_version: 'latest'
 
 logging::syslog::syslog_server: 'kibana'
 timezone::timezone: 'Asia/Jerusalem'
+
+vagrant::user: 'vagrant'
