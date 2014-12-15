@@ -1,6 +1,7 @@
 node 'syncbsd.local' {
 
   include shell
+  include baseline::celestial
 
   class{'vim':
     repo => 'git://github.com/narkisr/vim-lite.git'
