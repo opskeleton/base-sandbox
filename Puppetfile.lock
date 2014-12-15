@@ -7,7 +7,7 @@ FORGE
       puppetlabs-apt (>= 1.1.0)
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
-    maestrodev-rvm (1.7.1)
+    maestrodev-rvm (1.8.0)
       puppetlabs-stdlib (>= 3.2.0)
     maestrodev-wget (1.5.6)
     narkisr-git (0.0.1)
@@ -28,7 +28,7 @@ FORGE
 GIT
   remote: /home/ronen/code/puppet-profiles
   ref: master
-  sha: 536c9dc5714538b572d39e623e458d5d3e769ce4
+  sha: ec4b5b2678e78877cc306f55d22cdec1753a9c87
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
@@ -43,7 +43,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: 904944a85675a727e8636e5307ccb0a9b32f7502
+  sha: 4401bf2824d43076448bea1c146935b11ab07a4f
   specs:
     strings-backup (0.1.1)
       rodjek-logrotate (>= 1.1.1)
@@ -51,7 +51,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: c60831dd4bad6bbb4aaa87669eabefc7e0285309
+  sha: 92311964cd2501e663e12b1faf35d807f89fd683
   specs:
     strings-baseline (0.0.1)
 
@@ -119,7 +119,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-langs.git
   ref: master
-  sha: 838b1bfe372431edfc380922447d00c748108ff7
+  sha: 7b9cfba1dee7687c44e4f7da6aebbb4ef3f0a151
   specs:
     strings-langs (0.1.0)
       puppetlabs-apt (>= 1.1.0)
@@ -146,7 +146,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-shell.git
   ref: master
-  sha: ae14131e6fbd70cd39e28bfb5e1694a599d2416e
+  sha: e7cdd49f0899d2ebd1a4518ee30d0992a701c84d
   specs:
     strings-shell (0.2.0)
       stankevich-python (>= 1.7.8)
@@ -161,7 +161,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: 6255b237ea9ca7231c45ce3d6d7d5ec3b76cfa54
+  sha: 37891470a67d1c257fab9daccee40c6972565d23
   specs:
     strings-vagrant (0.1.0)
 
