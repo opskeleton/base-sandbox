@@ -16,3 +16,4 @@ third-party.log
 hieradata/physical.yaml
 hieradata/common.yaml
 hieradata-prod
+plots

@@ -22,6 +22,8 @@ GEM
       CFPropertyList (~> 2.2.6)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
+    gruff (0.5.1)
+      rmagick
     her (0.7.2)
       activemodel (>= 3.0.0, < 4.2)
       activesupport (>= 3.0.0, < 4.2)
@@ -72,6 +74,7 @@ GEM
     rest-client (1.7.2)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
+    rmagick (2.13.4)
     rspec (2.99.0)
       rspec-core (~> 2.99.0)
       rspec-expectations (~> 2.99.0)
@@ -102,6 +105,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  gruff
   librarian-puppet
   opskeleton
   puppet
