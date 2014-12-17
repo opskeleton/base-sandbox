@@ -1,6 +1,7 @@
 require 'serverspec'
 require 'pathname'
 require 'net/ssh'
+require 'json'
 
 include SpecInfra::Helper::Ssh
 include SpecInfra::Helper::DetectOS
@@ -12,6 +13,19 @@ def run(cmd)
   end
 end
 
+class StopWatch
+  attr_accessor :total
+  def stop
+    @total = Time.now - @start
+  end
+
+  def reset
+    @start = Time.now	
+  end
+end
+
+WATCH = StopWatch.new
+
 RSpec.configure do |c|
   c.before :suite do
     c.host  = ENV['TARGET_HOST']
@@ -19,6 +33,7 @@ RSpec.configure do |c|
     options = Net::SSH::Config.for(c.host)
     if(!ENV['LOCAL'])
 	run("vagrant destroy #{c.host} -f")
+	WATCH.reset
 	run("vagrant up #{c.host}")
       config = `vagrant ssh-config #{c.host}`
       sshhost =  sshuser = ''
@@ -44,6 +59,12 @@ RSpec.configure do |c|
 
   c.after :suite do
     c.host  = ENV['TARGET_HOST']
+    WATCH.stop
+    rev = %x{git rev-parse HEAD}.chomp
+    File.open('benchmark.json', 'a') { |f| 
+	json = {:total => WATCH.total.to_i, :host => c.host, :revision => rev, :time => Time.now}.to_json
+	f.write("#{json}\n") 
+    }
     run("vagrant destroy #{c.host} -f")
   end
 end
