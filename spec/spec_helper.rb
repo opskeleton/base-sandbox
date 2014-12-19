@@ -6,6 +6,7 @@ require 'json'
 include SpecInfra::Helper::Ssh
 include SpecInfra::Helper::DetectOS
 
+
 def run(cmd)
   unless(system(cmd, out: $stdout, err: :out))
     puts 'Failed to setup vagrant machine'
@@ -13,14 +14,20 @@ def run(cmd)
   end
 end
 
+
 class StopWatch
-  attr_accessor :total
+  attr_accessor :total, :status
   def stop
     @total = Time.now - @start
   end
 
   def reset
     @start = Time.now	
+    @status = :success
+  end
+
+  def failed
+    @status = :failed	
   end
 end
 
@@ -57,14 +64,20 @@ RSpec.configure do |c|
     c.ssh = Net::SSH.start(sshhost, sshuser, options)
   end
 
-  c.after :suite do
+  c.after :each do |example|
+    WATCH.failed if example.exception
+  end
+
+  c.after :suite do |suite|
     c.host  = ENV['TARGET_HOST']
-    WATCH.stop
-    rev = %x{git rev-parse HEAD}.chomp
-    File.open('benchmark.json', 'a') { |f| 
-	json = {:total => WATCH.total.to_i, :host => c.host, :revision => rev, :time => Time.now}.to_json
-	f.write("#{json}\n") 
-    }
-    run("vagrant destroy #{c.host} -f")
+    if(WATCH.status.eql?(:success))
+	 WATCH.stop
+	 rev = %x{git rev-parse HEAD}.chomp
+	 File.open('benchmark.json', 'a') { |f| 
+	   json = {:total => WATCH.total.to_i, :host => c.host, :revision => rev, :time => Time.now}.to_json
+	   f.write("#{json}\n") 
+	 }
+    end
+    run("vagrant destroy #{c.host} -f") unless ENV['SKIP_DESTROY']
   end
 end
