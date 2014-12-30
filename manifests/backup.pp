@@ -89,7 +89,9 @@ node 'backup.local'{
     headless => true
   }
 
-  include backup::attic
+  class{'backup::attic':
+    fuse => true
+  }
 }
 
 
