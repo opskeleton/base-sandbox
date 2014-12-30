@@ -14,3 +14,4 @@
 {"total":151,"host":"zfs","revision":"97601d490c4c5be8fdb0cd2887b74fff47c096a8","time":"2014-12-19 04:41:58 +0200"}
 {"total":428,"host":"langs","revision":"97601d490c4c5be8fdb0cd2887b74fff47c096a8","time":"2014-12-19 23:40:40 +0200"}
 {"total":539,"host":"virtualized","revision":"41e882133265f36ba5cc646baadbd88e91111530","time":"2014-12-30 05:39:17 +0200"}
+{"total":457,"host":"backup","revision":"0bd7b653b556529ff57fe1d0fed7ace487ba0110","time":"2014-12-30 19:59:01 +0200"}
