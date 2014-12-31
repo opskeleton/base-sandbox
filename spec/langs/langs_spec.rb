@@ -16,6 +16,11 @@ describe command('node -v') do
   it { should return_stdout 'v0.10.33' }
 end
 
+describe command('go version') do
+  it { should return_stdout 'go version go1.4 linux/amd64' }
+end
+
+
 # describe ppa('chris-lea/node.js') do
   # it { should exist }
 # end
