@@ -69,6 +69,9 @@ mod 'strings/logging',
 mod 'strings/desktop', 
   :git => 'git://github.com/pulling-strings/puppet-desktop.git'
 
+mod 'strings/barbecue', 
+  :git => 'git://github.com/pulling-strings/puppet-barbecue.git'
+
 mod 'narkisr/profiles', 
   :git => '/home/ronen/code/puppet-profiles'
 

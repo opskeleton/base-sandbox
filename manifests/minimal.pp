@@ -7,4 +7,6 @@ node 'minimal.local'{
   include baseline::update
   include baseline::celestial
   include timezone
+  include barbecue
+  include barbecue::packages
 }

@@ -43,10 +43,18 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: d96090f66eb92360e61dbe740224c215091eab2e
+  sha: 7f4ee762d2cc949d95ac29da2ed93f4c9c149cb1
   specs:
     strings-backup (0.1.1)
       rodjek-logrotate (>= 1.1.1)
+
+GIT
+  remote: git://github.com/pulling-strings/puppet-barbecue.git
+  ref: master
+  sha: 2eb7189c2521a8c74475b57a972b3568eba2f23b
+  specs:
+    strings-barbecue (0.0.2)
+      puppetlabs-apt (>= 1.5.2)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
@@ -119,7 +127,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-langs.git
   ref: master
-  sha: 7f6f2a5721d547fefc02f405844b8db7e0435051
+  sha: 3875e3681c651f70e3ab94e5ddf61f9c68f07b51
   specs:
     strings-langs (0.1.0)
       puppetlabs-apt (>= 1.1.0)
@@ -213,6 +221,7 @@ DEPENDENCIES
   saz-timezone (>= 0)
   strings-archive (>= 0)
   strings-backup (>= 0)
+  strings-barbecue (>= 0)
   strings-baseline (>= 0)
   strings-build (>= 0)
   strings-clamav (>= 0)
