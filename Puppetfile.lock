@@ -3,7 +3,7 @@ FORGE
   specs:
     attachmentgenie-ufw (1.4.9)
       puppetlabs-stdlib (>= 2.2.1)
-    garethr-docker (3.1.0)
+    garethr-docker (3.3.1)
       puppetlabs-apt (>= 1.1.0)
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
@@ -15,10 +15,10 @@ FORGE
       puppetlabs-stdlib (>= 2.2.1)
     puppetlabs-stdlib (4.5.0)
     rodjek-logrotate (1.1.1)
-    sensu-sensu (1.3.1)
-      maestrodev-wget (>= 1.4.5)
-      puppetlabs-apt (>= 0.0.1)
-      puppetlabs-stdlib (>= 0.0.1)
+    sensu-sensu (1.4.0)
+      maestrodev-wget (< 2.0.0, >= 1.4.5)
+      puppetlabs-apt (< 2.0.0, >= 0.0.1)
+      puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
     stahnma-epel (1.0.2)
     stankevich-python (1.8.2)
       puppetlabs-stdlib (>= 4.0.0)
@@ -28,7 +28,7 @@ FORGE
 GIT
   remote: /home/ronen/code/puppet-profiles
   ref: master
-  sha: ba896a42a7112ffbbf431e880ef7fc02f9a40469
+  sha: 5b4c32bc76dcd8ee25cf24b0de35fb3dc686c607
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
@@ -51,7 +51,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-barbecue.git
   ref: master
-  sha: 50aa7751006af0d7b67f82fbde560dd74adf2cea
+  sha: 793a2ea18c8626a302d95972963cbb6a980b776b
   specs:
     strings-barbecue (0.0.2)
       puppetlabs-apt (>= 1.5.2)
