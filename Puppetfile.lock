@@ -7,15 +7,15 @@ FORGE
       puppetlabs-apt (>= 1.1.0)
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
-    maestrodev-rvm (1.8.1)
+    maestrodev-rvm (1.9.0)
       puppetlabs-stdlib (>= 4.0.0)
     maestrodev-wget (1.5.7)
     narkisr-git (0.0.1)
     puppetlabs-apt (1.7.0)
       puppetlabs-stdlib (>= 2.2.1)
-    puppetlabs-stdlib (4.5.0)
+    puppetlabs-stdlib (4.5.1)
     rodjek-logrotate (1.1.1)
-    sensu-sensu (1.4.0)
+    sensu-sensu (1.5.0)
       maestrodev-wget (< 2.0.0, >= 1.4.5)
       puppetlabs-apt (< 2.0.0, >= 0.0.1)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
@@ -28,7 +28,7 @@ FORGE
 GIT
   remote: /home/ronen/code/puppet-profiles
   ref: master
-  sha: 5b4c32bc76dcd8ee25cf24b0de35fb3dc686c607
+  sha: ec4b5b2678e78877cc306f55d22cdec1753a9c87
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
