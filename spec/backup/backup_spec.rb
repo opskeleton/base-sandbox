@@ -5,9 +5,6 @@ describe file('/etc/duply/s3-ex/conf') do
     it { should contain 'GPG_PW=blabla' }
 end
 
-# syncthing
-version = 'v0.8.17'
-
 describe file("/opt/syncthing/.config/syncthing/config.xml") do
     it { should contain 'tls="true"' }
     it { should contain '~/appliances-1' }
@@ -17,6 +14,7 @@ end
 describe service('syncthing') do
     it { should be_running }
 end
+
 describe port(8080) do
    it { should be_listening }
 end
