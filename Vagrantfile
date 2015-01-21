@@ -26,7 +26,7 @@ Vagrant.configure("2") do |config|
   bridge ||= 'eth0'
 
   # Ubuntu instances
-  %w(desktop pythonized langs minimal backup virtualized logging zfs example).each do |type|
+  %w(build desktop pythonized langs minimal backup virtualized logging zfs example).each do |type|
     config.vm.define type.to_sym do |node| 
       node.vm.box = 'ubuntu-14.04.1_puppet-3.7.3'
       node.vm.hostname = "#{type}.local"
