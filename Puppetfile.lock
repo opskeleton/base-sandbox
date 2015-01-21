@@ -28,7 +28,7 @@ FORGE
 GIT
   remote: /home/ronen/code/puppet-profiles
   ref: master
-  sha: 781f26c71e30578fb37c8e4f6d4484934dec0aa7
+  sha: fd607e1965472aabf0fb1440130b6933a880e123
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
@@ -43,7 +43,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: e1484554486b1d74d89a40e343b4373a79bf8531
+  sha: 53452cb0ded909b508eeab64310d2cb1480acca1
   specs:
     strings-backup (0.1.1)
       rodjek-logrotate (>= 1.1.1)
@@ -66,7 +66,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-build.git
   ref: master
-  sha: 99206edd6b1c82e79b722c1c6505e2fbe23c1cdd
+  sha: 852fd55dc33c377fbd5f568d0dff4885a33fb2b7
   specs:
     strings-build (0.1.0)
 
