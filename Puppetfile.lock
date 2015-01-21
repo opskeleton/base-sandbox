@@ -66,7 +66,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-build.git
   ref: master
-  sha: 99206edd6b1c82e79b722c1c6505e2fbe23c1cdd
+  sha: 852fd55dc33c377fbd5f568d0dff4885a33fb2b7
   specs:
     strings-build (0.1.0)
 
