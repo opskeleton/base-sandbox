@@ -47,3 +47,11 @@ logging::syslog::syslog_server: 'kibana'
 timezone::timezone: 'Asia/Jerusalem'
 
 vagrant::user: 'vagrant'
+
+backup::syncthing::repos:
+  appliances:
+    directory: '~/appliances-1'
+    ro: false
+    nodes: 
+      - 'C56YYFN-U7QEMMU-2J3DVM4-RFHHNAT-FH7ATN6-VJSREZY-XKYXPOF-RSKC7QE'
+ 
