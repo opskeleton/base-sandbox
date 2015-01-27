@@ -66,7 +66,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-build.git
   ref: master
-  sha: 852fd55dc33c377fbd5f568d0dff4885a33fb2b7
+  sha: 61a01db4f1e8ee494a2519d21ece5c66893ad62e
   specs:
     strings-build (0.1.0)
 
@@ -118,7 +118,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-jdk.git
   ref: master
-  sha: a9a2e8bcfdee2e17e8a2d1b7952084c1c4b37646
+  sha: 9a2f128970d2c78bdf67ae486ee283afe9012b53
   specs:
     strings-jdk (0.0.1)
       puppetlabs-apt (>= 0.0.3)
@@ -169,7 +169,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: 719127df63c907603f11b6e5fe1c6d13c150c4ed
+  sha: dce4bb1e6dd7018d8ff7eb01996f669969189548
   specs:
     strings-vagrant (0.1.0)
 
