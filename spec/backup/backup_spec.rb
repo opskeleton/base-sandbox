@@ -19,3 +19,6 @@ describe port(8080) do
    it { should be_listening }
 end
 
+describe command('sleep 10 && wget localhost:8080 --no-check-certificate') do
+  its(:stderr) { should match /Authentication Failed/ }
+end
