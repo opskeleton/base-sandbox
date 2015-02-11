@@ -3,12 +3,12 @@ FORGE
   specs:
     attachmentgenie-ufw (1.4.9)
       puppetlabs-stdlib (>= 2.2.1)
-    garethr-docker (3.3.1)
+    garethr-docker (3.3.2)
       puppetlabs-apt (>= 1.1.0)
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
-    maestrodev-rvm (1.9.0)
-      puppetlabs-stdlib (>= 4.0.0)
+    maestrodev-rvm (1.10.0)
+      puppetlabs-stdlib (>= 4.2.0)
     maestrodev-wget (1.5.7)
     narkisr-git (0.0.1)
     puppetlabs-apt (1.7.0)
@@ -20,7 +20,7 @@ FORGE
       puppetlabs-apt (< 2.0.0, >= 0.0.1)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
     stahnma-epel (1.0.2)
-    stankevich-python (1.8.2)
+    stankevich-python (1.8.3)
       puppetlabs-stdlib (>= 4.0.0)
     zleslie-pkgng (0.2.5)
       puppetlabs-stdlib (>= 4.0.0)
@@ -66,7 +66,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-build.git
   ref: master
-  sha: 61a01db4f1e8ee494a2519d21ece5c66893ad62e
+  sha: db8a6a374f2d6de8a3a37c96bbe2627b4e638ca3
   specs:
     strings-build (0.1.0)
 
@@ -169,7 +169,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: dce4bb1e6dd7018d8ff7eb01996f669969189548
+  sha: 56c230232b1c5925cde1ba480aca7d0f2887a6dc
   specs:
     strings-vagrant (0.1.0)
 
