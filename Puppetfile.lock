@@ -28,7 +28,7 @@ FORGE
 GIT
   remote: /home/ronen/code/puppet-profiles
   ref: master
-  sha: 2e0cba649a47e4699550e5e52fb3a38505acba42
+  sha: de744eb9e62af75e896129afc200c0e367e8d385
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
@@ -51,7 +51,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-barbecue.git
   ref: master
-  sha: 793a2ea18c8626a302d95972963cbb6a980b776b
+  sha: b7103de925e400335c20475899dd78cd8f0ce8b4
   specs:
     strings-barbecue (0.0.2)
       puppetlabs-apt (>= 1.5.2)
@@ -66,7 +66,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-build.git
   ref: master
-  sha: db8a6a374f2d6de8a3a37c96bbe2627b4e638ca3
+  sha: 84a2c240ec5807ee7200157fcb90c1e05d2a5c31
   specs:
     strings-build (0.1.0)
 
@@ -169,7 +169,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: 56c230232b1c5925cde1ba480aca7d0f2887a6dc
+  sha: 66d94eada2e69f9d9028f6c5c83c35f3cd160f1e
   specs:
     strings-vagrant (0.1.0)
 
