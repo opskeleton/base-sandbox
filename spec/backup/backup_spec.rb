@@ -15,7 +15,6 @@ describe service('syncthing') do
     it { should be_running }
 end
 
-describe port(8080) do
-   it { should be_listening }
+describe command('sleep 10 && wget localhost:8080 --no-check-certificate') do
+  its(:stderr) { should match /Authentication Failed/ }
 end
-

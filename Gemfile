@@ -6,7 +6,7 @@ gem 'puppet'
 # testing
 gem 'rspec-puppet'
 gem 'puppetlabs_spec_helper', '>= 0.1.0'
-gem 'serverspec', '~> 1.14.0'
+gem 'serverspec'
 
 # build 
 gem 'puppet-lint'

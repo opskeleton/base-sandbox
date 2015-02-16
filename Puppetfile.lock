@@ -3,12 +3,12 @@ FORGE
   specs:
     attachmentgenie-ufw (1.4.9)
       puppetlabs-stdlib (>= 2.2.1)
-    garethr-docker (3.3.1)
+    garethr-docker (3.3.2)
       puppetlabs-apt (>= 1.1.0)
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
-    maestrodev-rvm (1.9.0)
-      puppetlabs-stdlib (>= 4.0.0)
+    maestrodev-rvm (1.10.0)
+      puppetlabs-stdlib (>= 4.2.0)
     maestrodev-wget (1.5.7)
     narkisr-git (0.0.1)
     puppetlabs-apt (1.7.0)
@@ -20,7 +20,7 @@ FORGE
       puppetlabs-apt (< 2.0.0, >= 0.0.1)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
     stahnma-epel (1.0.2)
-    stankevich-python (1.8.2)
+    stankevich-python (1.8.3)
       puppetlabs-stdlib (>= 4.0.0)
     zleslie-pkgng (0.2.5)
       puppetlabs-stdlib (>= 4.0.0)
@@ -28,7 +28,7 @@ FORGE
 GIT
   remote: /home/ronen/code/puppet-profiles
   ref: master
-  sha: 2e0cba649a47e4699550e5e52fb3a38505acba42
+  sha: de744eb9e62af75e896129afc200c0e367e8d385
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
@@ -51,7 +51,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-barbecue.git
   ref: master
-  sha: 793a2ea18c8626a302d95972963cbb6a980b776b
+  sha: b7103de925e400335c20475899dd78cd8f0ce8b4
   specs:
     strings-barbecue (0.0.2)
       puppetlabs-apt (>= 1.5.2)
@@ -66,7 +66,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-build.git
   ref: master
-  sha: 61a01db4f1e8ee494a2519d21ece5c66893ad62e
+  sha: 84a2c240ec5807ee7200157fcb90c1e05d2a5c31
   specs:
     strings-build (0.1.0)
 
@@ -169,7 +169,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: dce4bb1e6dd7018d8ff7eb01996f669969189548
+  sha: 66d94eada2e69f9d9028f6c5c83c35f3cd160f1e
   specs:
     strings-vagrant (0.1.0)
 
