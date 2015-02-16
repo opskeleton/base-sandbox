@@ -47,6 +47,7 @@ logging::syslog::syslog_server: 'kibana'
 timezone::timezone: 'Asia/Jerusalem'
 
 vagrant::user: 'vagrant'
+vagrant::home: '/home/vagrant'
 
 backup::syncthing::repos:
   appliances:
