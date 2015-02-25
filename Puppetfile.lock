@@ -7,7 +7,7 @@ FORGE
       puppetlabs-apt (>= 1.1.0)
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
-    maestrodev-rvm (1.10.0)
+    maestrodev-rvm (1.10.1)
       puppetlabs-stdlib (>= 4.2.0)
     maestrodev-wget (1.5.7)
     narkisr-git (0.0.1)
@@ -169,7 +169,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: 66d94eada2e69f9d9028f6c5c83c35f3cd160f1e
+  sha: 7b8943ff941897f0a095e49ddb2b78523fe3630c
   specs:
     strings-vagrant (0.1.0)
 
