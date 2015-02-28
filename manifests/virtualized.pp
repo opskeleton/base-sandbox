@@ -1,4 +1,4 @@
-node 'virtualized.local'{
+node default {
   include vagrant
   include kvm
   include docker
