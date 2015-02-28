@@ -199,7 +199,7 @@ GIT
 GIT
   remote: git://github.com/ripienaar/puppet-module-data.git
   ref: master
-  sha: 010c9eb3496f515582a4d4868154e5fb246ee9b8
+  sha: 0eead7f411f404b0a9a73bb161aac46c9fbe3219
   specs:
     rip-module-data (0.4.0)
 
