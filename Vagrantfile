@@ -35,6 +35,13 @@ Vagrant.configure("2") do |config|
         vb.customize ['modifyvm', :id, '--memory', 2048, '--cpus', 4]
       end
 
+      node.vm.provider :libvirt do |domain|
+	 domain.uri = 'qemu+unix:///system'
+	  domain.host = "#{type}.local"
+	  domain.memory = 2048
+	  domain.cpus = 2
+      end
+ 
       node.vm.provision :shell, :inline => update
       node.vm.provision :puppet do |puppet|
         puppet.manifests_path = 'manifests'
