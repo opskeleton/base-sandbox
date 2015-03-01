@@ -1,5 +1,6 @@
 node default {
   include vagrant
+  include vagrant::libvirt
   include kvm
   include docker
   include shell::fig
