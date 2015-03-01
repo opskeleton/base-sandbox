@@ -46,6 +46,8 @@ sensu::sensu_plugin_version: 'latest'
 logging::syslog::syslog_server: 'kibana'
 timezone::timezone: 'Asia/Jerusalem'
 
+kvm::user: 'vagrant'
+
 vagrant::user: 'vagrant'
 vagrant::home: '/home/vagrant'
 
