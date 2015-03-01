@@ -1,5 +1,7 @@
 # setting up kvm on Ubuntu
-class kvm {
+class kvm($user=false) {
+
+  validate_string($user)
 
   $forward = '-I FORWARD -m physdev -physdev-is-bridged -j ACCEPT'
 
@@ -32,4 +34,12 @@ class kvm {
     user        => 'root',
     refreshonly => true
   }
+
+  exec{"adding ${user} to libvirtd group":
+    command => "usermod -G libvirtd  -a ${user}",
+    user    => 'root',
+    path    => ['/usr/bin','/bin','/usr/sbin/'],
+    unless  => "groups ${user} | grep libvirtd"
+  }
+
 }
