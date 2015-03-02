@@ -41,8 +41,7 @@ class ServerspecTask < RSpec::Core::RakeTask
 end
 
 namespace :serverspec do
-
-  %w(build syncbsd desktop logging zfs langs minimal backup virtualized desktop full).each do |profile|
+  Dir['manifests/*'].map{|it| it.match(/manifests\/(\w*).pp/)[1]}.each do |profile|
     ServerspecTask.new(profile.to_sym) do |t|
       t.target = profile 
       t.pattern = "spec/#{profile}/*_spec.rb"
