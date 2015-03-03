@@ -44,6 +44,7 @@ sensu::rabbitmq_subscription: 'syncthing'
 sensu::sensu_plugin_version: 'latest'
 
 logging::syslog::syslog_server: 'kibana'
+monitoring::collectd::host: 'localhost'
 timezone::timezone: 'Asia/Jerusalem'
 
 kvm::user: 'vagrant'
