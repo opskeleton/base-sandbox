@@ -1,4 +1,4 @@
-node 'minimal.local'{
+node default {
   include apt
   include shell
   include vim

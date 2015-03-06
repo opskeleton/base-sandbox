@@ -28,12 +28,12 @@ Vagrant.configure("2") do |config|
   # Ubuntu instances
   Dir['manifests/*'].map{|it| it.match(/manifests\/(\w*).pp/)[1]}.each do |type|
     config.vm.define type.to_sym do |node| 
-      node.vm.box = 'ubuntu-14.04.1_puppet-3.7.3'
-      node.vm.hostname = "#{type}.local"
+	node.vm.box = 'ubuntu-14.04.1_puppet-3.7.3'
+	node.vm.hostname = "#{type}.local"
 
-      node.vm.provider :virtualbox do |vb|
-        vb.customize ['modifyvm', :id, '--memory', 2048, '--cpus', 4]
-      end
+	node.vm.provider :virtualbox do |vb|
+	  vb.customize ['modifyvm', :id, '--memory', 2048, '--cpus', 4]
+	end
 
       node.vm.provider :libvirt do |domain|
         domain.uri = 'qemu+unix:///system'
@@ -54,19 +54,19 @@ Vagrant.configure("2") do |config|
   # BSD instances
   %w(syncbsd).each do |type|
     config.vm.define type.to_sym do |node|
-      node.vm.box = 'trueos-10.1_puppet-3.6.2' 
-      node.vm.guest = :freebsd
-      node.vm.network :public_network, :bridge => bridge
-      node.vm.network 'private_network', ip: '10.0.1.10'
-      node.vm.hostname = "#{type}.local"
+	node.vm.box = 'trueos-10.1_puppet-3.6.2' 
+	node.vm.guest = :freebsd
+	node.vm.network :public_network, :bridge => bridge
+	node.vm.network 'private_network', ip: '10.0.1.10'
+	node.vm.hostname = "#{type}.local"
 
-      node.vm.provider :virtualbox do |vb|
-        vb.customize ['modifyvm', :id, '--memory', 2048, '--cpus', 2]
-      end
+	node.vm.provider :virtualbox do |vb|
+	  vb.customize ['modifyvm', :id, '--memory', 2048, '--cpus', 2]
+	end
 
-      node.vm.synced_folder '.', '/vagrant', :nfs => true, id: 'vagrant-root'
-      node.vm.provision :shell, :inline => update_bsd
-      node.vm.provision :shell, inline: "cd /vagrant && ./bsdrun.sh manifests/#{type}.pp"
+	node.vm.synced_folder '.', '/vagrant', :nfs => true, id: 'vagrant-root'
+	node.vm.provision :shell, :inline => update_bsd
+	node.vm.provision :shell, inline: "cd /vagrant && ./bsdrun.sh manifests/#{type}.pp"
     end
   end
 

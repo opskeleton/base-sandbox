@@ -11,8 +11,13 @@ FORGE
       puppetlabs-stdlib (>= 4.2.0)
     maestrodev-wget (1.5.7)
     narkisr-git (0.0.1)
+    pdxcat-collectd (3.2.0)
+      puppetlabs-concat (>= 1.0.4)
+      puppetlabs-stdlib (>= 3.0.0)
     puppetlabs-apt (1.7.0)
       puppetlabs-stdlib (>= 2.2.1)
+    puppetlabs-concat (1.2.0)
+      puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
     puppetlabs-stdlib (4.5.1)
     rodjek-logrotate (1.1.1)
     sensu-sensu (1.5.0)
@@ -28,7 +33,7 @@ FORGE
 GIT
   remote: /home/ronen/code/puppet-profiles
   ref: master
-  sha: 4dede918917378418ad2e41a44ab45275394793f
+  sha: fbac86a93fd16fde960b9b224e7e0021dca69945
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
@@ -144,17 +149,18 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-monitoring.git
   ref: master
-  sha: 51db0b4c1faa2f2b5cad581a12a97bd0f2bb00f3
+  sha: 6978969c75e467f97405f7bb23c70e8ce3a92760
   specs:
     strings-monitoring (0.1.0)
       narkisr-git (>= 0)
+      pdxcat-collectd (>= 0)
       puppetlabs-stdlib (>= 0)
       sensu-sensu (>= 0)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-shell.git
   ref: master
-  sha: e7cdd49f0899d2ebd1a4518ee30d0992a701c84d
+  sha: a166de1d269016989117dc8beacd540e0b6f7b10
   specs:
     strings-shell (0.2.0)
       stankevich-python (>= 1.7.8)
