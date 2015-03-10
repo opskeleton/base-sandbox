@@ -108,7 +108,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-git.git
   ref: master
-  sha: 89a24c7ae98f833ecdd7d1901b9a82bd2c317aba
+  sha: 6ef1649e15e60a6143695d5d6dd1a07dd98feb9e
   specs:
     strings-git (0.0.1)
 
@@ -160,7 +160,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-shell.git
   ref: master
-  sha: a166de1d269016989117dc8beacd540e0b6f7b10
+  sha: 7e9dc7a57536f03c95435025182c8a277249af49
   specs:
     strings-shell (0.2.0)
       stankevich-python (>= 1.7.8)
@@ -189,7 +189,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-virtualbox.git
   ref: master
-  sha: 74dfcbe5c97755f3fb2c925a0011d59ec27d4677
+  sha: 57259d60c117ba6aab0801aba95673a414750147
   specs:
     strings-virtualbox (0.2.4)
       puppetlabs-apt (>= 1.1.0)
