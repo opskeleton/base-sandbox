@@ -28,7 +28,7 @@ Vagrant.configure("2") do |config|
   # Ubuntu instances
   Dir['manifests/*'].map{|it| it.match(/manifests\/(\w*).pp/)[1]}.each do |type|
     config.vm.define type.to_sym do |node| 
-	node.vm.box = 'ubuntu-14.04.1_puppet-3.7.3'
+	node.vm.box = 'ubuntu-14.10_puppet-3.7.3'
 	node.vm.hostname = "#{type}.local"
 
 	node.vm.provider :virtualbox do |vb|
