@@ -6,6 +6,6 @@ node default {
     remote_host => 'localhost',
     remote_port => '22',
     ssh_id_file => '/home/vagrant/.ssh/id_rsa',
-    ssh_config  => '/home/vagrant/.ssh/config'
+    ssh_config  => '-R 1234:localhost:22'
   }
 }
