@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe package('virtualbox-4.3') do
+describe package('virtualbox') do
     it { should be_installed }
 end
 
@@ -11,10 +11,10 @@ end
 cmd = "vboxmanage list systemproperties | grep 'Default machine'"
 
 # mainly require for cmd to work
-describe command("/etc/init.d/vboxdrv setup") do
-    it { should return_exit_status 0 }
-end
-
+# describe command("/etc/init.d/vboxdrv setup") do
+#     it { should return_exit_status 0 }
+# end
+#
 describe command("su - vagrant -c \"#{cmd}\"") do
     it { should return_exit_status 0 }
     it { should return_stdout('Default machine folder:          /vagrant') }
