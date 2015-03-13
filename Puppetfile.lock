@@ -7,7 +7,7 @@ FORGE
       puppetlabs-apt (>= 1.1.0)
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
-    maestrodev-rvm (1.10.1)
+    maestrodev-rvm (1.10.2)
       puppetlabs-stdlib (>= 4.2.0)
     maestrodev-wget (1.5.7)
     narkisr-git (0.0.1)
@@ -33,7 +33,7 @@ FORGE
 GIT
   remote: /home/ronen/code/puppet-profiles
   ref: master
-  sha: f235e51e3279d3b7e4ffcb5ba4798d8df1f8cac0
+  sha: 75cc78b410773a2e268f95b556ff4084b9ec9823
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
@@ -48,7 +48,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-autossh.git
   ref: master
-  sha: f3354aade1deb6b7ac4310675aae5ce623708ad2
+  sha: 8613df05d9cfe10b5b276444a4913f4d8f7fed66
   specs:
     strings-autossh (0.1.0)
       puppetlabs-stdlib (>= 0)
