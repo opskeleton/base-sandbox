@@ -46,6 +46,14 @@ GIT
     strings-archive (0.2.0)
 
 GIT
+  remote: git://github.com/pulling-strings/puppet-autossh.git
+  ref: master
+  sha: f3354aade1deb6b7ac4310675aae5ce623708ad2
+  specs:
+    strings-autossh (0.1.0)
+      puppetlabs-stdlib (>= 0)
+
+GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
   sha: 0dd4efff6c1a05aa254ea450bf4130c76a10990e
@@ -226,6 +234,7 @@ DEPENDENCIES
   rip-module-data (>= 0)
   saz-timezone (>= 0)
   strings-archive (>= 0)
+  strings-autossh (>= 0)
   strings-backup (>= 0)
   strings-barbecue (>= 0)
   strings-baseline (>= 0)

@@ -77,3 +77,6 @@ mod 'narkisr/profiles',
 
 mod 'rip/module-data',
   :git => 'git://github.com/ripienaar/puppet-module-data.git'
+
+mod 'strings/autossh',
+  :git => 'git://github.com/pulling-strings/puppet-autossh.git'
