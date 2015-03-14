@@ -3,7 +3,7 @@ class kvm($user=false) {
 
   validate_string($user)
 
-  $forward = '-I FORWARD -m physdev -physdev-is-bridged -j ACCEPT'
+  $forward = '-I FORWARD -m physdev --physdev-is-bridged -j ACCEPT'
 
   package{['qemu-kvm', 'libvirt-bin', 'bridge-utils', 'virt-manager']:
     ensure  => present
