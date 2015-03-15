@@ -33,7 +33,7 @@ FORGE
 GIT
   remote: /home/ronen/code/puppet-profiles
   ref: master
-  sha: 75cc78b410773a2e268f95b556ff4084b9ec9823
+  sha: 1d0e21be3c5b4f8d828a3492cd880b067e225ffa
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
