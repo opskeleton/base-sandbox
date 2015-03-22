@@ -14,7 +14,7 @@ FORGE
     pdxcat-collectd (3.2.0)
       puppetlabs-concat (>= 1.0.4)
       puppetlabs-stdlib (>= 3.0.0)
-    puppetlabs-apt (1.7.0)
+    puppetlabs-apt (1.8.0)
       puppetlabs-stdlib (>= 2.2.1)
     puppetlabs-concat (1.2.0)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
@@ -25,7 +25,7 @@ FORGE
       puppetlabs-apt (< 2.0.0, >= 0.0.1)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
     stahnma-epel (1.0.2)
-    stankevich-python (1.8.3)
+    stankevich-python (1.9.0)
       puppetlabs-stdlib (>= 4.0.0)
     zleslie-pkgng (0.2.5)
       puppetlabs-stdlib (>= 4.0.0)
@@ -33,7 +33,7 @@ FORGE
 GIT
   remote: /home/ronen/code/puppet-profiles
   ref: master
-  sha: 1d0e21be3c5b4f8d828a3492cd880b067e225ffa
+  sha: 0a1cf621070be4baa4e6900c99bb09336a6f9223
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
@@ -190,7 +190,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vim.git
   ref: master
-  sha: c0a22a7fe216156b3e648bc80f994f8d969f23d8
+  sha: e7f886d5aa61aaf70bbff4ccd628a9e96a808bff
   specs:
     strings-vim (0.0.1)
 
