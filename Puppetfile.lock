@@ -1,8 +1,6 @@
 FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
-    attachmentgenie-ufw (1.4.9)
-      puppetlabs-stdlib (>= 2.2.1)
     garethr-docker (3.3.2)
       puppetlabs-apt (>= 1.1.0)
       puppetlabs-stdlib (>= 4.1.0)
@@ -14,7 +12,7 @@ FORGE
     pdxcat-collectd (3.2.0)
       puppetlabs-concat (>= 1.0.4)
       puppetlabs-stdlib (>= 3.0.0)
-    puppetlabs-apt (1.7.0)
+    puppetlabs-apt (1.8.0)
       puppetlabs-stdlib (>= 2.2.1)
     puppetlabs-concat (1.2.0)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
@@ -25,7 +23,7 @@ FORGE
       puppetlabs-apt (< 2.0.0, >= 0.0.1)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
     stahnma-epel (1.0.2)
-    stankevich-python (1.8.3)
+    stankevich-python (1.9.0)
       puppetlabs-stdlib (>= 4.0.0)
     zleslie-pkgng (0.2.5)
       puppetlabs-stdlib (>= 4.0.0)
@@ -33,10 +31,18 @@ FORGE
 GIT
   remote: /home/ronen/code/puppet-profiles
   ref: master
-  sha: 75cc78b410773a2e268f95b556ff4084b9ec9823
+  sha: 5021b72e43d3a90dac33a234a9b4db128d3ef6dd
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
+
+GIT
+  remote: git://github.com/pulling-strings/attachmentgenie-ufw.git
+  ref: master
+  sha: f92d75ef2d41c755ec81e7ada1c787ea01daca5d
+  specs:
+    strings-ufw (2.0.0)
+      puppetlabs-stdlib (< 5.0.0, >= 2.2.1)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-archive.git
@@ -94,10 +100,9 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-desktop.git
   ref: master
-  sha: 2b0ae6726dcb478e03e0d45e19d45686f4d4c7c7
+  sha: 51bc076949fe4e5462928ba496dc1ad2bdfc3933
   specs:
     strings-desktop (0.1.0)
-      attachmentgenie-ufw (>= 1.4.9)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-downloadfile.git
@@ -190,14 +195,14 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vim.git
   ref: master
-  sha: c0a22a7fe216156b3e648bc80f994f8d969f23d8
+  sha: e7f886d5aa61aaf70bbff4ccd628a9e96a808bff
   specs:
     strings-vim (0.0.1)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-virtualbox.git
   ref: master
-  sha: 57259d60c117ba6aab0801aba95673a414750147
+  sha: d2d094a06434e23a30b5c3c9ea78139c1981a6d6
   specs:
     strings-virtualbox (0.2.4)
       puppetlabs-apt (>= 1.1.0)
@@ -251,6 +256,7 @@ DEPENDENCIES
   strings-monitoring (>= 0)
   strings-shell (>= 0)
   strings-ssmtp (>= 0)
+  strings-ufw (>= 0)
   strings-vagrant (>= 0)
   strings-vim (>= 0)
   strings-virtualbox (>= 0)
