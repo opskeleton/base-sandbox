@@ -1,8 +1,6 @@
 FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
-    attachmentgenie-ufw (1.4.9)
-      puppetlabs-stdlib (>= 2.2.1)
     garethr-docker (3.3.2)
       puppetlabs-apt (>= 1.1.0)
       puppetlabs-stdlib (>= 4.1.0)
@@ -37,6 +35,14 @@ GIT
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
+
+GIT
+  remote: git://github.com/pulling-strings/attachmentgenie-ufw.git
+  ref: master
+  sha: f92d75ef2d41c755ec81e7ada1c787ea01daca5d
+  specs:
+    strings-ufw (2.0.0)
+      puppetlabs-stdlib (< 5.0.0, >= 2.2.1)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-archive.git
@@ -94,10 +100,9 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-desktop.git
   ref: master
-  sha: 2b0ae6726dcb478e03e0d45e19d45686f4d4c7c7
+  sha: 51bc076949fe4e5462928ba496dc1ad2bdfc3933
   specs:
     strings-desktop (0.1.0)
-      attachmentgenie-ufw (>= 1.4.9)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-downloadfile.git
@@ -251,6 +256,7 @@ DEPENDENCIES
   strings-monitoring (>= 0)
   strings-shell (>= 0)
   strings-ssmtp (>= 0)
+  strings-ufw (>= 0)
   strings-vagrant (>= 0)
   strings-vim (>= 0)
   strings-virtualbox (>= 0)

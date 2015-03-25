@@ -13,7 +13,7 @@ class kvm($user=false) {
     command => "sed -i '/^COMMIT/i ${forward}' /etc/ufw/before.rules",
     user    => 'root',
     path    => ['/usr/bin','/bin','/usr/sbin/'],
-    unless  => 'grep phsydev /etc/ufw/before.rules'
+    unless  => 'grep physdev /etc/ufw/before.rules'
   } ~> Service['ufw']
 
   file_line {'bridge-nf-call-iptables':
@@ -43,4 +43,5 @@ class kvm($user=false) {
     unless  => "groups ${user} | grep libvirtd"
   }
 
+  ufw::interface {'virbr1': }
 }

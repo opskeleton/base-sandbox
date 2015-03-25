@@ -80,3 +80,6 @@ mod 'rip/module-data',
 
 mod 'strings/autossh',
   :git => 'git://github.com/pulling-strings/puppet-autossh.git'
+
+mod 'strings/ufw',
+  :git => 'git://github.com/pulling-strings/attachmentgenie-ufw.git'
