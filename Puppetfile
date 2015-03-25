@@ -73,7 +73,7 @@ mod 'strings/barbecue',
   :git => 'git://github.com/pulling-strings/puppet-barbecue.git'
 
 mod 'narkisr/profiles', 
-  :git => '/home/ronen/code/puppet-profiles'
+  :git => 'ssh://juno:29418/puppet-profiles.git'
 
 mod 'rip/module-data',
   :git => 'git://github.com/ripienaar/puppet-module-data.git'

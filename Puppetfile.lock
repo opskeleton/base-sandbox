@@ -29,14 +29,6 @@ FORGE
       puppetlabs-stdlib (>= 4.0.0)
 
 GIT
-  remote: /home/ronen/code/puppet-profiles
-  ref: master
-  sha: 0a1cf621070be4baa4e6900c99bb09336a6f9223
-  specs:
-    narkisr-profiles (0.1.0)
-      puppetlabs-stdlib (>= 1.0.0)
-
-GIT
   remote: git://github.com/pulling-strings/attachmentgenie-ufw.git
   ref: master
   sha: 314ece9540577e811624cd38ba5d94914de569a8
@@ -229,6 +221,14 @@ GIT
   specs:
     saz-timezone (3.1.1)
       puppetlabs-stdlib (>= 2.3.0)
+
+GIT
+  remote: ssh://juno:29418/puppet-profiles.git
+  ref: master
+  sha: 6192b2ddbd60cd84c14294dd3fd35103585c5158
+  specs:
+    narkisr-profiles (0.1.0)
+      puppetlabs-stdlib (>= 1.0.0)
 
 DEPENDENCIES
   garethr-docker (>= 0)
