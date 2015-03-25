@@ -31,7 +31,7 @@ FORGE
 GIT
   remote: /home/ronen/code/puppet-profiles
   ref: master
-  sha: 5021b72e43d3a90dac33a234a9b4db128d3ef6dd
+  sha: 0a1cf621070be4baa4e6900c99bb09336a6f9223
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
@@ -39,7 +39,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/attachmentgenie-ufw.git
   ref: master
-  sha: f92d75ef2d41c755ec81e7ada1c787ea01daca5d
+  sha: 314ece9540577e811624cd38ba5d94914de569a8
   specs:
     strings-ufw (2.0.0)
       puppetlabs-stdlib (< 5.0.0, >= 2.2.1)
