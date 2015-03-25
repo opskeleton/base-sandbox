@@ -33,7 +33,7 @@ FORGE
 GIT
   remote: /home/ronen/code/puppet-profiles
   ref: master
-  sha: 0a1cf621070be4baa4e6900c99bb09336a6f9223
+  sha: 5021b72e43d3a90dac33a234a9b4db128d3ef6dd
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
@@ -197,7 +197,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-virtualbox.git
   ref: master
-  sha: 57259d60c117ba6aab0801aba95673a414750147
+  sha: d2d094a06434e23a30b5c3c9ea78139c1981a6d6
   specs:
     strings-virtualbox (0.2.4)
       puppetlabs-apt (>= 1.1.0)
