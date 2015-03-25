@@ -10,10 +10,11 @@ class kvm($user=false) {
   }  ~>
 
   exec{'forward bridge':
-    command     => "/bin/sed -i '/^COMMIT/i ${forward}' /etc/ufw/before.rules",
-    user        => 'root',
-    refreshonly => true
-  }
+    command => "sed -i '/^COMMIT/i ${forward}' /etc/ufw/before.rules",
+    user    => 'root',
+    path    => ['/usr/bin','/bin','/usr/sbin/'],
+    unless  => 'grep phsydev /etc/ufw/before.rules'
+  } ~> Service['ufw']
 
   file_line {'bridge-nf-call-iptables':
     path => '/etc/sysctl.conf',
