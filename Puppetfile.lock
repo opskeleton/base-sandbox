@@ -1,13 +1,13 @@
 FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
-    garethr-docker (3.3.2)
+    garethr-docker (3.5.0)
       puppetlabs-apt (>= 1.1.0)
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
-    maestrodev-rvm (1.10.2)
+    maestrodev-rvm (1.11.0)
       puppetlabs-stdlib (>= 4.2.0)
-    maestrodev-wget (1.5.7)
+    maestrodev-wget (1.6.0)
     narkisr-git (0.0.1)
     pdxcat-collectd (3.2.0)
       puppetlabs-concat (>= 1.0.4)
@@ -23,7 +23,7 @@ FORGE
       puppetlabs-apt (< 2.0.0, >= 0.0.1)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
     stahnma-epel (1.0.2)
-    stankevich-python (1.9.0)
+    stankevich-python (1.9.1)
       puppetlabs-stdlib (>= 4.0.0)
     zleslie-pkgng (0.2.5)
       puppetlabs-stdlib (>= 4.0.0)
@@ -194,7 +194,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-virtualbox.git
   ref: master
-  sha: d2d094a06434e23a30b5c3c9ea78139c1981a6d6
+  sha: b65087fb0d7521a3c6e357dfa47356cf09afaf7e
   specs:
     strings-virtualbox (0.2.4)
       puppetlabs-apt (>= 1.1.0)
@@ -217,9 +217,9 @@ GIT
 GIT
   remote: git://github.com/saz/puppet-timezone.git
   ref: master
-  sha: e82cd1b32f395217056df492e5a7dac8dc5c683a
+  sha: 0b3e3f06c7c3c4e4ab571666cceb7f4779e69856
   specs:
-    saz-timezone (3.1.1)
+    saz-timezone (3.2.0)
       puppetlabs-stdlib (>= 2.3.0)
 
 GIT
