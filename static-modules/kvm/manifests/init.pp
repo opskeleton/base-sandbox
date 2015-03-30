@@ -5,6 +5,8 @@ class kvm($user=false) {
 
   $forward = '-I FORWARD -m physdev --physdev-is-bridged -j ACCEPT'
 
+  ensure_resource('class','ufw',{})
+
   package{['qemu-kvm', 'libvirt-bin', 'bridge-utils', 'virt-manager']:
     ensure  => present
   }  ~>
