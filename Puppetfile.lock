@@ -54,7 +54,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: 0dd4efff6c1a05aa254ea450bf4130c76a10990e
+  sha: 82f9dc5ed24d108f32b423601094a41b33f1677a
   specs:
     strings-backup (0.1.1)
       rodjek-logrotate (>= 1.1.1)
@@ -92,7 +92,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-desktop.git
   ref: master
-  sha: 51bc076949fe4e5462928ba496dc1ad2bdfc3933
+  sha: 3f70ff87f6bad58fb1ea76037af96a2c5ad3a537
   specs:
     strings-desktop (0.1.0)
 
@@ -128,7 +128,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-jdk.git
   ref: master
-  sha: 9a2f128970d2c78bdf67ae486ee283afe9012b53
+  sha: eab4f023cd855c6f8188f18bbce0aadaed19025d
   specs:
     strings-jdk (0.0.1)
       puppetlabs-apt (>= 0.0.3)
@@ -146,7 +146,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-logging.git
   ref: master
-  sha: 4b3dce44d9f66b347fad681de1db21e03b852c59
+  sha: 2be2d884409cd3d7570a8eb11d4b7d8acffc8432
   specs:
     strings-logging (0.0.1)
       puppetlabs-stdlib (>= 0)
@@ -202,7 +202,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-zfs.git
   ref: master
-  sha: 11e4fc41f00ec7256f06e446288021e893498a62
+  sha: cf0ce442dda8df606313e25679a910284ef9c56b
   specs:
     strings-zfs (0.1.0)
       puppetlabs-stdlib (>= 0)
@@ -225,7 +225,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: 6192b2ddbd60cd84c14294dd3fd35103585c5158
+  sha: 8eafc8a96feeebeab955d0a06441691ddd5770cf
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
