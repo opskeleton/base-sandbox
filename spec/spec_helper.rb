@@ -33,7 +33,6 @@ end
 
 WATCH = StopWatch.new
 PROVIDER = ENV['PROVIDER'] || 'virtualbox'
-PROVISION = ENV['PROVISION'] || false
 
 RSpec.configure do |c|
   c.before :suite do
