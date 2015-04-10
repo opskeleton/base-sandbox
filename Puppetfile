@@ -2,9 +2,9 @@ forge "https://forgeapi.puppetlabs.com"
 
 mod 'puppetlabs/stdlib'
 mod 'puppetlabs/apt'
-mod 'garethr/docker'
 mod 'zleslie/pkgng'
 mod 'maestrodev/rvm'
+mod 'garethr/docker'
 
 mod 'saz/timezone', 
   :git => 'git://github.com/saz/puppet-timezone.git'
