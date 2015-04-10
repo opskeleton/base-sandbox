@@ -4,6 +4,7 @@ mod 'puppetlabs/stdlib'
 mod 'puppetlabs/apt'
 mod 'zleslie/pkgng'
 mod 'maestrodev/rvm'
+mod 'garethr/docker'
 
 mod 'saz/timezone', 
   :git => 'git://github.com/saz/puppet-timezone.git'
@@ -82,6 +83,3 @@ mod 'strings/autossh',
 
 mod 'strings/ufw',
   :git => 'git://github.com/pulling-strings/attachmentgenie-ufw.git'
-
-mod 'strings/docker',
-  :git => 'git://github.com/pulling-strings/garethr-docker.git'
