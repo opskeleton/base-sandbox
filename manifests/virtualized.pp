@@ -10,6 +10,10 @@ node default {
     machinefolder => '/vagrant',
     user          => 'vagrant'
   }
+
+  ufw::allow { 'ssh':
+    port => '22'
+  }
 }
 
 
