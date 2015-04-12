@@ -13,7 +13,7 @@ describe package('nodejs') do
 end
 
 describe command('node -v') do
-  it { should return_stdout 'v0.10.33' }
+  it { should return_stdout 'v0.10.37' }
 end
 
 describe command('go version') do

@@ -1,5 +1,6 @@
 node 'backup.local'{
   include clamav
+  include apt
 
   clamav::scan { 'all-but-sys-and-dev':
     exclude_dir => ['(?i)/^\/(sys|dev)/'],
