@@ -92,7 +92,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-desktop.git
   ref: master
-  sha: d0fe6f3a4731720c83172b2c7465caa4aae221a7
+  sha: 71f8dc3e2f98883519f863c85e878c14b77da1b8
   specs:
     strings-desktop (0.1.0)
 
@@ -113,7 +113,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-git.git
   ref: master
-  sha: 6ef1649e15e60a6143695d5d6dd1a07dd98feb9e
+  sha: 5287b58d3bfcdf740e0eed9409410accd9c20c44
   specs:
     strings-git (0.0.1)
 
@@ -187,7 +187,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vim.git
   ref: master
-  sha: e7f886d5aa61aaf70bbff4ccd628a9e96a808bff
+  sha: 29ea274e0be22e4814a968dbedc8d426e5e30d81
   specs:
     strings-vim (0.0.1)
 
@@ -225,7 +225,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: 33d205e2bd2e9ffd581af96faad69c42cf8ad18c
+  sha: 57e37e7b88d29682d5b3fd1770c4f00285bc6242
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
