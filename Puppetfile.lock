@@ -14,16 +14,16 @@ FORGE
       puppetlabs-stdlib (>= 3.0.0)
     puppetlabs-apt (1.8.0)
       puppetlabs-stdlib (>= 2.2.1)
-    puppetlabs-concat (1.2.0)
+    puppetlabs-concat (1.2.1)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
-    puppetlabs-stdlib (4.5.1)
+    puppetlabs-stdlib (4.6.0)
     rodjek-logrotate (1.1.1)
     sensu-sensu (1.5.5)
       maestrodev-wget (< 2.0.0, >= 1.4.5)
       puppetlabs-apt (< 2.0.0, >= 0.0.1)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
     stahnma-epel (1.0.2)
-    stankevich-python (1.9.1)
+    stankevich-python (1.9.4)
       puppetlabs-stdlib (>= 4.0.0)
     zleslie-pkgng (0.2.5)
       puppetlabs-stdlib (>= 4.0.0)
@@ -137,7 +137,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-langs.git
   ref: master
-  sha: 3875e3681c651f70e3ab94e5ddf61f9c68f07b51
+  sha: e9cc5095e06c716c6ab0006314bc7fa2e2d534c9
   specs:
     strings-langs (0.1.0)
       puppetlabs-apt (>= 1.1.0)
@@ -187,9 +187,10 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vim.git
   ref: master
-  sha: 29ea274e0be22e4814a968dbedc8d426e5e30d81
+  sha: 3d8288c2d8ab0a2738c36e02cb33746a9107460b
   specs:
-    strings-vim (0.0.1)
+    strings-vim (0.1.0)
+      puppetlabs-stdlib (>= 4.2.0)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-virtualbox.git
@@ -225,7 +226,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: 57e37e7b88d29682d5b3fd1770c4f00285bc6242
+  sha: ca3fa6f16a8b38ab81498b25ec12f22fee997fd6
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
