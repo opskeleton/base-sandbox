@@ -1,10 +1,6 @@
 FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
-    garethr-docker (3.5.0)
-      puppetlabs-apt (>= 1.1.0)
-      puppetlabs-stdlib (>= 4.1.0)
-      stahnma-epel (>= 0.0.6)
     maestrodev-rvm (1.11.0)
       puppetlabs-stdlib (>= 4.2.0)
     maestrodev-wget (1.6.0)
@@ -35,6 +31,16 @@ GIT
   specs:
     strings-ufw (2.0.0)
       puppetlabs-stdlib (< 5.0.0, >= 2.2.1)
+
+GIT
+  remote: git://github.com/pulling-strings/garethr-docker.git
+  ref: master
+  sha: 7cce3f1c701b4c8987173fc3d16db935544a20b4
+  specs:
+    strings-docker (3.5.0)
+      puppetlabs-apt (>= 1.1.0)
+      puppetlabs-stdlib (>= 4.1.0)
+      stahnma-epel (>= 0.0.6)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-archive.git
@@ -232,7 +238,6 @@ GIT
       puppetlabs-stdlib (>= 1.0.0)
 
 DEPENDENCIES
-  garethr-docker (>= 0)
   maestrodev-rvm (>= 0)
   narkisr-profiles (>= 0)
   puppetlabs-apt (>= 0)
@@ -247,6 +252,7 @@ DEPENDENCIES
   strings-build (>= 0)
   strings-clamav (>= 0)
   strings-desktop (>= 0)
+  strings-docker (>= 0)
   strings-downloadfile (>= 0)
   strings-editfile (>= 0)
   strings-git (>= 0)
