@@ -1,7 +1,6 @@
 forge "https://forgeapi.puppetlabs.com"
 
 mod 'puppetlabs/stdlib'
-mod 'puppetlabs/apt'
 mod 'zleslie/pkgng'
 mod 'maestrodev/rvm'
 

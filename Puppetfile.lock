@@ -5,7 +5,7 @@ FORGE
       puppetlabs-stdlib (>= 4.2.0)
     maestrodev-wget (1.6.0)
     narkisr-git (0.0.1)
-    pdxcat-collectd (3.2.0)
+    pdxcat-collectd (3.3.0)
       puppetlabs-concat (>= 1.0.4)
       puppetlabs-stdlib (>= 3.0.0)
     puppetlabs-apt (1.8.0)
@@ -14,6 +14,9 @@ FORGE
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
     puppetlabs-stdlib (4.6.0)
     rodjek-logrotate (1.1.1)
+    saz-ssh (2.5.0)
+      puppetlabs-concat (>= 1.0.0)
+      puppetlabs-stdlib (>= 2.2.1)
     sensu-sensu (1.5.5)
       maestrodev-wget (< 2.0.0, >= 1.4.5)
       puppetlabs-apt (< 2.0.0, >= 0.0.1)
@@ -134,11 +137,11 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-jdk.git
   ref: master
-  sha: eab4f023cd855c6f8188f18bbce0aadaed19025d
+  sha: e50b0e79ba99ed040468801198bbe7f8a90605bf
   specs:
-    strings-jdk (0.0.1)
-      puppetlabs-apt (>= 0.0.3)
-      puppetlabs-stdlib (>= 2.0.0)
+    strings-jdk (0.1.0)
+      puppetlabs-apt (< 2.0.0)
+      puppetlabs-stdlib (>= 2.2.1)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-langs.git
@@ -232,15 +235,15 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: 69c281362e8407180e996c4fc090351b2026f7ad
+  sha: 17728932b644824a20826a68c0c3976d867d8c56
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
+      saz-ssh (>= 2.5.0)
 
 DEPENDENCIES
   maestrodev-rvm (>= 0)
   narkisr-profiles (>= 0)
-  puppetlabs-apt (>= 0)
   puppetlabs-stdlib (>= 0)
   rip-module-data (>= 0)
   saz-timezone (>= 0)
