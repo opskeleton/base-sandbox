@@ -84,3 +84,6 @@ mod 'strings/autossh',
 
 mod 'strings/ufw',
   :git => 'git://github.com/pulling-strings/attachmentgenie-ufw.git'
+
+mod 'strings/vector',
+  :git => 'git://github.com/pulling-strings/puppet-vector.git'

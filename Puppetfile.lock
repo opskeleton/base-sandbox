@@ -194,6 +194,14 @@ GIT
     strings-vagrant (0.1.0)
 
 GIT
+  remote: git://github.com/pulling-strings/puppet-vector.git
+  ref: master
+  sha: fc05c73f54647613bfa6555f59fd4783f69f63bd
+  specs:
+    strings-vector (0.1.0)
+      puppetlabs-stdlib (>= 1.0.0)
+
+GIT
   remote: git://github.com/pulling-strings/puppet-vim.git
   ref: master
   sha: 3d8288c2d8ab0a2738c36e02cb33746a9107460b
@@ -268,6 +276,7 @@ DEPENDENCIES
   strings-ssmtp (>= 0)
   strings-ufw (>= 0)
   strings-vagrant (>= 0)
+  strings-vector (>= 0)
   strings-vim (>= 0)
   strings-virtualbox (>= 0)
   strings-zfs (>= 0)
