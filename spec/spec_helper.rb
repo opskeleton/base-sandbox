@@ -3,9 +3,7 @@ require 'pathname'
 require 'net/ssh'
 require 'json'
 
-include SpecInfra::Helper::Ssh
-include SpecInfra::Helper::DetectOS
-
+set :backend, :exec
 
 def run(cmd)
   unless(system(cmd, out: $stdout, err: :out))
