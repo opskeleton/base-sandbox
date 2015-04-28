@@ -1,7 +1,6 @@
 forge "https://forgeapi.puppetlabs.com"
 
 mod 'puppetlabs/stdlib'
-mod 'puppetlabs/apt'
 mod 'zleslie/pkgng'
 mod 'maestrodev/rvm'
 
@@ -85,3 +84,6 @@ mod 'strings/autossh',
 
 mod 'strings/ufw',
   :git => 'git://github.com/pulling-strings/attachmentgenie-ufw.git'
+
+mod 'strings/vector',
+  :git => 'git://github.com/pulling-strings/puppet-vector.git'
