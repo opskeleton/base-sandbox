@@ -3,7 +3,7 @@ FORGE
   specs:
     maestrodev-rvm (1.11.0)
       puppetlabs-stdlib (>= 4.2.0)
-    maestrodev-wget (1.6.0)
+    maestrodev-wget (1.7.0)
     narkisr-git (0.0.1)
     pdxcat-collectd (3.3.0)
       puppetlabs-concat (>= 1.0.4)
@@ -163,7 +163,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-monitoring.git
   ref: master
-  sha: 6978969c75e467f97405f7bb23c70e8ce3a92760
+  sha: 356dec45fb28a97f1eb0e9d7c5bf236b625082f8
   specs:
     strings-monitoring (0.1.0)
       narkisr-git (>= 0)
