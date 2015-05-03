@@ -3,7 +3,7 @@ require 'pathname'
 require 'net/ssh'
 require 'json'
 
-set :backend, :exec
+set :backend, :ssh
 
 def run(cmd)
   unless(system(cmd, out: $stdout, err: :out))
@@ -43,13 +43,13 @@ RSpec.configure do |c|
 	run("vagrant up #{c.host} --provider=#{PROVIDER}")
 	run("vagrant provision #{c.host}")
       config = `vagrant ssh-config #{c.host}`
-      sshhost =  sshuser = ''
+      sshhost =  ''
       if config != ''
         config.each_line do |line|
           if match = /HostName (.*)/.match(line)
             sshhost = match[1]
           elsif  match = /User (.*)/.match(line)
-            sshuser = match[1]
+		options[:user] = match[1]
           elsif match = /IdentityFile (.*)/.match(line)
             options[:keys] =  [match[1].gsub(/"/,'')]
           elsif match = /Port (.*)/.match(line)
@@ -59,9 +59,10 @@ RSpec.configure do |c|
       end
     else
       sshhost = 'localhost' 
-      sshuser = 'vagrant' 
+	options[:user] = 'vagrant'
     end
-    c.ssh = Net::SSH.start(sshhost, sshuser, options)
+    set :host, sshhost
+    set :ssh_options,options
   end
 
   c.after :each do |example|
