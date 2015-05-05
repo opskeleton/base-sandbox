@@ -1,0 +1,9 @@
+---
+sensu::rabbitmq_password: 'secret'
+sensu::api_password: 'secret'
+sensu::api_user: 'secret'
+sensu::api_port: 4567
+sensu::subscriptions:
+  - 'sensu-test'
+
+
