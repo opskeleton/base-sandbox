@@ -13,11 +13,11 @@ describe package('nodejs') do
 end
 
 describe command('node -v') do
-  it { should return_stdout 'v0.10.37' }
+  its(:stdout) {should eq 'v0.10.37'}
 end
 
 describe command('go version') do
-  it { should return_stdout 'go version go1.4 linux/amd64' }
+  its(:stdout) {should eq 'go version go1.4 linux/amd64'}
 end
 
 
