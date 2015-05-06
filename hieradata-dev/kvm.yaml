@@ -40,7 +40,7 @@ sensu::rabbitmq_password: 'secret'
 sensu::rabbitmq_host: '10.0.2.2'
 sensu::rabbitmq_port: '55672'
 sensu::rabbitmq_vhost: '/sensu'
-sensu::rabbitmq_subscription: 'syncthing'
+sensu::rabbitmq_subscription: 'system'
 sensu::sensu_plugin_version: 'latest'
 
 logging::syslog::syslog_server: 'kibana'
