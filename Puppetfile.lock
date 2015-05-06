@@ -163,7 +163,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-monitoring.git
   ref: master
-  sha: 0f7e244be294ca5453662621015c03f643366498
+  sha: a1f5128a2d19c568ddc5980c5f81b89d62678307
   specs:
     strings-monitoring (0.1.0)
       narkisr-git (>= 0)
