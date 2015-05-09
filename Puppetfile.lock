@@ -3,7 +3,7 @@ FORGE
   specs:
     maestrodev-rvm (1.11.0)
       puppetlabs-stdlib (>= 4.2.0)
-    maestrodev-wget (1.6.0)
+    maestrodev-wget (1.7.0)
     narkisr-git (0.0.1)
     pdxcat-collectd (3.3.0)
       puppetlabs-concat (>= 1.0.4)
@@ -146,7 +146,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-langs.git
   ref: master
-  sha: e9cc5095e06c716c6ab0006314bc7fa2e2d534c9
+  sha: 7775fe0bb9765b8e49bad1c5b8f3af1cfb65f590
   specs:
     strings-langs (0.1.0)
       puppetlabs-apt (>= 1.1.0)
@@ -163,7 +163,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-monitoring.git
   ref: master
-  sha: 6978969c75e467f97405f7bb23c70e8ce3a92760
+  sha: ae4988435884f7507bcc992f1165da555bd89746
   specs:
     strings-monitoring (0.1.0)
       narkisr-git (>= 0)
@@ -243,7 +243,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: ec670288163893efbec2b4bc0a217e5277954f9c
+  sha: 6cb3747246129aa24b0dff34dcd1d867a777ced5
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)

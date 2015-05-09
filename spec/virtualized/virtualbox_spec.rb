@@ -5,7 +5,7 @@ describe package('virtualbox-4.3') do
 end
 
 describe command('vboxmanage') do
-    it { should return_exit_status 0 }
+    its(:exit_status)  { should eq 0 }
 end
 
 cmd = "vboxmanage list systemproperties | grep 'Default machine'"
@@ -16,6 +16,6 @@ cmd = "vboxmanage list systemproperties | grep 'Default machine'"
 # end
 #
 describe command("su - vagrant -c \"#{cmd}\"") do
-    it { should return_exit_status 0 }
-    it { should return_stdout('Default machine folder:          /vagrant') }
+    its(:exit_status)  { should eq 0 }
+    its(:stdout) {should contain 'Default machine folder:          /vagrant'}
 end

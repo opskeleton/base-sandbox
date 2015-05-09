@@ -49,7 +49,6 @@ sensu::rabbitmq_password: 'secret'
 sensu::rabbitmq_host: '10.0.2.2'
 sensu::rabbitmq_port: '55672'
 sensu::rabbitmq_vhost: '/sensu'
-sensu::rabbitmq_subscription: 'syncthing'
 sensu::sensu_plugin_version: 'latest'
 
 logging::syslog::syslog_server: 'kibana'
@@ -68,3 +67,4 @@ backup::syncthing::repos:
       - 'C56YYFN-U7QEMMU-2J3DVM4-RFHHNAT-FH7ATN6-VJSREZY-XKYXPOF-RSKC7QE'
  
 virtualbox::manage::user: 'ronen'
+

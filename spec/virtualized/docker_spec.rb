@@ -9,7 +9,7 @@ describe service('docker') do
 end
 
 describe command('fig') do
-    it { should return_exit_status 1 }
+    its(:exit_status) { should eq 1 }
 end
 
 
