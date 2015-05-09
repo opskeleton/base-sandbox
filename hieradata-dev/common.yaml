@@ -1,9 +1,70 @@
----
-sensu::rabbitmq_password: 'secret'
-sensu::api_password: 'secret'
-sensu::api_user: 'secret'
-sensu::api_port: 4567
-sensu::subscriptions:
-  - 'sensu-test'
+--- 
+home: '/home/vagrant'
+desktop::user: 'vagrant'         
+desktop::home: '/home/vagrant'
 
+shell::user: 'vagrant'         
+shell::home: '/home/vagrant'
+
+vim::user: 'vagrant'           
+vim::home: '/home/vagrant'     
+
+langs::ruby::user: 'vagrant'   
+
+git::configure::user: 'vagrant'
+git::configure::scm_user: 'vagrant'       
+git::configure::scm_email: 'vagrant@gmail.com'
+
+backup::duply::passphrase: 'foobar'
+backup::copy::user: 'vagrant'
+backup::copy::sysuser: 'vagrant'
+backup::copy::folder: '/home/vagrant/.copy'
+
+baseline::home: '/home/vagrant'
+baseline::networking::user: 'vagrant'
+baseline::filesystem::ssds:
+ - '/'
+ - '/home'
+
+baseline::ssh::keys:
+  upgrade:
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5BsjhACNz35yfz2Mxb23+YZLDPpQnjFvi7kXbjc5oNq3He9W2/uQfmdnwxYiSDMxk2LmRqoboIv4CyTDFPDSXDSqUpXh5SxTKQazbu8qEuudM9xAgSt3Q9DLvJj/KU6V5i/y8mnpDbrLa6DlM1bC6FAvK8PtbOPlMRrtjYYGJ/SS/oRzij0UTuBpJfz7+qsHrRNdJ3yU52wqwZuj8SparlKwpPCrcYFJ14LviULoAOKoTBaEsa23iMcQlLL7Eyf5AVStglFZWaKfs+7arQKgoJnSHHOY9osZDA6WyW81SFvqw5l/O9TwijDBKdMuo5Cz53Ci64wc5eNw4orxt4s7n ronen@nucleus
+  celestial:
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5BsjhACNz35yfz2Mxb23+YZLDPpQnjFvi7kXbjc5oNq3He9W2/uQfmdnwxYiSDMxk2LmRqoboIv4CyTDFPDSXDSqUpXh5SxTKQazbu8qEuudM9xAgSt3Q9DLvJj/KU6V5i/y8mnpDbrLa6DlM1bC6FAvK8PtbOPlMRrtjYYGJ/SS/oRzij0UTuBpJfz7+qsHrRNdJ3yU52wqwZuj8SparlKwpPCrcYFJ14LviULoAOKoTBaEsa23iMcQlLL7Eyf5AVStglFZWaKfs+7arQKgoJnSHHOY9osZDA6WyW81SFvqw5l/O9TwijDBKdMuo5Cz53Ci64wc5eNw4orxt4s7n ronen@nucleus
+  ronen:
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5BsjhACNz35yfz2Mxb23+YZLDPpQnjFvi7kXbjc5oNq3He9W2/uQfmdnwxYiSDMxk2LmRqoboIv4CyTDFPDSXDSqUpXh5SxTKQazbu8qEuudM9xAgSt3Q9DLvJj/KU6V5i/y8mnpDbrLa6DlM1bC6FAvK8PtbOPlMRrtjYYGJ/SS/oRzij0UTuBpJfz7+qsHrRNdJ3yU52wqwZuj8SparlKwpPCrcYFJ14LviULoAOKoTBaEsa23iMcQlLL7Eyf5AVStglFZWaKfs+7arQKgoJnSHHOY9osZDA6WyW81SFvqw5l/O9TwijDBKdMuo5Cz53Ci64wc5eNw4orxt4s7n ronen@nucleus
+
+baseline::ssh::config::user: 'vagrant'
+
+baseline::ssh::config::proxies:
+   foo:
+      proxy: 'bar'
+      port: 1234
+      user: 'vagrant'
+      key: '~/.ssh/id_rsa'
+ 
+baseline::update::user: 'upgrade'
+
+sensu::rabbitmq_password: 'secret'
+sensu::rabbitmq_host: '10.0.2.2'
+sensu::rabbitmq_port: '55672'
+sensu::rabbitmq_vhost: '/sensu'
+sensu::sensu_plugin_version: 'latest'
+
+logging::syslog::syslog_server: 'kibana'
+timezone::timezone: 'Asia/Jerusalem'
+
+kvm::user: 'vagrant'
+
+vagrant::user: 'vagrant'
+vagrant::home: '/home/vagrant'
+
+backup::syncthing::repos:
+  appliances:
+    directory: '~/appliances-1'
+    ro: false
+    nodes: 
+      - 'C56YYFN-U7QEMMU-2J3DVM4-RFHHNAT-FH7ATN6-VJSREZY-XKYXPOF-RSKC7QE'
+ 
+virtualbox::manage::user: 'ronen'
 
