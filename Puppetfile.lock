@@ -79,7 +79,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 92311964cd2501e663e12b1faf35d807f89fd683
+  sha: 0bdd9a7c2f7d88b7a079486b72d6313365083f34
   specs:
     strings-baseline (0.0.1)
 
@@ -146,7 +146,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-langs.git
   ref: master
-  sha: 7775fe0bb9765b8e49bad1c5b8f3af1cfb65f590
+  sha: e65b7bce7603276a44cc4097437b6c86a740f76c
   specs:
     strings-langs (0.1.0)
       puppetlabs-apt (>= 1.1.0)
@@ -163,7 +163,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-monitoring.git
   ref: master
-  sha: ae4988435884f7507bcc992f1165da555bd89746
+  sha: 390ad3d5627aae551d185a10cb5f25276bbd3688
   specs:
     strings-monitoring (0.1.0)
       narkisr-git (>= 0)
@@ -174,7 +174,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-shell.git
   ref: master
-  sha: 7e9dc7a57536f03c95435025182c8a277249af49
+  sha: d57793fb6e3c16f3ad1f7fdab561775e0b9bd16d
   specs:
     strings-shell (0.2.0)
       stankevich-python (>= 1.7.8)
