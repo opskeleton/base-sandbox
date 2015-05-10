@@ -14,7 +14,7 @@ FORGE
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
     puppetlabs-stdlib (4.6.0)
     rodjek-logrotate (1.1.1)
-    saz-ssh (2.5.0)
+    saz-ssh (2.6.0)
       puppetlabs-concat (>= 1.0.0)
       puppetlabs-stdlib (>= 2.2.1)
     sensu-sensu (1.5.5)
@@ -163,7 +163,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-monitoring.git
   ref: master
-  sha: 390ad3d5627aae551d185a10cb5f25276bbd3688
+  sha: 9fc13f8699bc75f2f85f3fadc494eac6c4a8e59c
   specs:
     strings-monitoring (0.1.0)
       narkisr-git (>= 0)
@@ -235,9 +235,9 @@ GIT
 GIT
   remote: git://github.com/saz/puppet-timezone.git
   ref: master
-  sha: 0b3e3f06c7c3c4e4ab571666cceb7f4779e69856
+  sha: 734918982a512f51a3f1855396d2d7da3f37f53c
   specs:
-    saz-timezone (3.2.0)
+    saz-timezone (3.3.0)
       puppetlabs-stdlib (>= 2.3.0)
 
 GIT
