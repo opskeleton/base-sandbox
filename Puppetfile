@@ -1,3 +1,4 @@
+require 'net/ping'
 forge "https://forgeapi.puppetlabs.com"
 
 mod 'puppetlabs/stdlib'
@@ -74,7 +75,7 @@ mod 'strings/barbecue',
   :git => 'git://github.com/pulling-strings/puppet-barbecue.git'
 
 mod 'narkisr/profiles', 
-  :git => 'ssh://juno:29418/puppet-profiles.git'
+  :git => 'ssh://juno:29418/puppet-profiles.git' if Net::Ping::HTTP.new('juno').ping?
 
 mod 'rip/module-data',
   :git => 'git://github.com/ripienaar/puppet-module-data.git'
