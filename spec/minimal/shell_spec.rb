@@ -30,10 +30,6 @@ describe package('ack-grep') do
     it { should be_installed }
 end
 
-describe file('/usr/bin/ack') do
-  it { should be_linked_to '/usr/bin/ack-grep' }
-end
-
 # rlwrap
 describe file('/home/vagrant/.inputrc') do
   it { should contain 'vi' }
