@@ -75,7 +75,7 @@ mod 'strings/barbecue',
   :git => 'git://github.com/pulling-strings/puppet-barbecue.git'
 
 mod 'narkisr/profiles', 
-  :git => 'ssh://juno:29418/puppet-profiles.git' if Net::Ping::HTTP.new('juno').ping?
+  :git => 'ssh://juno:29418/puppet-profiles.git' if Net::Ping::HTTP.new('https://juno:8443').ping?
 
 mod 'rip/module-data',
   :git => 'git://github.com/ripienaar/puppet-module-data.git'
