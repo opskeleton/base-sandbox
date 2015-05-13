@@ -14,6 +14,9 @@ FORGE
       puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
     puppetlabs-stdlib (4.6.0)
     rodjek-logrotate (1.1.1)
+    saz-ssh (2.6.0)
+      puppetlabs-concat (>= 1.0.0)
+      puppetlabs-stdlib (>= 2.2.1)
     sensu-sensu (1.5.5)
       maestrodev-wget (< 2.0.0, >= 1.4.5)
       puppetlabs-apt (< 2.0.0, >= 0.0.1)
@@ -237,8 +240,18 @@ GIT
     saz-timezone (3.3.0)
       puppetlabs-stdlib (>= 2.3.0)
 
+GIT
+  remote: ssh://juno:29418/puppet-profiles.git
+  ref: master
+  sha: 6cb3747246129aa24b0dff34dcd1d867a777ced5
+  specs:
+    narkisr-profiles (0.1.0)
+      puppetlabs-stdlib (>= 1.0.0)
+      saz-ssh (>= 2.5.0)
+
 DEPENDENCIES
   maestrodev-rvm (>= 0)
+  narkisr-profiles (>= 0)
   puppetlabs-stdlib (>= 0)
   rip-module-data (>= 0)
   saz-timezone (>= 0)
