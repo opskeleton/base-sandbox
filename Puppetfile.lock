@@ -10,13 +10,10 @@ FORGE
       puppetlabs-stdlib (>= 3.0.0)
     puppetlabs-apt (1.8.0)
       puppetlabs-stdlib (>= 2.2.1)
-    puppetlabs-concat (1.2.1)
-      puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
+    puppetlabs-concat (2.0.0)
+      puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
     puppetlabs-stdlib (4.6.0)
     rodjek-logrotate (1.1.1)
-    saz-ssh (2.5.0)
-      puppetlabs-concat (>= 1.0.0)
-      puppetlabs-stdlib (>= 2.2.1)
     sensu-sensu (1.5.5)
       maestrodev-wget (< 2.0.0, >= 1.4.5)
       puppetlabs-apt (< 2.0.0, >= 0.0.1)
@@ -137,7 +134,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-jdk.git
   ref: master
-  sha: e50b0e79ba99ed040468801198bbe7f8a90605bf
+  sha: f6d65df9da4eedeba07631bf83a44361922f09b0
   specs:
     strings-jdk (0.1.0)
       puppetlabs-apt (< 2.0.0)
@@ -146,7 +143,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-langs.git
   ref: master
-  sha: e65b7bce7603276a44cc4097437b6c86a740f76c
+  sha: 02bb83fd64b4910cb69b41938a4c463fd64f90a5
   specs:
     strings-langs (0.1.0)
       puppetlabs-apt (>= 1.1.0)
@@ -163,7 +160,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-monitoring.git
   ref: master
-  sha: 390ad3d5627aae551d185a10cb5f25276bbd3688
+  sha: 9fc13f8699bc75f2f85f3fadc494eac6c4a8e59c
   specs:
     strings-monitoring (0.1.0)
       narkisr-git (>= 0)
@@ -235,23 +232,13 @@ GIT
 GIT
   remote: git://github.com/saz/puppet-timezone.git
   ref: master
-  sha: 0b3e3f06c7c3c4e4ab571666cceb7f4779e69856
+  sha: 734918982a512f51a3f1855396d2d7da3f37f53c
   specs:
-    saz-timezone (3.2.0)
+    saz-timezone (3.3.0)
       puppetlabs-stdlib (>= 2.3.0)
-
-GIT
-  remote: ssh://juno:29418/puppet-profiles.git
-  ref: master
-  sha: 6cb3747246129aa24b0dff34dcd1d867a777ced5
-  specs:
-    narkisr-profiles (0.1.0)
-      puppetlabs-stdlib (>= 1.0.0)
-      saz-ssh (>= 2.5.0)
 
 DEPENDENCIES
   maestrodev-rvm (>= 0)
-  narkisr-profiles (>= 0)
   puppetlabs-stdlib (>= 0)
   rip-module-data (>= 0)
   saz-timezone (>= 0)
