@@ -1,7 +1,9 @@
 FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
-    maestrodev-rvm (1.11.0)
+    golja-gnupg (1.2.0)
+    maestrodev-rvm (1.12.0)
+      golja-gnupg (>= 1.2.0)
       puppetlabs-stdlib (>= 4.2.0)
     maestrodev-wget (1.7.0)
     narkisr-git (0.0.1)
@@ -163,13 +165,20 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-monitoring.git
   ref: master
-  sha: 9fc13f8699bc75f2f85f3fadc494eac6c4a8e59c
+  sha: 198e0f0dce91808638c5ffc1376f2e92866413b8
   specs:
     strings-monitoring (0.1.0)
       narkisr-git (>= 0)
       pdxcat-collectd (>= 0)
       puppetlabs-stdlib (>= 0)
       sensu-sensu (>= 0)
+
+GIT
+  remote: git://github.com/pulling-strings/puppet-pi.git
+  ref: master
+  sha: 9efe3a10e9898d130b34c42b889f4e30ed420444
+  specs:
+    strings-pi (0.1.0)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-shell.git
@@ -243,7 +252,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: 6cb3747246129aa24b0dff34dcd1d867a777ced5
+  sha: df032f62bc82c220f1d13a071daeb76f47cbb29a
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
@@ -272,6 +281,7 @@ DEPENDENCIES
   strings-langs (>= 0)
   strings-logging (>= 0)
   strings-monitoring (>= 0)
+  strings-pi (>= 0)
   strings-shell (>= 0)
   strings-ssmtp (>= 0)
   strings-ufw (>= 0)
