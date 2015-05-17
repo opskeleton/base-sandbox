@@ -252,7 +252,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: df032f62bc82c220f1d13a071daeb76f47cbb29a
+  sha: e9591230725d0ad11f9f9b4141e1e594b4a47fc8
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
