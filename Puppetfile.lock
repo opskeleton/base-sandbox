@@ -131,7 +131,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-hardening.git
   ref: master
-  sha: 9d6f958316775b38f7273dd9297d6ac5c6ea3eb1
+  sha: 4b2f6bbbca3604a37bee91b120813efc3ef96687
   specs:
     strings-hardening (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
@@ -252,7 +252,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: e9591230725d0ad11f9f9b4141e1e594b4a47fc8
+  sha: f7451e26bdd1958d55cbe21afd429883b70add28
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
