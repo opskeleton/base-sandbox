@@ -79,7 +79,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: f0b2ac5fda20b6169a3f7c77bfd05b070220e942
+  sha: 592feba56fc3587c3a67797b80d8bd2f76c7b618
   specs:
     strings-baseline (0.0.1)
 
@@ -235,7 +235,7 @@ GIT
 GIT
   remote: git://github.com/puppetlabs/puppetlabs-concat.git
   ref: master
-  sha: 86180764b75dbdd63a25b6503895033a6ca1c39b
+  sha: adb17a4bc83543cc0eb2263f5315f059e1e50a2e
   specs:
     puppetlabs-concat (1.2.3)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
