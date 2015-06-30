@@ -18,6 +18,10 @@ fi
 SCRIPT
 
 
+def hostname(host)
+  "hostnamectl set-hostname #{host}"
+end
+
 Vagrant.configure("2") do |config|
 
   env  = ENV['PUPPET_ENV'] 
@@ -28,8 +32,8 @@ Vagrant.configure("2") do |config|
   # Ubuntu instances
   Dir['manifests/*'].map{|it| it.match(/manifests\/(\w*).pp/)[1]}.each do |type|
     config.vm.define type.to_sym do |node| 
-	node.vm.box = 'ubuntu-14.10_puppet-3.7.3'
-	node.vm.hostname = "#{type}.local"
+	node.vm.box = 'ubuntu-15.04_puppet-3.7.5'
+	# node.vm.hostname = "#{type}.local"
 	node.vm.network :public_network, :bridge => bridge
 
 	node.vm.provider :virtualbox do |vb|
@@ -43,6 +47,7 @@ Vagrant.configure("2") do |config|
 	  domain.cpus = 2
 	end
 
+	node.vm.provision :shell, :inline => hostname(type)
 	node.vm.provision :shell, :inline => update
 	node.vm.provision :puppet do |puppet|
 	  puppet.manifests_path = 'manifests'
