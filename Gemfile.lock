@@ -11,14 +11,12 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    aws-sdk (2.0.48)
-      aws-sdk-resources (= 2.0.48)
-    aws-sdk-core (2.0.48)
-      builder (~> 3.0)
+    aws-sdk (2.1.7)
+      aws-sdk-resources (= 2.1.7)
+    aws-sdk-core (2.1.7)
       jmespath (~> 1.0)
-      multi_json (~> 1.0)
-    aws-sdk-resources (2.0.48)
-      aws-sdk-core (= 2.0.48)
+    aws-sdk-resources (2.1.7)
+      aws-sdk-core (= 2.1.7)
     bintray_deploy (0.0.4)
       configuration
       rest-client
@@ -32,6 +30,7 @@ GEM
       CFPropertyList (~> 2.2.6)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
+    git (1.2.9.1)
     gruff (0.6.0)
       rmagick (>= 2.13.4)
     her (0.7.4)
@@ -59,16 +58,17 @@ GEM
     minitest (5.7.0)
     mocha (1.1.0)
       metaclass (~> 0.0.1)
-    multi_json (1.11.0)
+    multi_json (1.11.2)
     multipart-post (2.0.0)
     net-ping (1.7.7)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.2)
     netrc (0.10.3)
-    opskeleton (0.8.10)
+    opskeleton (0.9.2)
       aws-sdk (~> 2)
       bintray_deploy
+      git
       net-scp
       thor
     puppet (3.7.5)
@@ -141,6 +141,3 @@ DEPENDENCIES
   rake
   rspec-puppet
   serverspec
-
-BUNDLED WITH
-   1.10.3
