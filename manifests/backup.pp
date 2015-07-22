@@ -1,4 +1,4 @@
-node 'backup.local'{
+node default {
   include clamav
   include apt
 
@@ -50,25 +50,6 @@ node 'backup.local'{
     'C56YYFN-U7QEMMU-2J3DVM4-RFHHNAT-FH7ATN6-VJSREZY-XKYXPOF-RSKC7QE' => {name => 'foo' , address => 'foo:1234'},
   }
 
-
-  class{'backup::syncthing':
-    nodes => $nodes,
-    token => 'mhfu4ugmsauj6cgvsu68kvloa1gt3v'
-  }
-
-  # include monitoring
-  #
-  # class{'monitoring::syncthing':
-  #   token => 'mhfu4ugmsauj6cgvsu68kvloa1gt3v'
-  # }
-  #
-  # class{'monitoring::serverspec':
-  #   name  => 'backup',
-  #   repo  => 'git://github.com/narkisr/puppet-base-env.git',
-  #   dst   => '/opt/puppet-base-env',
-  #   specs => 'backup/*'
-  # }
-  #
   class{'backup::dropbox':
     headless => true
   }
