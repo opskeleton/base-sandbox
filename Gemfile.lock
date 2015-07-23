@@ -31,6 +31,8 @@ GEM
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
     git (1.2.9.1)
+    git_clone_url (0.1.0)
+      uri-ssh_git
     gruff (0.6.0)
       rmagick (>= 2.13.4)
     her (0.7.6)
@@ -66,10 +68,11 @@ GEM
     net-ssh (2.9.2)
     net-telnet (0.1.1)
     netrc (0.10.3)
-    opskeleton (0.9.3)
+    opskeleton (0.9.5)
       aws-sdk (~> 2)
       bintray_deploy
       git
+      git_clone_url
       net-scp
       thor
     puppet (3.7.5)
@@ -92,7 +95,7 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
-    rmagick (2.15.2)
+    rmagick (2.15.3)
     rspec (3.3.0)
       rspec-core (~> 3.3.0)
       rspec-expectations (~> 3.3.0)
@@ -112,13 +115,13 @@ GEM
       rspec
     rspec-support (3.3.0)
     rsync (1.0.9)
-    serverspec (2.19.0)
+    serverspec (2.20.0)
       multi_json
       rspec (~> 3.0)
       rspec-its
-      specinfra (~> 2.35)
+      specinfra (~> 2.38)
     sfl (2.2)
-    specinfra (2.37.8)
+    specinfra (2.38.1)
       net-scp
       net-ssh (~> 2.7)
       net-telnet
@@ -130,6 +133,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.1)
+    uri-ssh_git (0.1.1)
 
 PLATFORMS
   ruby
@@ -145,6 +149,3 @@ DEPENDENCIES
   rake
   rspec-puppet
   serverspec
-
-BUNDLED WITH
-   1.10.5
