@@ -4,7 +4,7 @@ describe package('erlang') do
   it { should be_installed }
 end
 
-describe file('/usr/share/elixir-v1.0.4') do
+describe file('/usr/share/elixir-v1.0.5') do
   it { should be_directory}
 end
 
@@ -13,7 +13,7 @@ describe package('nodejs') do
 end
 
 describe command('node -v') do
-  its(:stdout) {should contain 'v0.10.37'}
+  its(:stdout) {should contain 'v0.10.40'}
 end
 
 describe command('go version') do
