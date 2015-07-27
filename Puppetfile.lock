@@ -7,12 +7,12 @@ FORGE
       puppetlabs-stdlib (>= 4.2.0)
     maestrodev-wget (1.7.0)
     narkisr-git (0.0.1)
-    pdxcat-collectd (3.4.0)
+    pdxcat-collectd (4.0.0)
       puppetlabs-concat (>= 1.0.4)
-      puppetlabs-stdlib (>= 3.0.0)
+      puppetlabs-stdlib (>= 3.2.0)
     puppetlabs-apt (1.8.0)
       puppetlabs-stdlib (>= 2.2.1)
-    puppetlabs-stdlib (4.6.0)
+    puppetlabs-stdlib (4.7.0)
     rodjek-logrotate (1.1.1)
     saz-ssh (2.8.1)
       puppetlabs-concat (>= 1.0.0)
@@ -147,7 +147,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-langs.git
   ref: master
-  sha: 1143a94120181e5d390a70432f1f2ca684ca23d0
+  sha: 0e25feaca4dec3f271421d44ef5bd0c6de1aff92
   specs:
     strings-langs (0.1.0)
       puppetlabs-apt (>= 1.1.0)
@@ -197,7 +197,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: f8a2650b1cd3c63dd12e0907fcf4893eb826907a
+  sha: e872938d7a86890b38c0f4863412a381509c73a1
   specs:
     strings-vagrant (0.1.0)
 
