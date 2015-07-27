@@ -68,7 +68,7 @@ GEM
     net-ssh (2.9.2)
     net-telnet (0.1.1)
     netrc (0.10.3)
-    opskeleton (0.9.7)
+    opskeleton (0.9.8)
       aws-sdk (~> 2)
       bintray_deploy
       git
@@ -121,7 +121,7 @@ GEM
       rspec-its
       specinfra (~> 2.38)
     sfl (2.2)
-    specinfra (2.38.1)
+    specinfra (2.39.0)
       net-scp
       net-ssh (~> 2.7)
       net-telnet
@@ -149,3 +149,6 @@ DEPENDENCIES
   rake
   rspec-puppet
   serverspec
+
+BUNDLED WITH
+   1.10.5
