@@ -57,6 +57,10 @@ node default {
   class{'backup::attic':
     fuse => true
   }
+
+  class{'backup::zbackup': }
+
+
 }
 
 
