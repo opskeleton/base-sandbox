@@ -7,7 +7,7 @@ FORGE
       puppetlabs-stdlib (>= 4.2.0)
     maestrodev-wget (1.7.0)
     narkisr-git (0.0.1)
-    pdxcat-collectd (4.0.0)
+    pdxcat-collectd (4.0.1)
       puppetlabs-concat (>= 1.0.4)
       puppetlabs-stdlib (>= 3.2.0)
     puppetlabs-apt (1.8.0)
@@ -87,7 +87,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-build.git
   ref: master
-  sha: 84a2c240ec5807ee7200157fcb90c1e05d2a5c31
+  sha: b994c2a31b0d30bdd270a7fcf0971ac99cb4ddd0
   specs:
     strings-build (0.1.0)
 
