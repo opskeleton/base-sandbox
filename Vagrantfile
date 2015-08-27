@@ -18,10 +18,8 @@ SCRIPT
 
 Vagrant.configure("2") do |config|
 
-  env  = ENV['PUPPET_ENV'] 
-  env ||= 'dev'
-  bridge = ENV['VAGRANT_BRIDGE']
-  bridge ||= 'eth0'
+  env  = ENV['PUPPET_ENV'] || 'dev'
+  bridge = ENV['VAGRANT_BRIDGE'] || 'eth0'
 
   # Ubuntu instances
   Dir['manifests/*'].map{|it| it.match(/manifests\/(\w*).pp/)[1]}.each do |type|
