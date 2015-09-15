@@ -54,12 +54,9 @@ node default {
     headless => true
   }
 
-  class{'backup::attic':
-    fuse => true
-  }
-
   class{'backup::zbackup': }
 
+  include backup::rclone
 
 }
 
