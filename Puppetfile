@@ -4,12 +4,10 @@ forge "https://forgeapi.puppetlabs.com"
 mod 'puppetlabs/stdlib'
 mod 'zleslie/pkgng'
 mod 'maestrodev/rvm'
+mod 'garethr/docker'
 
 mod 'puppetlabs/concat',
   :git => 'git://github.com/puppetlabs/puppetlabs-concat.git'
-
-mod 'strings/docker',
-  :git => 'git://github.com/pulling-strings/garethr-docker.git'
 
 mod 'saz/timezone', 
   :git => 'git://github.com/saz/puppet-timezone.git'

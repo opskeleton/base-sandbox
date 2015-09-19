@@ -1,6 +1,10 @@
 FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
+    garethr-docker (4.1.1)
+      puppetlabs-apt (<= 3.0.0, >= 1.1.0)
+      puppetlabs-stdlib (>= 4.1.0)
+      stahnma-epel (>= 0.0.6)
     golja-gnupg (1.2.1)
     maestrodev-rvm (1.12.1)
       golja-gnupg (>= 1.2.0)
@@ -14,9 +18,6 @@ FORGE
       puppetlabs-stdlib (>= 2.2.1)
     puppetlabs-stdlib (4.8.0)
     rodjek-logrotate (1.1.1)
-    saz-ssh (2.8.1)
-      puppetlabs-concat (>= 1.0.0)
-      puppetlabs-stdlib (>= 2.2.1)
     sensu-sensu (1.5.5)
       maestrodev-wget (< 2.0.0, >= 1.4.5)
       puppetlabs-apt (< 2.0.0, >= 0.0.1)
@@ -35,16 +36,6 @@ GIT
   specs:
     strings-ufw (2.0.0)
       puppetlabs-stdlib (< 5.0.0, >= 2.2.1)
-
-GIT
-  remote: git://github.com/pulling-strings/garethr-docker.git
-  ref: master
-  sha: eaef7803ea685d443129fce400b3d78a762e16b3
-  specs:
-    strings-docker (3.5.0)
-      puppetlabs-apt (>= 1.1.0)
-      puppetlabs-stdlib (>= 4.1.0)
-      stahnma-epel (>= 0.0.6)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-archive.git
@@ -256,18 +247,9 @@ GIT
     saz-timezone (3.3.0)
       puppetlabs-stdlib (>= 2.3.0)
 
-GIT
-  remote: ssh://juno:29418/puppet-profiles.git
-  ref: master
-  sha: c8e4cd02d2cd92fb601fc42665fbe7af89dd2fd0
-  specs:
-    narkisr-profiles (0.1.0)
-      puppetlabs-stdlib (>= 1.0.0)
-      saz-ssh (>= 2.5.0)
-
 DEPENDENCIES
+  garethr-docker (>= 0)
   maestrodev-rvm (>= 0)
-  narkisr-profiles (>= 0)
   puppetlabs-concat (>= 0)
   puppetlabs-stdlib (>= 0)
   rip-module-data (>= 0)
@@ -280,7 +262,6 @@ DEPENDENCIES
   strings-build (>= 0)
   strings-clamav (>= 0)
   strings-desktop (>= 0)
-  strings-docker (>= 0)
   strings-downloadfile (>= 0)
   strings-editfile (>= 0)
   strings-git (>= 0)
