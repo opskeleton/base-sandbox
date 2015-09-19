@@ -31,7 +31,7 @@ mod 'strings/virtualbox',
  :git => 'git://github.com/pulling-strings/puppet-virtualbox.git'
 
 mod 'strings/archive', 
- :git => 'git://github.com/pulling-strings/puppet-archive.git'
+  :git => 'git://github.com/pulling-strings/puppet-archive.git'
 
 mod 'strings/jdk',
   :git => 'git://github.com/pulling-strings/puppet-jdk.git'
@@ -41,6 +41,9 @@ mod 'strings/backup',
 
 mod 'strings/monitoring',
   :git => 'git://github.com/pulling-strings/puppet-monitoring.git'
+
+mod 'sensu/sensu',
+  :git => 'git://github.com/sensu/sensu-puppet.git'
 
 mod 'strings/shell', 
   :git => 'git://github.com/pulling-strings/puppet-shell.git'

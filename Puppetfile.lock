@@ -9,24 +9,20 @@ FORGE
     maestrodev-rvm (1.12.1)
       golja-gnupg (>= 1.2.0)
       puppetlabs-stdlib (>= 4.2.0)
-    maestrodev-wget (1.7.0)
+    maestrodev-wget (1.7.1)
     narkisr-git (0.0.1)
     pdxcat-collectd (4.0.1)
       puppetlabs-concat (>= 1.0.4)
       puppetlabs-stdlib (>= 3.2.0)
-    puppetlabs-apt (1.8.0)
-      puppetlabs-stdlib (>= 2.2.1)
-    puppetlabs-stdlib (4.8.0)
+    puppetlabs-apt (2.1.1)
+      puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
+    puppetlabs-stdlib (4.9.0)
     rodjek-logrotate (1.1.1)
-    sensu-sensu (1.5.5)
-      maestrodev-wget (< 2.0.0, >= 1.4.5)
-      puppetlabs-apt (< 2.0.0, >= 0.0.1)
-      puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
-    stahnma-epel (1.0.2)
-    stankevich-python (1.9.6)
-      puppetlabs-stdlib (< 6.0.0, >= 4.0.0)
+    stahnma-epel (1.1.1)
+    stankevich-python (1.9.8)
+      puppetlabs-stdlib (< 6.0.0, >= 4.6.0)
       stahnma-epel (< 2.0.0, >= 1.0.1)
-    zleslie-pkgng (0.2.5)
+    zleslie-pkgng (0.2.6)
       puppetlabs-stdlib (>= 4.0.0)
 
 GIT
@@ -47,7 +43,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-autossh.git
   ref: master
-  sha: 8613df05d9cfe10b5b276444a4913f4d8f7fed66
+  sha: 7dd8cf83bf21c366840f0e285cb945bf9ab307e3
   specs:
     strings-autossh (0.1.0)
       puppetlabs-stdlib (>= 0)
@@ -55,7 +51,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: 9bbb45f752e21c5808463c4843becae2f93e7bb0
+  sha: e50e8385cb92078802a877e55ba866926b9cd385
   specs:
     strings-backup (0.1.1)
       rodjek-logrotate (>= 1.1.1)
@@ -93,9 +89,11 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-desktop.git
   ref: master
-  sha: 71f8dc3e2f98883519f863c85e878c14b77da1b8
+  sha: 584d42b3e93d2fde31b3a7c1d7c0199002824e5e
   specs:
     strings-desktop (0.1.0)
+      puppetlabs-apt (>= 2.1.1)
+      puppetlabs-stdlib (< 5.0.0, >= 2.2.1)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-downloadfile.git
@@ -129,16 +127,16 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-jdk.git
   ref: master
-  sha: f6d65df9da4eedeba07631bf83a44361922f09b0
+  sha: a78e25439e5dbe47a1372f0e9c5f419a11694e51
   specs:
     strings-jdk (0.1.0)
-      puppetlabs-apt (< 2.0.0)
+      puppetlabs-apt (< 3.0.0, >= 2.0.0)
       puppetlabs-stdlib (>= 2.2.1)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-langs.git
   ref: master
-  sha: 40b361f138f8906fd765501a7736a7f8541dfebc
+  sha: 221478438d020ff34fed1baefc6c2d1d497df966
   specs:
     strings-langs (0.1.0)
       puppetlabs-apt (>= 1.1.0)
@@ -155,13 +153,12 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-monitoring.git
   ref: master
-  sha: 198e0f0dce91808638c5ffc1376f2e92866413b8
+  sha: 3fc03ed555778ff6882b379960ea3f70e6a88cfc
   specs:
     strings-monitoring (0.1.0)
       narkisr-git (>= 0)
       pdxcat-collectd (>= 0)
       puppetlabs-stdlib (>= 0)
-      sensu-sensu (>= 0)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-pi.git
@@ -227,7 +224,7 @@ GIT
 GIT
   remote: git://github.com/puppetlabs/puppetlabs-concat.git
   ref: master
-  sha: e250a262a5d8adf01640706d33ef6c8ffcd6a89c
+  sha: c307bee3933d88e6028274b0fa122a9b0c87b1d4
   specs:
     puppetlabs-concat (1.2.4)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
@@ -247,6 +244,16 @@ GIT
     saz-timezone (3.3.0)
       puppetlabs-stdlib (>= 2.3.0)
 
+GIT
+  remote: git://github.com/sensu/sensu-puppet.git
+  ref: master
+  sha: c2bf85729d8b507723ae37ff7137f56a1c57c441
+  specs:
+    sensu-sensu (1.5.5)
+      maestrodev-wget (< 2.0.0, >= 1.4.5)
+      puppetlabs-apt (< 3.0.0, >= 2.0.0)
+      puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
+
 DEPENDENCIES
   garethr-docker (>= 0)
   maestrodev-rvm (>= 0)
@@ -254,6 +261,7 @@ DEPENDENCIES
   puppetlabs-stdlib (>= 0)
   rip-module-data (>= 0)
   saz-timezone (>= 0)
+  sensu-sensu (>= 0)
   strings-archive (>= 0)
   strings-autossh (>= 0)
   strings-backup (>= 0)
