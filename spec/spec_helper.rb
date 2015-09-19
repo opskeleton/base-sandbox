@@ -30,8 +30,6 @@ class StopWatch
 end
 
 WATCH = StopWatch.new
-PROVIDER = ENV['PROVIDER'] || 'virtualbox'
-
 RSpec.configure do |c|
   c.before :suite do
     c.host  = ENV['TARGET_HOST']
@@ -40,7 +38,7 @@ RSpec.configure do |c|
     if(!ENV['LOCAL'])
 	run("vagrant destroy #{c.host} -f") unless ENV['SKIP_DESTROY']
 	WATCH.reset
-	run("vagrant up #{c.host} --provider=#{PROVIDER}")
+	run("vagrant up #{c.host}")
 	run("vagrant provision #{c.host}")
       config = `vagrant ssh-config #{c.host}`
       sshhost =  ''
