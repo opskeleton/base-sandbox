@@ -54,9 +54,9 @@ node default {
     headless => true
   }
 
-  class{'backup::zbackup': }
+  class{'backup::zbackup':}
 
-  include backup::rclone
+  class{'backup::rclone':}
 
 }
 
