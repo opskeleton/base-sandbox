@@ -55,7 +55,7 @@ Vagrant.configure("2") do |config|
     config.vm.define type.to_sym do |node|
 	node.vm.box = 'trueos-10.1_puppet-3.6.2' 
 	node.vm.guest = :freebsd
-	node.vm.network :public_network, :bridge => bridge
+	node.vm.network :public_network, :bridge => device
 	node.vm.network 'private_network', ip: '10.0.1.10'
 	node.vm.hostname = "#{type}.local"
 
