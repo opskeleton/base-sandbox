@@ -59,7 +59,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-barbecue.git
   ref: master
-  sha: b7103de925e400335c20475899dd78cd8f0ce8b4
+  sha: d3a1a73c9e6a7ca40561ae5efd3935418e932298
   specs:
     strings-barbecue (0.0.2)
       puppetlabs-apt (>= 1.5.2)
@@ -74,7 +74,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-build.git
   ref: master
-  sha: b994c2a31b0d30bdd270a7fcf0971ac99cb4ddd0
+  sha: 094da88ea03b15a2ae7f3417fcc7414b0314ca40
   specs:
     strings-build (0.1.0)
 
@@ -127,7 +127,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-jdk.git
   ref: master
-  sha: a78e25439e5dbe47a1372f0e9c5f419a11694e51
+  sha: b7dab70f77fc040aca8ed66a5afd914719559b11
   specs:
     strings-jdk (0.1.0)
       puppetlabs-apt (< 3.0.0, >= 2.0.0)
@@ -247,9 +247,9 @@ GIT
 GIT
   remote: git://github.com/sensu/sensu-puppet.git
   ref: master
-  sha: c2bf85729d8b507723ae37ff7137f56a1c57c441
+  sha: f02d33a19aa481e2ba9926accd948e210eb38b7e
   specs:
-    sensu-sensu (1.5.5)
+    sensu-sensu (2.0.0)
       maestrodev-wget (< 2.0.0, >= 1.4.5)
       puppetlabs-apt (< 3.0.0, >= 2.0.0)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
