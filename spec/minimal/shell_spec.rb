@@ -47,7 +47,7 @@ end
 
 describe file('/home/vagrant/.tmux.conf') do
   it { should contain 'set' }
-  it { should be_linked_to '/home/vagrant/.tmux/.tmux.con' }
+  it { should be_linked_to '/home/vagrant/.tmux/.tmux.conf.plugins' }
 end
 
 describe package('tmuxinator') do
