@@ -18,7 +18,6 @@ SCRIPT
 
 Vagrant.configure("2") do |config|
 
-  env  = ENV['PUPPET_ENV'] || 'dev'
   device = ENV['VAGRANT_BRIDGE'] || 'eth0'
 
   # Ubuntu instances
