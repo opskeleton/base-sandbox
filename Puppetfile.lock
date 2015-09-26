@@ -133,7 +133,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-jdk.git
   ref: master
-  sha: 403057af4ddf0e3315d9ccb550fe18f2598c6c64
+  sha: a84318ab9ea3ca57e721aa3833583b2230bd48b7
   specs:
     strings-jdk (0.1.0)
       puppetlabs-apt (< 3.0.0, >= 2.0.0)
