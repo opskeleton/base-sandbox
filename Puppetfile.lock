@@ -1,10 +1,6 @@
 FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
-    garethr-docker (4.1.1)
-      puppetlabs-apt (<= 3.0.0, >= 1.1.0)
-      puppetlabs-stdlib (>= 4.1.0)
-      stahnma-epel (>= 0.0.6)
     golja-gnupg (1.2.1)
     maestrodev-rvm (1.12.1)
       golja-gnupg (>= 1.2.0)
@@ -34,6 +30,16 @@ GIT
       puppetlabs-stdlib (< 5.0.0, >= 2.2.1)
 
 GIT
+  remote: git://github.com/pulling-strings/garethr-docker.git
+  ref: master
+  sha: bdc6b26a29573925055b4e1bd6bb75094677f44b
+  specs:
+    strings-docker (4.1.1)
+      puppetlabs-apt (<= 3.0.0, >= 1.1.0)
+      puppetlabs-stdlib (>= 4.1.0)
+      stahnma-epel (>= 0.0.6)
+
+GIT
   remote: git://github.com/pulling-strings/puppet-archive.git
   ref: master
   sha: 3f4250dbc2b977845643e98ad24f427c24c845b1
@@ -59,7 +65,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-barbecue.git
   ref: master
-  sha: b7103de925e400335c20475899dd78cd8f0ce8b4
+  sha: d3a1a73c9e6a7ca40561ae5efd3935418e932298
   specs:
     strings-barbecue (0.0.2)
       puppetlabs-apt (>= 1.5.2)
@@ -127,7 +133,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-jdk.git
   ref: master
-  sha: a78e25439e5dbe47a1372f0e9c5f419a11694e51
+  sha: a84318ab9ea3ca57e721aa3833583b2230bd48b7
   specs:
     strings-jdk (0.1.0)
       puppetlabs-apt (< 3.0.0, >= 2.0.0)
@@ -170,7 +176,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-shell.git
   ref: master
-  sha: e5e1eba9c31aec5955522be1798d2ba39fff1af6
+  sha: a4a9fea286138fb40b132e8a5838fad70e77f37a
   specs:
     strings-shell (0.2.0)
       stankevich-python (>= 1.7.8)
@@ -216,7 +222,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-zfs.git
   ref: master
-  sha: cf0ce442dda8df606313e25679a910284ef9c56b
+  sha: a9a6f8c88e153a699f706cde71e461b4e2bff473
   specs:
     strings-zfs (0.1.0)
       puppetlabs-stdlib (>= 0)
@@ -247,15 +253,14 @@ GIT
 GIT
   remote: git://github.com/sensu/sensu-puppet.git
   ref: master
-  sha: c2bf85729d8b507723ae37ff7137f56a1c57c441
+  sha: f02d33a19aa481e2ba9926accd948e210eb38b7e
   specs:
-    sensu-sensu (1.5.5)
+    sensu-sensu (2.0.0)
       maestrodev-wget (< 2.0.0, >= 1.4.5)
       puppetlabs-apt (< 3.0.0, >= 2.0.0)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
 
 DEPENDENCIES
-  garethr-docker (>= 0)
   maestrodev-rvm (>= 0)
   puppetlabs-concat (>= 0)
   puppetlabs-stdlib (>= 0)
@@ -270,6 +275,7 @@ DEPENDENCIES
   strings-build (>= 0)
   strings-clamav (>= 0)
   strings-desktop (>= 0)
+  strings-docker (>= 0)
   strings-downloadfile (>= 0)
   strings-editfile (>= 0)
   strings-git (>= 0)
