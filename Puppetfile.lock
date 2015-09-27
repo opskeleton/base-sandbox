@@ -14,6 +14,9 @@ FORGE
       puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
     puppetlabs-stdlib (4.9.0)
     rodjek-logrotate (1.1.1)
+    saz-ssh (2.8.1)
+      puppetlabs-concat (>= 1.0.0)
+      puppetlabs-stdlib (>= 2.2.1)
     stahnma-epel (1.1.1)
     stankevich-python (1.9.8)
       puppetlabs-stdlib (< 6.0.0, >= 4.6.0)
@@ -260,8 +263,18 @@ GIT
       puppetlabs-apt (< 3.0.0, >= 2.0.0)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
 
+GIT
+  remote: ssh://juno:29418/puppet-profiles.git
+  ref: master
+  sha: cccf3de67fda05e6fb71d0842ecd2c166b7b4ab8
+  specs:
+    narkisr-profiles (0.1.0)
+      puppetlabs-stdlib (>= 1.0.0)
+      saz-ssh (>= 2.5.0)
+
 DEPENDENCIES
   maestrodev-rvm (>= 0)
+  narkisr-profiles (>= 0)
   puppetlabs-concat (>= 0)
   puppetlabs-stdlib (>= 0)
   rip-module-data (>= 0)
