@@ -68,7 +68,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-barbecue.git
   ref: master
-  sha: d3a1a73c9e6a7ca40561ae5efd3935418e932298
+  sha: 874745f16ff4ccfe23863e15c03347f696f5a110
   specs:
     strings-barbecue (0.0.2)
       puppetlabs-apt (>= 1.5.2)
@@ -76,7 +76,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 592feba56fc3587c3a67797b80d8bd2f76c7b618
+  sha: 7c288a9f647fda130fc885f0f55dd68d7d7750e9
   specs:
     strings-baseline (0.0.1)
 
@@ -145,7 +145,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-langs.git
   ref: master
-  sha: 221478438d020ff34fed1baefc6c2d1d497df966
+  sha: bb7a0e4c4979a2760b60e418fcaa3e2b07228ff5
   specs:
     strings-langs (0.1.0)
       puppetlabs-apt (>= 1.1.0)
@@ -217,7 +217,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-virtualbox.git
   ref: master
-  sha: 0b102c7c6e29ce69cadfd5e14152dc16b90ae79d
+  sha: d55f7a74a25bce59378afe7e1102bb84c26f4f18
   specs:
     strings-virtualbox (0.2.4)
       puppetlabs-apt (>= 1.1.0)
@@ -266,7 +266,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: 45f404d512835091887a7f2b22ad060dcdaa99f6
+  sha: 616344961f4b1d31064933da7dc0726e690e3e27
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
