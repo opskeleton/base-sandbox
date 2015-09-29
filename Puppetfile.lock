@@ -217,7 +217,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-virtualbox.git
   ref: master
-  sha: d55f7a74a25bce59378afe7e1102bb84c26f4f18
+  sha: 895dc2349c5d96c7121b2e3dae4d8e996b01d910
   specs:
     strings-virtualbox (0.2.4)
       puppetlabs-apt (>= 1.1.0)
@@ -266,7 +266,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: d420410c52ce80d5dea9c6894358ab1912d921e8
+  sha: 3aa0c7d6687a7921daf8a6214fc5ac3df2345d13
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
