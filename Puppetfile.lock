@@ -60,7 +60,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: e50e8385cb92078802a877e55ba866926b9cd385
+  sha: c244bdc314bbb42f0e04ee5226369f43bfdd3a9f
   specs:
     strings-backup (0.1.1)
       rodjek-logrotate (>= 1.1.1)
@@ -256,7 +256,7 @@ GIT
 GIT
   remote: git://github.com/sensu/sensu-puppet.git
   ref: master
-  sha: db1922ebaafade6e665b086df765df7a7b113127
+  sha: d98ecc14a3de307da5786c4edcb477f54eee9ef4
   specs:
     sensu-sensu (2.0.0)
       maestrodev-wget (< 2.0.0, >= 1.4.5)
@@ -266,7 +266,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: d908d5bfe97cd0bfb965badea5b5d9c114f101a2
+  sha: e175f4684a899f5d6066ba1d97d85d03eaa78988
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
