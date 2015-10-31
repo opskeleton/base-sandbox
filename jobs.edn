@@ -5,7 +5,7 @@
      :repo "git://github.com/narkisr/puppet-base-env.git" 
      :target "/tmp/puppet-base-env" 
      :steps [
-        {:cmd "gem" :args ["install" "bundler" "-v" "1.7.15"] :timeout 1200} 
+        {:cmd "gem" :args ["install" "bundler" "-v" "1.10.5"] :timeout 1200} 
         {:cmd "bundle" :args ["install"] :timeout 1200}
         {:cmd "librarian-puppet" :args ["install"] :timeout 1200}
         {:cmd "rake" :args ["serverspec:minimal"] :timeout 1200}
