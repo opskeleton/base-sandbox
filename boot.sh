@@ -1,4 +1,4 @@
 gem install bundle
 bundle install
 librarian-puppet install
-vagrant up
+vagrant up minimal

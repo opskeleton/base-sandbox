@@ -10,7 +10,7 @@ FORGE
     pdxcat-collectd (4.0.1)
       puppetlabs-concat (>= 1.0.4)
       puppetlabs-stdlib (>= 3.2.0)
-    puppetlabs-apt (2.1.1)
+    puppetlabs-apt (2.2.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
     puppetlabs-stdlib (4.9.0)
     rodjek-logrotate (1.1.1)
@@ -21,8 +21,8 @@ FORGE
     stankevich-python (1.9.8)
       puppetlabs-stdlib (< 6.0.0, >= 4.6.0)
       stahnma-epel (< 2.0.0, >= 1.0.1)
-    zleslie-pkgng (0.2.6)
-      puppetlabs-stdlib (>= 4.0.0)
+    zleslie-pkgng (0.3.0)
+      puppetlabs-stdlib (>= 4.6.0)
 
 GIT
   remote: git://github.com/pulling-strings/attachmentgenie-ufw.git
@@ -60,7 +60,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: e50e8385cb92078802a877e55ba866926b9cd385
+  sha: c244bdc314bbb42f0e04ee5226369f43bfdd3a9f
   specs:
     strings-backup (0.1.1)
       rodjek-logrotate (>= 1.1.1)
@@ -83,7 +83,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-build.git
   ref: master
-  sha: 094da88ea03b15a2ae7f3417fcc7414b0314ca40
+  sha: 3b34a2de11a6899734f41646ad8313c34027723b
   specs:
     strings-build (0.1.0)
 
@@ -256,7 +256,7 @@ GIT
 GIT
   remote: git://github.com/sensu/sensu-puppet.git
   ref: master
-  sha: f02d33a19aa481e2ba9926accd948e210eb38b7e
+  sha: d98ecc14a3de307da5786c4edcb477f54eee9ef4
   specs:
     sensu-sensu (2.0.0)
       maestrodev-wget (< 2.0.0, >= 1.4.5)
@@ -266,7 +266,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: 3aa0c7d6687a7921daf8a6214fc5ac3df2345d13
+  sha: e175f4684a899f5d6066ba1d97d85d03eaa78988
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
