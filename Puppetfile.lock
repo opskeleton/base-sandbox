@@ -60,7 +60,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: b348313d907da0f91c9806f97c139fcdc3adace4
+  sha: 25c8df512b75326848f3c61dec32ad7441a03c90
   specs:
     strings-backup (0.1.1)
       rodjek-logrotate (>= 1.1.1)
