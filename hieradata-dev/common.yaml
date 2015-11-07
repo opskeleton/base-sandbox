@@ -16,9 +16,6 @@ git::configure::scm_user: 'vagrant'
 git::configure::scm_email: 'vagrant@gmail.com'
 
 backup::duply::passphrase: 'foobar'
-backup::copy::user: 'vagrant'
-backup::copy::sysuser: 'vagrant'
-backup::copy::folder: '/home/vagrant/.copy'
 backup::dropbox::headless_url: 'https://s3-eu-west-1.amazonaws.com/narkisr-archives/dropbox-lnx.x86_64-3.10.9.tar.gz'
 backup::dropbox::headless_version: '3.10.9'
 
