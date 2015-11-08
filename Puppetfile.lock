@@ -18,7 +18,7 @@ FORGE
       puppetlabs-concat (>= 1.0.0)
       puppetlabs-stdlib (>= 2.2.1)
     stahnma-epel (1.1.1)
-    stankevich-python (1.9.8)
+    stankevich-python (1.10.0)
       puppetlabs-stdlib (< 6.0.0, >= 4.6.0)
       stahnma-epel (< 2.0.0, >= 1.0.1)
     zleslie-pkgng (0.3.0)
@@ -172,14 +172,14 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-pi.git
   ref: master
-  sha: a302785a9cfb440b4d909caa74829469fff87203
+  sha: 18983d10f6435a5b5dff812d82dc8ac4c263d22c
   specs:
     strings-pi (0.1.0)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-shell.git
   ref: master
-  sha: a4a9fea286138fb40b132e8a5838fad70e77f37a
+  sha: 6ebfbd89859cd81d06880d54eaf075bb432999d9
   specs:
     strings-shell (0.2.0)
       stankevich-python (>= 1.7.8)
