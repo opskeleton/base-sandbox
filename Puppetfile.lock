@@ -98,7 +98,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-desktop.git
   ref: master
-  sha: 3117ce75e44a4dbb0072aad7965d7d5a2aca0a05
+  sha: c132d4bf46c41e23a8eeea3b3276652c27a87edf
   specs:
     strings-desktop (0.1.0)
       puppetlabs-apt (>= 2.1.1)
@@ -136,7 +136,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-jdk.git
   ref: master
-  sha: a84318ab9ea3ca57e721aa3833583b2230bd48b7
+  sha: e942d87db93f746a3e7cfb1e8ed8950bcc090d7c
   specs:
     strings-jdk (0.1.0)
       puppetlabs-apt (< 3.0.0, >= 2.0.0)
@@ -225,7 +225,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-zfs.git
   ref: master
-  sha: a9a6f8c88e153a699f706cde71e461b4e2bff473
+  sha: c05dc478b604226b759636e42d7f4f665d91e2f2
   specs:
     strings-zfs (0.1.0)
       puppetlabs-stdlib (>= 0)
@@ -233,7 +233,7 @@ GIT
 GIT
   remote: git://github.com/puppetlabs/puppetlabs-concat.git
   ref: master
-  sha: c307bee3933d88e6028274b0fa122a9b0c87b1d4
+  sha: b87f15578031cc2073d72487533e78abfce7430a
   specs:
     puppetlabs-concat (1.2.4)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
@@ -256,7 +256,7 @@ GIT
 GIT
   remote: git://github.com/sensu/sensu-puppet.git
   ref: master
-  sha: d98ecc14a3de307da5786c4edcb477f54eee9ef4
+  sha: bc5e501e9b6c7ac38181c8749fb6a04b24efdb94
   specs:
     sensu-sensu (2.0.0)
       maestrodev-wget (< 2.0.0, >= 1.4.5)
@@ -266,7 +266,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: d41fb41b2a8fd7300871849e7e796ffe652e15d8
+  sha: 7ff7be66bd1ff45d8c6e6423d609622867ced556
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
