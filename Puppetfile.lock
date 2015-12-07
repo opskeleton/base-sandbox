@@ -17,11 +17,12 @@ FORGE
     saz-ssh (2.8.1)
       puppetlabs-concat (>= 1.0.0)
       puppetlabs-stdlib (>= 2.2.1)
-    stahnma-epel (1.1.1)
+    stahnma-epel (1.2.2)
+      puppetlabs-stdlib (>= 3.0.0)
     stankevich-python (1.10.0)
       puppetlabs-stdlib (< 6.0.0, >= 4.6.0)
       stahnma-epel (< 2.0.0, >= 1.0.1)
-    zleslie-pkgng (0.3.0)
+    zleslie-pkgng (0.3.2)
       puppetlabs-stdlib (>= 4.6.0)
 
 GIT
@@ -83,7 +84,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-build.git
   ref: master
-  sha: 3b34a2de11a6899734f41646ad8313c34027723b
+  sha: 78e14beec2e12bf1373536c80f5360f8516ef130
   specs:
     strings-build (0.1.0)
 
@@ -98,7 +99,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-desktop.git
   ref: master
-  sha: c132d4bf46c41e23a8eeea3b3276652c27a87edf
+  sha: 28e3708a272e14db9dac97c2ac8ae46bc96ca5aa
   specs:
     strings-desktop (0.1.0)
       puppetlabs-apt (>= 2.1.1)
@@ -145,7 +146,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-langs.git
   ref: master
-  sha: 4201c6b3cb87d3f3885b136eb68ecca9fad4e0b0
+  sha: eafc03796519eb32dc48cef4aaf0ddcd6272d186
   specs:
     strings-langs (0.1.0)
       puppetlabs-apt (>= 1.1.0)
@@ -266,7 +267,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: 7ff7be66bd1ff45d8c6e6423d609622867ced556
+  sha: 8d199fb570a842ba0dbdf791ad59da4cd07d4aa9
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
