@@ -4,7 +4,6 @@ describe user('zfs') do
   it { should exist }
 end
 
-
-describe package('ubuntu-zfs') do
+describe package('zfsutils-linux') do
   it { should be_installed }
 end
