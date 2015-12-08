@@ -1,9 +1,10 @@
 node default {
   include profiles
 
-  package{'python-software-properties':
+  package{'software-properties-common':
     ensure  => present
   } -> Exec <||>
+
 
 }
 
