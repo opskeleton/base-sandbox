@@ -27,12 +27,13 @@ Vagrant.configure("2") do |config|
   # Ubuntu instances
   Dir['manifests/*'].map{|it| it.match(/manifests\/(\w*).pp/)[1]}.each do |type|
     config.vm.define type.to_sym do |node| 
-      node.vm.box = 'ubuntu-15.04_puppet-3.8.2'
-      node.vm.hostname = "#{type}.local"
-      node.vm.network :public_network, :bridge => device , :dev => device
+      node.vm.box = 'ubuntu-15.10_puppet-3.8.2'
+      # node.vm.hostname = "#{type}.local"
+	node.vm.provider 'libvirt'
 
-      node.vm.provider :virtualbox do |vb|
+      node.vm.provider :virtualbox do |vb, o|
         vb.customize ['modifyvm', :id, '--memory', 2048, '--cpus', 4]
+	  o.vm.network :public_network, :bridge => device , :dev => device
       end
 
       node.vm.provider :libvirt do |domain, o|
@@ -40,10 +41,11 @@ Vagrant.configure("2") do |config|
         domain.host = "#{type}.local"
         domain.memory = 2048
         domain.cpus = 2
-        domain.storage_pool_name = 'daemon'
-        o.vm.synced_folder './', '/vagrant', type: 'nfs'
+        # domain.storage_pool_name = 'daemon'
+        o.vm.synced_folder './', '/vagrant', type: '9p'
       end
 
+	node.vm.provision :shell, inline: "hostnamectl set-hostname #{type}.local"
       node.vm.provision :shell, :inline => update
       node.vm.provision :puppet do |puppet|
         puppet.manifests_path = 'manifests'
