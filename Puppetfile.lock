@@ -10,9 +10,9 @@ FORGE
     pdxcat-collectd (4.0.1)
       puppetlabs-concat (>= 1.0.4)
       puppetlabs-stdlib (>= 3.2.0)
-    puppetlabs-apt (2.2.0)
+    puppetlabs-apt (2.2.1)
       puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
-    puppetlabs-stdlib (4.9.0)
+    puppetlabs-stdlib (4.9.1)
     rodjek-logrotate (1.1.1)
     saz-ssh (2.8.1)
       puppetlabs-concat (>= 1.0.0)
@@ -36,7 +36,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/garethr-docker.git
   ref: master
-  sha: bdc6b26a29573925055b4e1bd6bb75094677f44b
+  sha: e5356b18d24437535377b600336d54b602c2e0ec
   specs:
     strings-docker (4.1.1)
       puppetlabs-apt (<= 3.0.0, >= 1.1.0)
@@ -84,7 +84,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-build.git
   ref: master
-  sha: 78e14beec2e12bf1373536c80f5360f8516ef130
+  sha: 3e7c497206de283dd4218b717e0ce0709f6a193b
   specs:
     strings-build (0.1.0)
 
@@ -146,7 +146,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-langs.git
   ref: master
-  sha: eafc03796519eb32dc48cef4aaf0ddcd6272d186
+  sha: 324ba4e2ac51fa918611df0d231d65b4f99ad095
   specs:
     strings-langs (0.1.0)
       puppetlabs-apt (>= 1.1.0)
@@ -195,7 +195,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: e872938d7a86890b38c0f4863412a381509c73a1
+  sha: c47a3290f1d87e5615ec38c728c05420d57d9e39
   specs:
     strings-vagrant (0.1.0)
 
@@ -218,7 +218,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-virtualbox.git
   ref: master
-  sha: 895dc2349c5d96c7121b2e3dae4d8e996b01d910
+  sha: a4a95a6f3af8a1bab1a40399afe48ebf73789ada
   specs:
     strings-virtualbox (0.2.4)
       puppetlabs-apt (>= 1.1.0)
@@ -226,7 +226,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-zfs.git
   ref: master
-  sha: c05dc478b604226b759636e42d7f4f665d91e2f2
+  sha: 4bbd86b3ed13bad023cbdf17f9713f8d446837e6
   specs:
     strings-zfs (0.1.0)
       puppetlabs-stdlib (>= 0)
@@ -234,9 +234,9 @@ GIT
 GIT
   remote: git://github.com/puppetlabs/puppetlabs-concat.git
   ref: master
-  sha: b87f15578031cc2073d72487533e78abfce7430a
+  sha: ca98a145ca4374383dc33db7119fb0b5364e736f
   specs:
-    puppetlabs-concat (1.2.4)
+    puppetlabs-concat (1.2.5)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
 
 GIT
