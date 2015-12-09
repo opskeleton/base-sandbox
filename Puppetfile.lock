@@ -257,7 +257,7 @@ GIT
 GIT
   remote: git://github.com/sensu/sensu-puppet.git
   ref: master
-  sha: bc5e501e9b6c7ac38181c8749fb6a04b24efdb94
+  sha: 1d464c02914aaf0b8fa7ad94610bf2a3b3b4eebe
   specs:
     sensu-sensu (2.0.0)
       maestrodev-wget (< 2.0.0, >= 1.4.5)
@@ -267,7 +267,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: 8d199fb570a842ba0dbdf791ad59da4cd07d4aa9
+  sha: ed09f93f4fae19c1f81ed8e6f1ea56c4d790d776
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
