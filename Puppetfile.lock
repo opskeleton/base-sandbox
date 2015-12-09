@@ -10,9 +10,9 @@ FORGE
     pdxcat-collectd (4.0.1)
       puppetlabs-concat (>= 1.0.4)
       puppetlabs-stdlib (>= 3.2.0)
-    puppetlabs-apt (2.2.0)
+    puppetlabs-apt (2.2.1)
       puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
-    puppetlabs-stdlib (4.9.0)
+    puppetlabs-stdlib (4.9.1)
     rodjek-logrotate (1.1.1)
     saz-ssh (2.8.1)
       puppetlabs-concat (>= 1.0.0)
@@ -84,7 +84,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-build.git
   ref: master
-  sha: 78e14beec2e12bf1373536c80f5360f8516ef130
+  sha: 3e7c497206de283dd4218b717e0ce0709f6a193b
   specs:
     strings-build (0.1.0)
 
@@ -146,7 +146,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-langs.git
   ref: master
-  sha: eafc03796519eb32dc48cef4aaf0ddcd6272d186
+  sha: 324ba4e2ac51fa918611df0d231d65b4f99ad095
   specs:
     strings-langs (0.1.0)
       puppetlabs-apt (>= 1.1.0)
@@ -226,7 +226,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-zfs.git
   ref: master
-  sha: c05dc478b604226b759636e42d7f4f665d91e2f2
+  sha: 4bbd86b3ed13bad023cbdf17f9713f8d446837e6
   specs:
     strings-zfs (0.1.0)
       puppetlabs-stdlib (>= 0)
@@ -234,9 +234,9 @@ GIT
 GIT
   remote: git://github.com/puppetlabs/puppetlabs-concat.git
   ref: master
-  sha: b87f15578031cc2073d72487533e78abfce7430a
+  sha: ca98a145ca4374383dc33db7119fb0b5364e736f
   specs:
-    puppetlabs-concat (1.2.4)
+    puppetlabs-concat (1.2.5)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
 
 GIT
@@ -257,7 +257,7 @@ GIT
 GIT
   remote: git://github.com/sensu/sensu-puppet.git
   ref: master
-  sha: bc5e501e9b6c7ac38181c8749fb6a04b24efdb94
+  sha: 1d464c02914aaf0b8fa7ad94610bf2a3b3b4eebe
   specs:
     sensu-sensu (2.0.0)
       maestrodev-wget (< 2.0.0, >= 1.4.5)
@@ -267,7 +267,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: 8d199fb570a842ba0dbdf791ad59da4cd07d4aa9
+  sha: ed09f93f4fae19c1f81ed8e6f1ea56c4d790d776
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
