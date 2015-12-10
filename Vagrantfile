@@ -43,7 +43,7 @@ Vagrant.configure("2") do |config|
         domain.memory = 2048
         domain.cpus = 2
         domain.storage_pool_name = pool if pool
-        o.vm.synced_folder './', '/vagrant', type: '9p'
+        o.vm.synced_folder './', '/vagrant', type: 'nfs'
       end
 
 	node.vm.provision :shell, inline: "hostnamectl set-hostname #{type}.local"
