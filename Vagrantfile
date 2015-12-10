@@ -23,6 +23,7 @@ SCRIPT
 Vagrant.configure("2") do |config|
 
   device = ENV['VAGRANT_BRIDGE'] || 'eth0'
+  pool = ENV['VAGRANT_POOL'] 
 
   # Ubuntu instances
   Dir['manifests/*'].map{|it| it.match(/manifests\/(\w*).pp/)[1]}.each do |type|
@@ -41,7 +42,7 @@ Vagrant.configure("2") do |config|
         domain.host = "#{type}.local"
         domain.memory = 2048
         domain.cpus = 2
-        # domain.storage_pool_name = 'daemon'
+        domain.storage_pool_name = pool if pool
         o.vm.synced_folder './', '/vagrant', type: '9p'
       end
 
