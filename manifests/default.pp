@@ -5,6 +5,10 @@ node default {
     ensure  => present
   } -> Exec <||>
 
+  Service {
+    provider => systemd
+  }
+
 
 }
 
