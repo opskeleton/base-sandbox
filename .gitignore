@@ -18,3 +18,4 @@ hieradata/common.yaml
 hieradata-prod
 plots
 target
+benchmark.json
