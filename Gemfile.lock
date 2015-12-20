@@ -74,7 +74,7 @@ GEM
       git_clone_url
       net-scp
       thor
-    puppet (3.7.5)
+    puppet (3.8.2)
       facter (> 1.6, < 3)
       hiera (~> 1.0)
       json_pure
@@ -142,7 +142,7 @@ DEPENDENCIES
   librarian-puppet
   net-ping
   opskeleton
-  puppet (= 3.7.5)
+  puppet (= 3.8.2)
   puppet-lint
   puppetlabs_spec_helper (>= 0.1.0)
   rake

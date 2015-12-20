@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # base
-gem 'puppet', '= 3.7.5'
+gem 'puppet', '= 3.8.2'
 
 # testing
 gem 'rspec-puppet'
