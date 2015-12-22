@@ -12,7 +12,7 @@ FORGE
       puppetlabs-stdlib (>= 3.2.0)
     puppetlabs-apt (2.2.1)
       puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
-    puppetlabs-stdlib (4.9.1)
+    puppetlabs-stdlib (4.10.0)
     rodjek-logrotate (1.1.1)
     saz-ssh (2.8.1)
       puppetlabs-concat (>= 1.0.0)
@@ -129,7 +129,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-hardening.git
   ref: master
-  sha: ce823599f5c8d29d7f68f3c3797199425547f6dc
+  sha: 51300ae289460afaf0c9ef447ab99a8ef394ac27
   specs:
     strings-hardening (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
@@ -195,7 +195,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: c47a3290f1d87e5615ec38c728c05420d57d9e39
+  sha: 40bb42b4c2a13ffa17f03b333bb1db69de2a71f9
   specs:
     strings-vagrant (0.1.0)
 
@@ -257,7 +257,7 @@ GIT
 GIT
   remote: git://github.com/sensu/sensu-puppet.git
   ref: master
-  sha: 1d464c02914aaf0b8fa7ad94610bf2a3b3b4eebe
+  sha: 553994fb8724f84ec820a0a36b347a148d4495e3
   specs:
     sensu-sensu (2.0.0)
       maestrodev-wget (< 2.0.0, >= 1.4.5)
