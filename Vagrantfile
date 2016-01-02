@@ -3,7 +3,7 @@
 
 MIRROR=ENV['MIRROR'] || 'us.archive.ubuntu.com'
 
-update = <<SCRIPT
+update_ubuntu = <<SCRIPT
 if [ ! -f /tmp/up ]; then
   sudo sed -i.bak "s/us.archive.ubuntu.com/#{MIRROR}/g" /etc/apt/sources.list
   sudo sed -i.bak '/deb-src/d' /etc/apt/sources.list
@@ -15,10 +15,13 @@ SCRIPT
 update_bsd = <<SCRIPT
 if [ ! -f /tmp/up ]; then
   pkg update -f
-  pkg upgrade -y
+  # pkg upgrade -y
   touch /tmp/up
 fi
 SCRIPT
+
+BSD = %w(manifests/syncbsd.pp)
+LINUX = Dir['manifests/*'] - BSD
 
 Vagrant.configure("2") do |config|
 
@@ -26,7 +29,7 @@ Vagrant.configure("2") do |config|
   pool = ENV['VAGRANT_POOL'] 
 
   # Ubuntu instances
-  Dir['manifests/*'].map{|it| it.match(/manifests\/(\w*).pp/)[1]}.each do |type|
+  LINUX.map{|it| it.match(/manifests\/(\w*).pp/)[1]}.each do |type|
     config.vm.define type.to_sym do |node| 
       node.vm.box = 'ubuntu-15.10_puppet-3.8.2'
       # node.vm.hostname = "#{type}.local"
@@ -47,7 +50,7 @@ Vagrant.configure("2") do |config|
       end
 
 	node.vm.provision :shell, inline: "hostnamectl set-hostname #{type}.local"
-      node.vm.provision :shell, :inline => update
+      node.vm.provision :shell, :inline => update_ubuntu
       node.vm.provision :puppet do |puppet|
         puppet.manifests_path = 'manifests'
         puppet.manifest_file  = "#{type}.pp"
@@ -56,20 +59,19 @@ Vagrant.configure("2") do |config|
     end
   end
 
-  # BSD instances
-  %w(syncbsd).each do |type|
+  BSD.map{|it| it.match(/manifests\/(\w*).pp/)[1]}.each do |type|
     config.vm.define type.to_sym do |node|
-      node.vm.box = 'trueos-10.1_puppet-3.6.2' 
+	node.vm.network :public_network, :bridge => device,  auto_config: false
+	node.vm.provider 'virtualbox'
+	node.vm.box = 'FreeBSD-10.1_puppet-3.8.2' 
       node.vm.guest = :freebsd
-      node.vm.network :public_network, :bridge => device
       node.vm.network 'private_network', ip: '10.0.1.10'
-      node.vm.hostname = "#{type}.local"
 
       node.vm.provider :virtualbox do |vb|
         vb.customize ['modifyvm', :id, '--memory', 2048, '--cpus', 2]
       end
 
-      node.vm.synced_folder '.', '/vagrant', :nfs => true, id: 'vagrant-root'
+      node.vm.synced_folder '.', '/vagrant', type: :nfs
       node.vm.provision :shell, :inline => update_bsd
       node.vm.provision :shell, inline: "cd /vagrant && ./bsdrun.sh manifests/#{type}.pp"
     end
