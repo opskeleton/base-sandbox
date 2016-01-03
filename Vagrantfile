@@ -15,12 +15,11 @@ SCRIPT
 update_bsd = <<SCRIPT
 if [ ! -f /tmp/up ]; then
   pkg update -f
-  # pkg upgrade -y
   touch /tmp/up
 fi
 SCRIPT
 
-BSD = %w(manifests/syncbsd.pp)
+BSD = %w(manifests/minimal_bsd.pp)
 LINUX = Dir['manifests/*'] - BSD
 
 Vagrant.configure("2") do |config|
@@ -63,7 +62,7 @@ Vagrant.configure("2") do |config|
     config.vm.define type.to_sym do |node|
 	node.vm.network :public_network, :bridge => device,  auto_config: false
 	node.vm.provider 'virtualbox'
-	node.vm.box = 'FreeBSD-10.1_puppet-3.8.2' 
+	node.vm.box = 'freebsd-10.2_puppet-3.8.2' 
       node.vm.guest = :freebsd
       node.vm.network 'private_network', ip: '10.0.1.10'
 
