@@ -1,14 +1,14 @@
 node default {
   include profiles
 
-  package{'software-properties-common':
-    ensure  => present
-  } -> Exec <||>
+  if $operatingsystem == 'Ubuntu' {
+    package{'software-properties-common':
+      ensure  => present
+    } -> Exec <||>
 
-  Service {
-    provider => systemd
+    Service {
+      provider => systemd
+    }
   }
-
-
 }
 
