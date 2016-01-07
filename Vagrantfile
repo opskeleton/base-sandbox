@@ -60,6 +60,7 @@ Vagrant.configure("2") do |config|
 
   BSD.map{|it| it.match(/manifests\/(\w*).pp/)[1]}.each do |type|
     config.vm.define type.to_sym do |node|
+	node.ssh.shell = '/bin/sh'
 	node.vm.network :public_network, :bridge => device,  auto_config: false
 	node.vm.provider 'virtualbox'
 	node.vm.box = 'freebsd-10.2_puppet-3.8.2' 
