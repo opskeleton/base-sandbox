@@ -13,14 +13,10 @@ describe package('nodejs') do
 end
 
 describe command('node -v') do
-  its(:stdout) {should contain 'v0.10.41'}
+  its(:stdout) {should contain 'v0.10.43'}
 end
 
 describe command('go version') do
-  its(:stdout) {should contain 'go version go1.5 linux/amd64'}
+  its(:stdout) {should contain 'go version go1.5.3 linux/amd64'}
 end
 
-
-# describe ppa('chris-lea/node.js') do
-  # it { should exist }
-# end
