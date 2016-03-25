@@ -2,15 +2,15 @@ FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
     golja-gnupg (1.2.3)
-    maestrodev-rvm (1.12.1)
+    lwf-remote_file (1.1.3)
+    maestrodev-rvm (1.13.1)
       golja-gnupg (>= 1.2.0)
       puppetlabs-stdlib (>= 4.2.0)
-    maestrodev-wget (1.7.2)
     narkisr-git (0.0.1)
     pdxcat-collectd (4.0.1)
       puppetlabs-concat (>= 1.0.4)
       puppetlabs-stdlib (>= 3.2.0)
-    puppetlabs-apt (2.2.1)
+    puppetlabs-apt (2.2.2)
       puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
     puppetlabs-stdlib (4.11.0)
     rodjek-logrotate (1.1.1)
@@ -77,7 +77,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: ab2aecdb8b6f1b56005e85d287844b2722bedf1c
+  sha: ccd6c333325cf3b55583abcf587b8936c7233dce
   specs:
     strings-baseline (0.0.1)
 
@@ -173,7 +173,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-pi.git
   ref: master
-  sha: 18983d10f6435a5b5dff812d82dc8ac4c263d22c
+  sha: cddcedb51302bd38742a284d20ed4cc61bb8d4ed
   specs:
     strings-pi (0.1.0)
 
@@ -234,7 +234,7 @@ GIT
 GIT
   remote: git://github.com/puppetlabs/puppetlabs-concat.git
   ref: master
-  sha: b033974923125e54b926c144f9c794402f8c1d60
+  sha: a866804adb923156ab7fa15334dec67a77cec024
   specs:
     puppetlabs-concat (2.1.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.2.0)
@@ -242,9 +242,9 @@ GIT
 GIT
   remote: git://github.com/ripienaar/puppet-module-data.git
   ref: master
-  sha: aa537833a400abcad19bd2e283c392c745cedeee
+  sha: 28dafce3a70b35364d33f64d9f518e1adffef242
   specs:
-    rip-module-data (0.4.0)
+    rip-module-data (0.5.1)
 
 GIT
   remote: git://github.com/saz/puppet-timezone.git
@@ -257,10 +257,10 @@ GIT
 GIT
   remote: git://github.com/sensu/sensu-puppet.git
   ref: master
-  sha: 6278ba9a26bb47d39f219f6a83831e2221f5d0f8
+  sha: c53ac5c36e2b76ae3e646c5643291765ee600548
   specs:
-    sensu-sensu (2.0.0)
-      maestrodev-wget (< 2.0.0, >= 1.4.5)
+    sensu-sensu (2.1.0)
+      lwf-remote_file (< 2.0.0, >= 1.0.0)
       puppetlabs-apt (< 3.0.0, >= 2.0.0)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
 
