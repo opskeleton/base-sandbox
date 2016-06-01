@@ -7,7 +7,7 @@ update_ubuntu = <<SCRIPT
 if [ ! -f /tmp/up ]; then
   sudo sed -i.bak "s/us.archive.ubuntu.com/#{MIRROR}/g" /etc/apt/sources.list
   sudo sed -i.bak '/deb-src/d' /etc/apt/sources.list
-  sudo aptitude update 
+  sudo apt-get update 
   touch /tmp/up
 fi
 SCRIPT
@@ -30,7 +30,7 @@ Vagrant.configure("2") do |config|
   # Ubuntu instances
   LINUX.map{|it| it.match(/manifests\/(\w*).pp/)[1]}.each do |type|
     config.vm.define type.to_sym do |node| 
-      node.vm.box = 'ubuntu-15.10_puppet-3.8.2'
+	node.vm.box = 'ubuntu-16.04_puppet-3.8.7'
       # node.vm.hostname = "#{type}.local"
 	node.vm.provider 'libvirt'
 
