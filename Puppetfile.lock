@@ -195,7 +195,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: fd31e4fcfb337d24dd010595ef8586dc20649cee
+  sha: fd54e2ef59a052c452851611ac6bb79f356e70a3
   specs:
     strings-vagrant (0.1.0)
 
@@ -257,7 +257,7 @@ GIT
 GIT
   remote: git://github.com/sensu/sensu-puppet.git
   ref: master
-  sha: c53ac5c36e2b76ae3e646c5643291765ee600548
+  sha: 691b159e117860c0f584aa492b1b11ebdcec1401
   specs:
     sensu-sensu (2.1.0)
       lwf-remote_file (< 2.0.0, >= 1.0.0)
