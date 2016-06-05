@@ -218,7 +218,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-virtualbox.git
   ref: master
-  sha: bb93d03375d5588feef9a2636c2367b7945b053e
+  sha: 73a5fe464d9e70edd79efa8a180a4a51d984c5ae
   specs:
     strings-virtualbox (0.2.4)
       puppetlabs-apt (>= 1.1.0)
