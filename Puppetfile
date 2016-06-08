@@ -2,7 +2,11 @@ require 'net/ping'
 forge "https://forgeapi.puppetlabs.com"
 
 mod 'puppetlabs/stdlib'
-mod 'zleslie/pkgng'
+
+mod 'zleslie/pkgng', 
+  :git => 'git://github.com/pulling-strings/puppet-pkgng.git',
+  :ref => '0.4.0'
+
 mod 'maestrodev/rvm'
 
 mod 'puppetlabs/concat',

@@ -22,8 +22,6 @@ FORGE
     stankevich-python (1.12.0)
       puppetlabs-stdlib (< 6.0.0, >= 4.6.0)
       stahnma-epel (< 2.0.0, >= 1.0.1)
-    zleslie-pkgng (1.1.1)
-      puppetlabs-stdlib (>= 4.6.0)
 
 GIT
   remote: git://github.com/pulling-strings/attachmentgenie-ufw.git
@@ -176,6 +174,14 @@ GIT
   sha: 6919cb131860867d40883a14df401628752ef287
   specs:
     strings-pi (0.1.0)
+
+GIT
+  remote: git://github.com/pulling-strings/puppet-pkgng.git
+  ref: 0.4.0
+  sha: e35099279e09f73aa9801131cbf4504f82a336d9
+  specs:
+    zleslie-pkgng (0.4.0)
+      puppetlabs-stdlib (>= 4.6.0)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-shell.git
