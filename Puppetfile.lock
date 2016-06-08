@@ -72,7 +72,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 48d9b50445286cacd27b420607485e13f78320b1
+  sha: 201eab4a0e4f0f2f4b025048f0b27248bfafb3b1
   specs:
     strings-baseline (0.0.1)
 
@@ -183,7 +183,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-shell.git
   ref: master
-  sha: 6ebfbd89859cd81d06880d54eaf075bb432999d9
+  sha: be49c5e868b48bccf90580d323ab9d5dd80e1033
   specs:
     strings-shell (0.2.0)
       stankevich-python (>= 1.7.8)
