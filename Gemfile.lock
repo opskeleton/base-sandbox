@@ -148,6 +148,3 @@ DEPENDENCIES
   rake
   rspec-puppet
   serverspec
-
-BUNDLED WITH
-   1.10.5
