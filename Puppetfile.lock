@@ -240,7 +240,7 @@ GIT
 GIT
   remote: git://github.com/puppetlabs/puppetlabs-concat.git
   ref: master
-  sha: 83c6003c05241f58f278b5dae4d1b312abc3be18
+  sha: 37c4f8a40d9fc208c299b7a73ac0aba33cb90cc1
   specs:
     puppetlabs-concat (2.1.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.2.0)
@@ -273,7 +273,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: 5d2d0a6bb495248e0ee5bbf98fd2bdfbc00b154f
+  sha: ae3a1fc1191848de97d88d470b036285775dcdbf
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
