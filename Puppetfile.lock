@@ -67,7 +67,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-barbecue.git
   ref: master
-  sha: da7a48739224ca7e7c058b934a694d6b6de1cc07
+  sha: f1fb0329f8c30d72f9e987e14b9e170331eeb5f1
   specs:
     strings-barbecue (0.0.2)
       puppetlabs-apt (>= 1.5.2)
@@ -75,14 +75,14 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 201eab4a0e4f0f2f4b025048f0b27248bfafb3b1
+  sha: 6fe6c3d851c8a5dc1dae846f039c2344ccc6a9f6
   specs:
     strings-baseline (0.0.1)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-build.git
   ref: master
-  sha: 3e7c497206de283dd4218b717e0ce0709f6a193b
+  sha: 0c6d9f3202f868378915051bff9505c012d0b904
   specs:
     strings-build (0.1.0)
 
@@ -186,7 +186,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-shell.git
   ref: master
-  sha: be49c5e868b48bccf90580d323ab9d5dd80e1033
+  sha: 92f59ad87accb1109b5f08fe048d3d07d497de83
   specs:
     strings-shell (0.2.0)
       stankevich-python (>= 1.7.8)
@@ -201,7 +201,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: fd54e2ef59a052c452851611ac6bb79f356e70a3
+  sha: cde4953bb4e8bdea155d29ad01eaba8aaf799324
   specs:
     strings-vagrant (0.1.0)
 
@@ -273,7 +273,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: ae3a1fc1191848de97d88d470b036285775dcdbf
+  sha: 348eef122bb5e6cb4ef074a3027a2233711bff17
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
