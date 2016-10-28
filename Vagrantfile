@@ -7,7 +7,7 @@ update_ubuntu = <<SCRIPT
 if [ ! -f /tmp/up ]; then
   sudo sed -i.bak "s/us.archive.ubuntu.com/#{MIRROR}/g" /etc/apt/sources.list
   sudo sed -i.bak '/deb-src/d' /etc/apt/sources.list
-  sudo apt-get update 
+  sudo apt-get update
   touch /tmp/up
 fi
 SCRIPT
@@ -25,11 +25,14 @@ LINUX = Dir['manifests/*'] - BSD
 Vagrant.configure("2") do |config|
 
   device = ENV['VAGRANT_BRIDGE'] || 'eth0'
-  pool = ENV['VAGRANT_POOL'] 
+  pool = ENV['VAGRANT_POOL']
 
   # Ubuntu instances
   LINUX.map{|it| it.match(/manifests\/(\w*).pp/)[1]}.each do |type|
-    config.vm.define type.to_sym do |node| 
+    config.vm.define type.to_sym do |node|
+      if Vagrant.has_plugin?("vagrant-cachier")
+       config.cache.scope = :box
+      end
 	node.vm.box = 'ubuntu-16.04_puppet-3.8.7'
       # node.vm.hostname = "#{type}.local"
 	node.vm.provider 'libvirt'
@@ -63,7 +66,7 @@ Vagrant.configure("2") do |config|
 	node.ssh.shell = '/bin/sh'
 	node.vm.network :public_network, :bridge => device,  auto_config: false
 	node.vm.provider 'virtualbox'
-	node.vm.box = 'freebsd-10.2_puppet-3.8.2' 
+	node.vm.box = 'freebsd-10.2_puppet-3.8.2'
       node.vm.guest = :freebsd
       node.vm.network 'private_network', ip: '10.0.1.10'
 
