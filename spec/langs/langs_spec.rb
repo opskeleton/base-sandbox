@@ -17,6 +17,6 @@ describe command('node -v') do
 end
 
 describe command('go version') do
-  its(:stdout) {should contain 'go version go1.5.3 linux/amd64'}
+  its(:stdout) {should contain 'go version go1.7.3 linux/amd64'}
 end
 
