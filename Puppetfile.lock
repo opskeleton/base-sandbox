@@ -10,18 +10,18 @@ FORGE
     pdxcat-collectd (4.0.1)
       puppetlabs-concat (>= 1.0.4)
       puppetlabs-stdlib (>= 3.2.0)
-    puppetlabs-apt (2.2.2)
+    puppetlabs-apt (2.3.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
-    puppetlabs-stdlib (4.12.0)
+    puppetlabs-stdlib (4.13.1)
     rodjek-logrotate (1.1.1)
-    saz-ssh (2.8.1)
+    saz-ssh (2.9.1)
       puppetlabs-concat (>= 1.0.0)
       puppetlabs-stdlib (>= 2.2.1)
     stahnma-epel (1.2.2)
       puppetlabs-stdlib (>= 3.0.0)
-    stankevich-python (1.12.0)
+    stankevich-python (1.18.0)
       puppetlabs-stdlib (< 6.0.0, >= 4.6.0)
-      stahnma-epel (< 2.0.0, >= 1.0.1)
+      stahnma-epel (< 2.0.0, >= 1.2.2)
 
 GIT
   remote: git://github.com/pulling-strings/attachmentgenie-ufw.git
@@ -144,7 +144,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-langs.git
   ref: master
-  sha: b2b9d8c93fa6fb9f600d178308ed188a586b8e97
+  sha: 3625491dcff8cc003dae6cf5908cb376c31e62f9
   specs:
     strings-langs (0.1.0)
       puppetlabs-apt (>= 1.1.0)
@@ -201,7 +201,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: cde4953bb4e8bdea155d29ad01eaba8aaf799324
+  sha: f6a2fa83c67186b8f523f43aa8385548e2cc594d
   specs:
     strings-vagrant (0.1.0)
 
@@ -240,9 +240,9 @@ GIT
 GIT
   remote: git://github.com/puppetlabs/puppetlabs-concat.git
   ref: master
-  sha: 37c4f8a40d9fc208c299b7a73ac0aba33cb90cc1
+  sha: fdf4a84534ccb1b9ae8ffb654c7e160a31e294ee
   specs:
-    puppetlabs-concat (2.1.0)
+    puppetlabs-concat (2.2.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.2.0)
 
 GIT
@@ -263,7 +263,7 @@ GIT
 GIT
   remote: git://github.com/sensu/sensu-puppet.git
   ref: master
-  sha: 691b159e117860c0f584aa492b1b11ebdcec1401
+  sha: 6d10bae43dbb16ca58e3188cc293de01a622240a
   specs:
     sensu-sensu (2.1.0)
       lwf-remote_file (< 2.0.0, >= 1.0.0)
