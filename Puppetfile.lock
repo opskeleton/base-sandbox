@@ -12,14 +12,14 @@ FORGE
       puppetlabs-stdlib (>= 3.2.0)
     puppetlabs-apt (2.3.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
-    puppetlabs-stdlib (4.13.1)
+    puppetlabs-stdlib (4.14.0)
     rodjek-logrotate (1.1.1)
     saz-ssh (2.9.1)
       puppetlabs-concat (>= 1.0.0)
       puppetlabs-stdlib (>= 2.2.1)
     stahnma-epel (1.2.2)
       puppetlabs-stdlib (>= 3.0.0)
-    stankevich-python (1.18.0)
+    stankevich-python (1.18.2)
       puppetlabs-stdlib (< 6.0.0, >= 4.6.0)
       stahnma-epel (< 2.0.0, >= 1.2.2)
 
@@ -240,7 +240,7 @@ GIT
 GIT
   remote: git://github.com/puppetlabs/puppetlabs-concat.git
   ref: master
-  sha: fdf4a84534ccb1b9ae8ffb654c7e160a31e294ee
+  sha: 87bf704f8aea435ab5a044161175330f5a0299b2
   specs:
     puppetlabs-concat (2.2.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.2.0)
@@ -263,9 +263,9 @@ GIT
 GIT
   remote: git://github.com/sensu/sensu-puppet.git
   ref: master
-  sha: 6d10bae43dbb16ca58e3188cc293de01a622240a
+  sha: 810753b9a23bef3ce2b168f488c2c0e0c5da463b
   specs:
-    sensu-sensu (2.1.0)
+    sensu-sensu (2.2.0)
       lwf-remote_file (< 2.0.0, >= 1.0.0)
       puppetlabs-apt (< 3.0.0, >= 2.0.0)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
