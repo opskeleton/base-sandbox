@@ -7,6 +7,7 @@
      :steps [
         {:cmd "gem" :args ["install" "bundler" "-v" "1.10.5"] :timeout 1200} 
         {:cmd "bundle" :args ["install"] :timeout 1200}
+        {:cmd "sed" :args ["-i" "/.*profiles/ d"  "Puppetfile"] :timeout 200}
         {:cmd "librarian-puppet" :args ["install"] :timeout 1200}
         {:cmd "rake" :args ["serverspec:minimal"] :timeout 1200}
         {:cmd "rake" :args ["serverspec:virtualized"] :timeout 1200}
