@@ -23,6 +23,9 @@ BSD = %w(manifests/minimal_bsd.pp)
 LINUX = Dir['manifests/*'] - BSD
 
 Vagrant.configure("2") do |config|
+  if Vagrant.has_plugin?("vagrant-cachier")
+     config.cache.scope = :box
+  end
 
   device = ENV['VAGRANT_BRIDGE'] || 'eth0'
   pool = ENV['VAGRANT_POOL']
@@ -30,9 +33,6 @@ Vagrant.configure("2") do |config|
   # Ubuntu instances
   LINUX.map{|it| it.match(/manifests\/(\w*).pp/)[1]}.each do |type|
     config.vm.define type.to_sym do |node|
-      if Vagrant.has_plugin?("vagrant-cachier")
-       config.cache.scope = :box
-      end
 	node.vm.box = 'ubuntu-16.04_puppet-3.8.7'
       # node.vm.hostname = "#{type}.local"
 	node.vm.provider 'libvirt'
