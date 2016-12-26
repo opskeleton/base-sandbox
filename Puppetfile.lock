@@ -201,7 +201,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: f6a2fa83c67186b8f523f43aa8385548e2cc594d
+  sha: cc7dea2991aa481674e7c36112438af8e1d03378
   specs:
     strings-vagrant (0.1.0)
 
@@ -240,7 +240,7 @@ GIT
 GIT
   remote: git://github.com/puppetlabs/puppetlabs-concat.git
   ref: master
-  sha: 87bf704f8aea435ab5a044161175330f5a0299b2
+  sha: 440bd99da71dc857c34223d34fa8ff99ba00fc59
   specs:
     puppetlabs-concat (2.2.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.2.0)
