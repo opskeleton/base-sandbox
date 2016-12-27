@@ -32,16 +32,6 @@ GIT
       puppetlabs-stdlib (< 5.0.0, >= 2.2.1)
 
 GIT
-  remote: git://github.com/pulling-strings/garethr-docker.git
-  ref: master
-  sha: 6395e8c68df563d74653d7e19919c44ffa3d0d58
-  specs:
-    strings-docker (4.1.1)
-      puppetlabs-apt (<= 3.0.0, >= 1.1.0)
-      puppetlabs-stdlib (>= 4.1.0)
-      stahnma-epel (>= 0.0.6)
-
-GIT
   remote: git://github.com/pulling-strings/puppet-archive.git
   ref: master
   sha: 3f4250dbc2b977845643e98ad24f427c24c845b1
@@ -102,6 +92,13 @@ GIT
     strings-desktop (0.1.0)
       puppetlabs-apt (>= 2.1.1)
       puppetlabs-stdlib (< 5.0.0, >= 2.2.1)
+
+GIT
+  remote: git://github.com/pulling-strings/puppet-docker.git
+  ref: master
+  sha: 22b06a170dffcfa40809a93805ec8a793ab5f9e3
+  specs:
+    strings-docker (1.0.0)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-downloadfile.git

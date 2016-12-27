@@ -16,7 +16,7 @@ mod 'saz/timezone',
   :git => 'git://github.com/saz/puppet-timezone.git'
 
 mod 'strings/docker', 
-  :git => 'git://github.com/pulling-strings/garethr-docker.git'
+  :git => 'git://github.com/pulling-strings/puppet-docker.git'
 
 mod 'strings/zfs', 
    :git => 'git://github.com/pulling-strings/puppet-zfs.git'
