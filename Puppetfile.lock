@@ -96,7 +96,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-docker.git
   ref: master
-  sha: 22b06a170dffcfa40809a93805ec8a793ab5f9e3
+  sha: 1a41d3c86f393d4f326c92de6aca709fcab326d6
   specs:
     strings-docker (1.0.0)
 
