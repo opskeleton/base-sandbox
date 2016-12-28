@@ -96,9 +96,9 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-docker.git
   ref: master
-  sha: 1a41d3c86f393d4f326c92de6aca709fcab326d6
+  sha: e4b577d26f3a90144b3877cbb6f88ea589eb5bb5
   specs:
-    strings-docker (1.0.0)
+    strings-docker (0.0.1)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-downloadfile.git
@@ -198,7 +198,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: 1eb502067231ad679b75bcbeeea10bd97ac1df09
+  sha: daf85bf77368cf2c9a99b450586cf92409c67e2b
   specs:
     strings-vagrant (0.1.0)
 
