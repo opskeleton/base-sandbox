@@ -6,7 +6,6 @@ FORGE
     maestrodev-rvm (1.13.1)
       golja-gnupg (>= 1.2.0)
       puppetlabs-stdlib (>= 4.2.0)
-    narkisr-git (0.0.1)
     pdxcat-collectd (4.0.1)
       puppetlabs-concat (>= 1.0.4)
       puppetlabs-stdlib (>= 3.2.0)
@@ -22,6 +21,7 @@ FORGE
     stankevich-python (1.18.2)
       puppetlabs-stdlib (< 6.0.0, >= 4.6.0)
       stahnma-epel (< 2.0.0, >= 1.2.2)
+    stm-debconf (1.0.1)
 
 GIT
   remote: git://github.com/pulling-strings/attachmentgenie-ufw.git
@@ -65,7 +65,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 6fe6c3d851c8a5dc1dae846f039c2344ccc6a9f6
+  sha: 1aa799912d1cab0875ed02573b2099590bb2ed3c
   specs:
     strings-baseline (0.0.1)
 
@@ -99,7 +99,6 @@ GIT
   sha: 1a41d3c86f393d4f326c92de6aca709fcab326d6
   specs:
     strings-docker (1.0.0)
-
 GIT
   remote: git://github.com/pulling-strings/puppet-downloadfile.git
   ref: master
@@ -158,12 +157,12 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-monitoring.git
   ref: master
-  sha: 3fc03ed555778ff6882b379960ea3f70e6a88cfc
+  sha: 1f20948353f5ebdc2c32b34416670d94b3d88b43
   specs:
     strings-monitoring (0.1.0)
-      narkisr-git (>= 0)
       pdxcat-collectd (>= 0)
       puppetlabs-stdlib (>= 0)
+      strings-git (>= 0)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-pi.git
@@ -252,10 +251,11 @@ GIT
 GIT
   remote: git://github.com/saz/puppet-timezone.git
   ref: master
-  sha: cf62f1bb34c2704afac9e2d37244bbf0c6b3ac95
+  sha: 3693726d4a78b6afa603dbdea042db2cbe54f1fd
   specs:
     saz-timezone (3.3.0)
       puppetlabs-stdlib (>= 2.3.0)
+      stm-debconf (>= 1.0.0)
 
 GIT
   remote: git://github.com/sensu/sensu-puppet.git
@@ -270,7 +270,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: 348eef122bb5e6cb4ef074a3027a2233711bff17
+  sha: eda71dfbb4a496660fbdf72f036235d59a8b7d48
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
