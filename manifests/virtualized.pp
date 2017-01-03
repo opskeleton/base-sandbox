@@ -3,8 +3,6 @@ node default {
   include vagrant::libvirt
 
   include kvm
-  include docker
-  include shell::fig
 
   include virtualbox
 
@@ -12,7 +10,7 @@ node default {
     machinefolder => '/vagrant',
     user          => 'vagrant'
   }
-
+  
   ufw::allow { 'ssh':
     port => '22'
   }
