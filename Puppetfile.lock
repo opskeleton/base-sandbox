@@ -49,7 +49,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: 9d417e5de4f610cd1371b649f07b4ce1aa5d2aab
+  sha: 7488a47a74143bb5d30c967766e9852a8d298cd2
   specs:
     strings-backup (0.1.1)
       rodjek-logrotate (>= 1.1.1)
@@ -57,7 +57,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-barbecue.git
   ref: master
-  sha: f1fb0329f8c30d72f9e987e14b9e170331eeb5f1
+  sha: 490628e2b612cbdab0553870db08706d9d038993
   specs:
     strings-barbecue (0.0.2)
       puppetlabs-apt (>= 1.5.2)
@@ -65,14 +65,14 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 1aa799912d1cab0875ed02573b2099590bb2ed3c
+  sha: 032e8080520e970f351931a4afde25cf333c7774
   specs:
     strings-baseline (0.0.1)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-build.git
   ref: master
-  sha: 39eb274720bd86804b41d86d23bbe1a45c93dae2
+  sha: d1b988f980e5d772f10656a1f1e135c76f78faed
   specs:
     strings-build (0.1.0)
 
@@ -87,7 +87,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-desktop.git
   ref: master
-  sha: ad2c524f034994498f49b03b9b0aad29257c9131
+  sha: bf36426654f187d8a63c4905b045f3dd68f7beb5
   specs:
     strings-desktop (0.1.0)
       puppetlabs-apt (>= 2.1.1)
@@ -140,7 +140,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-langs.git
   ref: master
-  sha: 4ee0bcd019e1fc602488fc1bcd03f89b87a49a63
+  sha: 1965e32bb46efd113952f4dbc91e3f504f3c32ac
   specs:
     strings-langs (0.1.0)
       puppetlabs-apt (>= 1.1.0)
@@ -197,7 +197,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: 1eb502067231ad679b75bcbeeea10bd97ac1df09
+  sha: daf85bf77368cf2c9a99b450586cf92409c67e2b
   specs:
     strings-vagrant (0.1.0)
 
