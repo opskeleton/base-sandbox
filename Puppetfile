@@ -3,7 +3,7 @@ forge "https://forgeapi.puppetlabs.com"
 
 mod 'puppetlabs/stdlib'
 
-mod 'zleslie/pkgng', 
+mod 'zleslie/pkgng',
   :git => 'git://github.com/pulling-strings/puppet-pkgng.git',
   :ref => '0.4.0'
 
@@ -12,22 +12,22 @@ mod 'maestrodev/rvm'
 mod 'puppetlabs/concat',
   :git => 'git://github.com/puppetlabs/puppetlabs-concat.git'
 
-mod 'saz/timezone', 
+mod 'saz/timezone',
   :git => 'git://github.com/saz/puppet-timezone.git'
 
-mod 'strings/docker', 
+mod 'strings/docker',
   :git => 'git://github.com/pulling-strings/puppet-docker.git'
 
-mod 'strings/zfs', 
+mod 'strings/zfs',
    :git => 'git://github.com/pulling-strings/puppet-zfs.git'
 
-mod 'strings/vim', 
+mod 'strings/vim',
     :git => 'git://github.com/pulling-strings/puppet-vim.git'
 
-mod 'strings/build', 
+mod 'strings/build',
   :git => 'git://github.com/pulling-strings/puppet-build.git'
 
-mod 'strings/git', 
+mod 'strings/git',
   :git => 'git://github.com/pulling-strings/puppet-git.git'
 
 mod 'strings/downloadfile', 
@@ -51,10 +51,10 @@ mod 'strings/monitoring',
 mod 'sensu/sensu',
   :git => 'git://github.com/sensu/sensu-puppet.git'
 
-mod 'strings/shell', 
+mod 'strings/shell',
   :git => 'git://github.com/pulling-strings/puppet-shell.git'
 
-mod 'strings/langs', 
+mod 'strings/langs',
   :git => 'git://github.com/pulling-strings/puppet-langs.git'
 
 mod 'strings/vagrant', 
@@ -69,23 +69,20 @@ mod 'strings/hardening',
 mod 'strings/editfile',
     :git => 'git://github.com/pulling-strings/puppet-editfile.git'
 
-mod 'strings/clamav', 
+mod 'strings/clamav',
     :git => 'git://github.com/pulling-strings/puppet-clamav.git'
 
-mod 'strings/ssmtp', 
+mod 'strings/ssmtp',
   :git => 'git://github.com/pulling-strings/puppet-ssmtp.git'
 
-mod 'strings/logging', 
+mod 'strings/logging',
   :git => 'git://github.com/pulling-strings/puppet-logging.git'
 
-mod 'strings/desktop', 
+mod 'strings/desktop',
   :git => 'git://github.com/pulling-strings/puppet-desktop.git'
 
-mod 'strings/barbecue', 
+mod 'strings/barbecue',
   :git => 'git://github.com/pulling-strings/puppet-barbecue.git'
-
-mod 'narkisr/profiles', 
-  :git => 'ssh://juno:29418/puppet-profiles.git' if Net::Ping::HTTP.new('https://juno:8443').ping?
 
 mod 'rip/module-data',
   :git => 'git://github.com/ripienaar/puppet-module-data.git'
@@ -99,7 +96,12 @@ mod 'strings/ufw',
 mod 'strings/vector',
   :git => 'git://github.com/pulling-strings/puppet-vector.git'
 
-mod 'strings/pi', 
+mod 'strings/pi',
    :git => 'git://github.com/pulling-strings/puppet-pi.git'
+
+
+# Optional
+mod 'narkisr/profiles',
+  :git => 'ssh://juno:29418/puppet-profiles.git' if Net::Ping::HTTP.new('https://juno:8443').ping?
 
 
