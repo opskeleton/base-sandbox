@@ -59,9 +59,3 @@ describe file('/home/vagrant/.tmuxinator') do
   it { should be_owned_by 'vagrant' }
 end
 
-# misc
-describe file('/opt/z') do
-  it { should be_directory }  
-  it { should be_owned_by 'vagrant' }
-end
-
