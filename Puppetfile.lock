@@ -215,7 +215,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vim.git
   ref: master
-  sha: 3d8288c2d8ab0a2738c36e02cb33746a9107460b
+  sha: b6877bb1a39f9927c2c46f3a9a804107e86e1c39
   specs:
     strings-vim (0.1.0)
       puppetlabs-stdlib (>= 4.2.0)
@@ -254,16 +254,16 @@ GIT
 GIT
   remote: git://github.com/saz/puppet-timezone.git
   ref: master
-  sha: 3693726d4a78b6afa603dbdea042db2cbe54f1fd
+  sha: 0ec84f1431366e41930075ba01361080d3b02d6d
   specs:
-    saz-timezone (3.3.0)
+    saz-timezone (3.4.0)
       puppetlabs-stdlib (>= 2.3.0)
       stm-debconf (>= 1.0.0)
 
 GIT
   remote: git://github.com/sensu/sensu-puppet.git
   ref: master
-  sha: 810753b9a23bef3ce2b168f488c2c0e0c5da463b
+  sha: ca45853d7ab1268462bd152ec8fd17bebfeb1eb6
   specs:
     sensu-sensu (2.2.0)
       lwf-remote_file (< 2.0.0, >= 1.0.0)
