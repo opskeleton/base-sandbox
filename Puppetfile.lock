@@ -97,7 +97,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-docker.git
   ref: master
-  sha: 97db2f662f1a9eb0cd47a41334a45711bbf6926f
+  sha: cc4c3d3d8f7e2cba6eb5b0392bf8930940f48a54
   specs:
     strings-docker (0.1.0)
       camptocamp-systemd (>= 0)
