@@ -1,10 +1,10 @@
 node default {
   include docker
   include shell::fig
-  docker::image {'library/redis':
+  docker::image {'redis:alpine':
     timeout => 360
   }
-  docker::service{'library/redis':}
+  docker::service{'redis:alpine':}
 
 }
 
