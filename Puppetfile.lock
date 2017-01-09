@@ -14,9 +14,9 @@ FORGE
       puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
     puppetlabs-stdlib (4.14.0)
     rodjek-logrotate (1.1.1)
-    saz-ssh (2.9.1)
-      puppetlabs-concat (>= 1.0.0)
-      puppetlabs-stdlib (>= 2.2.1)
+    saz-ssh (3.0.1)
+      puppetlabs-concat (< 3.0.0, >= 1.2.5)
+      puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
     stahnma-epel (1.2.2)
       puppetlabs-stdlib (>= 3.0.0)
     stankevich-python (1.18.2)
@@ -143,7 +143,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-langs.git
   ref: master
-  sha: 1965e32bb46efd113952f4dbc91e3f504f3c32ac
+  sha: e0e3f53b547f8df9d9451a891fb7d1a57f8d39a3
   specs:
     strings-langs (0.1.0)
       puppetlabs-apt (>= 1.1.0)
