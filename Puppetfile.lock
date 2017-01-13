@@ -239,7 +239,7 @@ GIT
 GIT
   remote: git://github.com/puppetlabs/puppetlabs-concat.git
   ref: master
-  sha: 440bd99da71dc857c34223d34fa8ff99ba00fc59
+  sha: 0c7f78ed2d1ed1a08de44521c08f9f2188e97cdd
   specs:
     puppetlabs-concat (2.2.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.2.0)
