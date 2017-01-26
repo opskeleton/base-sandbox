@@ -1,6 +1,5 @@
 node default {
   include docker
-  include shell::fig
   docker::image {'redis:alpine':
     timeout => 360
   }
