@@ -12,7 +12,7 @@ FORGE
       puppetlabs-stdlib (>= 3.2.0)
     puppetlabs-apt (2.3.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
-    puppetlabs-stdlib (4.14.0)
+    puppetlabs-stdlib (4.15.0)
     rodjek-logrotate (1.1.1)
     saz-ssh (3.0.1)
       puppetlabs-concat (< 3.0.0, >= 1.2.5)
@@ -97,7 +97,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-docker.git
   ref: master
-  sha: cc4c3d3d8f7e2cba6eb5b0392bf8930940f48a54
+  sha: 1dd6b72300d753ed193a0934e1777b25a1be2a25
   specs:
     strings-docker (0.1.0)
       camptocamp-systemd (>= 0)
@@ -239,7 +239,7 @@ GIT
 GIT
   remote: git://github.com/puppetlabs/puppetlabs-concat.git
   ref: master
-  sha: 0c7f78ed2d1ed1a08de44521c08f9f2188e97cdd
+  sha: 66022dc64068e2266a606225eec0b55d325ecddd
   specs:
     puppetlabs-concat (2.2.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.2.0)
@@ -273,7 +273,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: eda71dfbb4a496660fbdf72f036235d59a8b7d48
+  sha: 558efb2927d2a34fbe12962f028b6678d8a209f5
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
