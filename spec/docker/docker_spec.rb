@@ -8,7 +8,7 @@ describe service('docker') do
     it { should be_running }
 end
 
-describe command('fig') do
+describe command('docker-compose') do
     its(:exit_status) { should eq 1 }
 end
 
