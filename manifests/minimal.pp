@@ -8,6 +8,6 @@ node default {
   include baseline::update
   include baseline::celestial
   include timezone
-  include barbecue
-  include barbecue::packages
+  # include barbecue
+  # include barbecue::packages
 }
