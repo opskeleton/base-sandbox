@@ -3,7 +3,7 @@ node default {
   include barbecue
 
   class{'jdk':
-    version => 7
+    version => 8
   }
 
   package{'software-properties-common':
