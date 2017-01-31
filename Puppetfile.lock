@@ -58,7 +58,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-barbecue.git
   ref: master
-  sha: 490628e2b612cbdab0553870db08706d9d038993
+  sha: c07b93c162bde80ea38b930c8c9c636947f5cff4
   specs:
     strings-barbecue (0.0.2)
       puppetlabs-apt (>= 1.5.2)
@@ -143,7 +143,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-langs.git
   ref: master
-  sha: e0e3f53b547f8df9d9451a891fb7d1a57f8d39a3
+  sha: f0c834b2fae740ef8dfa69748b7dcd784d5e27e5
   specs:
     strings-langs (0.1.0)
       puppetlabs-apt (>= 1.1.0)
