@@ -15,3 +15,4 @@ end
 describe command('sbt version') do
   its(:stdout) {should match /0.1-SNAPSHOT/}
 end
+

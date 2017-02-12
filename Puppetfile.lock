@@ -66,7 +66,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 2db2a49e92db9a9fd75503db069b1ecea29e1f3a
+  sha: 915eb41294c52ed7a2716f8c3cbb1be83d57b894
   specs:
     strings-baseline (0.0.1)
 
@@ -134,7 +134,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-jdk.git
   ref: master
-  sha: 91ed9a953cedb2171a48b724870922958aaddc65
+  sha: 04eae9c6caee1825a4faa0681976e47ccbbd3e56
   specs:
     strings-jdk (0.1.0)
       puppetlabs-apt (< 3.0.0, >= 2.0.0)
@@ -263,7 +263,7 @@ GIT
 GIT
   remote: git://github.com/sensu/sensu-puppet.git
   ref: master
-  sha: ca45853d7ab1268462bd152ec8fd17bebfeb1eb6
+  sha: 614308c51069f37186b56ede98ac0d002c7aa028
   specs:
     sensu-sensu (2.2.0)
       lwf-remote_file (< 2.0.0, >= 1.0.0)
