@@ -33,4 +33,8 @@ describe file('/etc/sudoers.d/celestial') do
     it { should contain 'celestial ALL=NOPASSWD: /tmp/*/scripts/run.sh  --detailed-exitcodes'}
 end
 
+describe package('rng-tools') do
+    it { should be_installed }
+end
+
 
