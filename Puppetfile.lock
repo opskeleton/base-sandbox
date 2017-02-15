@@ -50,7 +50,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: 7488a47a74143bb5d30c967766e9852a8d298cd2
+  sha: 81e4a4c52b963e7fe77bc03096c1386850c9280e
   specs:
     strings-backup (0.1.1)
       rodjek-logrotate (>= 1.1.1)
@@ -66,7 +66,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 2db2a49e92db9a9fd75503db069b1ecea29e1f3a
+  sha: 915eb41294c52ed7a2716f8c3cbb1be83d57b894
   specs:
     strings-baseline (0.0.1)
 
@@ -134,7 +134,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-jdk.git
   ref: master
-  sha: 91ed9a953cedb2171a48b724870922958aaddc65
+  sha: 04eae9c6caee1825a4faa0681976e47ccbbd3e56
   specs:
     strings-jdk (0.1.0)
       puppetlabs-apt (< 3.0.0, >= 2.0.0)
@@ -263,7 +263,7 @@ GIT
 GIT
   remote: git://github.com/sensu/sensu-puppet.git
   ref: master
-  sha: ca45853d7ab1268462bd152ec8fd17bebfeb1eb6
+  sha: 614308c51069f37186b56ede98ac0d002c7aa028
   specs:
     sensu-sensu (2.2.0)
       lwf-remote_file (< 2.0.0, >= 1.0.0)
