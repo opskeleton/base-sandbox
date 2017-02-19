@@ -50,7 +50,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: 7488a47a74143bb5d30c967766e9852a8d298cd2
+  sha: be28794254b27f339960a7af3d62ff37e0682325
   specs:
     strings-backup (0.1.1)
       rodjek-logrotate (>= 1.1.1)
@@ -58,7 +58,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-barbecue.git
   ref: master
-  sha: c07b93c162bde80ea38b930c8c9c636947f5cff4
+  sha: 36b6ff880c252d83efcaa1187844bb1af91f5cfe
   specs:
     strings-barbecue (0.0.2)
       puppetlabs-apt (>= 1.5.2)
@@ -97,7 +97,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-docker.git
   ref: master
-  sha: 1dd6b72300d753ed193a0934e1777b25a1be2a25
+  sha: 8a1e42c2d57a1dfb552fd74f252c9b57d6c2f083
   specs:
     strings-docker (0.1.0)
       camptocamp-systemd (>= 0)
@@ -273,7 +273,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: 739fcef5189981753321bfd990105712229ff76f
+  sha: c7ab59f2c9f70dfbc9f619f3211c889a54d93b60
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
