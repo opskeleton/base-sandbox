@@ -88,7 +88,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-desktop.git
   ref: master
-  sha: bf36426654f187d8a63c4905b045f3dd68f7beb5
+  sha: 2e7913c4e9cd525055844a534854fa91dd8f1170
   specs:
     strings-desktop (0.1.0)
       puppetlabs-apt (>= 2.1.1)
