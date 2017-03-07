@@ -239,7 +239,7 @@ GIT
 GIT
   remote: git://github.com/puppetlabs/puppetlabs-concat.git
   ref: master
-  sha: e8e63832e0cceb0e87aae1603cf085d1448e9f4b
+  sha: 8df55e36215ba813551a278bf5be52e9b9cf0a51
   specs:
     puppetlabs-concat (2.2.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.2.0)
@@ -263,7 +263,7 @@ GIT
 GIT
   remote: git://github.com/sensu/sensu-puppet.git
   ref: master
-  sha: afd74cbfdb3627ee769c46ed2419a19360c7905b
+  sha: aff88c8eb2d4c86d0fa375b9928163888019bcf5
   specs:
     sensu-sensu (2.2.0)
       lwf-remote_file (< 2.0.0, >= 1.0.0)
@@ -273,7 +273,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: c7ab59f2c9f70dfbc9f619f3211c889a54d93b60
+  sha: f8b88d24dde3e91be7ea4267b62df99694e353b5
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
