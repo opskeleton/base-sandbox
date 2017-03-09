@@ -62,7 +62,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 915eb41294c52ed7a2716f8c3cbb1be83d57b894
+  sha: 366e05c9ede6e90f1cb34aea1b28c17d060337bc
   specs:
     strings-baseline (0.0.1)
 
@@ -130,7 +130,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-jdk.git
   ref: master
-  sha: 04eae9c6caee1825a4faa0681976e47ccbbd3e56
+  sha: 91881aa7840c8180151047db7367f6626794c5be
   specs:
     strings-jdk (0.1.0)
       puppetlabs-apt (< 3.0.0, >= 2.0.0)

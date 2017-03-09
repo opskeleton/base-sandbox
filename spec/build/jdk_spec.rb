@@ -11,3 +11,8 @@ describe file('/usr/lib/jvm/java-8-oracle/lib/security/local_policy.jar') do
   it { should exist }
 end
 
+describe package('oracle-java8-unlimited-jce-policy') do
+    it { should be_installed }
+end
+
+
