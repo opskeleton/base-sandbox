@@ -171,7 +171,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-shell.git
   ref: master
-  sha: 652e4eb19bbba2e6263f6539c526f42f93d3739d
+  sha: 52a65cbe2c2b4735cc638ca71f88e2a820a90d70
   specs:
     strings-shell (0.2.0)
       stankevich-python (>= 1.7.8)
