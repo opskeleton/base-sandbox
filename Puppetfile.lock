@@ -3,13 +3,9 @@ FORGE
   specs:
     camptocamp-systemd (0.4.0)
     golja-gnupg (1.2.3)
-    lwf-remote_file (1.1.3)
     maestrodev-rvm (1.13.1)
       golja-gnupg (>= 1.2.0)
       puppetlabs-stdlib (>= 4.2.0)
-    pdxcat-collectd (4.0.1)
-      puppetlabs-concat (>= 1.0.4)
-      puppetlabs-stdlib (>= 3.2.0)
     puppetlabs-apt (2.3.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
     puppetlabs-stdlib (4.15.0)
@@ -158,16 +154,6 @@ GIT
       puppetlabs-stdlib (>= 0)
 
 GIT
-  remote: git://github.com/pulling-strings/puppet-monitoring.git
-  ref: master
-  sha: 1f20948353f5ebdc2c32b34416670d94b3d88b43
-  specs:
-    strings-monitoring (0.1.0)
-      pdxcat-collectd (>= 0)
-      puppetlabs-stdlib (>= 0)
-      strings-git (>= 0)
-
-GIT
   remote: git://github.com/pulling-strings/puppet-pi.git
   ref: master
   sha: 6919cb131860867d40883a14df401628752ef287
@@ -261,16 +247,6 @@ GIT
       stm-debconf (>= 1.0.0)
 
 GIT
-  remote: git://github.com/sensu/sensu-puppet.git
-  ref: master
-  sha: aff88c8eb2d4c86d0fa375b9928163888019bcf5
-  specs:
-    sensu-sensu (2.2.0)
-      lwf-remote_file (< 2.0.0, >= 1.0.0)
-      puppetlabs-apt (< 3.0.0, >= 2.0.0)
-      puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
-
-GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
   sha: f8b88d24dde3e91be7ea4267b62df99694e353b5
@@ -286,7 +262,6 @@ DEPENDENCIES
   puppetlabs-stdlib (>= 0)
   rip-module-data (>= 0)
   saz-timezone (>= 0)
-  sensu-sensu (>= 0)
   strings-archive (>= 0)
   strings-autossh (>= 0)
   strings-backup (>= 0)
@@ -303,7 +278,6 @@ DEPENDENCIES
   strings-jdk (>= 0)
   strings-langs (>= 0)
   strings-logging (>= 0)
-  strings-monitoring (>= 0)
   strings-pi (>= 0)
   strings-shell (>= 0)
   strings-ssmtp (>= 0)

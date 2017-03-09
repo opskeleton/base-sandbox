@@ -45,12 +45,6 @@ mod 'strings/jdk',
 mod 'strings/backup',
   :git => 'git://github.com/pulling-strings/puppet-backup.git'
 
-mod 'strings/monitoring',
-  :git => 'git://github.com/pulling-strings/puppet-monitoring.git'
-
-mod 'sensu/sensu',
-  :git => 'git://github.com/sensu/sensu-puppet.git'
-
 mod 'strings/shell',
   :git => 'git://github.com/pulling-strings/puppet-shell.git'
 
