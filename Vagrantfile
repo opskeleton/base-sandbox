@@ -3,7 +3,7 @@
 
 UPDATE_BSD = <<SCRIPT
 if [ ! -f /tmp/up ]; then
-  pkg update -f
+  FETCH_TIMEOUT=200  pkg update -f
   touch /tmp/up
 fi
 SCRIPT
@@ -33,13 +33,13 @@ Vagrant.configure("2") do |config|
   BSD.map{|it| it.match(/manifests\/(\w*).pp/)[1]}.each do |type|
     config.vm.define type.to_sym do |node|
 	node.ssh.shell = '/bin/sh'
-	node.vm.network :public_network, :bridge => device,  auto_config: false
+	node.vm.network :public_network, :bridge => ENV['VAGRANT_BRIDGE'] || 'eth0'
 	node.vm.provider 'virtualbox'
 	node.vm.box = 'FreeBSD-11-zfs'
       node.vm.guest = :freebsd
       node.vm.network 'private_network', ip: '10.0.1.10'
 
-      node.vm.synced_folder ".", "/vagrant", type: "rsync" # or "rsync"
+      node.vm.synced_folder ".", "/vagrant", type: "nfs" # or "rsync"
 
       node.vm.provider :virtualbox do |vb|
         vb.customize ['modifyvm', :id, '--memory', 2048, '--cpus', 2]
