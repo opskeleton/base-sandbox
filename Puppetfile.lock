@@ -18,7 +18,7 @@ FORGE
     stankevich-python (1.18.2)
       puppetlabs-stdlib (< 6.0.0, >= 4.6.0)
       stahnma-epel (< 2.0.0, >= 1.2.2)
-    stm-debconf (1.0.1)
+    stm-debconf (2.0.0)
 
 GIT
   remote: git://github.com/pulling-strings/attachmentgenie-ufw.git
@@ -171,7 +171,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-shell.git
   ref: master
-  sha: 52a65cbe2c2b4735cc638ca71f88e2a820a90d70
+  sha: 6cfb4503ea1533d268278e2762893664569d2ddd
   specs:
     strings-shell (0.2.0)
       stankevich-python (>= 1.7.8)
@@ -201,7 +201,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vim.git
   ref: master
-  sha: b6877bb1a39f9927c2c46f3a9a804107e86e1c39
+  sha: 6ab78a49860c3189a2dfe73b0103dafa32384551
   specs:
     strings-vim (0.1.0)
       puppetlabs-stdlib (>= 4.2.0)
