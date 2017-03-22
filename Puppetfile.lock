@@ -8,7 +8,7 @@ FORGE
       puppetlabs-stdlib (>= 4.2.0)
     puppetlabs-apt (2.3.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
-    puppetlabs-stdlib (4.15.0)
+    puppetlabs-stdlib (4.16.0)
     rodjek-logrotate (1.1.1)
     saz-ssh (3.0.1)
       puppetlabs-concat (< 3.0.0, >= 1.2.5)
@@ -186,7 +186,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: daf85bf77368cf2c9a99b450586cf92409c67e2b
+  sha: bb794218a9e9c5c1521b6f22191e46dde7a92df6
   specs:
     strings-vagrant (0.1.0)
 
@@ -225,7 +225,7 @@ GIT
 GIT
   remote: git://github.com/puppetlabs/puppetlabs-concat.git
   ref: master
-  sha: 8df55e36215ba813551a278bf5be52e9b9cf0a51
+  sha: ccdbf7e0ef5d7b006a88844326460dc5cc6875d5
   specs:
     puppetlabs-concat (2.2.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.2.0)
