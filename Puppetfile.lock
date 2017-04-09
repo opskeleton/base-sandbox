@@ -6,8 +6,8 @@ FORGE
     maestrodev-rvm (1.13.1)
       golja-gnupg (>= 1.2.0)
       puppetlabs-stdlib (>= 4.2.0)
-    puppetlabs-apt (2.3.0)
-      puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
+    puppetlabs-apt (2.4.0)
+      puppetlabs-stdlib (< 5.0.0, >= 4.13.0)
     puppetlabs-stdlib (4.16.0)
     rodjek-logrotate (1.1.1)
     saz-ssh (3.0.1)
@@ -115,7 +115,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-git.git
   ref: master
-  sha: 5287b58d3bfcdf740e0eed9409410accd9c20c44
+  sha: 88f68eae13b941f49f5976e35205e44aae32ad2e
   specs:
     strings-git (0.0.1)
 
@@ -225,7 +225,7 @@ GIT
 GIT
   remote: git://github.com/puppetlabs/puppetlabs-concat.git
   ref: master
-  sha: ccdbf7e0ef5d7b006a88844326460dc5cc6875d5
+  sha: 22a47610cbef058d4220fa605f76d2ea1acca1a5
   specs:
     puppetlabs-concat (2.2.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.2.0)
