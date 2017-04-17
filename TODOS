@@ -1,5 +1,0 @@
-* Enable graylog2 logging via rsyslog.conf
-* Add nvm
-* add scm_breeze
-* Enable profiles: server/dev-machine/tiny (tiny is rpi)
-* add Nodejs ppa

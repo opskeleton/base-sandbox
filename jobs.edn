@@ -1,9 +1,9 @@
 {
  :jobs [
-    {:name "puppet-base-env"
+    {:name "base-sandbox"
      :clear-merge-fail true
-     :repo "git://github.com/narkisr/puppet-base-env.git" 
-     :target "/tmp/puppet-base-env" 
+     :repo "git://github.com/opskeleton/base-sandbox.git" 
+     :target "/tmp/base-sandbox" 
      :steps [
         {:cmd "gem" :args ["install" "bundler" "-v" "1.10.5"] :timeout 1200} 
         {:cmd "bundle" :args ["install"] :timeout 1200}
