@@ -1,25 +1,20 @@
 # Introduction
 
-My full working environment including shell, vim and many other tools installation/configurations, designed to work only with Ubuntu 14.04
+A base environment for servers, development, backup and many more, based on top of Ubuntu-16.04/FreeBSD-11 integrating a large collection of modules from [pulling-strings](https://github.com/pulling-strings).
 
-[![Build Status](https://travis-ci.org/narkisr/puppet-base-env.png)](https://travis-ci.org/narkisr/puppet-base-env)
+Check the manifests folder for usage examples.
+
+[![Build Status](https://travis-ci.org/opskeleton/base-sandbox.png)](https://travis-ci.org/opskeleton/base-sandbox)
 
 # Usage
 
-You can play with it using vagrant:
+Create the development environment within Vagrant:
 
 ```bash
-$ cd puppet-base-env
-$ librarian-puppet install 
-$ vagrant up
-$ vagrant ssh
-$ cd /vagrant
-$ sudo ./run.sh
+$ ./boot.sh
 ```
 
 ## In order to use it on your machine: 
-
-On machine with RVM:
 
 ```bash
 # edit to match your own settings
@@ -28,18 +23,22 @@ $ librarian-puppet install
 $ sudo ./run.sh
 ```
 
-On a barebone machines:
-```bash
-$ gem install bundle
-$ bundle install 
-$ librarian-puppet install
-$ sudo ./run.sh
-```
+## Prerequisite
 
+For Development:
+
+* Vagrant 1.8.x
+* Ubuntu 16.x box with puppet 3.8.7 (or FreeBSD-11)
+* RVM
+
+For Deployment:
+
+* Puppet 3.8.7
+* Ubuntu 16.04
 
 # Copyright and license
 
-Copyright [2013] [Ronen Narkis]
+Copyright [2017] [Ronen Narkis]
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
