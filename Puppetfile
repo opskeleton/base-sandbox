@@ -10,7 +10,8 @@ mod 'zleslie/pkgng',
 mod 'maestrodev/rvm'
 
 mod 'puppetlabs/concat',
-  :git => 'git://github.com/puppetlabs/puppetlabs-concat.git'
+  :git => 'git://github.com/puppetlabs/puppetlabs-concat.git',
+  :ref => '2.1.x'
 
 mod 'saz/timezone',
   :git => 'git://github.com/saz/puppet-timezone.git'
