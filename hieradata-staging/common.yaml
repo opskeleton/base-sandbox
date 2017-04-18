@@ -1,49 +1,35 @@
 ---
-home: '/home/vagrant'
-desktop::user: 'vagrant'
-desktop::home: '/home/vagrant'
+home: '/home/re-mote'
+desktop::user: 're-mote'
+desktop::home: '/home/re-mote'
 
-shell::user: 'vagrant'
-shell::home: '/home/vagrant'
+shell::user: 're-mote'
+shell::home: '/home/re-mote'
 
-vim::user: 'vagrant'
-vim::home: '/home/vagrant'
+vim::user: 're-mote'
+vim::home: '/home/re-mote'
 
-langs::ruby::user: 'vagrant'
+langs::ruby::user: 're-mote'
 
-git::configure::user: 'vagrant'
-git::configure::scm_user: 'vagrant'
-git::configure::scm_email: 'vagrant@gmail.com'
+git::configure::user: 're-mote'
+git::configure::scm_user: 're-mote'
+git::configure::scm_email: 're-mote@gmail.com'
 
-baseline::home: '/home/vagrant'
-baseline::networking::user: 'vagrant'
+
+baseline::home: '/home/re-mote'
+baseline::networking::user: 're-mote'
 baseline::filesystem::ssds:
  - '/'
  - '/home'
 
+baseline::ssh::config::user: 're-mote'
+
 baseline::ssh::keys:
   upgrade:
     - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5BsjhACNz35yfz2Mxb23+YZLDPpQnjFvi7kXbjc5oNq3He9W2/uQfmdnwxYiSDMxk2LmRqoboIv4CyTDFPDSXDSqUpXh5SxTKQazbu8qEuudM9xAgSt3Q9DLvJj/KU6V5i/y8mnpDbrLa6DlM1bC6FAvK8PtbOPlMRrtjYYGJ/SS/oRzij0UTuBpJfz7+qsHrRNdJ3yU52wqwZuj8SparlKwpPCrcYFJ14LviULoAOKoTBaEsa23iMcQlLL7Eyf5AVStglFZWaKfs+7arQKgoJnSHHOY9osZDA6WyW81SFvqw5l/O9TwijDBKdMuo5Cz53Ci64wc5eNw4orxt4s7n ronen@nucleus
-  ronen:
+  re-mote:
     - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5BsjhACNz35yfz2Mxb23+YZLDPpQnjFvi7kXbjc5oNq3He9W2/uQfmdnwxYiSDMxk2LmRqoboIv4CyTDFPDSXDSqUpXh5SxTKQazbu8qEuudM9xAgSt3Q9DLvJj/KU6V5i/y8mnpDbrLa6DlM1bC6FAvK8PtbOPlMRrtjYYGJ/SS/oRzij0UTuBpJfz7+qsHrRNdJ3yU52wqwZuj8SparlKwpPCrcYFJ14LviULoAOKoTBaEsa23iMcQlLL7Eyf5AVStglFZWaKfs+7arQKgoJnSHHOY9osZDA6WyW81SFvqw5l/O9TwijDBKdMuo5Cz53Ci64wc5eNw4orxt4s7n ronen@nucleus
-
-baseline::ssh::config::user: 'vagrant'
-
-baseline::ssh::config::proxies:
-   foo:
-      proxy: 'bar'
-      port: 1234
-      user: 'vagrant'
-      key: '~/.ssh/id_rsa'
-
-baseline::update::user: 'upgrade'
 
 timezone::timezone: 'Asia/Jerusalem'
 
-kvm::user: 'vagrant'
-
-vagrant::user: 'vagrant'
-vagrant::home: '/home/vagrant'
-
-virtualbox::manage::user: 'ronen'
 jdk::enable_jce: true

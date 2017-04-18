@@ -4,7 +4,7 @@
   includes: 
     - Puppetfile
     - modules
-    - manifests/default.pp
+    - manifests
     - static-modules
     - Gemfile
     - Gemfile.lock
@@ -13,5 +13,6 @@
     - run.sh
     - boot.sh
     - hieradata-prod
+    - hieradata-staging
     - hiera.yaml
 

@@ -6,8 +6,6 @@ node default {
   include baseline
   include baseline::ssh::config
   include baseline::update
-  include baseline::celestial
   include timezone
-  # include barbecue
-  # include barbecue::packages
+  include barbecue
 }
