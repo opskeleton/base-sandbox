@@ -20,7 +20,7 @@ Vagrant.configure("2") do |config|
   LINUX.map{|it| it.match(/manifests\/(\w*).pp/)[1]}.each do |type|
     config.vm.define type.to_sym do |node|
     	env  = ENV['PUPPET_ENV'] || 'dev'
-	node.vm.box = 'ubuntu-16.04.1_puppet-3.8.7'
+	node.vm.box = 'ubuntu-16.04.2_puppet-3.8.7'
       node.vm.hostname = "#{type}.local"
       node.vm.provision :puppet do |puppet|
          puppet.manifests_path = 'manifests'
