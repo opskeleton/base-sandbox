@@ -5,7 +5,6 @@ node default {
   }
 
   include shell
-  include baseline::celestial
   include baseline::update
 
   class{'vim':
