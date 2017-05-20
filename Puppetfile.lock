@@ -8,7 +8,7 @@ FORGE
       puppetlabs-stdlib (>= 4.2.0)
     puppetlabs-apt (2.4.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.13.0)
-    puppetlabs-stdlib (4.16.0)
+    puppetlabs-stdlib (4.17.0)
     rodjek-logrotate (1.1.1)
     saz-ssh (3.0.1)
       puppetlabs-concat (< 3.0.0, >= 1.2.5)
@@ -62,7 +62,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: dbcda623c14b38d252ce65e02ce1493e31251acc
+  sha: 08c87b5031b443a26d6bc81c6e243108357f9f50
   specs:
     strings-baseline (0.0.1)
 
@@ -156,7 +156,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-pi.git
   ref: master
-  sha: 1c9364ff83fe727362330cd63221060be7dcce3e
+  sha: 42a66824c45254e62911dbeeed69a30bdad47ce9
   specs:
     strings-pi (0.1.0)
 
