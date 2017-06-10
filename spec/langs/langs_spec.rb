@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe package('erlang') do
+describe package('erlang-nox') do
   it { should be_installed }
 end
 
