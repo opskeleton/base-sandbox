@@ -139,7 +139,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-langs.git
   ref: master
-  sha: 24b1749633ed2c1ac61265c5a01f07d24dc2fcf6
+  sha: 4cb246dadfbf19ddb78a3faa6f22e75ff564efee
   specs:
     strings-langs (0.1.0)
       puppetlabs-apt (>= 1.1.0)
