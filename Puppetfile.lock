@@ -8,7 +8,7 @@ FORGE
       puppetlabs-stdlib (>= 4.2.0)
     puppetlabs-apt (2.4.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.13.0)
-    puppetlabs-stdlib (4.17.0)
+    puppetlabs-stdlib (4.17.1)
     rodjek-logrotate (1.1.1)
     saz-ssh (3.0.1)
       puppetlabs-concat (< 3.0.0, >= 1.2.5)
@@ -46,7 +46,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: fa712758a78fd99d828c4710df7a2679e1148f59
+  sha: 5a85dc4c8055a0037b2ceba193b45311f6ee3e14
   specs:
     strings-backup (0.1.1)
       rodjek-logrotate (>= 1.1.1)
@@ -249,7 +249,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: 52ef4379e0655da112f83b35880e95bfafcfb396
+  sha: 47a48d15dddd567ce29d39def8f23653054895e1
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
