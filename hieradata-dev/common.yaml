@@ -6,6 +6,9 @@ desktop::home: '/home/vagrant'
 shell::user: 'vagrant'
 shell::home: '/home/vagrant'
 
+backup::dropbox::user: 'vagrant'
+backup::dropbox::home: '/home/vagrant'
+
 vim::user: 'vagrant'
 vim::home: '/home/vagrant'
 
