@@ -5,9 +5,9 @@ node default {
   include backup::octo
   include apt
 
-  # class {'backup::dropbox':
-  #  headless => true
-  # }
+  class {'backup::dropbox':
+    headless => true
+  }
 
   clamav::scan { 'all-but-sys-and-dev':
     exclude_dir => ['(?i)/^\/(sys|dev)/'],
