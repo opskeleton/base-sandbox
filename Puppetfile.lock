@@ -240,16 +240,16 @@ GIT
 GIT
   remote: git://github.com/saz/puppet-timezone.git
   ref: master
-  sha: 0ec84f1431366e41930075ba01361080d3b02d6d
+  sha: 62ba3ccadf13ee8dbd786b7ade29096fc3ab40b6
   specs:
-    saz-timezone (3.4.0)
-      puppetlabs-stdlib (>= 2.3.0)
-      stm-debconf (>= 1.0.0)
+    saz-timezone (3.5.0)
+      puppetlabs-stdlib (< 5.0.0, >= 2.6.0)
+      stm-debconf (< 3.0.0, >= 2.0.0)
 
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: 47a48d15dddd567ce29d39def8f23653054895e1
+  sha: 1d1615efb409d20199477e9b7132547b2d098142
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
