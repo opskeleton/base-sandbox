@@ -13,8 +13,7 @@ mod 'puppetlabs/concat',
   :git => 'git://github.com/puppetlabs/puppetlabs-concat.git',
   :ref => '2.1.x'
 
-mod 'saz/timezone',
-  :git => 'git://github.com/saz/puppet-timezone.git'
+mod 'saz/timezone','3.4.0'
 
 mod 'strings/docker',
   :git => 'git://github.com/pulling-strings/puppet-docker.git'

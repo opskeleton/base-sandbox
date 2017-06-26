@@ -13,6 +13,9 @@ FORGE
     saz-ssh (3.0.1)
       puppetlabs-concat (< 3.0.0, >= 1.2.5)
       puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
+    saz-timezone (3.4.0)
+      puppetlabs-stdlib (>= 2.3.0)
+      stm-debconf (>= 1.0.0)
     stahnma-epel (1.2.2)
       puppetlabs-stdlib (>= 3.0.0)
     stankevich-python (1.18.2)
@@ -238,15 +241,6 @@ GIT
     rip-module-data (0.5.1)
 
 GIT
-  remote: git://github.com/saz/puppet-timezone.git
-  ref: master
-  sha: 62ba3ccadf13ee8dbd786b7ade29096fc3ab40b6
-  specs:
-    saz-timezone (3.5.0)
-      puppetlabs-stdlib (< 5.0.0, >= 2.6.0)
-      stm-debconf (< 3.0.0, >= 2.0.0)
-
-GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
   sha: 1d1615efb409d20199477e9b7132547b2d098142
@@ -261,7 +255,7 @@ DEPENDENCIES
   puppetlabs-concat (>= 0)
   puppetlabs-stdlib (>= 0)
   rip-module-data (>= 0)
-  saz-timezone (>= 0)
+  saz-timezone (= 3.4.0)
   strings-archive (>= 0)
   strings-autossh (>= 0)
   strings-backup (>= 0)
