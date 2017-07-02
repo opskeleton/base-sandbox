@@ -4,8 +4,8 @@ describe package('erlang-nox') do
   it { should be_installed }
 end
 
-describe file('/usr/share/elixir-v1.0.5') do
-  it { should be_directory}
+describe package('elixir') do
+  it { should be_installed }
 end
 
 describe package('nodejs') do
