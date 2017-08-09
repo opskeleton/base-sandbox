@@ -65,7 +65,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 08c87b5031b443a26d6bc81c6e243108357f9f50
+  sha: 2e57e3a6da8d47e610b0382124e4656dc9673660
   specs:
     strings-baseline (0.0.1)
 
@@ -87,7 +87,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-desktop.git
   ref: master
-  sha: 2e7913c4e9cd525055844a534854fa91dd8f1170
+  sha: 21a5c01a659d797951a6745b726afe64fcdd45e2
   specs:
     strings-desktop (0.1.0)
       puppetlabs-apt (>= 2.1.1)
@@ -243,7 +243,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: 6f21a739f0719120b68ed759e60f8ea83c6c44a1
+  sha: e1e0469a9b0ec15ce7b35a203aa8eb30e7780280
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
