@@ -1,7 +1,8 @@
 FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
-    camptocamp-systemd (0.4.0)
+    camptocamp-systemd (1.0.0)
+      puppetlabs-stdlib (< 5.0.0, >= 4.13.1)
     golja-gnupg (1.2.3)
     maestrodev-rvm (1.13.1)
       golja-gnupg (>= 1.2.0)
@@ -87,7 +88,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-desktop.git
   ref: master
-  sha: 731de6bc3821f0c66aac948cbb0568dfe291e874
+  sha: a92dade092259df0d5ca09df8a59c51230e62068
   specs:
     strings-desktop (0.1.0)
       puppetlabs-apt (>= 2.1.1)
@@ -212,7 +213,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-virtualbox.git
   ref: master
-  sha: ee3db1bee55f670c33d76953af9530f82976ebc5
+  sha: d2880b58fc68b5a05b2071b05cf89f5660e18bf8
   specs:
     strings-virtualbox (0.2.4)
       puppetlabs-apt (>= 1.1.0)
