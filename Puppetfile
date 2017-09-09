@@ -30,13 +30,13 @@ mod 'strings/build',
 mod 'strings/git',
   :git => 'git://github.com/pulling-strings/puppet-git.git'
 
-mod 'strings/downloadfile', 
+mod 'strings/downloadfile',
   :git => 'git://github.com/pulling-strings/puppet-downloadfile.git'
 
 mod 'strings/virtualbox',
  :git => 'git://github.com/pulling-strings/puppet-virtualbox.git'
 
-mod 'strings/archive', 
+mod 'strings/archive',
   :git => 'git://github.com/pulling-strings/puppet-archive.git'
 
 mod 'strings/jdk',
@@ -51,13 +51,13 @@ mod 'strings/shell',
 mod 'strings/langs',
   :git => 'git://github.com/pulling-strings/puppet-langs.git'
 
-mod 'strings/vagrant', 
+mod 'strings/vagrant',
   :git => 'git://github.com/pulling-strings/puppet-vagrant.git'
 
-mod 'strings/baseline', 
+mod 'strings/baseline',
   :git => 'git://github.com/pulling-strings/puppet-baseline.git'
 
-mod 'strings/hardening', 
+mod 'strings/hardening',
   :git => 'git://github.com/pulling-strings/puppet-hardening.git'
 
 mod 'strings/editfile',
@@ -93,6 +93,8 @@ mod 'strings/vector',
 mod 'strings/pi',
    :git => 'git://github.com/pulling-strings/puppet-pi.git'
 
+mod 'devsec/os_hardening',
+   :git => 'git://github.com/dev-sec/puppet-os-hardening.git'
 
 # Optional
 mod 'narkisr/profiles',

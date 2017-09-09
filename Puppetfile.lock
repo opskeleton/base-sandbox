@@ -23,6 +23,16 @@ FORGE
       puppetlabs-stdlib (< 6.0.0, >= 4.6.0)
       stahnma-epel (< 2.0.0, >= 1.2.2)
     stm-debconf (2.0.0)
+    thias-sysctl (1.0.6)
+
+GIT
+  remote: git://github.com/dev-sec/puppet-os-hardening.git
+  ref: master
+  sha: 5ad62229783d3b1548b341a44625717d552767e4
+  specs:
+    devsec-os_hardening (1.1.2)
+      puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
+      thias-sysctl (< 2.0.0, >= 1.0.6)
 
 GIT
   remote: git://github.com/pulling-strings/attachmentgenie-ufw.git
@@ -251,6 +261,7 @@ GIT
       saz-ssh (>= 2.5.0)
 
 DEPENDENCIES
+  devsec-os_hardening (>= 0)
   maestrodev-rvm (>= 0)
   narkisr-profiles (>= 0)
   puppetlabs-concat (>= 0)
