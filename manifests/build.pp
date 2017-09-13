@@ -1,5 +1,8 @@
 node default {
   include build
+  include build::boot
+  include build::gradle
+  include build::sbt
   include barbecue
 
   class{'jdk':
