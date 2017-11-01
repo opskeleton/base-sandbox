@@ -15,8 +15,7 @@ mod 'puppetlabs/concat',
 
 mod 'saz/timezone','3.4.0'
 
-mod 'strings/docker',
-  :git => 'git://github.com/pulling-strings/puppet-docker.git'
+mod 'puppetlabs/docker'
 
 mod 'strings/zfs',
    :git => 'git://github.com/pulling-strings/puppet-zfs.git'

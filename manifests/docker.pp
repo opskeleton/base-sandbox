@@ -1,9 +1,11 @@
 node default {
   include docker
-  docker::image {'redis:alpine':
-    timeout => 360
+
+  docker::image {'redis:alpine': }
+
+  class {'docker::compose':
+    ensure => present,
   }
-  docker::service{'redis:alpine':}
 
 }
 
