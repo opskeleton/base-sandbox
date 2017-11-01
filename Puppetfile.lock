@@ -1,14 +1,16 @@
 FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
-    camptocamp-systemd (1.1.0)
-      puppetlabs-stdlib (< 5.0.0, >= 4.13.1)
     golja-gnupg (1.2.3)
     maestrodev-rvm (1.13.1)
       golja-gnupg (>= 1.2.0)
       puppetlabs-stdlib (>= 4.2.0)
     puppetlabs-apt (2.4.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.13.0)
+    puppetlabs-docker (1.0.1)
+      puppetlabs-apt (>= 2.1.0)
+      puppetlabs-stdlib (>= 4.1.0)
+      stahnma-epel (>= 0.0.6)
     puppetlabs-stdlib (4.20.0)
     rodjek-logrotate (1.1.1)
     saz-timezone (3.4.0)
@@ -100,14 +102,6 @@ GIT
     strings-desktop (0.1.0)
       puppetlabs-apt (>= 2.1.1)
       puppetlabs-stdlib (< 5.0.0, >= 2.2.1)
-
-GIT
-  remote: git://github.com/pulling-strings/puppet-docker.git
-  ref: master
-  sha: 8a1e42c2d57a1dfb552fd74f252c9b57d6c2f083
-  specs:
-    strings-docker (0.1.0)
-      camptocamp-systemd (>= 0)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-downloadfile.git
@@ -262,6 +256,7 @@ DEPENDENCIES
   maestrodev-rvm (>= 0)
   narkisr-profiles (>= 0)
   puppetlabs-concat (>= 0)
+  puppetlabs-docker (>= 0)
   puppetlabs-stdlib (>= 0)
   rip-module-data (>= 0)
   saz-timezone (= 3.4.0)
@@ -273,7 +268,6 @@ DEPENDENCIES
   strings-build (>= 0)
   strings-clamav (>= 0)
   strings-desktop (>= 0)
-  strings-docker (>= 0)
   strings-downloadfile (>= 0)
   strings-editfile (>= 0)
   strings-git (>= 0)
