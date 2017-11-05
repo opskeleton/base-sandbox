@@ -1,6 +1,5 @@
 node 'logging.local'{
   include apt
-  include logging::sysdig
   include logging::syslog
 
   class{'logging::logwatch':
