@@ -11,7 +11,7 @@ FORGE
       puppetlabs-apt (>= 2.1.0)
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
-    puppetlabs-stdlib (4.20.0)
+    puppetlabs-stdlib (4.21.0)
     saz-timezone (3.4.0)
       puppetlabs-stdlib (>= 2.3.0)
       stm-debconf (>= 1.0.0)
@@ -180,7 +180,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: ea21a9e340078cc94abf4ecc24239149b38db66f
+  sha: 1cb9c3ce0a41c2478db636ffb0e232b4ab3761b3
   specs:
     strings-vagrant (0.0.1)
 
