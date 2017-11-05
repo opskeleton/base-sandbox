@@ -8,5 +8,4 @@ node default {
   include baseline::update
   include timezone
   include barbecue
-  include os_hardening
 }
