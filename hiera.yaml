@@ -2,7 +2,7 @@
 version: 5
 
 defaults:
-  datadir: hieradata-dev
+  datadir: hieradata-prod
   data_hash: yaml_data
 hierarchy:
  - name : 'virtual type'
