@@ -7,11 +7,14 @@ FORGE
       puppetlabs-stdlib (>= 4.2.0)
     puppetlabs-apt (2.4.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.13.0)
-    puppetlabs-docker (1.0.1)
+    puppetlabs-docker (1.0.2)
       puppetlabs-apt (>= 2.1.0)
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
-    puppetlabs-stdlib (4.21.0)
+    puppetlabs-stdlib (4.22.0)
+    saz-ssh (3.0.1)
+      puppetlabs-concat (< 3.0.0, >= 1.2.5)
+      puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
     saz-timezone (3.4.0)
       puppetlabs-stdlib (>= 2.3.0)
       stm-debconf (>= 1.0.0)
@@ -23,7 +26,7 @@ FORGE
 GIT
   remote: git://github.com/dev-sec/puppet-os-hardening.git
   ref: master
-  sha: 5ad62229783d3b1548b341a44625717d552767e4
+  sha: fb186c04ee0af0853d1a6434b7c853cca9ddbe81
   specs:
     devsec-os_hardening (1.1.2)
       puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
