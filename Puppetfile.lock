@@ -11,7 +11,7 @@ FORGE
       puppetlabs-apt (>= 2.1.0)
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
-    puppetlabs-stdlib (4.22.0)
+    puppetlabs-stdlib (4.24.0)
     saz-ssh (3.0.1)
       puppetlabs-concat (< 3.0.0, >= 1.2.5)
       puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
@@ -26,9 +26,9 @@ FORGE
 GIT
   remote: git://github.com/dev-sec/puppet-os-hardening.git
   ref: master
-  sha: fb186c04ee0af0853d1a6434b7c853cca9ddbe81
+  sha: 1499296f1ab90237656c9a6bb9b93374d5ad1658
   specs:
-    devsec-os_hardening (1.1.2)
+    devsec-os_hardening (2.0.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
       thias-sysctl (< 2.0.0, >= 1.0.6)
 
@@ -92,7 +92,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-desktop.git
   ref: master
-  sha: 9965281c46f6287b010f10dd9b52f092c91dacae
+  sha: 6b97af95f9bb290a127433c9741409f3183b8bdf
   specs:
     strings-desktop (0.1.0)
       puppetlabs-apt (>= 2.1.1)
@@ -154,7 +154,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-pi.git
   ref: master
-  sha: 7974a6910eee2caeb9d0c5e4907725aa4ec9cdeb
+  sha: ef1432c4f99524ec77a35e4ed42ea42ff4cca3da
   specs:
     strings-pi (0.0.1)
 
