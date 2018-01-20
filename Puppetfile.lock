@@ -7,7 +7,7 @@ FORGE
       puppetlabs-stdlib (>= 4.2.0)
     puppetlabs-apt (2.4.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.13.0)
-    puppetlabs-docker (1.0.2)
+    puppetlabs-docker (1.0.4)
       puppetlabs-apt (>= 2.1.0)
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
@@ -26,9 +26,9 @@ FORGE
 GIT
   remote: git://github.com/dev-sec/puppet-os-hardening.git
   ref: master
-  sha: 1499296f1ab90237656c9a6bb9b93374d5ad1658
+  sha: df2cee0d56779fbd6902a103d35d2595b4a31706
   specs:
-    devsec-os_hardening (2.0.0)
+    devsec-os_hardening (2.1.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
       thias-sysctl (< 2.0.0, >= 1.0.6)
 
@@ -71,7 +71,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 78cc1279520c64881cc4148da9134a9d17f84844
+  sha: 368ee22cae460788f229c7662bfb25fc4e620f56
   specs:
     strings-baseline (0.0.1)
 
@@ -130,7 +130,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-jdk.git
   ref: master
-  sha: 91881aa7840c8180151047db7367f6626794c5be
+  sha: c6bffbabf58ba368cc028069bbda72599423ce70
   specs:
     strings-jdk (0.1.0)
       puppetlabs-apt (< 3.0.0, >= 2.0.0)
@@ -154,7 +154,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-pi.git
   ref: master
-  sha: ef1432c4f99524ec77a35e4ed42ea42ff4cca3da
+  sha: 4648d392cae23525f578683511e82460794d67e4
   specs:
     strings-pi (0.0.1)
 
@@ -233,9 +233,19 @@ GIT
   specs:
     rip-module-data (0.5.1)
 
+GIT
+  remote: ssh://juno:29418/puppet-profiles.git
+  ref: master
+  sha: 67ea338f808c46ea3239212ce0d68e1c73f26d0d
+  specs:
+    narkisr-profiles (0.1.0)
+      puppetlabs-stdlib (>= 1.0.0)
+      saz-ssh (>= 2.5.0)
+
 DEPENDENCIES
   devsec-os_hardening (>= 0)
   maestrodev-rvm (>= 0)
+  narkisr-profiles (>= 0)
   puppetlabs-concat (>= 0)
   puppetlabs-docker (>= 0)
   puppetlabs-stdlib (>= 0)
