@@ -78,7 +78,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-build.git
   ref: master
-  sha: bf6a53239d8c6657f5a0f84f2bb3102fe62a8ee6
+  sha: 438550652e257431fcc5a3f45c774af117f9f693
   specs:
     strings-build (0.0.1)
 
@@ -236,7 +236,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: 4dceb761639981e380532bb0cc6fe3914a352392
+  sha: 1192f59830e22fc3224ee15cc8a3077042b8a64f
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
