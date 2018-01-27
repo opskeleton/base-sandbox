@@ -71,14 +71,14 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 368ee22cae460788f229c7662bfb25fc4e620f56
+  sha: 8b73980b2cee678f899358e8d593a52da0b80811
   specs:
     strings-baseline (0.0.1)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-build.git
   ref: master
-  sha: bf6a53239d8c6657f5a0f84f2bb3102fe62a8ee6
+  sha: 438550652e257431fcc5a3f45c774af117f9f693
   specs:
     strings-build (0.0.1)
 
@@ -92,7 +92,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-desktop.git
   ref: master
-  sha: 6b97af95f9bb290a127433c9741409f3183b8bdf
+  sha: 63afd2d2363e3b6cddaf7b0426ffb1ae14521b63
   specs:
     strings-desktop (0.1.0)
       puppetlabs-apt (>= 2.1.1)
@@ -183,7 +183,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: 1cb9c3ce0a41c2478db636ffb0e232b4ab3761b3
+  sha: 807999f0863959209a892c9aa344755d7ce1c083
   specs:
     strings-vagrant (0.0.1)
 
@@ -213,7 +213,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-zfs.git
   ref: master
-  sha: 016e789326696131b1c5d6bd66ce995b53d38e50
+  sha: 4bb42884af41b50d77d9464cb93f928fc1f90e15
   specs:
     strings-zfs (0.1.0)
       puppetlabs-stdlib (>= 0)
@@ -236,7 +236,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: 67ea338f808c46ea3239212ce0d68e1c73f26d0d
+  sha: 1192f59830e22fc3224ee15cc8a3077042b8a64f
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
