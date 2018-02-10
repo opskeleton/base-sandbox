@@ -20,13 +20,13 @@ FORGE
       stm-debconf (>= 1.0.0)
     stahnma-epel (1.3.0)
       puppetlabs-stdlib (>= 3.0.0)
-    stm-debconf (2.0.0)
+    stm-debconf (2.1.0)
     thias-sysctl (1.0.6)
 
 GIT
   remote: git://github.com/dev-sec/puppet-os-hardening.git
   ref: master
-  sha: df2cee0d56779fbd6902a103d35d2595b4a31706
+  sha: 07cd8e1dfc3ee77f49b92c717ed9b9be6e8e2022
   specs:
     devsec-os_hardening (2.1.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
@@ -71,7 +71,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 8b73980b2cee678f899358e8d593a52da0b80811
+  sha: 96b5cb6957f3c5b2f282ea311cb4ad222bf31061
   specs:
     strings-baseline (0.0.1)
 
@@ -92,7 +92,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-desktop.git
   ref: master
-  sha: 63afd2d2363e3b6cddaf7b0426ffb1ae14521b63
+  sha: c18114c2e357c0b71f34a49cfb415abe7a3fd891
   specs:
     strings-desktop (0.1.0)
       puppetlabs-apt (>= 2.1.1)
@@ -130,7 +130,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-jdk.git
   ref: master
-  sha: c6bffbabf58ba368cc028069bbda72599423ce70
+  sha: 557e8b13735abc66ddbf55660e83d380a5e9ca89
   specs:
     strings-jdk (0.1.0)
       puppetlabs-apt (< 3.0.0, >= 2.0.0)
@@ -154,7 +154,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-pi.git
   ref: master
-  sha: 4648d392cae23525f578683511e82460794d67e4
+  sha: 7621b75a5bfaaf874910423b111c67391787c513
   specs:
     strings-pi (0.0.1)
 
@@ -183,7 +183,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: 807999f0863959209a892c9aa344755d7ce1c083
+  sha: 3d804559cf043db5ae8389517923b1688a2d914f
   specs:
     strings-vagrant (0.0.1)
 
@@ -227,13 +227,6 @@ GIT
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
 
 GIT
-  remote: git://github.com/ripienaar/puppet-module-data.git
-  ref: master
-  sha: 28dafce3a70b35364d33f64d9f518e1adffef242
-  specs:
-    rip-module-data (0.5.1)
-
-GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
   sha: 1192f59830e22fc3224ee15cc8a3077042b8a64f
@@ -247,9 +240,8 @@ DEPENDENCIES
   maestrodev-rvm (>= 0)
   narkisr-profiles (>= 0)
   puppetlabs-concat (>= 0)
-  puppetlabs-docker (>= 0)
+  puppetlabs-docker (= 1.0.4)
   puppetlabs-stdlib (>= 0)
-  rip-module-data (>= 0)
   saz-timezone (= 3.4.0)
   strings-archive (>= 0)
   strings-autossh (>= 0)
