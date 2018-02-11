@@ -183,7 +183,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
   ref: master
-  sha: 3d804559cf043db5ae8389517923b1688a2d914f
+  sha: 51106a1a58ff16553e8215578089bc2f8186dc76
   specs:
     strings-vagrant (0.0.1)
 
