@@ -35,7 +35,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/attachmentgenie-ufw.git
   ref: master
-  sha: 314ece9540577e811624cd38ba5d94914de569a8
+  sha: b9867888b82a09ab7b5eef6a83a9703fecf8fbdb
   specs:
     strings-ufw (2.0.0)
       puppetlabs-stdlib (< 5.0.0, >= 2.2.1)
@@ -57,7 +57,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: 40b7f5a9489a50a409dd5296819826887b6f6980
+  sha: 2cb5f768c223bf10264341d129e8952fd91d1c40
   specs:
     strings-backup (0.0.1)
 
@@ -71,7 +71,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 96b5cb6957f3c5b2f282ea311cb4ad222bf31061
+  sha: ccef4f758c403da2747f7366c8fe7a114ad8ab4a
   specs:
     strings-baseline (0.0.1)
 
@@ -92,7 +92,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-desktop.git
   ref: master
-  sha: c18114c2e357c0b71f34a49cfb415abe7a3fd891
+  sha: 93e482fa7cdea73d8c1ecb2a8a6cae82db6da968
   specs:
     strings-desktop (0.1.0)
       puppetlabs-apt (>= 2.1.1)
@@ -169,7 +169,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-shell.git
   ref: master
-  sha: 6cfb4503ea1533d268278e2762893664569d2ddd
+  sha: 1df4ff8424d2f0eaf14c7f9584fcbf1b494ded08
   specs:
     strings-shell (0.0.1)
 
@@ -188,17 +188,9 @@ GIT
     strings-vagrant (0.0.1)
 
 GIT
-  remote: git://github.com/pulling-strings/puppet-vector.git
-  ref: master
-  sha: 7f5ad6a0a8865a70febd823c6bd05240ab18bc41
-  specs:
-    strings-vector (0.1.0)
-      puppetlabs-stdlib (>= 1.0.0)
-
-GIT
   remote: git://github.com/pulling-strings/puppet-vim.git
   ref: master
-  sha: 6ab78a49860c3189a2dfe73b0103dafa32384551
+  sha: c07022ef854ee518d98c160dd40597d1bfecbf32
   specs:
     strings-vim (0.1.0)
       puppetlabs-stdlib (>= 4.2.0)
@@ -263,7 +255,6 @@ DEPENDENCIES
   strings-ssmtp (>= 0)
   strings-ufw (>= 0)
   strings-vagrant (>= 0)
-  strings-vector (>= 0)
   strings-vim (>= 0)
   strings-virtualbox (>= 0)
   strings-zfs (>= 0)
