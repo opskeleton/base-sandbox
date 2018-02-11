@@ -14,26 +14,28 @@ Create the development environment within Vagrant:
 $ ./boot.sh
 ```
 
-## In order to use it on your machine: 
+## In order to use it on your machine:
 
 ```bash
 # edit to match your own settings
 $ vi hieradata/physical.yaml
 $ librarian-puppet install
-$ sudo ./run.sh
+$ sudo bash run.sh
+# if running on an xfce based UI
+$ facter_dbus=$DBUS_SESSION_BUS_ADDRESS sudo -E bash run.sh
 ```
 
 ## Prerequisite
 
 For Development:
 
-* Vagrant 1.8.x
+* Vagrant 2.x
 * Ubuntu 16.x box with puppet 3.8.7 (or FreeBSD-11)
 * RVM
 
 For Deployment:
 
-* Puppet 3.8.7
+* Puppet 4.10.8
 * Ubuntu 16.04
 
 # Copyright and license
