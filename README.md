@@ -30,7 +30,7 @@ $ facter_dbus=$DBUS_SESSION_BUS_ADDRESS sudo -E bash run.sh
 For Development:
 
 * Vagrant 2.x
-* Ubuntu 16.x box with puppet 3.8.7 (or FreeBSD-11)
+* Ubuntu 16.x box with puppet 4.10.8 (or FreeBSD-11)
 * RVM
 
 For Deployment:
