@@ -4,6 +4,7 @@ node default {
   include git::configure
   include baseline
   include baseline::mirror
+  include baseline::security
   include baseline::ssh::config
   include baseline::update
   include timezone
