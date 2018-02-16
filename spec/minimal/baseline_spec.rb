@@ -15,11 +15,11 @@ describe file('/home/vagrant/.zshrc') do
 end
 
 
-describe user('upgrade') do
+describe user('re-ops') do
   it { should exist }
 end
 
-describe file('/etc/sudoers.d/upgrade') do
+describe file('/etc/sudoers.d/re-ops') do
     it { should be_file }
 end
 

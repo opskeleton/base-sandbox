@@ -7,11 +7,11 @@ describe file('/home/vagrant/.zshrc') do
 end
 
 
-describe user('upgrade') do
+describe user('re-ops') do
   it { should exist }
 end
 
-describe file('/usr/local/etc/sudoers.d/upgrade') do
+describe file('/usr/local/etc/sudoers.d/re-ops') do
     it { should be_file }
 end
 
@@ -19,10 +19,4 @@ end
 describe user('celestial') do
   it { should exist }
 end
-
-describe file('/usr/local/etc/sudoers.d/celestial') do
-    it { should be_file }
-    it { should contain 'celestial ALL=NOPASSWD: /tmp/*/scripts/run.sh  --detailed-exitcodes'}
-end
-
 

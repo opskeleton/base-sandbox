@@ -6,7 +6,7 @@ node default {
   include baseline::mirror
   include baseline::security
   include baseline::ssh::config
-  include baseline::update
+  include baseline::reops
   include timezone
   include barbecue
 }
