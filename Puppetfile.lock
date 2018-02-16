@@ -26,7 +26,7 @@ FORGE
 GIT
   remote: git://github.com/dev-sec/puppet-os-hardening.git
   ref: master
-  sha: 07cd8e1dfc3ee77f49b92c717ed9b9be6e8e2022
+  sha: b3ebeddb5a59a4d70b24a2008079a77a360cf163
   specs:
     devsec-os_hardening (2.1.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
@@ -71,7 +71,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: ccef4f758c403da2747f7366c8fe7a114ad8ab4a
+  sha: 2e7b4881a2e00e2c7049e0838324a59a30377f29
   specs:
     strings-baseline (0.0.1)
 
