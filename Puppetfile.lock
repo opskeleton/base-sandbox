@@ -68,7 +68,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: e3a59679ec9194ce51f2b33bc912d1c3e00c5ad1
+  sha: 9b2f2b8963d5ecf1093ca4ef62026a32138fae29
   specs:
     strings-baseline (0.2.0)
 
@@ -120,7 +120,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-jdk.git
   ref: master
-  sha: 1783c564cffadb616a80da265d976b182e51f56e
+  sha: 5ab1714de453c584442f96b657c1f7030948fdae
   specs:
     strings-jdk (0.1.0)
       puppetlabs-apt (>= 0)
@@ -134,14 +134,6 @@ GIT
     strings-langs (0.2.0)
       puppetlabs-apt (>= 2.1.0)
       puppetlabs-stdlib (>= 4.1.0)
-
-GIT
-  remote: git://github.com/pulling-strings/puppet-logging.git
-  ref: master
-  sha: f7edfd4ff71a556320ced9819403db9597cb4fd4
-  specs:
-    strings-logging (0.0.1)
-      puppetlabs-stdlib (>= 0)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-pi.git
@@ -165,13 +157,6 @@ GIT
   specs:
     strings-shell (0.2.0)
       stankevich-python (>= 1.7.8)
-
-GIT
-  remote: git://github.com/pulling-strings/puppet-ssmtp.git
-  ref: master
-  sha: 47b71687fc8e29ebcc28cd4d44f729d79e3b45e8
-  specs:
-    strings-ssmtp (0.0.1)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-vagrant.git
@@ -240,10 +225,8 @@ DEPENDENCIES
   strings-hardening (>= 0)
   strings-jdk (>= 0)
   strings-langs (>= 0)
-  strings-logging (>= 0)
   strings-pi (>= 0)
   strings-shell (>= 0)
-  strings-ssmtp (>= 0)
   strings-ufw (>= 0)
   strings-vagrant (>= 0)
   strings-vim (>= 0)
