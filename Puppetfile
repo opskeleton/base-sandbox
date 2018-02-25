@@ -62,12 +62,6 @@ mod 'strings/hardening',
 mod 'strings/editfile',
     :git => 'git://github.com/pulling-strings/puppet-editfile.git'
 
-mod 'strings/ssmtp',
-  :git => 'git://github.com/pulling-strings/puppet-ssmtp.git'
-
-mod 'strings/logging',
-  :git => 'git://github.com/pulling-strings/puppet-logging.git'
-
 mod 'strings/desktop',
   :git => 'git://github.com/pulling-strings/puppet-desktop.git'
 
