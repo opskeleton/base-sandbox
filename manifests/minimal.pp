@@ -3,6 +3,7 @@ node default {
   include vim
   include git::configure
   include baseline
+  include baseline::osquery
   include baseline::mirror
   include baseline::security
   include baseline::ssh::config

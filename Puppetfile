@@ -62,9 +62,6 @@ mod 'strings/hardening',
 mod 'strings/editfile',
     :git => 'git://github.com/pulling-strings/puppet-editfile.git'
 
-mod 'strings/clamav',
-    :git => 'git://github.com/pulling-strings/puppet-clamav.git'
-
 mod 'strings/ssmtp',
   :git => 'git://github.com/pulling-strings/puppet-ssmtp.git'
 
@@ -76,9 +73,6 @@ mod 'strings/desktop',
 
 mod 'strings/barbecue',
   :git => 'git://github.com/pulling-strings/puppet-barbecue.git'
-
-mod 'strings/autossh',
-  :git => 'git://github.com/pulling-strings/puppet-autossh.git'
 
 mod 'strings/ufw',
   :git => 'git://github.com/pulling-strings/attachmentgenie-ufw.git'
