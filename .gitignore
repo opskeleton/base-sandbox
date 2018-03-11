@@ -19,5 +19,4 @@ hieradata-prod
 plots
 target
 benchmark.json
-mirror
 *.log
