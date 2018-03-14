@@ -11,7 +11,7 @@ FORGE
       puppetlabs-apt (>= 2.1.0)
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
-    puppetlabs-stdlib (4.24.0)
+    puppetlabs-stdlib (4.25.0)
     saz-ssh (3.0.1)
       puppetlabs-concat (< 3.0.0, >= 1.2.5)
       puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
@@ -53,7 +53,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: 08e01c8e1bb19fcfb4ada6626a789fa2e543ca4f
+  sha: 7188f8169c7c37543542609ddb9d19c63cdba43b
   specs:
     strings-backup (0.2.0)
 
@@ -68,7 +68,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: 635d71d01a7b87dcb83c8c461b687bc0557cb0cc
+  sha: e9771edcdd3dd4f1c62ceb0e4677cae2c4d4500c
   specs:
     strings-baseline (0.2.0)
 
@@ -82,7 +82,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-desktop.git
   ref: master
-  sha: 93e482fa7cdea73d8c1ecb2a8a6cae82db6da968
+  sha: 968e639dc6395214aeeaaa91996ae9469e73dd1d
   specs:
     strings-desktop (0.1.0)
       puppetlabs-apt (>= 2.1.1)
