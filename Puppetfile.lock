@@ -53,7 +53,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-backup.git
   ref: master
-  sha: 7188f8169c7c37543542609ddb9d19c63cdba43b
+  sha: 1e07c8fd1680f5d6e0ee8779b50e3aa7f551377b
   specs:
     strings-backup (0.2.0)
 
