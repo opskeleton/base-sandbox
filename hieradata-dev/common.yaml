@@ -1,25 +1,25 @@
 ---
-home: '/home/vagrant'
-desktop::user: 'vagrant'
-desktop::home: '/home/vagrant'
+home: '/home/re-ops'
+desktop::user: 're-ops'
+desktop::home: '/home/re-ops'
 
-shell::user: 'vagrant'
-shell::home: '/home/vagrant'
+shell::user: 're-ops'
+shell::home: '/home/re-ops'
 
-backup::dropbox::user: 'vagrant'
-backup::dropbox::home: '/home/vagrant'
+backup::dropbox::user: 're-ops'
+backup::dropbox::home: '/home/re-ops'
 
-vim::user: 'vagrant'
-vim::home: '/home/vagrant'
+vim::user: 're-ops'
+vim::home: '/home/re-ops'
 
-langs::ruby::user: 'vagrant'
+langs::ruby::user: 're-ops'
 
-git::configure::user: 'vagrant'
-git::configure::scm_user: 'vagrant'
-git::configure::scm_email: 'vagrant@gmail.com'
+git::configure::user: 're-ops'
+git::configure::scm_user: 're-ops'
+git::configure::scm_email: 're-ops@gmail.com'
 
-baseline::home: '/home/vagrant'
-baseline::networking::user: 'vagrant'
+baseline::home: '/home/re-ops'
+baseline::networking::user: 're-ops'
 baseline::filesystem::ssds:
  - '/'
  - '/home'
@@ -30,23 +30,23 @@ baseline::ssh::keys:
   ronen:
     - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5BsjhACNz35yfz2Mxb23+YZLDPpQnjFvi7kXbjc5oNq3He9W2/uQfmdnwxYiSDMxk2LmRqoboIv4CyTDFPDSXDSqUpXh5SxTKQazbu8qEuudM9xAgSt3Q9DLvJj/KU6V5i/y8mnpDbrLa6DlM1bC6FAvK8PtbOPlMRrtjYYGJ/SS/oRzij0UTuBpJfz7+qsHrRNdJ3yU52wqwZuj8SparlKwpPCrcYFJ14LviULoAOKoTBaEsa23iMcQlLL7Eyf5AVStglFZWaKfs+7arQKgoJnSHHOY9osZDA6WyW81SFvqw5l/O9TwijDBKdMuo5Cz53Ci64wc5eNw4orxt4s7n ronen@nucleus
 
-baseline::ssh::config::user: 'vagrant'
+baseline::ssh::config::user: 're-ops'
 
 baseline::ssh::config::proxies:
    foo:
       proxy: 'bar'
       port: 1234
-      user: 'vagrant'
+      user: 're-ops'
       key: '~/.ssh/id_rsa'
 
 baseline::reops::user: 're-ops'
 
 timezone::timezone: 'Asia/Jerusalem'
 
-kvm::user: 'vagrant'
+kvm::user: 're-ops'
 
-vagrant::user: 'vagrant'
-vagrant::home: '/home/vagrant'
+re-ops::user: 're-ops'
+re-ops::home: '/home/re-ops'
 
 virtualbox::manage::user: 'ronen'
 jdk::enable_jce: true
