@@ -29,7 +29,7 @@ FORGE
 GIT
   remote: git://github.com/dev-sec/puppet-os-hardening.git
   ref: master
-  sha: 1fea019b6a243b20595b025cbd49044c0f96fda8
+  sha: 9e3affee448c83a2f1c10c73ddf6b561ab21fd41
   specs:
     devsec-os_hardening (2.1.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
