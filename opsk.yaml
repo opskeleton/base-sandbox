@@ -13,6 +13,5 @@
     - run.sh
     - boot.sh
     - hieradata-prod
-    - hieradata-staging
     - hiera.yaml
 
