@@ -26,19 +26,11 @@ baseline::filesystem::ssds:
 
 baseline::ssh::keys:
   re-ops:
-    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5BsjhACNz35yfz2Mxb23+YZLDPpQnjFvi7kXbjc5oNq3He9W2/uQfmdnwxYiSDMxk2LmRqoboIv4CyTDFPDSXDSqUpXh5SxTKQazbu8qEuudM9xAgSt3Q9DLvJj/KU6V5i/y8mnpDbrLa6DlM1bC6FAvK8PtbOPlMRrtjYYGJ/SS/oRzij0UTuBpJfz7+qsHrRNdJ3yU52wqwZuj8SparlKwpPCrcYFJ14LviULoAOKoTBaEsa23iMcQlLL7Eyf5AVStglFZWaKfs+7arQKgoJnSHHOY9osZDA6WyW81SFvqw5l/O9TwijDBKdMuo5Cz53Ci64wc5eNw4orxt4s7n
-    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDgoPH0etDAG0OykkG0gwhZPomlS0FcJA5Om2ZBqWTgIfUs3NO/KqL8zc5D+mjod+qH+fm3u1zyQI6RCV5uAyHs8Q6bcxzBdGRr5z+59STWak5oDwa55t9XrBYSS7Nf+ejT4Hh68A0irBBoquconzHzV1jw48SjqEVwjMgqksw1IB3m9gris2blwf3OaDEyHckmOV+g3jfc3BvTDTByM17xrUUPKncQmN8usC+2ZqhxRHatigsAfWrsRQJZMQjxHYolOtq/U6bc4KWBw70ViUL7+4iaKzb8pLua8m+diaQ1pJZJ5RuvgE5mjZ0k4bFUyq9u5ia4rB2K3ytEMiN1B4Rn
-  ronen:
-    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5BsjhACNz35yfz2Mxb23+YZLDPpQnjFvi7kXbjc5oNq3He9W2/uQfmdnwxYiSDMxk2LmRqoboIv4CyTDFPDSXDSqUpXh5SxTKQazbu8qEuudM9xAgSt3Q9DLvJj/KU6V5i/y8mnpDbrLa6DlM1bC6FAvK8PtbOPlMRrtjYYGJ/SS/oRzij0UTuBpJfz7+qsHrRNdJ3yU52wqwZuj8SparlKwpPCrcYFJ14LviULoAOKoTBaEsa23iMcQlLL7Eyf5AVStglFZWaKfs+7arQKgoJnSHHOY9osZDA6WyW81SFvqw5l/O9TwijDBKdMuo5Cz53Ci64wc5eNw4orxt4s7n
+    - 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5BsjhACNz35yfz2Mxb23+YZLDPpQnjFvi7kXbjc5oNq3He9W2/uQfmdnwxYiSDMxk2LmRqoboIv4CyTDFPDSXDSqUpXh5SxTKQazbu8qEuudM9xAgSt3Q9DLvJj/KU6V5i/y8mnpDbrLa6DlM1bC6FAvK8PtbOPlMRrtjYYGJ/SS/oRzij0UTuBpJfz7+qsHrRNdJ3yU52wqwZuj8SparlKwpPCrcYFJ14LviULoAOKoTBaEsa23iMcQlLL7Eyf5AVStglFZWaKfs+7arQKgoJnSHHOY9osZDA6WyW81SFvqw5l/O9TwijDBKdMuo5Cz53Ci64wc5eNw4orxt4s7n'
+    - 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDgoPH0etDAG0OykkG0gwhZPomlS0FcJA5Om2ZBqWTgIfUs3NO/KqL8zc5D+mjod+qH+fm3u1zyQI6RCV5uAyHs8Q6bcxzBdGRr5z+59STWak5oDwa55t9XrBYSS7Nf+ejT4Hh68A0irBBoquconzHzV1jw48SjqEVwjMgqksw1IB3m9gris2blwf3OaDEyHckmOV+g3jfc3BvTDTByM17xrUUPKncQmN8usC+2ZqhxRHatigsAfWrsRQJZMQjxHYolOtq/U6bc4KWBw70ViUL7+4iaKzb8pLua8m+diaQ1pJZJ5RuvgE5mjZ0k4bFUyq9u5ia4rB2K3ytEMiN1B4Rn'
+    - 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDX3kyxqNnLnHC3WRPFMhX0K2LQVzBFnOXmo9rPi6kBggpPuhUsrIkUpZckA9uFQvENim8Nz30BaUW6JQaWL8rclWy1IrEU5R7e5chi/Qwn6cL5NVkrP9c2urDaO6eAOhIYVfvAkxM9cSLxcHxcWu9hOoXQHWaUgtp1O724MvnjTVzF1unIfDoGVmoTPyMcnksfR8bpH8fIq9Lqn02o23GRbsQl3nRNlrHQQNz6U0iLGxVL9JblT0ouOnYaRtbyeQo2wZp5TbpFlW3XOC8Daw+3HJDGAkIUJ2wm7Gdlao225wDSFKJgekLcBxOFKhAJdYIS8s4CqgkpQNmz/0z/x6G9'
 
 baseline::ssh::config::user: 're-ops'
-
-baseline::ssh::config::proxies:
-   foo:
-      proxy: 'bar'
-      port: 1234
-      user: 're-ops'
-      key: '~/.ssh/id_rsa'
 
 baseline::reops::user: 're-ops'
 
@@ -49,5 +41,5 @@ kvm::user: 're-ops'
 re-ops::user: 're-ops'
 re-ops::home: '/home/re-ops'
 
-virtualbox::manage::user: 'ronen'
+virtualbox::manage::user: 're-ops'
 jdk::enable_jce: true
