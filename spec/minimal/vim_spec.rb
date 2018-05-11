@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe file('/home/vagrant/.vimrc') do
+describe file('/home/re-ops/.vimrc') do
     it { should contain 'pathogen' }
     it { should be_file }
-    it { should be_linked_to '/home/vagrant/.vim/.vimrc' }
+    it { should be_linked_to '/home/re-ops/.vim/.vimrc' }
 end
 
 

@@ -5,25 +5,25 @@ describe package('zsh') do
     it { should be_installed }
 end
 
-describe file('/home/vagrant/.zshrc') do
+describe file('/home/re-ops/.zshrc') do
     it { should contain 'plugins' }
     it { should be_file }
-    it { should be_linked_to '/home/vagrant/.oh-my-zsh/.zshrc' }
+    it { should be_linked_to '/home/re-ops/.oh-my-zsh/.zshrc' }
 end
 
-describe file('/home/vagrant/.oh-my-zsh') do
+describe file('/home/re-ops/.oh-my-zsh') do
   it { should be_directory }  
-  it { should be_owned_by 'vagrant' }
+  it { should be_owned_by 're-ops' }
 end
 
 describe file('/etc/passwd') do
-  it { should contain '/home/vagrant:/bin/zsh' }
+  it { should contain '/home/re-ops:/bin/zsh' }
 end
 
 # ack
-describe file('/home/vagrant/.ackrc') do
+describe file('/home/re-ops/.ackrc') do
   it { should contain 'clojure' }
-  it { should be_linked_to '/home/vagrant/.dots/.ackrc' }
+  it { should be_linked_to '/home/re-ops/.dots/.ackrc' }
 end
 
 describe package('ack-grep') do
@@ -31,9 +31,9 @@ describe package('ack-grep') do
 end
 
 # rlwrap
-describe file('/home/vagrant/.inputrc') do
+describe file('/home/re-ops/.inputrc') do
   it { should contain 'vi' }
-  it { should be_linked_to '/home/vagrant/.dots/.inputrc' }
+  it { should be_linked_to '/home/re-ops/.dots/.inputrc' }
 end
 
 describe package('rlwrap') do
@@ -45,17 +45,17 @@ describe package('tmux') do
     it { should be_installed }
 end
 
-describe file('/home/vagrant/.tmux.conf') do
+describe file('/home/re-ops/.tmux.conf') do
   it { should contain 'set' }
-  it { should be_linked_to '/home/vagrant/.tmux/.tmux.conf.plugins' }
+  it { should be_linked_to '/home/re-ops/.tmux/.tmux.conf.plugins' }
 end
 
 describe package('tmuxinator') do
   it { should be_installed.by('gem') }
 end
 
-describe file('/home/vagrant/.tmuxinator') do
-  it { should be_directory }  
-  it { should be_owned_by 'vagrant' }
+describe file('/home/re-ops/.tmuxinator') do
+  it { should be_directory }
+  it { should be_owned_by 're-ops' }
 end
 

@@ -1,6 +1,7 @@
 
 require 'spec_helper'
 
-describe file('/etc/timezone') do
-  it { should contain 'Asia/Jerusalem' }
+describe command('date') do
+  its(:stdout) {should contain 'IDT'}
 end
+
