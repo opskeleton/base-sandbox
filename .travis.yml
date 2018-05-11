@@ -4,6 +4,3 @@ rvm:
 script:
   - "sed -i '/.*profiles/ d' Puppetfile"
   - "bundle exec librarian-puppet install"
-  - "bundle exec rake lint"
-  - "bundle exec rake modspec"
-
