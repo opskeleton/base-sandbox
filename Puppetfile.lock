@@ -11,7 +11,7 @@ FORGE
       puppetlabs-apt (>= 2.1.0)
       puppetlabs-stdlib (>= 4.1.0)
       stahnma-epel (>= 0.0.6)
-    puppetlabs-stdlib (4.25.0)
+    puppetlabs-stdlib (4.25.1)
     saz-ssh (3.0.1)
       puppetlabs-concat (< 3.0.0, >= 1.2.5)
       puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
@@ -20,16 +20,16 @@ FORGE
       stm-debconf (>= 1.0.0)
     stahnma-epel (1.3.0)
       puppetlabs-stdlib (>= 3.0.0)
-    stankevich-python (1.18.2)
+    stankevich-python (1.19.0)
       puppetlabs-stdlib (< 6.0.0, >= 4.6.0)
       stahnma-epel (< 2.0.0, >= 1.2.2)
-    stm-debconf (2.1.0)
+    stm-debconf (2.2.0)
     thias-sysctl (1.0.6)
 
 GIT
   remote: git://github.com/dev-sec/puppet-os-hardening.git
   ref: master
-  sha: 9e3affee448c83a2f1c10c73ddf6b561ab21fd41
+  sha: 29be243021bbd6f125d2b9465d5556c911614ecd
   specs:
     devsec-os_hardening (2.1.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
@@ -68,7 +68,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
   ref: master
-  sha: e9771edcdd3dd4f1c62ceb0e4677cae2c4d4500c
+  sha: 6008dfc982a896d178be014db84d0e8742abe007
   specs:
     strings-baseline (0.2.0)
 
@@ -199,7 +199,7 @@ GIT
 GIT
   remote: ssh://juno:29418/puppet-profiles.git
   ref: master
-  sha: 7eb76d00a68095b6dacfbc4887e902f75674f614
+  sha: b8165c790583e15bee8a03641036c01dd89415a0
   specs:
     narkisr-profiles (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
