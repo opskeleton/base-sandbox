@@ -8,11 +8,6 @@ task :spec => 'serverspec:all'
 
 class ServerspecTask < RSpec::Core::RakeTask
   attr_accessor :target
-
-  # def spec_command
-  #   cmd = super
-  #   "env TARGET_HOST=#{target} #{cmd}"
-  # end
 end
 
 namespace :serverspec do
