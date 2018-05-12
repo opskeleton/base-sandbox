@@ -1,7 +1,5 @@
 require 'serverspec'
-require 'pathname'
 require 'net/ssh'
-require 'json'
 
 set :backend, :ssh
 
