@@ -15,7 +15,7 @@ cmd = "vboxmanage list systemproperties | grep 'Default machine'"
 #     it { should return_exit_status 0 }
 # end
 #
-describe command("su - vagrant -c \"#{cmd}\"") do
+describe command("su - re-ops -c \"#{cmd}\"") do
     its(:exit_status)  { should eq 0 }
-    its(:stdout) {should contain 'Default machine folder:          /vagrant'}
+    its(:stdout) {should contain 'Default machine folder:          /virtualbox'}
 end
