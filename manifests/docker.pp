@@ -1,5 +1,11 @@
 node default {
-  include docker
+  package{'linux-image-extra-virtual':
+    ensure  => present
+  }
+
+  -> class{'docker':
+    manage_kernel => false
+  }
 
   docker::image {'redis:alpine': }
 
