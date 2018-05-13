@@ -5,9 +5,8 @@ node default {
   include build::sbt
   include barbecue
 
-  class{'jdk':
-    version    => '8',
-    enable_jce => true
+  package{'openjdk-8-jdk':
+    ensure  => present
   }
 
   package{'software-properties-common':
