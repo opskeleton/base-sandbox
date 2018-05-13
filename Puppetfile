@@ -50,9 +50,6 @@ mod 'strings/shell',
 mod 'strings/langs',
   :git => 'git://github.com/pulling-strings/puppet-langs.git'
 
-mod 'strings/vagrant',
-  :git => 'git://github.com/pulling-strings/puppet-vagrant.git'
-
 mod 'strings/baseline',
   :git => 'git://github.com/pulling-strings/puppet-baseline.git'
 

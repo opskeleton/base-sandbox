@@ -1,14 +1,14 @@
 node default {
-  include vagrant
-  include vagrant::libvirt
 
   include kvm
-
   include virtualbox
 
+  file{'/virtualbox':
+     ensure => directory,
+  }
   class{'virtualbox::manage':
-    machinefolder => '/vagrant',
-    user          => 'vagrant'
+    machinefolder => '/virtualbox',
+    user          => 're-ops'
   }
   
   ufw::allow { 'ssh':
