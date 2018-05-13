@@ -9,9 +9,9 @@ class kvm($user=false) {
 
   package{['qemu-kvm', 'libvirt-bin', 'bridge-utils', 'virt-manager']:
     ensure  => present
-  }  ~>
+  }
 
-  exec{'forward bridge':
+  ~> exec{'forward bridge':
     command => "sed -i '/^COMMIT/i ${forward}' /etc/ufw/before.rules",
     user    => 'root',
     path    => ['/usr/bin','/bin','/usr/sbin/'],
@@ -21,21 +21,28 @@ class kvm($user=false) {
   file_line {'bridge-nf-call-iptables':
     path => '/etc/sysctl.conf',
     line => 'net.bridge.bridge-nf-call-iptables = 0'
-  } ->
+  }
 
-  file_line {'bridge-nf-call-arptables':
+  -> file_line {'bridge-nf-call-arptables':
     path => '/etc/sysctl.conf',
     line => 'net.bridge.bridge-nf-call-arptables = 0'
-  } ->
+  }
 
-  file_line {'bridge-nf-call-ip6tables':
+  -> file_line {'bridge-nf-call-ip6tables':
     path => '/etc/sysctl.conf',
     line => 'net.bridge.bridge-nf-call-iptables = 0'
-  } ~>
+  }
 
-  exec{'/sbin/sysctl -p':
+  ~> exec{'/sbin/sysctl -p':
     user        => 'root',
     refreshonly => true
+  }
+
+  exec{'creating libvirtd group':
+    command => 'addgroup libvirtd',
+    user    => 'root',
+    path    => ['/usr/bin','/bin','/usr/sbin/'],
+    unless  => 'groups | grep libvirtd'
   }
 
   exec{"adding ${user} to libvirtd group":
