@@ -1,18 +1,13 @@
 require 'spec_helper'
 
 describe command('packer version') do
-  its(:stdout) { should eq 'Packer v0.7.5' }
+  its(:stdout) { should include 'Packer v1.1.3' }
 end
 
 describe command('lein version') do
-  its(:stdout) { should eq 'Leiningen 2.5.1' }
+  its(:stdout) { should include'Leiningen 2.8.1' }
 end
 
-describe command('gradle -v') do
-  its(:stdout) { should match /Gradle 2.2.1/ }
+describe command('gradle --version') do
+  its(:stdout) { should match /Gradle 4.7/ }
 end
-
-describe command('sbt version') do
-  its(:stdout) {should match /0.1-SNAPSHOT/}
-end
-

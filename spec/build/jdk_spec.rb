@@ -1,18 +1,5 @@
 
-describe command('sbt version') do
-  its(:stdout) {should contain 'java version "1.8.0"'}
+describe command("jrunscript -e 'print (javax.crypto.Cipher.getMaxAllowedKeyLength(\"RC5\") >= 256);'") do
+  its(:stdout) {should contain 'true'}
 end
-
-describe file('/usr/lib/jvm/java-8-oracle/lib/security/US_export_policy.jar') do
-  it { should exist }
-end
-
-describe file('/usr/lib/jvm/java-8-oracle/lib/security/local_policy.jar') do
-  it { should exist }
-end
-
-describe package('oracle-java8-unlimited-jce-policy') do
-    it { should be_installed }
-end
-
 
